@@ -48,28 +48,12 @@ Specifically:
 
 
 ### Colaborators
-<div class="pull-left">
-<a href="https://github.com/hcgalvan">
-   <img src="https://avatars.githubusercontent.com/hcgalvan" width="80px;" alt=""/>
-   <br /><sub><b>H.Galván</b></sub>
-</a>
-</div>
-<div class="pull-left">
-<a href="https://github.com/agustinabl">
-   <img src="https://avatars.githubusercontent.com/agustinabl" width="80px;" alt=""/>
-   <br /><sub><b>A.Boveda</b></sub>
-</a>
-</div>
-<div class="pull-left">
-<a href="https://github.com/pablokoss">
-   <img src="https://avatars.githubusercontent.com/pablokoss" width="80px;" alt=""/>
-   <br /><sub><b>P.Koss</b></sub>
-</a>
-</div>
 
-<div class="pull-left">
-<a href="https://github.com/dseba9">
-   <img src="https://avatars.githubusercontent.com/dseba9" width="80px;" alt=""/>
-   <br /><sub><b>S.Galván</b></sub>
-</a>
-</div>
+|H.Galván|A.Boveda|P.Koss|S.Galván|
+|---|---|---|---|
+|<a href="https://github.com/hcgalvan">
+   <img src="https://avatars.githubusercontent.com/hcgalvan" width="80px;" alt=""/>|<a href="https://github.com/agustinabl">
+   <img src="https://avatars.githubusercontent.com/agustinabl" width="80px;" alt=""/>|<a href="https://github.com/pablokoss">
+   <img src="https://avatars.githubusercontent.com/pablokoss" width="80px;" alt=""/>|<a href="https://github.com/dseba9">
+   <img src="https://avatars.githubusercontent.com/dseba9" width="80px;" alt=""/>|
+   
