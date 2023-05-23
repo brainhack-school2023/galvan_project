@@ -46,7 +46,7 @@ Specifically:
 
 ### Schedule
 
-
+-
 ### Colaborators
 
 |H.Galván|A.Boveda|P.Koss|S.Galván|
