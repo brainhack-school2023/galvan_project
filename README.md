@@ -12,7 +12,7 @@ This project is about creating an AI model to predict a medical diagnosis
 
 
 ## Project definition
----
+
 
 ### Background
 
@@ -48,8 +48,28 @@ Specifically:
 
 
 ### Colaborators
-
+<div class="pull-left">
 <a href="https://github.com/hcgalvan">
-   <img src="https://avatars.githubusercontent.com/hcgalvan" width="50px;" alt=""/>
-   <br /><sub><b>H.C.Galván</b></sub>
+   <img src="https://avatars.githubusercontent.com/hcgalvan" width="80px;" alt=""/>
+   <br /><sub><b>H.Galván</b></sub>
 </a>
+</div>
+<div class="pull-left">
+<a href="https://github.com/agustinabl">
+   <img src="https://avatars.githubusercontent.com/agustinabl" width="80px;" alt=""/>
+   <br /><sub><b>A.Boveda</b></sub>
+</a>
+</div>
+<div class="pull-left">
+<a href="https://github.com/pablokoss">
+   <img src="https://avatars.githubusercontent.com/pablokoss" width="80px;" alt=""/>
+   <br /><sub><b>P.Koss</b></sub>
+</a>
+</div>
+
+<div class="pull-left">
+<a href="https://github.com/dseba9">
+   <img src="https://avatars.githubusercontent.com/dseba9" width="80px;" alt=""/>
+   <br /><sub><b>S.Galván</b></sub>
+</a>
+</div>
