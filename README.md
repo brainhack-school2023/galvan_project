@@ -1,5 +1,6 @@
 
-This project is about creating an AI model to predict a medical diagnosis
+## Detection of schizophrenia based on tractographic techniques with fine tuning in machine learning.
+
 
 
 # 
