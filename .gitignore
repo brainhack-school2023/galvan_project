@@ -1,5 +1,6 @@
 *.pyc
 venv*
+list
 __pycache__/
 # data/*
 !data/.gitkeep
