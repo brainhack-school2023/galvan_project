@@ -11,7 +11,7 @@
 | Dataset | [**Open In Google**](https://purl.stanford.edu/mg599hw5271)| UCLA | 2023-05-24
 
 ### project folders
-![Image](<img src="https://raw.githubusercontent.com/hcgalvan/hcgalvan_project/main/data/image-1.jpg" width="80px;" alt=""/>)
+[Tractografía]<img src="https://raw.githubusercontent.com/brainhack-school2023/hcgalvan_project/main/data/tractografia.png" width="170px;" alt=""/>
 
 * **data**: Raw data for the project and images.
 * **docs**: Documentation, including Markdown.
