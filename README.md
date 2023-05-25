@@ -7,10 +7,18 @@
 
 | Title        | repo    | tags | date
 |:--------------------|:--------------------:|:--------------------:|:--------------------
-|Pitch Project  |[**Open In Google**](https://docs.google.com/presentation/d/1pgS_7BF-ZuwxwgHhbA5jdm0gcpsiapIzR7eVAEqdzcQ/edit?usp=sharing) | Neuroimages | 2023-05-24
+|Pitch Project  |[**Open In Google**](https://docs.google.com/presentation/d/e/2PACX-1vTdQtXpYau8WrRoniEIE87jnO-npG0ezAElcvfuzTdrlMxa3oVx3VcqvO2CIKgL5k8WTBNnvzXT3SGv/pub?start=false&loop=true&delayms=60000) | Neuroimages | 2023-05-24
 | Dataset | [**Open In Google**](https://purl.stanford.edu/mg599hw5271)| UCLA | 2023-05-24
 
+### project folders
+![Image](<img src="https://raw.githubusercontent.com/hcgalvan/hcgalvan_project/main/data/image-1.jpg" width="80px;" alt=""/>)
 
+* **data**: Raw data for the project and images.
+* **docs**: Documentation, including Markdown.
+* **results**: Results, including checkpoints, hdf5 files, pickle files, as well as figures and tables.
+* **scripts**: Scripts (Python, bash, .ipynb notebooks).
+* **src**: Reusable Python modules for the project (imports).
+* **tests**: Tests for the code.
 
 ## Project definition
 #### Main Question
