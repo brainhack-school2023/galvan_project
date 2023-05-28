@@ -1,0 +1,662 @@
+0,N
+number of tracts	8735,sub-50004_dwi.Frontal_Aslant_Tract_R.stat.txt	0
+mean length(mm)	83.2683,sub-50004_dwi.Frontal_Aslant_Tract_R.stat.txt	1
+span(mm)	29.882,sub-50004_dwi.Frontal_Aslant_Tract_R.stat.txt	2
+curl	2.78657,sub-50004_dwi.Frontal_Aslant_Tract_R.stat.txt	3
+elongation	4.54926,sub-50004_dwi.Frontal_Aslant_Tract_R.stat.txt	4
+diameter(mm)	18.3037,sub-50004_dwi.Frontal_Aslant_Tract_R.stat.txt	5
+volume(mm^3)	21910.3,sub-50004_dwi.Frontal_Aslant_Tract_R.stat.txt	6
+trunk volume(mm^3)	20980,sub-50004_dwi.Frontal_Aslant_Tract_R.stat.txt	7
+branch volume(mm^3)	930.311,sub-50004_dwi.Frontal_Aslant_Tract_R.stat.txt	8
+total surface area(mm^2)	36500.5,sub-50004_dwi.Frontal_Aslant_Tract_R.stat.txt	9
+total radius of end regions(mm)	19.8175,sub-50004_dwi.Frontal_Aslant_Tract_R.stat.txt	10
+total area of end regions(mm^2)	3548.89,sub-50004_dwi.Frontal_Aslant_Tract_R.stat.txt	11
+irregularity	7.62307,sub-50004_dwi.Frontal_Aslant_Tract_R.stat.txt	12
+area of end region 1(mm^2)	1837.12,sub-50004_dwi.Frontal_Aslant_Tract_R.stat.txt	13
+radius of end region 1(mm)	11.3466,sub-50004_dwi.Frontal_Aslant_Tract_R.stat.txt	14
+irregularity of end region 1	0.220163,sub-50004_dwi.Frontal_Aslant_Tract_R.stat.txt	15
+area of end region 2(mm^2)	1711.77,sub-50004_dwi.Frontal_Aslant_Tract_R.stat.txt	16
+radius of end region 2(mm)	8.47087,sub-50004_dwi.Frontal_Aslant_Tract_R.stat.txt	17
+irregularity of end region 2	0.131692,sub-50004_dwi.Frontal_Aslant_Tract_R.stat.txt	18
+qa	0.0843324,sub-50004_dwi.Frontal_Aslant_Tract_R.stat.txt	19
+dti_fa	0.414165,sub-50004_dwi.Frontal_Aslant_Tract_R.stat.txt	20
+md	0.820089,sub-50004_dwi.Frontal_Aslant_Tract_R.stat.txt	21
+ad	1.16776,sub-50004_dwi.Frontal_Aslant_Tract_R.stat.txt	22
+rd	0.646256,sub-50004_dwi.Frontal_Aslant_Tract_R.stat.txt	23
+iso	0.254176,sub-50004_dwi.Frontal_Aslant_Tract_R.stat.txt	24
+rdi	0.148332,sub-50004_dwi.Frontal_Aslant_Tract_R.stat.txt	25
+nrdi02L	0.190231,sub-50004_dwi.Frontal_Aslant_Tract_R.stat.txt	26
+nrdi04L	0.0747116,sub-50004_dwi.Frontal_Aslant_Tract_R.stat.txt	27
+nrdi06L	0.0115202,sub-50004_dwi.Frontal_Aslant_Tract_R.stat.txt	28
+,sub-50004_dwi.Frontal_Aslant_Tract_R.stat.txt	29
+number of tracts	6459,sub-50005_dwi.Frontal_Aslant_Tract_R.stat.txt	0
+mean length(mm)	68.3769,sub-50005_dwi.Frontal_Aslant_Tract_R.stat.txt	1
+span(mm)	19.515,sub-50005_dwi.Frontal_Aslant_Tract_R.stat.txt	2
+curl	3.50381,sub-50005_dwi.Frontal_Aslant_Tract_R.stat.txt	3
+elongation	3.68623,sub-50005_dwi.Frontal_Aslant_Tract_R.stat.txt	4
+diameter(mm)	18.5493,sub-50005_dwi.Frontal_Aslant_Tract_R.stat.txt	5
+volume(mm^3)	18477.9,sub-50005_dwi.Frontal_Aslant_Tract_R.stat.txt	6
+trunk volume(mm^3)	9609.63,sub-50005_dwi.Frontal_Aslant_Tract_R.stat.txt	7
+branch volume(mm^3)	8868.31,sub-50005_dwi.Frontal_Aslant_Tract_R.stat.txt	8
+total surface area(mm^2)	33267,sub-50005_dwi.Frontal_Aslant_Tract_R.stat.txt	9
+total radius of end regions(mm)	27.7284,sub-50005_dwi.Frontal_Aslant_Tract_R.stat.txt	10
+total area of end regions(mm^2)	1771.51,sub-50005_dwi.Frontal_Aslant_Tract_R.stat.txt	11
+irregularity	8.34885,sub-50005_dwi.Frontal_Aslant_Tract_R.stat.txt	12
+area of end region 1(mm^2)	973.399,sub-50005_dwi.Frontal_Aslant_Tract_R.stat.txt	13
+radius of end region 1(mm)	16.4181,sub-50005_dwi.Frontal_Aslant_Tract_R.stat.txt	14
+irregularity of end region 1	0.869974,sub-50005_dwi.Frontal_Aslant_Tract_R.stat.txt	15
+area of end region 2(mm^2)	798.109,sub-50005_dwi.Frontal_Aslant_Tract_R.stat.txt	16
+radius of end region 2(mm)	11.3102,sub-50005_dwi.Frontal_Aslant_Tract_R.stat.txt	17
+irregularity of end region 2	0.503537,sub-50005_dwi.Frontal_Aslant_Tract_R.stat.txt	18
+qa	0.161665,sub-50005_dwi.Frontal_Aslant_Tract_R.stat.txt	19
+dti_fa	0.321487,sub-50005_dwi.Frontal_Aslant_Tract_R.stat.txt	20
+md	0.803063,sub-50005_dwi.Frontal_Aslant_Tract_R.stat.txt	21
+ad	1.05169,sub-50005_dwi.Frontal_Aslant_Tract_R.stat.txt	22
+rd	0.678749,sub-50005_dwi.Frontal_Aslant_Tract_R.stat.txt	23
+iso	0.689653,sub-50005_dwi.Frontal_Aslant_Tract_R.stat.txt	24
+rdi	0.38767,sub-50005_dwi.Frontal_Aslant_Tract_R.stat.txt	25
+nrdi02L	0.497283,sub-50005_dwi.Frontal_Aslant_Tract_R.stat.txt	26
+nrdi04L	0.195357,sub-50005_dwi.Frontal_Aslant_Tract_R.stat.txt	27
+nrdi06L	0.0301674,sub-50005_dwi.Frontal_Aslant_Tract_R.stat.txt	28
+,sub-50005_dwi.Frontal_Aslant_Tract_R.stat.txt	29
+number of tracts	7908,sub-50006_dwi.Frontal_Aslant_Tract_R.stat.txt	0
+mean length(mm)	79.8827,sub-50006_dwi.Frontal_Aslant_Tract_R.stat.txt	1
+span(mm)	31.1895,sub-50006_dwi.Frontal_Aslant_Tract_R.stat.txt	2
+curl	2.56121,sub-50006_dwi.Frontal_Aslant_Tract_R.stat.txt	3
+elongation	4.64615,sub-50006_dwi.Frontal_Aslant_Tract_R.stat.txt	4
+diameter(mm)	17.1933,sub-50006_dwi.Frontal_Aslant_Tract_R.stat.txt	5
+volume(mm^3)	18546.5,sub-50006_dwi.Frontal_Aslant_Tract_R.stat.txt	6
+trunk volume(mm^3)	17351.8,sub-50006_dwi.Frontal_Aslant_Tract_R.stat.txt	7
+branch volume(mm^3)	1194.72,sub-50006_dwi.Frontal_Aslant_Tract_R.stat.txt	8
+total surface area(mm^2)	32016.4,sub-50006_dwi.Frontal_Aslant_Tract_R.stat.txt	9
+total radius of end regions(mm)	20.5399,sub-50006_dwi.Frontal_Aslant_Tract_R.stat.txt	10
+total area of end regions(mm^2)	2863.4,sub-50006_dwi.Frontal_Aslant_Tract_R.stat.txt	11
+irregularity	7.42011,sub-50006_dwi.Frontal_Aslant_Tract_R.stat.txt	12
+area of end region 1(mm^2)	1353.36,sub-50006_dwi.Frontal_Aslant_Tract_R.stat.txt	13
+radius of end region 1(mm)	11.7158,sub-50006_dwi.Frontal_Aslant_Tract_R.stat.txt	14
+irregularity of end region 1	0.318626,sub-50006_dwi.Frontal_Aslant_Tract_R.stat.txt	15
+area of end region 2(mm^2)	1510.04,sub-50006_dwi.Frontal_Aslant_Tract_R.stat.txt	16
+radius of end region 2(mm)	8.82405,sub-50006_dwi.Frontal_Aslant_Tract_R.stat.txt	17
+irregularity of end region 2	0.161993,sub-50006_dwi.Frontal_Aslant_Tract_R.stat.txt	18
+qa	0.234519,sub-50006_dwi.Frontal_Aslant_Tract_R.stat.txt	19
+dti_fa	0.405567,sub-50006_dwi.Frontal_Aslant_Tract_R.stat.txt	20
+md	0.797788,sub-50006_dwi.Frontal_Aslant_Tract_R.stat.txt	21
+ad	1.14477,sub-50006_dwi.Frontal_Aslant_Tract_R.stat.txt	22
+rd	0.624298,sub-50006_dwi.Frontal_Aslant_Tract_R.stat.txt	23
+iso	0.622188,sub-50006_dwi.Frontal_Aslant_Tract_R.stat.txt	24
+rdi	0.419171,sub-50006_dwi.Frontal_Aslant_Tract_R.stat.txt	25
+nrdi02L	0.537321,sub-50006_dwi.Frontal_Aslant_Tract_R.stat.txt	26
+nrdi04L	0.210908,sub-50006_dwi.Frontal_Aslant_Tract_R.stat.txt	27
+nrdi06L	0.0324199,sub-50006_dwi.Frontal_Aslant_Tract_R.stat.txt	28
+,sub-50006_dwi.Frontal_Aslant_Tract_R.stat.txt	29
+number of tracts	5673,sub-50007_dwi.Frontal_Aslant_Tract_R.stat.txt	0
+mean length(mm)	75.6749,sub-50007_dwi.Frontal_Aslant_Tract_R.stat.txt	1
+span(mm)	28.4403,sub-50007_dwi.Frontal_Aslant_Tract_R.stat.txt	2
+curl	2.66084,sub-50007_dwi.Frontal_Aslant_Tract_R.stat.txt	3
+elongation	4.65455,sub-50007_dwi.Frontal_Aslant_Tract_R.stat.txt	4
+diameter(mm)	16.2583,sub-50007_dwi.Frontal_Aslant_Tract_R.stat.txt	5
+volume(mm^3)	15710.5,sub-50007_dwi.Frontal_Aslant_Tract_R.stat.txt	6
+trunk volume(mm^3)	6769.73,sub-50007_dwi.Frontal_Aslant_Tract_R.stat.txt	7
+branch volume(mm^3)	8940.78,sub-50007_dwi.Frontal_Aslant_Tract_R.stat.txt	8
+total surface area(mm^2)	29801.3,sub-50007_dwi.Frontal_Aslant_Tract_R.stat.txt	9
+total radius of end regions(mm)	20.4172,sub-50007_dwi.Frontal_Aslant_Tract_R.stat.txt	10
+total area of end regions(mm^2)	2174.97,sub-50007_dwi.Frontal_Aslant_Tract_R.stat.txt	11
+irregularity	7.71008,sub-50007_dwi.Frontal_Aslant_Tract_R.stat.txt	12
+area of end region 1(mm^2)	1119.31,sub-50007_dwi.Frontal_Aslant_Tract_R.stat.txt	13
+radius of end region 1(mm)	12.6132,sub-50007_dwi.Frontal_Aslant_Tract_R.stat.txt	14
+irregularity of end region 1	0.446526,sub-50007_dwi.Frontal_Aslant_Tract_R.stat.txt	15
+area of end region 2(mm^2)	1055.66,sub-50007_dwi.Frontal_Aslant_Tract_R.stat.txt	16
+radius of end region 2(mm)	7.80405,sub-50007_dwi.Frontal_Aslant_Tract_R.stat.txt	17
+irregularity of end region 2	0.181245,sub-50007_dwi.Frontal_Aslant_Tract_R.stat.txt	18
+qa	0.0801434,sub-50007_dwi.Frontal_Aslant_Tract_R.stat.txt	19
+dti_fa	0.417083,sub-50007_dwi.Frontal_Aslant_Tract_R.stat.txt	20
+md	0.782596,sub-50007_dwi.Frontal_Aslant_Tract_R.stat.txt	21
+ad	1.12635,sub-50007_dwi.Frontal_Aslant_Tract_R.stat.txt	22
+rd	0.610717,sub-50007_dwi.Frontal_Aslant_Tract_R.stat.txt	23
+iso	0.255845,sub-50007_dwi.Frontal_Aslant_Tract_R.stat.txt	24
+rdi	0.147398,sub-50007_dwi.Frontal_Aslant_Tract_R.stat.txt	25
+nrdi02L	0.189004,sub-50007_dwi.Frontal_Aslant_Tract_R.stat.txt	26
+nrdi04L	0.0742161,sub-50007_dwi.Frontal_Aslant_Tract_R.stat.txt	27
+nrdi06L	0.0114322,sub-50007_dwi.Frontal_Aslant_Tract_R.stat.txt	28
+,sub-50007_dwi.Frontal_Aslant_Tract_R.stat.txt	29
+number of tracts	8226,sub-50008_dwi.Frontal_Aslant_Tract_R.stat.txt	0
+mean length(mm)	80.9207,sub-50008_dwi.Frontal_Aslant_Tract_R.stat.txt	1
+span(mm)	31.7265,sub-50008_dwi.Frontal_Aslant_Tract_R.stat.txt	2
+curl	2.55057,sub-50008_dwi.Frontal_Aslant_Tract_R.stat.txt	3
+elongation	4.58212,sub-50008_dwi.Frontal_Aslant_Tract_R.stat.txt	4
+diameter(mm)	17.6601,sub-50008_dwi.Frontal_Aslant_Tract_R.stat.txt	5
+volume(mm^3)	19821.5,sub-50008_dwi.Frontal_Aslant_Tract_R.stat.txt	6
+trunk volume(mm^3)	19211.4,sub-50008_dwi.Frontal_Aslant_Tract_R.stat.txt	7
+branch volume(mm^3)	610.088,sub-50008_dwi.Frontal_Aslant_Tract_R.stat.txt	8
+total surface area(mm^2)	28873.9,sub-50008_dwi.Frontal_Aslant_Tract_R.stat.txt	9
+total radius of end regions(mm)	15.7463,sub-50008_dwi.Frontal_Aslant_Tract_R.stat.txt	10
+total area of end regions(mm^2)	3800.57,sub-50008_dwi.Frontal_Aslant_Tract_R.stat.txt	11
+irregularity	6.43136,sub-50008_dwi.Frontal_Aslant_Tract_R.stat.txt	12
+area of end region 1(mm^2)	2495.19,sub-50008_dwi.Frontal_Aslant_Tract_R.stat.txt	13
+radius of end region 1(mm)	8.62735,sub-50008_dwi.Frontal_Aslant_Tract_R.stat.txt	14
+irregularity of end region 1	0.0937132,sub-50008_dwi.Frontal_Aslant_Tract_R.stat.txt	15
+area of end region 2(mm^2)	1305.37,sub-50008_dwi.Frontal_Aslant_Tract_R.stat.txt	16
+radius of end region 2(mm)	7.11894,sub-50008_dwi.Frontal_Aslant_Tract_R.stat.txt	17
+irregularity of end region 2	0.121968,sub-50008_dwi.Frontal_Aslant_Tract_R.stat.txt	18
+qa	0.129159,sub-50008_dwi.Frontal_Aslant_Tract_R.stat.txt	19
+dti_fa	0.426574,sub-50008_dwi.Frontal_Aslant_Tract_R.stat.txt	20
+md	0.829821,sub-50008_dwi.Frontal_Aslant_Tract_R.stat.txt	21
+ad	1.21288,sub-50008_dwi.Frontal_Aslant_Tract_R.stat.txt	22
+rd	0.638292,sub-50008_dwi.Frontal_Aslant_Tract_R.stat.txt	23
+iso	0.372183,sub-50008_dwi.Frontal_Aslant_Tract_R.stat.txt	24
+rdi	0.216331,sub-50008_dwi.Frontal_Aslant_Tract_R.stat.txt	25
+nrdi02L	0.277491,sub-50008_dwi.Frontal_Aslant_Tract_R.stat.txt	26
+nrdi04L	0.109008,sub-50008_dwi.Frontal_Aslant_Tract_R.stat.txt	27
+nrdi06L	0.0168304,sub-50008_dwi.Frontal_Aslant_Tract_R.stat.txt	28
+,sub-50008_dwi.Frontal_Aslant_Tract_R.stat.txt	29
+number of tracts	7507,sub-50010_dwi.Frontal_Aslant_Tract_R.stat.txt	0
+mean length(mm)	77.7195,sub-50010_dwi.Frontal_Aslant_Tract_R.stat.txt	1
+span(mm)	29.7448,sub-50010_dwi.Frontal_Aslant_Tract_R.stat.txt	2
+curl	2.61288,sub-50010_dwi.Frontal_Aslant_Tract_R.stat.txt	3
+elongation	5.36743,sub-50010_dwi.Frontal_Aslant_Tract_R.stat.txt	4
+diameter(mm)	14.4798,sub-50010_dwi.Frontal_Aslant_Tract_R.stat.txt	5
+volume(mm^3)	12798.1,sub-50010_dwi.Frontal_Aslant_Tract_R.stat.txt	6
+trunk volume(mm^3)	6334.93,sub-50010_dwi.Frontal_Aslant_Tract_R.stat.txt	7
+branch volume(mm^3)	6463.22,sub-50010_dwi.Frontal_Aslant_Tract_R.stat.txt	8
+total surface area(mm^2)	24418.2,sub-50010_dwi.Frontal_Aslant_Tract_R.stat.txt	9
+total radius of end regions(mm)	17.601,sub-50010_dwi.Frontal_Aslant_Tract_R.stat.txt	10
+total area of end regions(mm^2)	1854.75,sub-50010_dwi.Frontal_Aslant_Tract_R.stat.txt	11
+irregularity	6.9067,sub-50010_dwi.Frontal_Aslant_Tract_R.stat.txt	12
+area of end region 1(mm^2)	1256.41,sub-50010_dwi.Frontal_Aslant_Tract_R.stat.txt	13
+radius of end region 1(mm)	11.0489,sub-50010_dwi.Frontal_Aslant_Tract_R.stat.txt	14
+irregularity of end region 1	0.305251,sub-50010_dwi.Frontal_Aslant_Tract_R.stat.txt	15
+area of end region 2(mm^2)	598.337,sub-50010_dwi.Frontal_Aslant_Tract_R.stat.txt	16
+radius of end region 2(mm)	6.55213,sub-50010_dwi.Frontal_Aslant_Tract_R.stat.txt	17
+irregularity of end region 2	0.225408,sub-50010_dwi.Frontal_Aslant_Tract_R.stat.txt	18
+qa	0.0893513,sub-50010_dwi.Frontal_Aslant_Tract_R.stat.txt	19
+dti_fa	0.380491,sub-50010_dwi.Frontal_Aslant_Tract_R.stat.txt	20
+md	0.874739,sub-50010_dwi.Frontal_Aslant_Tract_R.stat.txt	21
+ad	1.19626,sub-50010_dwi.Frontal_Aslant_Tract_R.stat.txt	22
+rd	0.713981,sub-50010_dwi.Frontal_Aslant_Tract_R.stat.txt	23
+iso	0.295469,sub-50010_dwi.Frontal_Aslant_Tract_R.stat.txt	24
+rdi	0.170028,sub-50010_dwi.Frontal_Aslant_Tract_R.stat.txt	25
+nrdi02L	0.218446,sub-50010_dwi.Frontal_Aslant_Tract_R.stat.txt	26
+nrdi04L	0.0859806,sub-50010_dwi.Frontal_Aslant_Tract_R.stat.txt	27
+nrdi06L	0.0134162,sub-50010_dwi.Frontal_Aslant_Tract_R.stat.txt	28
+,sub-50010_dwi.Frontal_Aslant_Tract_R.stat.txt	29
+,sub-50013_dwi.Frontal_Aslant_Tract_R.stat.txt	0
+number of tracts	9193,sub-50014_dwi.Frontal_Aslant_Tract_R.stat.txt	0
+mean length(mm)	78.5968,sub-50014_dwi.Frontal_Aslant_Tract_R.stat.txt	1
+span(mm)	31.0295,sub-50014_dwi.Frontal_Aslant_Tract_R.stat.txt	2
+curl	2.53297,sub-50014_dwi.Frontal_Aslant_Tract_R.stat.txt	3
+elongation	4.77258,sub-50014_dwi.Frontal_Aslant_Tract_R.stat.txt	4
+diameter(mm)	16.4684,sub-50014_dwi.Frontal_Aslant_Tract_R.stat.txt	5
+volume(mm^3)	16741.7,sub-50014_dwi.Frontal_Aslant_Tract_R.stat.txt	6
+trunk volume(mm^3)	16272.6,sub-50014_dwi.Frontal_Aslant_Tract_R.stat.txt	7
+branch volume(mm^3)	469.073,sub-50014_dwi.Frontal_Aslant_Tract_R.stat.txt	8
+total surface area(mm^2)	25799,sub-50014_dwi.Frontal_Aslant_Tract_R.stat.txt	9
+total radius of end regions(mm)	16.5298,sub-50014_dwi.Frontal_Aslant_Tract_R.stat.txt	10
+total area of end regions(mm^2)	3145.43,sub-50014_dwi.Frontal_Aslant_Tract_R.stat.txt	11
+irregularity	6.34448,sub-50014_dwi.Frontal_Aslant_Tract_R.stat.txt	12
+area of end region 1(mm^2)	2089.77,sub-50014_dwi.Frontal_Aslant_Tract_R.stat.txt	13
+radius of end region 1(mm)	7.94871,sub-50014_dwi.Frontal_Aslant_Tract_R.stat.txt	14
+irregularity of end region 1	0.0949825,sub-50014_dwi.Frontal_Aslant_Tract_R.stat.txt	15
+area of end region 2(mm^2)	1055.66,sub-50014_dwi.Frontal_Aslant_Tract_R.stat.txt	16
+radius of end region 2(mm)	8.58105,sub-50014_dwi.Frontal_Aslant_Tract_R.stat.txt	17
+irregularity of end region 2	0.219133,sub-50014_dwi.Frontal_Aslant_Tract_R.stat.txt	18
+qa	0.168992,sub-50014_dwi.Frontal_Aslant_Tract_R.stat.txt	19
+dti_fa	0.411115,sub-50014_dwi.Frontal_Aslant_Tract_R.stat.txt	20
+md	0.804158,sub-50014_dwi.Frontal_Aslant_Tract_R.stat.txt	21
+ad	1.1517,sub-50014_dwi.Frontal_Aslant_Tract_R.stat.txt	22
+rd	0.630387,sub-50014_dwi.Frontal_Aslant_Tract_R.stat.txt	23
+iso	0.546856,sub-50014_dwi.Frontal_Aslant_Tract_R.stat.txt	24
+rdi	0.314649,sub-50014_dwi.Frontal_Aslant_Tract_R.stat.txt	25
+nrdi02L	0.403556,sub-50014_dwi.Frontal_Aslant_Tract_R.stat.txt	26
+nrdi04L	0.158508,sub-50014_dwi.Frontal_Aslant_Tract_R.stat.txt	27
+nrdi06L	0.0244536,sub-50014_dwi.Frontal_Aslant_Tract_R.stat.txt	28
+,sub-50014_dwi.Frontal_Aslant_Tract_R.stat.txt	29
+number of tracts	10746,sub-50015_dwi.Frontal_Aslant_Tract_R.stat.txt	0
+mean length(mm)	84.1078,sub-50015_dwi.Frontal_Aslant_Tract_R.stat.txt	1
+span(mm)	34.004,sub-50015_dwi.Frontal_Aslant_Tract_R.stat.txt	2
+curl	2.47347,sub-50015_dwi.Frontal_Aslant_Tract_R.stat.txt	3
+elongation	4.07442,sub-50015_dwi.Frontal_Aslant_Tract_R.stat.txt	4
+diameter(mm)	20.6429,sub-50015_dwi.Frontal_Aslant_Tract_R.stat.txt	5
+volume(mm^3)	28149.3,sub-50015_dwi.Frontal_Aslant_Tract_R.stat.txt	6
+trunk volume(mm^3)	28043.5,sub-50015_dwi.Frontal_Aslant_Tract_R.stat.txt	7
+branch volume(mm^3)	105.762,sub-50015_dwi.Frontal_Aslant_Tract_R.stat.txt	8
+total surface area(mm^2)	42598.5,sub-50015_dwi.Frontal_Aslant_Tract_R.stat.txt	9
+total radius of end regions(mm)	20.6393,sub-50015_dwi.Frontal_Aslant_Tract_R.stat.txt	10
+total area of end regions(mm^2)	4889.52,sub-50015_dwi.Frontal_Aslant_Tract_R.stat.txt	11
+irregularity	7.80975,sub-50015_dwi.Frontal_Aslant_Tract_R.stat.txt	12
+area of end region 1(mm^2)	3063.17,sub-50015_dwi.Frontal_Aslant_Tract_R.stat.txt	13
+radius of end region 1(mm)	12.8632,sub-50015_dwi.Frontal_Aslant_Tract_R.stat.txt	14
+irregularity of end region 1	0.169699,sub-50015_dwi.Frontal_Aslant_Tract_R.stat.txt	15
+area of end region 2(mm^2)	1826.35,sub-50015_dwi.Frontal_Aslant_Tract_R.stat.txt	16
+radius of end region 2(mm)	7.77602,sub-50015_dwi.Frontal_Aslant_Tract_R.stat.txt	17
+irregularity of end region 2	0.104011,sub-50015_dwi.Frontal_Aslant_Tract_R.stat.txt	18
+qa	0.175572,sub-50015_dwi.Frontal_Aslant_Tract_R.stat.txt	19
+dti_fa	0.423282,sub-50015_dwi.Frontal_Aslant_Tract_R.stat.txt	20
+md	0.806629,sub-50015_dwi.Frontal_Aslant_Tract_R.stat.txt	21
+ad	1.17067,sub-50015_dwi.Frontal_Aslant_Tract_R.stat.txt	22
+rd	0.624609,sub-50015_dwi.Frontal_Aslant_Tract_R.stat.txt	23
+iso	0.527358,sub-50015_dwi.Frontal_Aslant_Tract_R.stat.txt	24
+rdi	0.306431,sub-50015_dwi.Frontal_Aslant_Tract_R.stat.txt	25
+nrdi02L	0.392971,sub-50015_dwi.Frontal_Aslant_Tract_R.stat.txt	26
+nrdi04L	0.154328,sub-50015_dwi.Frontal_Aslant_Tract_R.stat.txt	27
+nrdi06L	0.0237901,sub-50015_dwi.Frontal_Aslant_Tract_R.stat.txt	28
+,sub-50015_dwi.Frontal_Aslant_Tract_R.stat.txt	29
+number of tracts	9545,sub-50020_dwi.Frontal_Aslant_Tract_R.stat.txt	0
+mean length(mm)	84.5274,sub-50020_dwi.Frontal_Aslant_Tract_R.stat.txt	1
+span(mm)	30.7435,sub-50020_dwi.Frontal_Aslant_Tract_R.stat.txt	2
+curl	2.74944,sub-50020_dwi.Frontal_Aslant_Tract_R.stat.txt	3
+elongation	5.11395,sub-50020_dwi.Frontal_Aslant_Tract_R.stat.txt	4
+diameter(mm)	16.5288,sub-50020_dwi.Frontal_Aslant_Tract_R.stat.txt	5
+volume(mm^3)	18137.2,sub-50020_dwi.Frontal_Aslant_Tract_R.stat.txt	6
+trunk volume(mm^3)	17097.2,sub-50020_dwi.Frontal_Aslant_Tract_R.stat.txt	7
+branch volume(mm^3)	1039.99,sub-50020_dwi.Frontal_Aslant_Tract_R.stat.txt	8
+total surface area(mm^2)	26807.7,sub-50020_dwi.Frontal_Aslant_Tract_R.stat.txt	9
+total radius of end regions(mm)	17.2895,sub-50020_dwi.Frontal_Aslant_Tract_R.stat.txt	10
+total area of end regions(mm^2)	3194.4,sub-50020_dwi.Frontal_Aslant_Tract_R.stat.txt	11
+irregularity	6.1076,sub-50020_dwi.Frontal_Aslant_Tract_R.stat.txt	12
+area of end region 1(mm^2)	1795.01,sub-50020_dwi.Frontal_Aslant_Tract_R.stat.txt	13
+radius of end region 1(mm)	9.40907,sub-50020_dwi.Frontal_Aslant_Tract_R.stat.txt	14
+irregularity of end region 1	0.154944,sub-50020_dwi.Frontal_Aslant_Tract_R.stat.txt	15
+area of end region 2(mm^2)	1399.38,sub-50020_dwi.Frontal_Aslant_Tract_R.stat.txt	16
+radius of end region 2(mm)	7.88041,sub-50020_dwi.Frontal_Aslant_Tract_R.stat.txt	17
+irregularity of end region 2	0.139415,sub-50020_dwi.Frontal_Aslant_Tract_R.stat.txt	18
+qa	0.179958,sub-50020_dwi.Frontal_Aslant_Tract_R.stat.txt	19
+dti_fa	0.413707,sub-50020_dwi.Frontal_Aslant_Tract_R.stat.txt	20
+md	0.881973,sub-50020_dwi.Frontal_Aslant_Tract_R.stat.txt	21
+ad	1.2592,sub-50020_dwi.Frontal_Aslant_Tract_R.stat.txt	22
+rd	0.693358,sub-50020_dwi.Frontal_Aslant_Tract_R.stat.txt	23
+iso	0.546691,sub-50020_dwi.Frontal_Aslant_Tract_R.stat.txt	24
+rdi	0.31573,sub-50020_dwi.Frontal_Aslant_Tract_R.stat.txt	25
+nrdi02L	0.405661,sub-50020_dwi.Frontal_Aslant_Tract_R.stat.txt	26
+nrdi04L	0.159679,sub-50020_dwi.Frontal_Aslant_Tract_R.stat.txt	27
+nrdi06L	0.0249236,sub-50020_dwi.Frontal_Aslant_Tract_R.stat.txt	28
+,sub-50020_dwi.Frontal_Aslant_Tract_R.stat.txt	29
+number of tracts	4916,sub-50021_dwi.Frontal_Aslant_Tract_R.stat.txt	0
+mean length(mm)	72.736,sub-50021_dwi.Frontal_Aslant_Tract_R.stat.txt	1
+span(mm)	25.7105,sub-50021_dwi.Frontal_Aslant_Tract_R.stat.txt	2
+curl	2.82904,sub-50021_dwi.Frontal_Aslant_Tract_R.stat.txt	3
+elongation	5.2616,sub-50021_dwi.Frontal_Aslant_Tract_R.stat.txt	4
+diameter(mm)	13.8239,sub-50021_dwi.Frontal_Aslant_Tract_R.stat.txt	5
+volume(mm^3)	10917,sub-50021_dwi.Frontal_Aslant_Tract_R.stat.txt	6
+trunk volume(mm^3)	8370.84,sub-50021_dwi.Frontal_Aslant_Tract_R.stat.txt	7
+branch volume(mm^3)	2546.12,sub-50021_dwi.Frontal_Aslant_Tract_R.stat.txt	8
+total surface area(mm^2)	21138.6,sub-50021_dwi.Frontal_Aslant_Tract_R.stat.txt	9
+total radius of end regions(mm)	17.4349,sub-50021_dwi.Frontal_Aslant_Tract_R.stat.txt	10
+total area of end regions(mm^2)	1997.72,sub-50021_dwi.Frontal_Aslant_Tract_R.stat.txt	11
+irregularity	6.69185,sub-50021_dwi.Frontal_Aslant_Tract_R.stat.txt	12
+area of end region 1(mm^2)	868.617,sub-50021_dwi.Frontal_Aslant_Tract_R.stat.txt	13
+radius of end region 1(mm)	9.65289,sub-50021_dwi.Frontal_Aslant_Tract_R.stat.txt	14
+irregularity of end region 1	0.337005,sub-50021_dwi.Frontal_Aslant_Tract_R.stat.txt	15
+area of end region 2(mm^2)	1129.1,sub-50021_dwi.Frontal_Aslant_Tract_R.stat.txt	16
+radius of end region 2(mm)	7.78205,sub-50021_dwi.Frontal_Aslant_Tract_R.stat.txt	17
+irregularity of end region 2	0.168501,sub-50021_dwi.Frontal_Aslant_Tract_R.stat.txt	18
+qa	0.178685,sub-50021_dwi.Frontal_Aslant_Tract_R.stat.txt	19
+dti_fa	0.417521,sub-50021_dwi.Frontal_Aslant_Tract_R.stat.txt	20
+md	0.79586,sub-50021_dwi.Frontal_Aslant_Tract_R.stat.txt	21
+ad	1.15497,sub-50021_dwi.Frontal_Aslant_Tract_R.stat.txt	22
+rd	0.616305,sub-50021_dwi.Frontal_Aslant_Tract_R.stat.txt	23
+iso	0.548889,sub-50021_dwi.Frontal_Aslant_Tract_R.stat.txt	24
+rdi	0.317678,sub-50021_dwi.Frontal_Aslant_Tract_R.stat.txt	25
+nrdi02L	0.407243,sub-50021_dwi.Frontal_Aslant_Tract_R.stat.txt	26
+nrdi04L	0.159861,sub-50021_dwi.Frontal_Aslant_Tract_R.stat.txt	27
+nrdi06L	0.0245822,sub-50021_dwi.Frontal_Aslant_Tract_R.stat.txt	28
+,sub-50021_dwi.Frontal_Aslant_Tract_R.stat.txt	29
+number of tracts	7026,sub-50023_dwi.Frontal_Aslant_Tract_R.stat.txt	0
+mean length(mm)	83.0172,sub-50023_dwi.Frontal_Aslant_Tract_R.stat.txt	1
+span(mm)	30.5582,sub-50023_dwi.Frontal_Aslant_Tract_R.stat.txt	2
+curl	2.71669,sub-50023_dwi.Frontal_Aslant_Tract_R.stat.txt	3
+elongation	4.79269,sub-50023_dwi.Frontal_Aslant_Tract_R.stat.txt	4
+diameter(mm)	17.3216,sub-50023_dwi.Frontal_Aslant_Tract_R.stat.txt	5
+volume(mm^3)	19563,sub-50023_dwi.Frontal_Aslant_Tract_R.stat.txt	6
+trunk volume(mm^3)	11556.4,sub-50023_dwi.Frontal_Aslant_Tract_R.stat.txt	7
+branch volume(mm^3)	8006.55,sub-50023_dwi.Frontal_Aslant_Tract_R.stat.txt	8
+total surface area(mm^2)	35471.3,sub-50023_dwi.Frontal_Aslant_Tract_R.stat.txt	9
+total radius of end regions(mm)	18.3201,sub-50023_dwi.Frontal_Aslant_Tract_R.stat.txt	10
+total area of end regions(mm^2)	2576.47,sub-50023_dwi.Frontal_Aslant_Tract_R.stat.txt	11
+irregularity	7.85183,sub-50023_dwi.Frontal_Aslant_Tract_R.stat.txt	12
+area of end region 1(mm^2)	1366.09,sub-50023_dwi.Frontal_Aslant_Tract_R.stat.txt	13
+radius of end region 1(mm)	10.5378,sub-50023_dwi.Frontal_Aslant_Tract_R.stat.txt	14
+irregularity of end region 1	0.255369,sub-50023_dwi.Frontal_Aslant_Tract_R.stat.txt	15
+area of end region 2(mm^2)	1210.38,sub-50023_dwi.Frontal_Aslant_Tract_R.stat.txt	16
+radius of end region 2(mm)	7.78232,sub-50023_dwi.Frontal_Aslant_Tract_R.stat.txt	17
+irregularity of end region 2	0.157197,sub-50023_dwi.Frontal_Aslant_Tract_R.stat.txt	18
+qa	0.131903,sub-50023_dwi.Frontal_Aslant_Tract_R.stat.txt	19
+dti_fa	0.410981,sub-50023_dwi.Frontal_Aslant_Tract_R.stat.txt	20
+md	0.864827,sub-50023_dwi.Frontal_Aslant_Tract_R.stat.txt	21
+ad	1.21036,sub-50023_dwi.Frontal_Aslant_Tract_R.stat.txt	22
+rd	0.692059,sub-50023_dwi.Frontal_Aslant_Tract_R.stat.txt	23
+iso	0.352658,sub-50023_dwi.Frontal_Aslant_Tract_R.stat.txt	24
+rdi	0.236332,sub-50023_dwi.Frontal_Aslant_Tract_R.stat.txt	25
+nrdi02L	0.303719,sub-50023_dwi.Frontal_Aslant_Tract_R.stat.txt	26
+nrdi04L	0.119586,sub-50023_dwi.Frontal_Aslant_Tract_R.stat.txt	27
+nrdi06L	0.0186939,sub-50023_dwi.Frontal_Aslant_Tract_R.stat.txt	28
+,sub-50023_dwi.Frontal_Aslant_Tract_R.stat.txt	29
+number of tracts	7882,sub-50025_dwi.Frontal_Aslant_Tract_R.stat.txt	0
+mean length(mm)	76.2378,sub-50025_dwi.Frontal_Aslant_Tract_R.stat.txt	1
+span(mm)	29.0109,sub-50025_dwi.Frontal_Aslant_Tract_R.stat.txt	2
+curl	2.6279,sub-50025_dwi.Frontal_Aslant_Tract_R.stat.txt	3
+elongation	5.0573,sub-50025_dwi.Frontal_Aslant_Tract_R.stat.txt	4
+diameter(mm)	15.0748,sub-50025_dwi.Frontal_Aslant_Tract_R.stat.txt	5
+volume(mm^3)	13607,sub-50025_dwi.Frontal_Aslant_Tract_R.stat.txt	6
+trunk volume(mm^3)	11931.5,sub-50025_dwi.Frontal_Aslant_Tract_R.stat.txt	7
+branch volume(mm^3)	1675.54,sub-50025_dwi.Frontal_Aslant_Tract_R.stat.txt	8
+total surface area(mm^2)	23882.6,sub-50025_dwi.Frontal_Aslant_Tract_R.stat.txt	9
+total radius of end regions(mm)	19.2731,sub-50025_dwi.Frontal_Aslant_Tract_R.stat.txt	10
+total area of end regions(mm^2)	2615.64,sub-50025_dwi.Frontal_Aslant_Tract_R.stat.txt	11
+irregularity	6.61469,sub-50025_dwi.Frontal_Aslant_Tract_R.stat.txt	12
+area of end region 1(mm^2)	1193.74,sub-50025_dwi.Frontal_Aslant_Tract_R.stat.txt	13
+radius of end region 1(mm)	10.839,sub-50025_dwi.Frontal_Aslant_Tract_R.stat.txt	14
+irregularity of end region 1	0.309187,sub-50025_dwi.Frontal_Aslant_Tract_R.stat.txt	15
+area of end region 2(mm^2)	1421.91,sub-50025_dwi.Frontal_Aslant_Tract_R.stat.txt	16
+radius of end region 2(mm)	8.43406,sub-50025_dwi.Frontal_Aslant_Tract_R.stat.txt	17
+irregularity of end region 2	0.157163,sub-50025_dwi.Frontal_Aslant_Tract_R.stat.txt	18
+qa	0.0733292,sub-50025_dwi.Frontal_Aslant_Tract_R.stat.txt	19
+dti_fa	0.371758,sub-50025_dwi.Frontal_Aslant_Tract_R.stat.txt	20
+md	0.925594,sub-50025_dwi.Frontal_Aslant_Tract_R.stat.txt	21
+ad	1.25285,sub-50025_dwi.Frontal_Aslant_Tract_R.stat.txt	22
+rd	0.761967,sub-50025_dwi.Frontal_Aslant_Tract_R.stat.txt	23
+iso	0.20262,sub-50025_dwi.Frontal_Aslant_Tract_R.stat.txt	24
+rdi	0.135172,sub-50025_dwi.Frontal_Aslant_Tract_R.stat.txt	25
+nrdi02L	0.173958,sub-50025_dwi.Frontal_Aslant_Tract_R.stat.txt	26
+nrdi04L	0.0686103,sub-50025_dwi.Frontal_Aslant_Tract_R.stat.txt	27
+nrdi06L	0.0108232,sub-50025_dwi.Frontal_Aslant_Tract_R.stat.txt	28
+,sub-50025_dwi.Frontal_Aslant_Tract_R.stat.txt	29
+number of tracts	7471,sub-50027_dwi.Frontal_Aslant_Tract_R.stat.txt	0
+mean length(mm)	78.7788,sub-50027_dwi.Frontal_Aslant_Tract_R.stat.txt	1
+span(mm)	30.8102,sub-50027_dwi.Frontal_Aslant_Tract_R.stat.txt	2
+curl	2.55691,sub-50027_dwi.Frontal_Aslant_Tract_R.stat.txt	3
+elongation	4.64585,sub-50027_dwi.Frontal_Aslant_Tract_R.stat.txt	4
+diameter(mm)	16.9568,sub-50027_dwi.Frontal_Aslant_Tract_R.stat.txt	5
+volume(mm^3)	17790.5,sub-50027_dwi.Frontal_Aslant_Tract_R.stat.txt	6
+trunk volume(mm^3)	17617.2,sub-50027_dwi.Frontal_Aslant_Tract_R.stat.txt	7
+branch volume(mm^3)	173.33,sub-50027_dwi.Frontal_Aslant_Tract_R.stat.txt	8
+total surface area(mm^2)	28716.3,sub-50027_dwi.Frontal_Aslant_Tract_R.stat.txt	9
+total radius of end regions(mm)	18.4754,sub-50027_dwi.Frontal_Aslant_Tract_R.stat.txt	10
+total area of end regions(mm^2)	2687.13,sub-50027_dwi.Frontal_Aslant_Tract_R.stat.txt	11
+irregularity	6.84265,sub-50027_dwi.Frontal_Aslant_Tract_R.stat.txt	12
+area of end region 1(mm^2)	1443.45,sub-50027_dwi.Frontal_Aslant_Tract_R.stat.txt	13
+radius of end region 1(mm)	9.21691,sub-50027_dwi.Frontal_Aslant_Tract_R.stat.txt	14
+irregularity of end region 1	0.184892,sub-50027_dwi.Frontal_Aslant_Tract_R.stat.txt	15
+area of end region 2(mm^2)	1243.68,sub-50027_dwi.Frontal_Aslant_Tract_R.stat.txt	16
+radius of end region 2(mm)	9.2585,sub-50027_dwi.Frontal_Aslant_Tract_R.stat.txt	17
+irregularity of end region 2	0.216532,sub-50027_dwi.Frontal_Aslant_Tract_R.stat.txt	18
+qa	0.250825,sub-50027_dwi.Frontal_Aslant_Tract_R.stat.txt	19
+dti_fa	0.430296,sub-50027_dwi.Frontal_Aslant_Tract_R.stat.txt	20
+md	0.808494,sub-50027_dwi.Frontal_Aslant_Tract_R.stat.txt	21
+ad	1.17113,sub-50027_dwi.Frontal_Aslant_Tract_R.stat.txt	22
+rd	0.627177,sub-50027_dwi.Frontal_Aslant_Tract_R.stat.txt	23
+iso	0.628046,sub-50027_dwi.Frontal_Aslant_Tract_R.stat.txt	24
+rdi	0.42658,sub-50027_dwi.Frontal_Aslant_Tract_R.stat.txt	25
+nrdi02L	0.547002,sub-50027_dwi.Frontal_Aslant_Tract_R.stat.txt	26
+nrdi04L	0.214796,sub-50027_dwi.Frontal_Aslant_Tract_R.stat.txt	27
+nrdi06L	0.0330914,sub-50027_dwi.Frontal_Aslant_Tract_R.stat.txt	28
+,sub-50027_dwi.Frontal_Aslant_Tract_R.stat.txt	29
+number of tracts	7391,sub-50029_dwi.Frontal_Aslant_Tract_R.stat.txt	0
+mean length(mm)	79.7788,sub-50029_dwi.Frontal_Aslant_Tract_R.stat.txt	1
+span(mm)	28.4893,sub-50029_dwi.Frontal_Aslant_Tract_R.stat.txt	2
+curl	2.80031,sub-50029_dwi.Frontal_Aslant_Tract_R.stat.txt	3
+elongation	4.07592,sub-50029_dwi.Frontal_Aslant_Tract_R.stat.txt	4
+diameter(mm)	19.5732,sub-50029_dwi.Frontal_Aslant_Tract_R.stat.txt	5
+volume(mm^3)	24005,sub-50029_dwi.Frontal_Aslant_Tract_R.stat.txt	6
+trunk volume(mm^3)	17543.7,sub-50029_dwi.Frontal_Aslant_Tract_R.stat.txt	7
+branch volume(mm^3)	6461.26,sub-50029_dwi.Frontal_Aslant_Tract_R.stat.txt	8
+total surface area(mm^2)	41680.9,sub-50029_dwi.Frontal_Aslant_Tract_R.stat.txt	9
+total radius of end regions(mm)	25.7373,sub-50029_dwi.Frontal_Aslant_Tract_R.stat.txt	10
+total area of end regions(mm^2)	3511.68,sub-50029_dwi.Frontal_Aslant_Tract_R.stat.txt	11
+irregularity	8.49645,sub-50029_dwi.Frontal_Aslant_Tract_R.stat.txt	12
+area of end region 1(mm^2)	2192.6,sub-50029_dwi.Frontal_Aslant_Tract_R.stat.txt	13
+radius of end region 1(mm)	13.2396,sub-50029_dwi.Frontal_Aslant_Tract_R.stat.txt	14
+irregularity of end region 1	0.251156,sub-50029_dwi.Frontal_Aslant_Tract_R.stat.txt	15
+area of end region 2(mm^2)	1319.08,sub-50029_dwi.Frontal_Aslant_Tract_R.stat.txt	16
+radius of end region 2(mm)	12.4977,sub-50029_dwi.Frontal_Aslant_Tract_R.stat.txt	17
+irregularity of end region 2	0.371995,sub-50029_dwi.Frontal_Aslant_Tract_R.stat.txt	18
+qa	0.138449,sub-50029_dwi.Frontal_Aslant_Tract_R.stat.txt	19
+dti_fa	0.38543,sub-50029_dwi.Frontal_Aslant_Tract_R.stat.txt	20
+md	1.0009,sub-50029_dwi.Frontal_Aslant_Tract_R.stat.txt	21
+ad	1.34714,sub-50029_dwi.Frontal_Aslant_Tract_R.stat.txt	22
+rd	0.827776,sub-50029_dwi.Frontal_Aslant_Tract_R.stat.txt	23
+iso	0.455026,sub-50029_dwi.Frontal_Aslant_Tract_R.stat.txt	24
+rdi	0.260267,sub-50029_dwi.Frontal_Aslant_Tract_R.stat.txt	25
+nrdi02L	0.33563,sub-50029_dwi.Frontal_Aslant_Tract_R.stat.txt	26
+nrdi04L	0.1327,sub-50029_dwi.Frontal_Aslant_Tract_R.stat.txt	27
+nrdi06L	0.0212058,sub-50029_dwi.Frontal_Aslant_Tract_R.stat.txt	28
+,sub-50029_dwi.Frontal_Aslant_Tract_R.stat.txt	29
+number of tracts	6726,sub-50032_dwi.Frontal_Aslant_Tract_R.stat.txt	0
+mean length(mm)	80.7952,sub-50032_dwi.Frontal_Aslant_Tract_R.stat.txt	1
+span(mm)	27.5865,sub-50032_dwi.Frontal_Aslant_Tract_R.stat.txt	2
+curl	2.9288,sub-50032_dwi.Frontal_Aslant_Tract_R.stat.txt	3
+elongation	4.57712,sub-50032_dwi.Frontal_Aslant_Tract_R.stat.txt	4
+diameter(mm)	17.652,sub-50032_dwi.Frontal_Aslant_Tract_R.stat.txt	5
+volume(mm^3)	19772.5,sub-50032_dwi.Frontal_Aslant_Tract_R.stat.txt	6
+trunk volume(mm^3)	14570.6,sub-50032_dwi.Frontal_Aslant_Tract_R.stat.txt	7
+branch volume(mm^3)	5201.91,sub-50032_dwi.Frontal_Aslant_Tract_R.stat.txt	8
+total surface area(mm^2)	38963.4,sub-50032_dwi.Frontal_Aslant_Tract_R.stat.txt	9
+total radius of end regions(mm)	25.3532,sub-50032_dwi.Frontal_Aslant_Tract_R.stat.txt	10
+total area of end regions(mm^2)	2351.24,sub-50032_dwi.Frontal_Aslant_Tract_R.stat.txt	11
+irregularity	8.69617,sub-50032_dwi.Frontal_Aslant_Tract_R.stat.txt	12
+area of end region 1(mm^2)	1296.56,sub-50032_dwi.Frontal_Aslant_Tract_R.stat.txt	13
+radius of end region 1(mm)	15.3537,sub-50032_dwi.Frontal_Aslant_Tract_R.stat.txt	14
+irregularity of end region 1	0.571191,sub-50032_dwi.Frontal_Aslant_Tract_R.stat.txt	15
+area of end region 2(mm^2)	1054.68,sub-50032_dwi.Frontal_Aslant_Tract_R.stat.txt	16
+radius of end region 2(mm)	9.99951,sub-50032_dwi.Frontal_Aslant_Tract_R.stat.txt	17
+irregularity of end region 2	0.297843,sub-50032_dwi.Frontal_Aslant_Tract_R.stat.txt	18
+qa	0.0913922,sub-50032_dwi.Frontal_Aslant_Tract_R.stat.txt	19
+dti_fa	0.421683,sub-50032_dwi.Frontal_Aslant_Tract_R.stat.txt	20
+md	0.793848,sub-50032_dwi.Frontal_Aslant_Tract_R.stat.txt	21
+ad	1.15949,sub-50032_dwi.Frontal_Aslant_Tract_R.stat.txt	22
+rd	0.611029,sub-50032_dwi.Frontal_Aslant_Tract_R.stat.txt	23
+iso	0.273001,sub-50032_dwi.Frontal_Aslant_Tract_R.stat.txt	24
+rdi	0.15907,sub-50032_dwi.Frontal_Aslant_Tract_R.stat.txt	25
+nrdi02L	0.203871,sub-50032_dwi.Frontal_Aslant_Tract_R.stat.txt	26
+nrdi04L	0.0800066,sub-50032_dwi.Frontal_Aslant_Tract_R.stat.txt	27
+nrdi06L	0.0122842,sub-50032_dwi.Frontal_Aslant_Tract_R.stat.txt	28
+,sub-50032_dwi.Frontal_Aslant_Tract_R.stat.txt	29
+number of tracts	6945,sub-50033_dwi.Frontal_Aslant_Tract_R.stat.txt	0
+mean length(mm)	73.029,sub-50033_dwi.Frontal_Aslant_Tract_R.stat.txt	1
+span(mm)	24.9337,sub-50033_dwi.Frontal_Aslant_Tract_R.stat.txt	2
+curl	2.92892,sub-50033_dwi.Frontal_Aslant_Tract_R.stat.txt	3
+elongation	3.89851,sub-50033_dwi.Frontal_Aslant_Tract_R.stat.txt	4
+diameter(mm)	18.7326,sub-50033_dwi.Frontal_Aslant_Tract_R.stat.txt	5
+volume(mm^3)	20127,sub-50033_dwi.Frontal_Aslant_Tract_R.stat.txt	6
+trunk volume(mm^3)	16447.9,sub-50033_dwi.Frontal_Aslant_Tract_R.stat.txt	7
+branch volume(mm^3)	3679.14,sub-50033_dwi.Frontal_Aslant_Tract_R.stat.txt	8
+total surface area(mm^2)	33696.9,sub-50033_dwi.Frontal_Aslant_Tract_R.stat.txt	9
+total radius of end regions(mm)	18.2443,sub-50033_dwi.Frontal_Aslant_Tract_R.stat.txt	10
+total area of end regions(mm^2)	3673.26,sub-50033_dwi.Frontal_Aslant_Tract_R.stat.txt	11
+irregularity	7.84056,sub-50033_dwi.Frontal_Aslant_Tract_R.stat.txt	12
+area of end region 1(mm^2)	2144.61,sub-50033_dwi.Frontal_Aslant_Tract_R.stat.txt	13
+radius of end region 1(mm)	10.3307,sub-50033_dwi.Frontal_Aslant_Tract_R.stat.txt	14
+irregularity of end region 1	0.156337,sub-50033_dwi.Frontal_Aslant_Tract_R.stat.txt	15
+area of end region 2(mm^2)	1528.65,sub-50033_dwi.Frontal_Aslant_Tract_R.stat.txt	16
+radius of end region 2(mm)	7.91364,sub-50033_dwi.Frontal_Aslant_Tract_R.stat.txt	17
+irregularity of end region 2	0.128705,sub-50033_dwi.Frontal_Aslant_Tract_R.stat.txt	18
+qa	0.167422,sub-50033_dwi.Frontal_Aslant_Tract_R.stat.txt	19
+dti_fa	0.419686,sub-50033_dwi.Frontal_Aslant_Tract_R.stat.txt	20
+md	0.841468,sub-50033_dwi.Frontal_Aslant_Tract_R.stat.txt	21
+ad	1.2013,sub-50033_dwi.Frontal_Aslant_Tract_R.stat.txt	22
+rd	0.661554,sub-50033_dwi.Frontal_Aslant_Tract_R.stat.txt	23
+iso	0.424832,sub-50033_dwi.Frontal_Aslant_Tract_R.stat.txt	24
+rdi	0.287738,sub-50033_dwi.Frontal_Aslant_Tract_R.stat.txt	25
+nrdi02L	0.369291,sub-50033_dwi.Frontal_Aslant_Tract_R.stat.txt	26
+nrdi04L	0.145169,sub-50033_dwi.Frontal_Aslant_Tract_R.stat.txt	27
+nrdi06L	0.0224969,sub-50033_dwi.Frontal_Aslant_Tract_R.stat.txt	28
+,sub-50033_dwi.Frontal_Aslant_Tract_R.stat.txt	29
+number of tracts	9661,sub-50035_dwi.Frontal_Aslant_Tract_R.stat.txt	0
+mean length(mm)	71.9832,sub-50035_dwi.Frontal_Aslant_Tract_R.stat.txt	1
+span(mm)	23.2758,sub-50035_dwi.Frontal_Aslant_Tract_R.stat.txt	2
+curl	3.09262,sub-50035_dwi.Frontal_Aslant_Tract_R.stat.txt	3
+elongation	3.86909,sub-50035_dwi.Frontal_Aslant_Tract_R.stat.txt	4
+diameter(mm)	18.6047,sub-50035_dwi.Frontal_Aslant_Tract_R.stat.txt	5
+volume(mm^3)	19568.9,sub-50035_dwi.Frontal_Aslant_Tract_R.stat.txt	6
+trunk volume(mm^3)	11486.9,sub-50035_dwi.Frontal_Aslant_Tract_R.stat.txt	7
+branch volume(mm^3)	8081.96,sub-50035_dwi.Frontal_Aslant_Tract_R.stat.txt	8
+total surface area(mm^2)	32685.3,sub-50035_dwi.Frontal_Aslant_Tract_R.stat.txt	9
+total radius of end regions(mm)	22.4243,sub-50035_dwi.Frontal_Aslant_Tract_R.stat.txt	10
+total area of end regions(mm^2)	4041.47,sub-50035_dwi.Frontal_Aslant_Tract_R.stat.txt	11
+irregularity	7.76871,sub-50035_dwi.Frontal_Aslant_Tract_R.stat.txt	12
+area of end region 1(mm^2)	2418.81,sub-50035_dwi.Frontal_Aslant_Tract_R.stat.txt	13
+radius of end region 1(mm)	13.3663,sub-50035_dwi.Frontal_Aslant_Tract_R.stat.txt	14
+irregularity of end region 1	0.232044,sub-50035_dwi.Frontal_Aslant_Tract_R.stat.txt	15
+area of end region 2(mm^2)	1622.66,sub-50035_dwi.Frontal_Aslant_Tract_R.stat.txt	16
+radius of end region 2(mm)	9.05802,sub-50035_dwi.Frontal_Aslant_Tract_R.stat.txt	17
+irregularity of end region 2	0.158851,sub-50035_dwi.Frontal_Aslant_Tract_R.stat.txt	18
+qa	0.201641,sub-50035_dwi.Frontal_Aslant_Tract_R.stat.txt	19
+dti_fa	0.444733,sub-50035_dwi.Frontal_Aslant_Tract_R.stat.txt	20
+md	0.780517,sub-50035_dwi.Frontal_Aslant_Tract_R.stat.txt	21
+ad	1.16348,sub-50035_dwi.Frontal_Aslant_Tract_R.stat.txt	22
+rd	0.589037,sub-50035_dwi.Frontal_Aslant_Tract_R.stat.txt	23
+iso	0.570038,sub-50035_dwi.Frontal_Aslant_Tract_R.stat.txt	24
+rdi	0.334109,sub-50035_dwi.Frontal_Aslant_Tract_R.stat.txt	25
+nrdi02L	0.428169,sub-50035_dwi.Frontal_Aslant_Tract_R.stat.txt	26
+nrdi04L	0.168009,sub-50035_dwi.Frontal_Aslant_Tract_R.stat.txt	27
+nrdi06L	0.0257797,sub-50035_dwi.Frontal_Aslant_Tract_R.stat.txt	28
+,sub-50035_dwi.Frontal_Aslant_Tract_R.stat.txt	29
+number of tracts	11087,sub-50036_dwi.Frontal_Aslant_Tract_R.stat.txt	0
+mean length(mm)	76.9539,sub-50036_dwi.Frontal_Aslant_Tract_R.stat.txt	1
+span(mm)	28.7833,sub-50036_dwi.Frontal_Aslant_Tract_R.stat.txt	2
+curl	2.67356,sub-50036_dwi.Frontal_Aslant_Tract_R.stat.txt	3
+elongation	4.20523,sub-50036_dwi.Frontal_Aslant_Tract_R.stat.txt	4
+diameter(mm)	18.2996,sub-50036_dwi.Frontal_Aslant_Tract_R.stat.txt	5
+volume(mm^3)	20239.7,sub-50036_dwi.Frontal_Aslant_Tract_R.stat.txt	6
+trunk volume(mm^3)	19137,sub-50036_dwi.Frontal_Aslant_Tract_R.stat.txt	7
+branch volume(mm^3)	1102.66,sub-50036_dwi.Frontal_Aslant_Tract_R.stat.txt	8
+total surface area(mm^2)	32566.8,sub-50036_dwi.Frontal_Aslant_Tract_R.stat.txt	9
+total radius of end regions(mm)	17.7162,sub-50036_dwi.Frontal_Aslant_Tract_R.stat.txt	10
+total area of end regions(mm^2)	3691.87,sub-50036_dwi.Frontal_Aslant_Tract_R.stat.txt	11
+irregularity	7.36127,sub-50036_dwi.Frontal_Aslant_Tract_R.stat.txt	12
+area of end region 1(mm^2)	2197.49,sub-50036_dwi.Frontal_Aslant_Tract_R.stat.txt	13
+radius of end region 1(mm)	10.7708,sub-50036_dwi.Frontal_Aslant_Tract_R.stat.txt	14
+irregularity of end region 1	0.165851,sub-50036_dwi.Frontal_Aslant_Tract_R.stat.txt	15
+area of end region 2(mm^2)	1494.37,sub-50036_dwi.Frontal_Aslant_Tract_R.stat.txt	16
+radius of end region 2(mm)	6.94539,sub-50036_dwi.Frontal_Aslant_Tract_R.stat.txt	17
+irregularity of end region 2	0.101411,sub-50036_dwi.Frontal_Aslant_Tract_R.stat.txt	18
+qa	0.231565,sub-50036_dwi.Frontal_Aslant_Tract_R.stat.txt	19
+dti_fa	0.398671,sub-50036_dwi.Frontal_Aslant_Tract_R.stat.txt	20
+md	0.809099,sub-50036_dwi.Frontal_Aslant_Tract_R.stat.txt	21
+ad	1.15021,sub-50036_dwi.Frontal_Aslant_Tract_R.stat.txt	22
+rd	0.638543,sub-50036_dwi.Frontal_Aslant_Tract_R.stat.txt	23
+iso	0.627304,sub-50036_dwi.Frontal_Aslant_Tract_R.stat.txt	24
+rdi	0.421313,sub-50036_dwi.Frontal_Aslant_Tract_R.stat.txt	25
+nrdi02L	0.540204,sub-50036_dwi.Frontal_Aslant_Tract_R.stat.txt	26
+nrdi04L	0.212106,sub-50036_dwi.Frontal_Aslant_Tract_R.stat.txt	27
+nrdi06L	0.0326597,sub-50036_dwi.Frontal_Aslant_Tract_R.stat.txt	28
+,sub-50036_dwi.Frontal_Aslant_Tract_R.stat.txt	29
+number of tracts	11238,sub-50038_dwi.Frontal_Aslant_Tract_R.stat.txt	0
+mean length(mm)	76.2927,sub-50038_dwi.Frontal_Aslant_Tract_R.stat.txt	1
+span(mm)	28.0239,sub-50038_dwi.Frontal_Aslant_Tract_R.stat.txt	2
+curl	2.72241,sub-50038_dwi.Frontal_Aslant_Tract_R.stat.txt	3
+elongation	3.63622,sub-50038_dwi.Frontal_Aslant_Tract_R.stat.txt	4
+diameter(mm)	20.9813,sub-50038_dwi.Frontal_Aslant_Tract_R.stat.txt	5
+volume(mm^3)	26377.8,sub-50038_dwi.Frontal_Aslant_Tract_R.stat.txt	6
+trunk volume(mm^3)	25692.3,sub-50038_dwi.Frontal_Aslant_Tract_R.stat.txt	7
+branch volume(mm^3)	685.492,sub-50038_dwi.Frontal_Aslant_Tract_R.stat.txt	8
+total surface area(mm^2)	41310.7,sub-50038_dwi.Frontal_Aslant_Tract_R.stat.txt	9
+total radius of end regions(mm)	18.8919,sub-50038_dwi.Frontal_Aslant_Tract_R.stat.txt	10
+total area of end regions(mm^2)	5334.11,sub-50038_dwi.Frontal_Aslant_Tract_R.stat.txt	11
+irregularity	8.21481,sub-50038_dwi.Frontal_Aslant_Tract_R.stat.txt	12
+area of end region 1(mm^2)	3023.02,sub-50038_dwi.Frontal_Aslant_Tract_R.stat.txt	13
+radius of end region 1(mm)	10.3397,sub-50038_dwi.Frontal_Aslant_Tract_R.stat.txt	14
+irregularity of end region 1	0.111104,sub-50038_dwi.Frontal_Aslant_Tract_R.stat.txt	15
+area of end region 2(mm^2)	2311.09,sub-50038_dwi.Frontal_Aslant_Tract_R.stat.txt	16
+radius of end region 2(mm)	8.55211,sub-50038_dwi.Frontal_Aslant_Tract_R.stat.txt	17
+irregularity of end region 2	0.0994214,sub-50038_dwi.Frontal_Aslant_Tract_R.stat.txt	18
+qa	0.225128,sub-50038_dwi.Frontal_Aslant_Tract_R.stat.txt	19
+dti_fa	0.407334,sub-50038_dwi.Frontal_Aslant_Tract_R.stat.txt	20
+md	0.804498,sub-50038_dwi.Frontal_Aslant_Tract_R.stat.txt	21
+ad	1.14225,sub-50038_dwi.Frontal_Aslant_Tract_R.stat.txt	22
+rd	0.635624,sub-50038_dwi.Frontal_Aslant_Tract_R.stat.txt	23
+iso	0.61248,sub-50038_dwi.Frontal_Aslant_Tract_R.stat.txt	24
+rdi	0.411011,sub-50038_dwi.Frontal_Aslant_Tract_R.stat.txt	25
+nrdi02L	0.527253,sub-50038_dwi.Frontal_Aslant_Tract_R.stat.txt	26
+nrdi04L	0.207144,sub-50038_dwi.Frontal_Aslant_Tract_R.stat.txt	27
+nrdi06L	0.0319995,sub-50038_dwi.Frontal_Aslant_Tract_R.stat.txt	28
+,sub-50038_dwi.Frontal_Aslant_Tract_R.stat.txt	29
+number of tracts	13013,sub-50043_dwi.Frontal_Aslant_Tract_R.stat.txt	0
+mean length(mm)	78.2795,sub-50043_dwi.Frontal_Aslant_Tract_R.stat.txt	1
+span(mm)	28.9197,sub-50043_dwi.Frontal_Aslant_Tract_R.stat.txt	2
+curl	2.70679,sub-50043_dwi.Frontal_Aslant_Tract_R.stat.txt	3
+elongation	4.12045,sub-50043_dwi.Frontal_Aslant_Tract_R.stat.txt	4
+diameter(mm)	18.9978,sub-50043_dwi.Frontal_Aslant_Tract_R.stat.txt	5
+volume(mm^3)	22189.4,sub-50043_dwi.Frontal_Aslant_Tract_R.stat.txt	6
+trunk volume(mm^3)	22046.4,sub-50043_dwi.Frontal_Aslant_Tract_R.stat.txt	7
+branch volume(mm^3)	142.975,sub-50043_dwi.Frontal_Aslant_Tract_R.stat.txt	8
+total surface area(mm^2)	29296,sub-50043_dwi.Frontal_Aslant_Tract_R.stat.txt	9
+total radius of end regions(mm)	16.5673,sub-50043_dwi.Frontal_Aslant_Tract_R.stat.txt	10
+total area of end regions(mm^2)	4838.6,sub-50043_dwi.Frontal_Aslant_Tract_R.stat.txt	11
+irregularity	6.27056,sub-50043_dwi.Frontal_Aslant_Tract_R.stat.txt	12
+area of end region 1(mm^2)	2822.27,sub-50043_dwi.Frontal_Aslant_Tract_R.stat.txt	13
+radius of end region 1(mm)	9.45643,sub-50043_dwi.Frontal_Aslant_Tract_R.stat.txt	14
+irregularity of end region 1	0.0995419,sub-50043_dwi.Frontal_Aslant_Tract_R.stat.txt	15
+area of end region 2(mm^2)	2016.33,sub-50043_dwi.Frontal_Aslant_Tract_R.stat.txt	16
+radius of end region 2(mm)	7.11091,sub-50043_dwi.Frontal_Aslant_Tract_R.stat.txt	17
+irregularity of end region 2	0.0787843,sub-50043_dwi.Frontal_Aslant_Tract_R.stat.txt	18
+qa	0.176178,sub-50043_dwi.Frontal_Aslant_Tract_R.stat.txt	19
+dti_fa	0.406799,sub-50043_dwi.Frontal_Aslant_Tract_R.stat.txt	20
+md	0.841123,sub-50043_dwi.Frontal_Aslant_Tract_R.stat.txt	21
+ad	1.19324,sub-50043_dwi.Frontal_Aslant_Tract_R.stat.txt	22
+rd	0.665066,sub-50043_dwi.Frontal_Aslant_Tract_R.stat.txt	23
+iso	0.461414,sub-50043_dwi.Frontal_Aslant_Tract_R.stat.txt	24
+rdi	0.310311,sub-50043_dwi.Frontal_Aslant_Tract_R.stat.txt	25
+nrdi02L	0.398295,sub-50043_dwi.Frontal_Aslant_Tract_R.stat.txt	26
+nrdi04L	0.156586,sub-50043_dwi.Frontal_Aslant_Tract_R.stat.txt	27
+nrdi06L	0.0242783,sub-50043_dwi.Frontal_Aslant_Tract_R.stat.txt	28
+,sub-50043_dwi.Frontal_Aslant_Tract_R.stat.txt	29
+number of tracts	11287,sub-50047_dwi.Frontal_Aslant_Tract_R.stat.txt	0
+mean length(mm)	77.5846,sub-50047_dwi.Frontal_Aslant_Tract_R.stat.txt	1
+span(mm)	25.5718,sub-50047_dwi.Frontal_Aslant_Tract_R.stat.txt	2
+curl	3.03399,sub-50047_dwi.Frontal_Aslant_Tract_R.stat.txt	3
+elongation	3.49479,sub-50047_dwi.Frontal_Aslant_Tract_R.stat.txt	4
+diameter(mm)	22.2001,sub-50047_dwi.Frontal_Aslant_Tract_R.stat.txt	5
+volume(mm^3)	30031.4,sub-50047_dwi.Frontal_Aslant_Tract_R.stat.txt	6
+trunk volume(mm^3)	29790.5,sub-50047_dwi.Frontal_Aslant_Tract_R.stat.txt	7
+branch volume(mm^3)	240.902,sub-50047_dwi.Frontal_Aslant_Tract_R.stat.txt	8
+total surface area(mm^2)	44364.1,sub-50047_dwi.Frontal_Aslant_Tract_R.stat.txt	9
+total radius of end regions(mm)	24.0753,sub-50047_dwi.Frontal_Aslant_Tract_R.stat.txt	10
+total area of end regions(mm^2)	4747.53,sub-50047_dwi.Frontal_Aslant_Tract_R.stat.txt	11
+irregularity	8.19881,sub-50047_dwi.Frontal_Aslant_Tract_R.stat.txt	12
+area of end region 1(mm^2)	2984.83,sub-50047_dwi.Frontal_Aslant_Tract_R.stat.txt	13
+radius of end region 1(mm)	13.2391,sub-50047_dwi.Frontal_Aslant_Tract_R.stat.txt	14
+irregularity of end region 1	0.18448,sub-50047_dwi.Frontal_Aslant_Tract_R.stat.txt	15
+area of end region 2(mm^2)	1762.7,sub-50047_dwi.Frontal_Aslant_Tract_R.stat.txt	16
+radius of end region 2(mm)	10.8362,sub-50047_dwi.Frontal_Aslant_Tract_R.stat.txt	17
+irregularity of end region 2	0.209278,sub-50047_dwi.Frontal_Aslant_Tract_R.stat.txt	18
+qa	0.29492,sub-50047_dwi.Frontal_Aslant_Tract_R.stat.txt	19
+dti_fa	0.398482,sub-50047_dwi.Frontal_Aslant_Tract_R.stat.txt	20
+md	0.872474,sub-50047_dwi.Frontal_Aslant_Tract_R.stat.txt	21
+ad	1.22186,sub-50047_dwi.Frontal_Aslant_Tract_R.stat.txt	22
+rd	0.697782,sub-50047_dwi.Frontal_Aslant_Tract_R.stat.txt	23
+iso	0.782662,sub-50047_dwi.Frontal_Aslant_Tract_R.stat.txt	24
+rdi	0.524702,sub-50047_dwi.Frontal_Aslant_Tract_R.stat.txt	25
+nrdi02L	0.674096,sub-50047_dwi.Frontal_Aslant_Tract_R.stat.txt	26
+nrdi04L	0.265313,sub-50047_dwi.Frontal_Aslant_Tract_R.stat.txt	27
+nrdi06L	0.0413873,sub-50047_dwi.Frontal_Aslant_Tract_R.stat.txt	28
+,sub-50047_dwi.Frontal_Aslant_Tract_R.stat.txt	29
+number of tracts	7901,sub-50048_dwi.Frontal_Aslant_Tract_R.stat.txt	0
+mean length(mm)	75.0948,sub-50048_dwi.Frontal_Aslant_Tract_R.stat.txt	1
+span(mm)	27.9928,sub-50048_dwi.Frontal_Aslant_Tract_R.stat.txt	2
+curl	2.68265,sub-50048_dwi.Frontal_Aslant_Tract_R.stat.txt	3
+elongation	4.0819,sub-50048_dwi.Frontal_Aslant_Tract_R.stat.txt	4
+diameter(mm)	18.397,sub-50048_dwi.Frontal_Aslant_Tract_R.stat.txt	5
+volume(mm^3)	19961.5,sub-50048_dwi.Frontal_Aslant_Tract_R.stat.txt	6
+trunk volume(mm^3)	19360.3,sub-50048_dwi.Frontal_Aslant_Tract_R.stat.txt	7
+branch volume(mm^3)	601.273,sub-50048_dwi.Frontal_Aslant_Tract_R.stat.txt	8
+total surface area(mm^2)	31959.6,sub-50048_dwi.Frontal_Aslant_Tract_R.stat.txt	9
+total radius of end regions(mm)	19.7615,sub-50048_dwi.Frontal_Aslant_Tract_R.stat.txt	10
+total area of end regions(mm^2)	3012.25,sub-50048_dwi.Frontal_Aslant_Tract_R.stat.txt	11
+irregularity	7.36368,sub-50048_dwi.Frontal_Aslant_Tract_R.stat.txt	12
+area of end region 1(mm^2)	1693.17,sub-50048_dwi.Frontal_Aslant_Tract_R.stat.txt	13
+radius of end region 1(mm)	12.5293,sub-50048_dwi.Frontal_Aslant_Tract_R.stat.txt	14
+irregularity of end region 1	0.291276,sub-50048_dwi.Frontal_Aslant_Tract_R.stat.txt	15
+area of end region 2(mm^2)	1319.08,sub-50048_dwi.Frontal_Aslant_Tract_R.stat.txt	16
+radius of end region 2(mm)	7.23222,sub-50048_dwi.Frontal_Aslant_Tract_R.stat.txt	17
+irregularity of end region 2	0.124572,sub-50048_dwi.Frontal_Aslant_Tract_R.stat.txt	18
+qa	0.170115,sub-50048_dwi.Frontal_Aslant_Tract_R.stat.txt	19
+dti_fa	0.375831,sub-50048_dwi.Frontal_Aslant_Tract_R.stat.txt	20
+md	0.879677,sub-50048_dwi.Frontal_Aslant_Tract_R.stat.txt	21
+ad	1.2034,sub-50048_dwi.Frontal_Aslant_Tract_R.stat.txt	22
+rd	0.717813,sub-50048_dwi.Frontal_Aslant_Tract_R.stat.txt	23
+iso	0.470364,sub-50048_dwi.Frontal_Aslant_Tract_R.stat.txt	24
+rdi	0.315034,sub-50048_dwi.Frontal_Aslant_Tract_R.stat.txt	25
+nrdi02L	0.404774,sub-50048_dwi.Frontal_Aslant_Tract_R.stat.txt	26
+nrdi04L	0.159333,sub-50048_dwi.Frontal_Aslant_Tract_R.stat.txt	27
+nrdi06L	0.0248728,sub-50048_dwi.Frontal_Aslant_Tract_R.stat.txt	28
+,sub-50048_dwi.Frontal_Aslant_Tract_R.stat.txt	29
