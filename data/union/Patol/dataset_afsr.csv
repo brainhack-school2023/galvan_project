@@ -1,0 +1,751 @@
+0,N
+number of tracts	901,sub-50004_dwi.Arcuate_Fasciculus_R.stat.txt	0
+mean length(mm)	101.651,sub-50004_dwi.Arcuate_Fasciculus_R.stat.txt	1
+span(mm)	23.971,sub-50004_dwi.Arcuate_Fasciculus_R.stat.txt	2
+curl	4.24058,sub-50004_dwi.Arcuate_Fasciculus_R.stat.txt	3
+elongation	12.3569,sub-50004_dwi.Arcuate_Fasciculus_R.stat.txt	4
+diameter(mm)	8.22627,sub-50004_dwi.Arcuate_Fasciculus_R.stat.txt	5
+volume(mm^3)	5402.66,sub-50004_dwi.Arcuate_Fasciculus_R.stat.txt	6
+trunk volume(mm^3)	5144.13,sub-50004_dwi.Arcuate_Fasciculus_R.stat.txt	7
+branch volume(mm^3)	258.528,sub-50004_dwi.Arcuate_Fasciculus_R.stat.txt	8
+total surface area(mm^2)	14112.3,sub-50004_dwi.Arcuate_Fasciculus_R.stat.txt	9
+total radius of end regions(mm)	9.68946,sub-50004_dwi.Arcuate_Fasciculus_R.stat.txt	10
+total area of end regions(mm^2)	327.078,sub-50004_dwi.Arcuate_Fasciculus_R.stat.txt	11
+irregularity	5.37198,sub-50004_dwi.Arcuate_Fasciculus_R.stat.txt	12
+area of end region 1(mm^2)	130.244,sub-50004_dwi.Arcuate_Fasciculus_R.stat.txt	13
+radius of end region 1(mm)	4.65448,sub-50004_dwi.Arcuate_Fasciculus_R.stat.txt	14
+irregularity of end region 1	0.522559,sub-50004_dwi.Arcuate_Fasciculus_R.stat.txt	15
+area of end region 2(mm^2)	196.834,sub-50004_dwi.Arcuate_Fasciculus_R.stat.txt	16
+radius of end region 2(mm)	5.03498,sub-50004_dwi.Arcuate_Fasciculus_R.stat.txt	17
+irregularity of end region 2	0.404618,sub-50004_dwi.Arcuate_Fasciculus_R.stat.txt	18
+qa	0.0849187,sub-50004_dwi.Arcuate_Fasciculus_R.stat.txt	19
+dti_fa	0.386133,sub-50004_dwi.Arcuate_Fasciculus_R.stat.txt	20
+md	0.864315,sub-50004_dwi.Arcuate_Fasciculus_R.stat.txt	21
+ad	1.19776,sub-50004_dwi.Arcuate_Fasciculus_R.stat.txt	22
+rd	0.697593,sub-50004_dwi.Arcuate_Fasciculus_R.stat.txt	23
+iso	0.271885,sub-50004_dwi.Arcuate_Fasciculus_R.stat.txt	24
+rdi	0.15736,sub-50004_dwi.Arcuate_Fasciculus_R.stat.txt	25
+nrdi02L	0.201958,sub-50004_dwi.Arcuate_Fasciculus_R.stat.txt	26
+nrdi04L	0.0793903,sub-50004_dwi.Arcuate_Fasciculus_R.stat.txt	27
+nrdi06L	0.0123067,sub-50004_dwi.Arcuate_Fasciculus_R.stat.txt	28
+,sub-50004_dwi.Arcuate_Fasciculus_R.stat.txt	29
+number of tracts	714,sub-50005_dwi.Arcuate_Fasciculus_R.stat.txt	0
+mean length(mm)	60.3154,sub-50005_dwi.Arcuate_Fasciculus_R.stat.txt	1
+span(mm)	21.7681,sub-50005_dwi.Arcuate_Fasciculus_R.stat.txt	2
+curl	2.77082,sub-50005_dwi.Arcuate_Fasciculus_R.stat.txt	3
+elongation	6.75301,sub-50005_dwi.Arcuate_Fasciculus_R.stat.txt	4
+diameter(mm)	8.93163,sub-50005_dwi.Arcuate_Fasciculus_R.stat.txt	5
+volume(mm^3)	3779.02,sub-50005_dwi.Arcuate_Fasciculus_R.stat.txt	6
+trunk volume(mm^3)	1236.82,sub-50005_dwi.Arcuate_Fasciculus_R.stat.txt	7
+branch volume(mm^3)	2542.2,sub-50005_dwi.Arcuate_Fasciculus_R.stat.txt	8
+total surface area(mm^2)	9894.6,sub-50005_dwi.Arcuate_Fasciculus_R.stat.txt	9
+total radius of end regions(mm)	14.9737,sub-50005_dwi.Arcuate_Fasciculus_R.stat.txt	10
+total area of end regions(mm^2)	331.974,sub-50005_dwi.Arcuate_Fasciculus_R.stat.txt	11
+irregularity	5.84641,sub-50005_dwi.Arcuate_Fasciculus_R.stat.txt	12
+area of end region 1(mm^2)	190.959,sub-50005_dwi.Arcuate_Fasciculus_R.stat.txt	13
+radius of end region 1(mm)	9.51637,sub-50005_dwi.Arcuate_Fasciculus_R.stat.txt	14
+irregularity of end region 1	1.48989,sub-50005_dwi.Arcuate_Fasciculus_R.stat.txt	15
+area of end region 2(mm^2)	141.016,sub-50005_dwi.Arcuate_Fasciculus_R.stat.txt	16
+radius of end region 2(mm)	5.45735,sub-50005_dwi.Arcuate_Fasciculus_R.stat.txt	17
+irregularity of end region 2	0.663509,sub-50005_dwi.Arcuate_Fasciculus_R.stat.txt	18
+qa	0.180425,sub-50005_dwi.Arcuate_Fasciculus_R.stat.txt	19
+dti_fa	0.353855,sub-50005_dwi.Arcuate_Fasciculus_R.stat.txt	20
+md	0.738716,sub-50005_dwi.Arcuate_Fasciculus_R.stat.txt	21
+ad	1.01508,sub-50005_dwi.Arcuate_Fasciculus_R.stat.txt	22
+rd	0.600536,sub-50005_dwi.Arcuate_Fasciculus_R.stat.txt	23
+iso	0.699567,sub-50005_dwi.Arcuate_Fasciculus_R.stat.txt	24
+rdi	0.397357,sub-50005_dwi.Arcuate_Fasciculus_R.stat.txt	25
+nrdi02L	0.508759,sub-50005_dwi.Arcuate_Fasciculus_R.stat.txt	26
+nrdi04L	0.19941,sub-50005_dwi.Arcuate_Fasciculus_R.stat.txt	27
+nrdi06L	0.030411,sub-50005_dwi.Arcuate_Fasciculus_R.stat.txt	28
+,sub-50005_dwi.Arcuate_Fasciculus_R.stat.txt	29
+number of tracts	966,sub-50006_dwi.Arcuate_Fasciculus_R.stat.txt	0
+mean length(mm)	130.36,sub-50006_dwi.Arcuate_Fasciculus_R.stat.txt	1
+span(mm)	30.1856,sub-50006_dwi.Arcuate_Fasciculus_R.stat.txt	2
+curl	4.31861,sub-50006_dwi.Arcuate_Fasciculus_R.stat.txt	3
+elongation	18.4102,sub-50006_dwi.Arcuate_Fasciculus_R.stat.txt	4
+diameter(mm)	7.08083,sub-50006_dwi.Arcuate_Fasciculus_R.stat.txt	5
+volume(mm^3)	5133.36,sub-50006_dwi.Arcuate_Fasciculus_R.stat.txt	6
+trunk volume(mm^3)	2495.19,sub-50006_dwi.Arcuate_Fasciculus_R.stat.txt	7
+branch volume(mm^3)	2638.17,sub-50006_dwi.Arcuate_Fasciculus_R.stat.txt	8
+total surface area(mm^2)	15076.9,sub-50006_dwi.Arcuate_Fasciculus_R.stat.txt	9
+total radius of end regions(mm)	17.0852,sub-50006_dwi.Arcuate_Fasciculus_R.stat.txt	10
+total area of end regions(mm^2)	441.653,sub-50006_dwi.Arcuate_Fasciculus_R.stat.txt	11
+irregularity	5.19918,sub-50006_dwi.Arcuate_Fasciculus_R.stat.txt	12
+area of end region 1(mm^2)	247.757,sub-50006_dwi.Arcuate_Fasciculus_R.stat.txt	13
+radius of end region 1(mm)	11.1081,sub-50006_dwi.Arcuate_Fasciculus_R.stat.txt	14
+irregularity of end region 1	1.5646,sub-50006_dwi.Arcuate_Fasciculus_R.stat.txt	15
+area of end region 2(mm^2)	193.896,sub-50006_dwi.Arcuate_Fasciculus_R.stat.txt	16
+radius of end region 2(mm)	5.97712,sub-50006_dwi.Arcuate_Fasciculus_R.stat.txt	17
+irregularity of end region 2	0.578846,sub-50006_dwi.Arcuate_Fasciculus_R.stat.txt	18
+qa	0.253977,sub-50006_dwi.Arcuate_Fasciculus_R.stat.txt	19
+dti_fa	0.441719,sub-50006_dwi.Arcuate_Fasciculus_R.stat.txt	20
+md	0.804747,sub-50006_dwi.Arcuate_Fasciculus_R.stat.txt	21
+ad	1.19052,sub-50006_dwi.Arcuate_Fasciculus_R.stat.txt	22
+rd	0.611862,sub-50006_dwi.Arcuate_Fasciculus_R.stat.txt	23
+iso	0.725157,sub-50006_dwi.Arcuate_Fasciculus_R.stat.txt	24
+rdi	0.424786,sub-50006_dwi.Arcuate_Fasciculus_R.stat.txt	25
+nrdi02L	0.544457,sub-50006_dwi.Arcuate_Fasciculus_R.stat.txt	26
+nrdi04L	0.21368,sub-50006_dwi.Arcuate_Fasciculus_R.stat.txt	27
+nrdi06L	0.032821,sub-50006_dwi.Arcuate_Fasciculus_R.stat.txt	28
+,sub-50006_dwi.Arcuate_Fasciculus_R.stat.txt	29
+number of tracts	1437,sub-50007_dwi.Arcuate_Fasciculus_R.stat.txt	0
+mean length(mm)	124.212,sub-50007_dwi.Arcuate_Fasciculus_R.stat.txt	1
+span(mm)	18.7957,sub-50007_dwi.Arcuate_Fasciculus_R.stat.txt	2
+curl	6.60856,sub-50007_dwi.Arcuate_Fasciculus_R.stat.txt	3
+elongation	17.0424,sub-50007_dwi.Arcuate_Fasciculus_R.stat.txt	4
+diameter(mm)	7.28845,sub-50007_dwi.Arcuate_Fasciculus_R.stat.txt	5
+volume(mm^3)	5182.32,sub-50007_dwi.Arcuate_Fasciculus_R.stat.txt	6
+trunk volume(mm^3)	3412.77,sub-50007_dwi.Arcuate_Fasciculus_R.stat.txt	7
+branch volume(mm^3)	1769.55,sub-50007_dwi.Arcuate_Fasciculus_R.stat.txt	8
+total surface area(mm^2)	12920.6,sub-50007_dwi.Arcuate_Fasciculus_R.stat.txt	9
+total radius of end regions(mm)	17.3118,sub-50007_dwi.Arcuate_Fasciculus_R.stat.txt	10
+total area of end regions(mm^2)	614.005,sub-50007_dwi.Arcuate_Fasciculus_R.stat.txt	11
+irregularity	4.54288,sub-50007_dwi.Arcuate_Fasciculus_R.stat.txt	12
+area of end region 1(mm^2)	230.13,sub-50007_dwi.Arcuate_Fasciculus_R.stat.txt	13
+radius of end region 1(mm)	3.65179,sub-50007_dwi.Arcuate_Fasciculus_R.stat.txt	14
+irregularity of end region 1	0.18205,sub-50007_dwi.Arcuate_Fasciculus_R.stat.txt	15
+area of end region 2(mm^2)	383.876,sub-50007_dwi.Arcuate_Fasciculus_R.stat.txt	16
+radius of end region 2(mm)	13.66,sub-50007_dwi.Arcuate_Fasciculus_R.stat.txt	17
+irregularity of end region 2	1.52707,sub-50007_dwi.Arcuate_Fasciculus_R.stat.txt	18
+qa	0.0891912,sub-50007_dwi.Arcuate_Fasciculus_R.stat.txt	19
+dti_fa	0.484189,sub-50007_dwi.Arcuate_Fasciculus_R.stat.txt	20
+md	0.753909,sub-50007_dwi.Arcuate_Fasciculus_R.stat.txt	21
+ad	1.15239,sub-50007_dwi.Arcuate_Fasciculus_R.stat.txt	22
+rd	0.554669,sub-50007_dwi.Arcuate_Fasciculus_R.stat.txt	23
+iso	0.235669,sub-50007_dwi.Arcuate_Fasciculus_R.stat.txt	24
+rdi	0.140089,sub-50007_dwi.Arcuate_Fasciculus_R.stat.txt	25
+nrdi02L	0.179441,sub-50007_dwi.Arcuate_Fasciculus_R.stat.txt	26
+nrdi04L	0.070369,sub-50007_dwi.Arcuate_Fasciculus_R.stat.txt	27
+nrdi06L	0.0107623,sub-50007_dwi.Arcuate_Fasciculus_R.stat.txt	28
+,sub-50007_dwi.Arcuate_Fasciculus_R.stat.txt	29
+number of tracts	7623,sub-50008_dwi.Arcuate_Fasciculus_R.stat.txt	0
+mean length(mm)	122.786,sub-50008_dwi.Arcuate_Fasciculus_R.stat.txt	1
+span(mm)	29.7212,sub-50008_dwi.Arcuate_Fasciculus_R.stat.txt	2
+curl	4.13127,sub-50008_dwi.Arcuate_Fasciculus_R.stat.txt	3
+elongation	8.64538,sub-50008_dwi.Arcuate_Fasciculus_R.stat.txt	4
+diameter(mm)	14.2025,sub-50008_dwi.Arcuate_Fasciculus_R.stat.txt	5
+volume(mm^3)	19452.3,sub-50008_dwi.Arcuate_Fasciculus_R.stat.txt	6
+trunk volume(mm^3)	9828.98,sub-50008_dwi.Arcuate_Fasciculus_R.stat.txt	7
+branch volume(mm^3)	9623.34,sub-50008_dwi.Arcuate_Fasciculus_R.stat.txt	8
+total surface area(mm^2)	42548.5,sub-50008_dwi.Arcuate_Fasciculus_R.stat.txt	9
+total radius of end regions(mm)	28.4918,sub-50008_dwi.Arcuate_Fasciculus_R.stat.txt	10
+total area of end regions(mm^2)	2335.57,sub-50008_dwi.Arcuate_Fasciculus_R.stat.txt	11
+irregularity	7.76638,sub-50008_dwi.Arcuate_Fasciculus_R.stat.txt	12
+area of end region 1(mm^2)	1058.6,sub-50008_dwi.Arcuate_Fasciculus_R.stat.txt	13
+radius of end region 1(mm)	15.1137,sub-50008_dwi.Arcuate_Fasciculus_R.stat.txt	14
+irregularity of end region 1	0.677894,sub-50008_dwi.Arcuate_Fasciculus_R.stat.txt	15
+area of end region 2(mm^2)	1276.97,sub-50008_dwi.Arcuate_Fasciculus_R.stat.txt	16
+radius of end region 2(mm)	13.3781,sub-50008_dwi.Arcuate_Fasciculus_R.stat.txt	17
+irregularity of end region 2	0.440306,sub-50008_dwi.Arcuate_Fasciculus_R.stat.txt	18
+qa	0.139031,sub-50008_dwi.Arcuate_Fasciculus_R.stat.txt	19
+dti_fa	0.407511,sub-50008_dwi.Arcuate_Fasciculus_R.stat.txt	20
+md	0.830196,sub-50008_dwi.Arcuate_Fasciculus_R.stat.txt	21
+ad	1.19138,sub-50008_dwi.Arcuate_Fasciculus_R.stat.txt	22
+rd	0.649602,sub-50008_dwi.Arcuate_Fasciculus_R.stat.txt	23
+iso	0.414959,sub-50008_dwi.Arcuate_Fasciculus_R.stat.txt	24
+rdi	0.241281,sub-50008_dwi.Arcuate_Fasciculus_R.stat.txt	25
+nrdi02L	0.309456,sub-50008_dwi.Arcuate_Fasciculus_R.stat.txt	26
+nrdi04L	0.121547,sub-50008_dwi.Arcuate_Fasciculus_R.stat.txt	27
+nrdi06L	0.0187529,sub-50008_dwi.Arcuate_Fasciculus_R.stat.txt	28
+,sub-50008_dwi.Arcuate_Fasciculus_R.stat.txt	29
+number of tracts	1074,sub-50010_dwi.Arcuate_Fasciculus_R.stat.txt	0
+mean length(mm)	104.414,sub-50010_dwi.Arcuate_Fasciculus_R.stat.txt	1
+span(mm)	37.8117,sub-50010_dwi.Arcuate_Fasciculus_R.stat.txt	2
+curl	2.76142,sub-50010_dwi.Arcuate_Fasciculus_R.stat.txt	3
+elongation	15.2845,sub-50010_dwi.Arcuate_Fasciculus_R.stat.txt	4
+diameter(mm)	6.83134,sub-50010_dwi.Arcuate_Fasciculus_R.stat.txt	5
+volume(mm^3)	3827.01,sub-50010_dwi.Arcuate_Fasciculus_R.stat.txt	6
+trunk volume(mm^3)	2651.88,sub-50010_dwi.Arcuate_Fasciculus_R.stat.txt	7
+branch volume(mm^3)	1175.13,sub-50010_dwi.Arcuate_Fasciculus_R.stat.txt	8
+total surface area(mm^2)	11033.5,sub-50010_dwi.Arcuate_Fasciculus_R.stat.txt	9
+total radius of end regions(mm)	11.3346,sub-50010_dwi.Arcuate_Fasciculus_R.stat.txt	10
+total area of end regions(mm^2)	462.218,sub-50010_dwi.Arcuate_Fasciculus_R.stat.txt	11
+irregularity	4.92379,sub-50010_dwi.Arcuate_Fasciculus_R.stat.txt	12
+area of end region 1(mm^2)	186.062,sub-50010_dwi.Arcuate_Fasciculus_R.stat.txt	13
+radius of end region 1(mm)	6.26162,sub-50010_dwi.Arcuate_Fasciculus_R.stat.txt	14
+irregularity of end region 1	0.66201,sub-50010_dwi.Arcuate_Fasciculus_R.stat.txt	15
+area of end region 2(mm^2)	276.156,sub-50010_dwi.Arcuate_Fasciculus_R.stat.txt	16
+radius of end region 2(mm)	5.07299,sub-50010_dwi.Arcuate_Fasciculus_R.stat.txt	17
+irregularity of end region 2	0.292768,sub-50010_dwi.Arcuate_Fasciculus_R.stat.txt	18
+qa	0.126634,sub-50010_dwi.Arcuate_Fasciculus_R.stat.txt	19
+dti_fa	0.479565,sub-50010_dwi.Arcuate_Fasciculus_R.stat.txt	20
+md	0.754832,sub-50010_dwi.Arcuate_Fasciculus_R.stat.txt	21
+ad	1.15286,sub-50010_dwi.Arcuate_Fasciculus_R.stat.txt	22
+rd	0.555821,sub-50010_dwi.Arcuate_Fasciculus_R.stat.txt	23
+iso	0.323218,sub-50010_dwi.Arcuate_Fasciculus_R.stat.txt	24
+rdi	0.192659,sub-50010_dwi.Arcuate_Fasciculus_R.stat.txt	25
+nrdi02L	0.246774,sub-50010_dwi.Arcuate_Fasciculus_R.stat.txt	26
+nrdi04L	0.0967735,sub-50010_dwi.Arcuate_Fasciculus_R.stat.txt	27
+nrdi06L	0.0148003,sub-50010_dwi.Arcuate_Fasciculus_R.stat.txt	28
+,sub-50010_dwi.Arcuate_Fasciculus_R.stat.txt	29
+number of tracts	14080,sub-50013_dwi.Arcuate_Fasciculus_R.stat.txt	0
+mean length(mm)	121.328,sub-50013_dwi.Arcuate_Fasciculus_R.stat.txt	1
+span(mm)	32.8827,sub-50013_dwi.Arcuate_Fasciculus_R.stat.txt	2
+curl	3.68971,sub-50013_dwi.Arcuate_Fasciculus_R.stat.txt	3
+elongation	8.67973,sub-50013_dwi.Arcuate_Fasciculus_R.stat.txt	4
+diameter(mm)	13.9783,sub-50013_dwi.Arcuate_Fasciculus_R.stat.txt	5
+volume(mm^3)	18619,sub-50013_dwi.Arcuate_Fasciculus_R.stat.txt	6
+trunk volume(mm^3)	13042,sub-50013_dwi.Arcuate_Fasciculus_R.stat.txt	7
+branch volume(mm^3)	5576.97,sub-50013_dwi.Arcuate_Fasciculus_R.stat.txt	8
+total surface area(mm^2)	30477,sub-50013_dwi.Arcuate_Fasciculus_R.stat.txt	9
+total radius of end regions(mm)	18.7783,sub-50013_dwi.Arcuate_Fasciculus_R.stat.txt	10
+total area of end regions(mm^2)	2971.12,sub-50013_dwi.Arcuate_Fasciculus_R.stat.txt	11
+irregularity	5.72018,sub-50013_dwi.Arcuate_Fasciculus_R.stat.txt	12
+area of end region 1(mm^2)	1648.12,sub-50013_dwi.Arcuate_Fasciculus_R.stat.txt	13
+radius of end region 1(mm)	10.3546,sub-50013_dwi.Arcuate_Fasciculus_R.stat.txt	14
+irregularity of end region 1	0.204375,sub-50013_dwi.Arcuate_Fasciculus_R.stat.txt	15
+area of end region 2(mm^2)	1323,sub-50013_dwi.Arcuate_Fasciculus_R.stat.txt	16
+radius of end region 2(mm)	8.42373,sub-50013_dwi.Arcuate_Fasciculus_R.stat.txt	17
+irregularity of end region 2	0.1685,sub-50013_dwi.Arcuate_Fasciculus_R.stat.txt	18
+qa	0.184653,sub-50013_dwi.Arcuate_Fasciculus_R.stat.txt	19
+dti_fa	0.479716,sub-50013_dwi.Arcuate_Fasciculus_R.stat.txt	20
+md	0.78527,sub-50013_dwi.Arcuate_Fasciculus_R.stat.txt	21
+ad	1.19491,sub-50013_dwi.Arcuate_Fasciculus_R.stat.txt	22
+rd	0.580449,sub-50013_dwi.Arcuate_Fasciculus_R.stat.txt	23
+iso	0.506399,sub-50013_dwi.Arcuate_Fasciculus_R.stat.txt	24
+rdi	0.29743,sub-50013_dwi.Arcuate_Fasciculus_R.stat.txt	25
+nrdi02L	0.381268,sub-50013_dwi.Arcuate_Fasciculus_R.stat.txt	26
+nrdi04L	0.149657,sub-50013_dwi.Arcuate_Fasciculus_R.stat.txt	27
+nrdi06L	0.0230062,sub-50013_dwi.Arcuate_Fasciculus_R.stat.txt	28
+,sub-50013_dwi.Arcuate_Fasciculus_R.stat.txt	29
+number of tracts	9043,sub-50014_dwi.Arcuate_Fasciculus_R.stat.txt	0
+mean length(mm)	101.991,sub-50014_dwi.Arcuate_Fasciculus_R.stat.txt	1
+span(mm)	28.0257,sub-50014_dwi.Arcuate_Fasciculus_R.stat.txt	2
+curl	3.63918,sub-50014_dwi.Arcuate_Fasciculus_R.stat.txt	3
+elongation	7.82903,sub-50014_dwi.Arcuate_Fasciculus_R.stat.txt	4
+diameter(mm)	13.0273,sub-50014_dwi.Arcuate_Fasciculus_R.stat.txt	5
+volume(mm^3)	13594.3,sub-50014_dwi.Arcuate_Fasciculus_R.stat.txt	6
+trunk volume(mm^3)	11911.9,sub-50014_dwi.Arcuate_Fasciculus_R.stat.txt	7
+branch volume(mm^3)	1682.39,sub-50014_dwi.Arcuate_Fasciculus_R.stat.txt	8
+total surface area(mm^2)	27313.9,sub-50014_dwi.Arcuate_Fasciculus_R.stat.txt	9
+total radius of end regions(mm)	16.4512,sub-50014_dwi.Arcuate_Fasciculus_R.stat.txt	10
+total area of end regions(mm^2)	1942.88,sub-50014_dwi.Arcuate_Fasciculus_R.stat.txt	11
+irregularity	6.54366,sub-50014_dwi.Arcuate_Fasciculus_R.stat.txt	12
+area of end region 1(mm^2)	991.026,sub-50014_dwi.Arcuate_Fasciculus_R.stat.txt	13
+radius of end region 1(mm)	9.01417,sub-50014_dwi.Arcuate_Fasciculus_R.stat.txt	14
+irregularity of end region 1	0.257582,sub-50014_dwi.Arcuate_Fasciculus_R.stat.txt	15
+area of end region 2(mm^2)	951.855,sub-50014_dwi.Arcuate_Fasciculus_R.stat.txt	16
+radius of end region 2(mm)	7.43705,sub-50014_dwi.Arcuate_Fasciculus_R.stat.txt	17
+irregularity of end region 2	0.182549,sub-50014_dwi.Arcuate_Fasciculus_R.stat.txt	18
+qa	0.189377,sub-50014_dwi.Arcuate_Fasciculus_R.stat.txt	19
+dti_fa	0.435802,sub-50014_dwi.Arcuate_Fasciculus_R.stat.txt	20
+md	0.753197,sub-50014_dwi.Arcuate_Fasciculus_R.stat.txt	21
+ad	1.11164,sub-50014_dwi.Arcuate_Fasciculus_R.stat.txt	22
+rd	0.573976,sub-50014_dwi.Arcuate_Fasciculus_R.stat.txt	23
+iso	0.58522,sub-50014_dwi.Arcuate_Fasciculus_R.stat.txt	24
+rdi	0.340087,sub-50014_dwi.Arcuate_Fasciculus_R.stat.txt	25
+nrdi02L	0.43555,sub-50014_dwi.Arcuate_Fasciculus_R.stat.txt	26
+nrdi04L	0.170772,sub-50014_dwi.Arcuate_Fasciculus_R.stat.txt	27
+nrdi06L	0.0260909,sub-50014_dwi.Arcuate_Fasciculus_R.stat.txt	28
+,sub-50014_dwi.Arcuate_Fasciculus_R.stat.txt	29
+number of tracts	10784,sub-50015_dwi.Arcuate_Fasciculus_R.stat.txt	0
+mean length(mm)	121.251,sub-50015_dwi.Arcuate_Fasciculus_R.stat.txt	1
+span(mm)	31.1824,sub-50015_dwi.Arcuate_Fasciculus_R.stat.txt	2
+curl	3.88846,sub-50015_dwi.Arcuate_Fasciculus_R.stat.txt	3
+elongation	7.96038,sub-50015_dwi.Arcuate_Fasciculus_R.stat.txt	4
+diameter(mm)	15.2319,sub-50015_dwi.Arcuate_Fasciculus_R.stat.txt	5
+volume(mm^3)	22094.4,sub-50015_dwi.Arcuate_Fasciculus_R.stat.txt	6
+trunk volume(mm^3)	21212.1,sub-50015_dwi.Arcuate_Fasciculus_R.stat.txt	7
+branch volume(mm^3)	882.328,sub-50015_dwi.Arcuate_Fasciculus_R.stat.txt	8
+total surface area(mm^2)	38878.2,sub-50015_dwi.Arcuate_Fasciculus_R.stat.txt	9
+total radius of end regions(mm)	17.8624,sub-50015_dwi.Arcuate_Fasciculus_R.stat.txt	10
+total area of end regions(mm^2)	3204.19,sub-50015_dwi.Arcuate_Fasciculus_R.stat.txt	11
+irregularity	6.70065,sub-50015_dwi.Arcuate_Fasciculus_R.stat.txt	12
+area of end region 1(mm^2)	1526.69,sub-50015_dwi.Arcuate_Fasciculus_R.stat.txt	13
+radius of end region 1(mm)	8.90008,sub-50015_dwi.Arcuate_Fasciculus_R.stat.txt	14
+irregularity of end region 1	0.163,sub-50015_dwi.Arcuate_Fasciculus_R.stat.txt	15
+area of end region 2(mm^2)	1677.5,sub-50015_dwi.Arcuate_Fasciculus_R.stat.txt	16
+radius of end region 2(mm)	8.96229,sub-50015_dwi.Arcuate_Fasciculus_R.stat.txt	17
+irregularity of end region 2	0.150427,sub-50015_dwi.Arcuate_Fasciculus_R.stat.txt	18
+qa	0.215153,sub-50015_dwi.Arcuate_Fasciculus_R.stat.txt	19
+dti_fa	0.472346,sub-50015_dwi.Arcuate_Fasciculus_R.stat.txt	20
+md	0.747954,sub-50015_dwi.Arcuate_Fasciculus_R.stat.txt	21
+ad	1.14822,sub-50015_dwi.Arcuate_Fasciculus_R.stat.txt	22
+rd	0.547819,sub-50015_dwi.Arcuate_Fasciculus_R.stat.txt	23
+iso	0.57751,sub-50015_dwi.Arcuate_Fasciculus_R.stat.txt	24
+rdi	0.341185,sub-50015_dwi.Arcuate_Fasciculus_R.stat.txt	25
+nrdi02L	0.436884,sub-50015_dwi.Arcuate_Fasciculus_R.stat.txt	26
+nrdi04L	0.17126,sub-50015_dwi.Arcuate_Fasciculus_R.stat.txt	27
+nrdi06L	0.0261364,sub-50015_dwi.Arcuate_Fasciculus_R.stat.txt	28
+,sub-50015_dwi.Arcuate_Fasciculus_R.stat.txt	29
+number of tracts	7164,sub-50020_dwi.Arcuate_Fasciculus_R.stat.txt	0
+mean length(mm)	115.75,sub-50020_dwi.Arcuate_Fasciculus_R.stat.txt	1
+span(mm)	29.1095,sub-50020_dwi.Arcuate_Fasciculus_R.stat.txt	2
+curl	3.97638,sub-50020_dwi.Arcuate_Fasciculus_R.stat.txt	3
+elongation	9.70341,sub-50020_dwi.Arcuate_Fasciculus_R.stat.txt	4
+diameter(mm)	11.9288,sub-50020_dwi.Arcuate_Fasciculus_R.stat.txt	5
+volume(mm^3)	12936.2,sub-50020_dwi.Arcuate_Fasciculus_R.stat.txt	6
+trunk volume(mm^3)	9096.49,sub-50020_dwi.Arcuate_Fasciculus_R.stat.txt	7
+branch volume(mm^3)	3839.74,sub-50020_dwi.Arcuate_Fasciculus_R.stat.txt	8
+total surface area(mm^2)	26355.2,sub-50020_dwi.Arcuate_Fasciculus_R.stat.txt	9
+total radius of end regions(mm)	15.2706,sub-50020_dwi.Arcuate_Fasciculus_R.stat.txt	10
+total area of end regions(mm^2)	1750.94,sub-50020_dwi.Arcuate_Fasciculus_R.stat.txt	11
+irregularity	6.07571,sub-50020_dwi.Arcuate_Fasciculus_R.stat.txt	12
+area of end region 1(mm^2)	790.275,sub-50020_dwi.Arcuate_Fasciculus_R.stat.txt	13
+radius of end region 1(mm)	8.24645,sub-50020_dwi.Arcuate_Fasciculus_R.stat.txt	14
+irregularity of end region 1	0.270337,sub-50020_dwi.Arcuate_Fasciculus_R.stat.txt	15
+area of end region 2(mm^2)	960.669,sub-50020_dwi.Arcuate_Fasciculus_R.stat.txt	16
+radius of end region 2(mm)	7.02412,sub-50020_dwi.Arcuate_Fasciculus_R.stat.txt	17
+irregularity of end region 2	0.161347,sub-50020_dwi.Arcuate_Fasciculus_R.stat.txt	18
+qa	0.19782,sub-50020_dwi.Arcuate_Fasciculus_R.stat.txt	19
+dti_fa	0.454456,sub-50020_dwi.Arcuate_Fasciculus_R.stat.txt	20
+md	0.848598,sub-50020_dwi.Arcuate_Fasciculus_R.stat.txt	21
+ad	1.26231,sub-50020_dwi.Arcuate_Fasciculus_R.stat.txt	22
+rd	0.641743,sub-50020_dwi.Arcuate_Fasciculus_R.stat.txt	23
+iso	0.52677,sub-50020_dwi.Arcuate_Fasciculus_R.stat.txt	24
+rdi	0.311092,sub-50020_dwi.Arcuate_Fasciculus_R.stat.txt	25
+nrdi02L	0.399122,sub-50020_dwi.Arcuate_Fasciculus_R.stat.txt	26
+nrdi04L	0.156828,sub-50020_dwi.Arcuate_Fasciculus_R.stat.txt	27
+nrdi06L	0.0242477,sub-50020_dwi.Arcuate_Fasciculus_R.stat.txt	28
+,sub-50020_dwi.Arcuate_Fasciculus_R.stat.txt	29
+number of tracts	1563,sub-50021_dwi.Arcuate_Fasciculus_R.stat.txt	0
+mean length(mm)	110.86,sub-50021_dwi.Arcuate_Fasciculus_R.stat.txt	1
+span(mm)	30.6863,sub-50021_dwi.Arcuate_Fasciculus_R.stat.txt	2
+curl	3.61269,sub-50021_dwi.Arcuate_Fasciculus_R.stat.txt	3
+elongation	13.8873,sub-50021_dwi.Arcuate_Fasciculus_R.stat.txt	4
+diameter(mm)	7.98286,sub-50021_dwi.Arcuate_Fasciculus_R.stat.txt	5
+volume(mm^3)	5548.57,sub-50021_dwi.Arcuate_Fasciculus_R.stat.txt	6
+trunk volume(mm^3)	3600.79,sub-50021_dwi.Arcuate_Fasciculus_R.stat.txt	7
+branch volume(mm^3)	1947.78,sub-50021_dwi.Arcuate_Fasciculus_R.stat.txt	8
+total surface area(mm^2)	14053.6,sub-50021_dwi.Arcuate_Fasciculus_R.stat.txt	9
+total radius of end regions(mm)	16.4598,sub-50021_dwi.Arcuate_Fasciculus_R.stat.txt	10
+total area of end regions(mm^2)	660.031,sub-50021_dwi.Arcuate_Fasciculus_R.stat.txt	11
+irregularity	5.0548,sub-50021_dwi.Arcuate_Fasciculus_R.stat.txt	12
+area of end region 1(mm^2)	476.907,sub-50021_dwi.Arcuate_Fasciculus_R.stat.txt	13
+radius of end region 1(mm)	5.6526,sub-50021_dwi.Arcuate_Fasciculus_R.stat.txt	14
+irregularity of end region 1	0.210481,sub-50021_dwi.Arcuate_Fasciculus_R.stat.txt	15
+area of end region 2(mm^2)	183.124,sub-50021_dwi.Arcuate_Fasciculus_R.stat.txt	16
+radius of end region 2(mm)	10.8072,sub-50021_dwi.Arcuate_Fasciculus_R.stat.txt	17
+irregularity of end region 2	2.00368,sub-50021_dwi.Arcuate_Fasciculus_R.stat.txt	18
+qa	0.209612,sub-50021_dwi.Arcuate_Fasciculus_R.stat.txt	19
+dti_fa	0.440398,sub-50021_dwi.Arcuate_Fasciculus_R.stat.txt	20
+md	0.785741,sub-50021_dwi.Arcuate_Fasciculus_R.stat.txt	21
+ad	1.15424,sub-50021_dwi.Arcuate_Fasciculus_R.stat.txt	22
+rd	0.60149,sub-50021_dwi.Arcuate_Fasciculus_R.stat.txt	23
+iso	0.581987,sub-50021_dwi.Arcuate_Fasciculus_R.stat.txt	24
+rdi	0.343831,sub-50021_dwi.Arcuate_Fasciculus_R.stat.txt	25
+nrdi02L	0.440682,sub-50021_dwi.Arcuate_Fasciculus_R.stat.txt	26
+nrdi04L	0.172946,sub-50021_dwi.Arcuate_Fasciculus_R.stat.txt	27
+nrdi06L	0.0265593,sub-50021_dwi.Arcuate_Fasciculus_R.stat.txt	28
+,sub-50021_dwi.Arcuate_Fasciculus_R.stat.txt	29
+number of tracts	10482,sub-50023_dwi.Arcuate_Fasciculus_R.stat.txt	0
+mean length(mm)	129.688,sub-50023_dwi.Arcuate_Fasciculus_R.stat.txt	1
+span(mm)	19.8887,sub-50023_dwi.Arcuate_Fasciculus_R.stat.txt	2
+curl	6.52068,sub-50023_dwi.Arcuate_Fasciculus_R.stat.txt	3
+elongation	8.2323,sub-50023_dwi.Arcuate_Fasciculus_R.stat.txt	4
+diameter(mm)	15.7535,sub-50023_dwi.Arcuate_Fasciculus_R.stat.txt	5
+volume(mm^3)	25278,sub-50023_dwi.Arcuate_Fasciculus_R.stat.txt	6
+trunk volume(mm^3)	21004.5,sub-50023_dwi.Arcuate_Fasciculus_R.stat.txt	7
+branch volume(mm^3)	4273.56,sub-50023_dwi.Arcuate_Fasciculus_R.stat.txt	8
+total surface area(mm^2)	44918.4,sub-50023_dwi.Arcuate_Fasciculus_R.stat.txt	9
+total radius of end regions(mm)	20.6353,sub-50023_dwi.Arcuate_Fasciculus_R.stat.txt	10
+total area of end regions(mm^2)	3268.82,sub-50023_dwi.Arcuate_Fasciculus_R.stat.txt	11
+irregularity	6.99839,sub-50023_dwi.Arcuate_Fasciculus_R.stat.txt	12
+area of end region 1(mm^2)	2120.13,sub-50023_dwi.Arcuate_Fasciculus_R.stat.txt	13
+radius of end region 1(mm)	12.3174,sub-50023_dwi.Arcuate_Fasciculus_R.stat.txt	14
+irregularity of end region 1	0.224815,sub-50023_dwi.Arcuate_Fasciculus_R.stat.txt	15
+area of end region 2(mm^2)	1148.69,sub-50023_dwi.Arcuate_Fasciculus_R.stat.txt	16
+radius of end region 2(mm)	8.31787,sub-50023_dwi.Arcuate_Fasciculus_R.stat.txt	17
+irregularity of end region 2	0.189222,sub-50023_dwi.Arcuate_Fasciculus_R.stat.txt	18
+qa	0.149506,sub-50023_dwi.Arcuate_Fasciculus_R.stat.txt	19
+dti_fa	0.465881,sub-50023_dwi.Arcuate_Fasciculus_R.stat.txt	20
+md	0.782605,sub-50023_dwi.Arcuate_Fasciculus_R.stat.txt	21
+ad	1.16966,sub-50023_dwi.Arcuate_Fasciculus_R.stat.txt	22
+rd	0.589077,sub-50023_dwi.Arcuate_Fasciculus_R.stat.txt	23
+iso	0.413077,sub-50023_dwi.Arcuate_Fasciculus_R.stat.txt	24
+rdi	0.243653,sub-50023_dwi.Arcuate_Fasciculus_R.stat.txt	25
+nrdi02L	0.312286,sub-50023_dwi.Arcuate_Fasciculus_R.stat.txt	26
+nrdi04L	0.122557,sub-50023_dwi.Arcuate_Fasciculus_R.stat.txt	27
+nrdi06L	0.0188218,sub-50023_dwi.Arcuate_Fasciculus_R.stat.txt	28
+,sub-50023_dwi.Arcuate_Fasciculus_R.stat.txt	29
+number of tracts	243,sub-50025_dwi.Arcuate_Fasciculus_R.stat.txt	0
+mean length(mm)	99.5739,sub-50025_dwi.Arcuate_Fasciculus_R.stat.txt	1
+span(mm)	26.9883,sub-50025_dwi.Arcuate_Fasciculus_R.stat.txt	2
+curl	3.68953,sub-50025_dwi.Arcuate_Fasciculus_R.stat.txt	3
+elongation	24.138,sub-50025_dwi.Arcuate_Fasciculus_R.stat.txt	4
+diameter(mm)	4.12519,sub-50025_dwi.Arcuate_Fasciculus_R.stat.txt	5
+volume(mm^3)	1330.83,sub-50025_dwi.Arcuate_Fasciculus_R.stat.txt	6
+trunk volume(mm^3)	786.358,sub-50025_dwi.Arcuate_Fasciculus_R.stat.txt	7
+branch volume(mm^3)	544.477,sub-50025_dwi.Arcuate_Fasciculus_R.stat.txt	8
+total surface area(mm^2)	4362.67,sub-50025_dwi.Arcuate_Fasciculus_R.stat.txt	9
+total radius of end regions(mm)	5.67462,sub-50025_dwi.Arcuate_Fasciculus_R.stat.txt	10
+total area of end regions(mm^2)	82.2591,sub-50025_dwi.Arcuate_Fasciculus_R.stat.txt	11
+irregularity	3.38075,sub-50025_dwi.Arcuate_Fasciculus_R.stat.txt	12
+area of end region 1(mm^2)	31.3368,sub-50025_dwi.Arcuate_Fasciculus_R.stat.txt	13
+radius of end region 1(mm)	3.64294,sub-50025_dwi.Arcuate_Fasciculus_R.stat.txt	14
+irregularity of end region 1	1.33046,sub-50025_dwi.Arcuate_Fasciculus_R.stat.txt	15
+area of end region 2(mm^2)	50.9223,sub-50025_dwi.Arcuate_Fasciculus_R.stat.txt	16
+radius of end region 2(mm)	2.03167,sub-50025_dwi.Arcuate_Fasciculus_R.stat.txt	17
+irregularity of end region 2	0.254653,sub-50025_dwi.Arcuate_Fasciculus_R.stat.txt	18
+qa	0.0899576,sub-50025_dwi.Arcuate_Fasciculus_R.stat.txt	19
+dti_fa	0.395469,sub-50025_dwi.Arcuate_Fasciculus_R.stat.txt	20
+md	0.838926,sub-50025_dwi.Arcuate_Fasciculus_R.stat.txt	21
+ad	1.20456,sub-50025_dwi.Arcuate_Fasciculus_R.stat.txt	22
+rd	0.656109,sub-50025_dwi.Arcuate_Fasciculus_R.stat.txt	23
+iso	0.271662,sub-50025_dwi.Arcuate_Fasciculus_R.stat.txt	24
+rdi	0.157587,sub-50025_dwi.Arcuate_Fasciculus_R.stat.txt	25
+nrdi02L	0.202127,sub-50025_dwi.Arcuate_Fasciculus_R.stat.txt	26
+nrdi04L	0.0793971,sub-50025_dwi.Arcuate_Fasciculus_R.stat.txt	27
+nrdi06L	0.0122539,sub-50025_dwi.Arcuate_Fasciculus_R.stat.txt	28
+,sub-50025_dwi.Arcuate_Fasciculus_R.stat.txt	29
+number of tracts	1394,sub-50027_dwi.Arcuate_Fasciculus_R.stat.txt	0
+mean length(mm)	104.259,sub-50027_dwi.Arcuate_Fasciculus_R.stat.txt	1
+span(mm)	30.9333,sub-50027_dwi.Arcuate_Fasciculus_R.stat.txt	2
+curl	3.37046,sub-50027_dwi.Arcuate_Fasciculus_R.stat.txt	3
+elongation	12.9787,sub-50027_dwi.Arcuate_Fasciculus_R.stat.txt	4
+diameter(mm)	8.03315,sub-50027_dwi.Arcuate_Fasciculus_R.stat.txt	5
+volume(mm^3)	5284.17,sub-50027_dwi.Arcuate_Fasciculus_R.stat.txt	6
+trunk volume(mm^3)	1182.96,sub-50027_dwi.Arcuate_Fasciculus_R.stat.txt	7
+branch volume(mm^3)	4101.2,sub-50027_dwi.Arcuate_Fasciculus_R.stat.txt	8
+total surface area(mm^2)	14542.2,sub-50027_dwi.Arcuate_Fasciculus_R.stat.txt	9
+total radius of end regions(mm)	13.7728,sub-50027_dwi.Arcuate_Fasciculus_R.stat.txt	10
+total area of end regions(mm^2)	723.684,sub-50027_dwi.Arcuate_Fasciculus_R.stat.txt	11
+irregularity	5.52688,sub-50027_dwi.Arcuate_Fasciculus_R.stat.txt	12
+area of end region 1(mm^2)	466.135,sub-50027_dwi.Arcuate_Fasciculus_R.stat.txt	13
+radius of end region 1(mm)	7.98797,sub-50027_dwi.Arcuate_Fasciculus_R.stat.txt	14
+irregularity of end region 1	0.430042,sub-50027_dwi.Arcuate_Fasciculus_R.stat.txt	15
+area of end region 2(mm^2)	257.549,sub-50027_dwi.Arcuate_Fasciculus_R.stat.txt	16
+radius of end region 2(mm)	5.78488,sub-50027_dwi.Arcuate_Fasciculus_R.stat.txt	17
+irregularity of end region 2	0.408205,sub-50027_dwi.Arcuate_Fasciculus_R.stat.txt	18
+qa	0.312648,sub-50027_dwi.Arcuate_Fasciculus_R.stat.txt	19
+dti_fa	0.480306,sub-50027_dwi.Arcuate_Fasciculus_R.stat.txt	20
+md	0.744519,sub-50027_dwi.Arcuate_Fasciculus_R.stat.txt	21
+ad	1.15946,sub-50027_dwi.Arcuate_Fasciculus_R.stat.txt	22
+rd	0.53705,sub-50027_dwi.Arcuate_Fasciculus_R.stat.txt	23
+iso	0.811388,sub-50027_dwi.Arcuate_Fasciculus_R.stat.txt	24
+rdi	0.481442,sub-50027_dwi.Arcuate_Fasciculus_R.stat.txt	25
+nrdi02L	0.616378,sub-50027_dwi.Arcuate_Fasciculus_R.stat.txt	26
+nrdi04L	0.241573,sub-50027_dwi.Arcuate_Fasciculus_R.stat.txt	27
+nrdi06L	0.0368245,sub-50027_dwi.Arcuate_Fasciculus_R.stat.txt	28
+,sub-50027_dwi.Arcuate_Fasciculus_R.stat.txt	29
+number of tracts	11554,sub-50029_dwi.Arcuate_Fasciculus_R.stat.txt	0
+mean length(mm)	119.493,sub-50029_dwi.Arcuate_Fasciculus_R.stat.txt	1
+span(mm)	24.7128,sub-50029_dwi.Arcuate_Fasciculus_R.stat.txt	2
+curl	4.83526,sub-50029_dwi.Arcuate_Fasciculus_R.stat.txt	3
+elongation	7.95864,sub-50029_dwi.Arcuate_Fasciculus_R.stat.txt	4
+diameter(mm)	15.0142,sub-50029_dwi.Arcuate_Fasciculus_R.stat.txt	5
+volume(mm^3)	21156.3,sub-50029_dwi.Arcuate_Fasciculus_R.stat.txt	6
+trunk volume(mm^3)	19439.6,sub-50029_dwi.Arcuate_Fasciculus_R.stat.txt	7
+branch volume(mm^3)	1716.67,sub-50029_dwi.Arcuate_Fasciculus_R.stat.txt	8
+total surface area(mm^2)	33886.8,sub-50029_dwi.Arcuate_Fasciculus_R.stat.txt	9
+total radius of end regions(mm)	18.1838,sub-50029_dwi.Arcuate_Fasciculus_R.stat.txt	10
+total area of end regions(mm^2)	2625.44,sub-50029_dwi.Arcuate_Fasciculus_R.stat.txt	11
+irregularity	6.01223,sub-50029_dwi.Arcuate_Fasciculus_R.stat.txt	12
+area of end region 1(mm^2)	1012.57,sub-50029_dwi.Arcuate_Fasciculus_R.stat.txt	13
+radius of end region 1(mm)	8.69392,sub-50029_dwi.Arcuate_Fasciculus_R.stat.txt	14
+irregularity of end region 1	0.234507,sub-50029_dwi.Arcuate_Fasciculus_R.stat.txt	15
+area of end region 2(mm^2)	1612.87,sub-50029_dwi.Arcuate_Fasciculus_R.stat.txt	16
+radius of end region 2(mm)	9.48988,sub-50029_dwi.Arcuate_Fasciculus_R.stat.txt	17
+irregularity of end region 2	0.175418,sub-50029_dwi.Arcuate_Fasciculus_R.stat.txt	18
+qa	0.161825,sub-50029_dwi.Arcuate_Fasciculus_R.stat.txt	19
+dti_fa	0.480498,sub-50029_dwi.Arcuate_Fasciculus_R.stat.txt	20
+md	0.800645,sub-50029_dwi.Arcuate_Fasciculus_R.stat.txt	21
+ad	1.21512,sub-50029_dwi.Arcuate_Fasciculus_R.stat.txt	22
+rd	0.593407,sub-50029_dwi.Arcuate_Fasciculus_R.stat.txt	23
+iso	0.459294,sub-50029_dwi.Arcuate_Fasciculus_R.stat.txt	24
+rdi	0.267969,sub-50029_dwi.Arcuate_Fasciculus_R.stat.txt	25
+nrdi02L	0.343726,sub-50029_dwi.Arcuate_Fasciculus_R.stat.txt	26
+nrdi04L	0.135028,sub-50029_dwi.Arcuate_Fasciculus_R.stat.txt	27
+nrdi06L	0.0208477,sub-50029_dwi.Arcuate_Fasciculus_R.stat.txt	28
+,sub-50029_dwi.Arcuate_Fasciculus_R.stat.txt	29
+number of tracts	347,sub-50032_dwi.Arcuate_Fasciculus_R.stat.txt	0
+mean length(mm)	93.527,sub-50032_dwi.Arcuate_Fasciculus_R.stat.txt	1
+span(mm)	32.0733,sub-50032_dwi.Arcuate_Fasciculus_R.stat.txt	2
+curl	2.91604,sub-50032_dwi.Arcuate_Fasciculus_R.stat.txt	3
+elongation	23.0777,sub-50032_dwi.Arcuate_Fasciculus_R.stat.txt	4
+diameter(mm)	4.0527,sub-50032_dwi.Arcuate_Fasciculus_R.stat.txt	5
+volume(mm^3)	1206.47,sub-50032_dwi.Arcuate_Fasciculus_R.stat.txt	6
+trunk volume(mm^3)	1184.92,sub-50032_dwi.Arcuate_Fasciculus_R.stat.txt	7
+branch volume(mm^3)	21.5441,sub-50032_dwi.Arcuate_Fasciculus_R.stat.txt	8
+total surface area(mm^2)	4092.39,sub-50032_dwi.Arcuate_Fasciculus_R.stat.txt	9
+total radius of end regions(mm)	5.72106,sub-50032_dwi.Arcuate_Fasciculus_R.stat.txt	10
+total area of end regions(mm^2)	204.668,sub-50032_dwi.Arcuate_Fasciculus_R.stat.txt	11
+irregularity	3.43673,sub-50032_dwi.Arcuate_Fasciculus_R.stat.txt	12
+area of end region 1(mm^2)	75.4042,sub-50032_dwi.Arcuate_Fasciculus_R.stat.txt	13
+radius of end region 1(mm)	2.49947,sub-50032_dwi.Arcuate_Fasciculus_R.stat.txt	14
+irregularity of end region 1	0.260285,sub-50032_dwi.Arcuate_Fasciculus_R.stat.txt	15
+area of end region 2(mm^2)	129.264,sub-50032_dwi.Arcuate_Fasciculus_R.stat.txt	16
+radius of end region 2(mm)	3.22159,sub-50032_dwi.Arcuate_Fasciculus_R.stat.txt	17
+irregularity of end region 2	0.252239,sub-50032_dwi.Arcuate_Fasciculus_R.stat.txt	18
+qa	0.0955589,sub-50032_dwi.Arcuate_Fasciculus_R.stat.txt	19
+dti_fa	0.465968,sub-50032_dwi.Arcuate_Fasciculus_R.stat.txt	20
+md	0.77164,sub-50032_dwi.Arcuate_Fasciculus_R.stat.txt	21
+ad	1.1849,sub-50032_dwi.Arcuate_Fasciculus_R.stat.txt	22
+rd	0.565011,sub-50032_dwi.Arcuate_Fasciculus_R.stat.txt	23
+iso	0.250308,sub-50032_dwi.Arcuate_Fasciculus_R.stat.txt	24
+rdi	0.148527,sub-50032_dwi.Arcuate_Fasciculus_R.stat.txt	25
+nrdi02L	0.190218,sub-50032_dwi.Arcuate_Fasciculus_R.stat.txt	26
+nrdi04L	0.0745816,sub-50032_dwi.Arcuate_Fasciculus_R.stat.txt	27
+nrdi06L	0.0113948,sub-50032_dwi.Arcuate_Fasciculus_R.stat.txt	28
+,sub-50032_dwi.Arcuate_Fasciculus_R.stat.txt	29
+number of tracts	9069,sub-50033_dwi.Arcuate_Fasciculus_R.stat.txt	0
+mean length(mm)	107.725,sub-50033_dwi.Arcuate_Fasciculus_R.stat.txt	1
+span(mm)	26.9723,sub-50033_dwi.Arcuate_Fasciculus_R.stat.txt	2
+curl	3.9939,sub-50033_dwi.Arcuate_Fasciculus_R.stat.txt	3
+elongation	8.12189,sub-50033_dwi.Arcuate_Fasciculus_R.stat.txt	4
+diameter(mm)	13.2635,sub-50033_dwi.Arcuate_Fasciculus_R.stat.txt	5
+volume(mm^3)	14884,sub-50033_dwi.Arcuate_Fasciculus_R.stat.txt	6
+trunk volume(mm^3)	13973.3,sub-50033_dwi.Arcuate_Fasciculus_R.stat.txt	7
+branch volume(mm^3)	910.726,sub-50033_dwi.Arcuate_Fasciculus_R.stat.txt	8
+total surface area(mm^2)	24432.9,sub-50033_dwi.Arcuate_Fasciculus_R.stat.txt	9
+total radius of end regions(mm)	14.6854,sub-50033_dwi.Arcuate_Fasciculus_R.stat.txt	10
+total area of end regions(mm^2)	2660.69,sub-50033_dwi.Arcuate_Fasciculus_R.stat.txt	11
+irregularity	5.44319,sub-50033_dwi.Arcuate_Fasciculus_R.stat.txt	12
+area of end region 1(mm^2)	1050.76,sub-50033_dwi.Arcuate_Fasciculus_R.stat.txt	13
+radius of end region 1(mm)	6.20043,sub-50033_dwi.Arcuate_Fasciculus_R.stat.txt	14
+irregularity of end region 1	0.114945,sub-50033_dwi.Arcuate_Fasciculus_R.stat.txt	15
+area of end region 2(mm^2)	1609.93,sub-50033_dwi.Arcuate_Fasciculus_R.stat.txt	16
+radius of end region 2(mm)	8.48498,sub-50033_dwi.Arcuate_Fasciculus_R.stat.txt	17
+irregularity of end region 2	0.14049,sub-50033_dwi.Arcuate_Fasciculus_R.stat.txt	18
+qa	0.227795,sub-50033_dwi.Arcuate_Fasciculus_R.stat.txt	19
+dti_fa	0.477822,sub-50033_dwi.Arcuate_Fasciculus_R.stat.txt	20
+md	0.756131,sub-50033_dwi.Arcuate_Fasciculus_R.stat.txt	21
+ad	1.16816,sub-50033_dwi.Arcuate_Fasciculus_R.stat.txt	22
+rd	0.550116,sub-50033_dwi.Arcuate_Fasciculus_R.stat.txt	23
+iso	0.588635,sub-50033_dwi.Arcuate_Fasciculus_R.stat.txt	24
+rdi	0.349161,sub-50033_dwi.Arcuate_Fasciculus_R.stat.txt	25
+nrdi02L	0.447101,sub-50033_dwi.Arcuate_Fasciculus_R.stat.txt	26
+nrdi04L	0.175268,sub-50033_dwi.Arcuate_Fasciculus_R.stat.txt	27
+nrdi06L	0.0267518,sub-50033_dwi.Arcuate_Fasciculus_R.stat.txt	28
+,sub-50033_dwi.Arcuate_Fasciculus_R.stat.txt	29
+number of tracts	15847,sub-50034_dwi.Arcuate_Fasciculus_R.stat.txt	0
+mean length(mm)	135.757,sub-50034_dwi.Arcuate_Fasciculus_R.stat.txt	1
+span(mm)	28.813,sub-50034_dwi.Arcuate_Fasciculus_R.stat.txt	2
+curl	4.71166,sub-50034_dwi.Arcuate_Fasciculus_R.stat.txt	3
+elongation	8.50089,sub-50034_dwi.Arcuate_Fasciculus_R.stat.txt	4
+diameter(mm)	15.9698,sub-50034_dwi.Arcuate_Fasciculus_R.stat.txt	5
+volume(mm^3)	27192.5,sub-50034_dwi.Arcuate_Fasciculus_R.stat.txt	6
+trunk volume(mm^3)	18729.6,sub-50034_dwi.Arcuate_Fasciculus_R.stat.txt	7
+branch volume(mm^3)	8462.9,sub-50034_dwi.Arcuate_Fasciculus_R.stat.txt	8
+total surface area(mm^2)	44268.1,sub-50034_dwi.Arcuate_Fasciculus_R.stat.txt	9
+total radius of end regions(mm)	22.8384,sub-50034_dwi.Arcuate_Fasciculus_R.stat.txt	10
+total area of end regions(mm^2)	4841.54,sub-50034_dwi.Arcuate_Fasciculus_R.stat.txt	11
+irregularity	6.4995,sub-50034_dwi.Arcuate_Fasciculus_R.stat.txt	12
+area of end region 1(mm^2)	1942.88,sub-50034_dwi.Arcuate_Fasciculus_R.stat.txt	13
+radius of end region 1(mm)	13.6193,sub-50034_dwi.Arcuate_Fasciculus_R.stat.txt	14
+irregularity of end region 1	0.299925,sub-50034_dwi.Arcuate_Fasciculus_R.stat.txt	15
+area of end region 2(mm^2)	2898.65,sub-50034_dwi.Arcuate_Fasciculus_R.stat.txt	16
+radius of end region 2(mm)	9.21915,sub-50034_dwi.Arcuate_Fasciculus_R.stat.txt	17
+irregularity of end region 2	0.092116,sub-50034_dwi.Arcuate_Fasciculus_R.stat.txt	18
+qa	0.271043,sub-50034_dwi.Arcuate_Fasciculus_R.stat.txt	19
+dti_fa	0.466747,sub-50034_dwi.Arcuate_Fasciculus_R.stat.txt	20
+md	0.751539,sub-50034_dwi.Arcuate_Fasciculus_R.stat.txt	21
+ad	1.15184,sub-50034_dwi.Arcuate_Fasciculus_R.stat.txt	22
+rd	0.551386,sub-50034_dwi.Arcuate_Fasciculus_R.stat.txt	23
+iso	0.730323,sub-50034_dwi.Arcuate_Fasciculus_R.stat.txt	24
+rdi	0.43047,sub-50034_dwi.Arcuate_Fasciculus_R.stat.txt	25
+nrdi02L	0.551162,sub-50034_dwi.Arcuate_Fasciculus_R.stat.txt	26
+nrdi04L	0.216034,sub-50034_dwi.Arcuate_Fasciculus_R.stat.txt	27
+nrdi06L	0.032949,sub-50034_dwi.Arcuate_Fasciculus_R.stat.txt	28
+,sub-50034_dwi.Arcuate_Fasciculus_R.stat.txt	29
+number of tracts	12464,sub-50035_dwi.Arcuate_Fasciculus_R.stat.txt	0
+mean length(mm)	123.912,sub-50035_dwi.Arcuate_Fasciculus_R.stat.txt	1
+span(mm)	31.3215,sub-50035_dwi.Arcuate_Fasciculus_R.stat.txt	2
+curl	3.95613,sub-50035_dwi.Arcuate_Fasciculus_R.stat.txt	3
+elongation	8.47426,sub-50035_dwi.Arcuate_Fasciculus_R.stat.txt	4
+diameter(mm)	14.6221,sub-50035_dwi.Arcuate_Fasciculus_R.stat.txt	5
+volume(mm^3)	20807.6,sub-50035_dwi.Arcuate_Fasciculus_R.stat.txt	6
+trunk volume(mm^3)	20313.1,sub-50035_dwi.Arcuate_Fasciculus_R.stat.txt	7
+branch volume(mm^3)	494.533,sub-50035_dwi.Arcuate_Fasciculus_R.stat.txt	8
+total surface area(mm^2)	36317.4,sub-50035_dwi.Arcuate_Fasciculus_R.stat.txt	9
+total radius of end regions(mm)	20.0593,sub-50035_dwi.Arcuate_Fasciculus_R.stat.txt	10
+total area of end regions(mm^2)	4021.88,sub-50035_dwi.Arcuate_Fasciculus_R.stat.txt	11
+irregularity	6.38032,sub-50035_dwi.Arcuate_Fasciculus_R.stat.txt	12
+area of end region 1(mm^2)	2116.21,sub-50035_dwi.Arcuate_Fasciculus_R.stat.txt	13
+radius of end region 1(mm)	10.5929,sub-50035_dwi.Arcuate_Fasciculus_R.stat.txt	14
+irregularity of end region 1	0.16658,sub-50035_dwi.Arcuate_Fasciculus_R.stat.txt	15
+area of end region 2(mm^2)	1905.67,sub-50035_dwi.Arcuate_Fasciculus_R.stat.txt	16
+radius of end region 2(mm)	9.46638,sub-50035_dwi.Arcuate_Fasciculus_R.stat.txt	17
+irregularity of end region 2	0.14773,sub-50035_dwi.Arcuate_Fasciculus_R.stat.txt	18
+qa	0.241611,sub-50035_dwi.Arcuate_Fasciculus_R.stat.txt	19
+dti_fa	0.502876,sub-50035_dwi.Arcuate_Fasciculus_R.stat.txt	20
+md	0.740412,sub-50035_dwi.Arcuate_Fasciculus_R.stat.txt	21
+ad	1.18722,sub-50035_dwi.Arcuate_Fasciculus_R.stat.txt	22
+rd	0.517007,sub-50035_dwi.Arcuate_Fasciculus_R.stat.txt	23
+iso	0.618522,sub-50035_dwi.Arcuate_Fasciculus_R.stat.txt	24
+rdi	0.364957,sub-50035_dwi.Arcuate_Fasciculus_R.stat.txt	25
+nrdi02L	0.467218,sub-50035_dwi.Arcuate_Fasciculus_R.stat.txt	26
+nrdi04L	0.183101,sub-50035_dwi.Arcuate_Fasciculus_R.stat.txt	27
+nrdi06L	0.0279005,sub-50035_dwi.Arcuate_Fasciculus_R.stat.txt	28
+,sub-50035_dwi.Arcuate_Fasciculus_R.stat.txt	29
+number of tracts	8737,sub-50036_dwi.Arcuate_Fasciculus_R.stat.txt	0
+mean length(mm)	106.313,sub-50036_dwi.Arcuate_Fasciculus_R.stat.txt	1
+span(mm)	31.422,sub-50036_dwi.Arcuate_Fasciculus_R.stat.txt	2
+curl	3.38339,sub-50036_dwi.Arcuate_Fasciculus_R.stat.txt	3
+elongation	7.69858,sub-50036_dwi.Arcuate_Fasciculus_R.stat.txt	4
+diameter(mm)	13.8094,sub-50036_dwi.Arcuate_Fasciculus_R.stat.txt	5
+volume(mm^3)	15923,sub-50036_dwi.Arcuate_Fasciculus_R.stat.txt	6
+trunk volume(mm^3)	14708.7,sub-50036_dwi.Arcuate_Fasciculus_R.stat.txt	7
+branch volume(mm^3)	1214.3,sub-50036_dwi.Arcuate_Fasciculus_R.stat.txt	8
+total surface area(mm^2)	28268.7,sub-50036_dwi.Arcuate_Fasciculus_R.stat.txt	9
+total radius of end regions(mm)	17.6274,sub-50036_dwi.Arcuate_Fasciculus_R.stat.txt	10
+total area of end regions(mm^2)	2253.31,sub-50036_dwi.Arcuate_Fasciculus_R.stat.txt	11
+irregularity	6.12909,sub-50036_dwi.Arcuate_Fasciculus_R.stat.txt	12
+area of end region 1(mm^2)	814.757,sub-50036_dwi.Arcuate_Fasciculus_R.stat.txt	13
+radius of end region 1(mm)	8.84908,sub-50036_dwi.Arcuate_Fasciculus_R.stat.txt	14
+irregularity of end region 1	0.301938,sub-50036_dwi.Arcuate_Fasciculus_R.stat.txt	15
+area of end region 2(mm^2)	1438.56,sub-50036_dwi.Arcuate_Fasciculus_R.stat.txt	16
+radius of end region 2(mm)	8.77831,sub-50036_dwi.Arcuate_Fasciculus_R.stat.txt	17
+irregularity of end region 2	0.168285,sub-50036_dwi.Arcuate_Fasciculus_R.stat.txt	18
+qa	0.291996,sub-50036_dwi.Arcuate_Fasciculus_R.stat.txt	19
+dti_fa	0.448309,sub-50036_dwi.Arcuate_Fasciculus_R.stat.txt	20
+md	0.771387,sub-50036_dwi.Arcuate_Fasciculus_R.stat.txt	21
+ad	1.15881,sub-50036_dwi.Arcuate_Fasciculus_R.stat.txt	22
+rd	0.577674,sub-50036_dwi.Arcuate_Fasciculus_R.stat.txt	23
+iso	0.847403,sub-50036_dwi.Arcuate_Fasciculus_R.stat.txt	24
+rdi	0.492102,sub-50036_dwi.Arcuate_Fasciculus_R.stat.txt	25
+nrdi02L	0.630499,sub-50036_dwi.Arcuate_Fasciculus_R.stat.txt	26
+nrdi04L	0.247335,sub-50036_dwi.Arcuate_Fasciculus_R.stat.txt	27
+nrdi06L	0.0378947,sub-50036_dwi.Arcuate_Fasciculus_R.stat.txt	28
+,sub-50036_dwi.Arcuate_Fasciculus_R.stat.txt	29
+number of tracts	5387,sub-50038_dwi.Arcuate_Fasciculus_R.stat.txt	0
+mean length(mm)	113.736,sub-50038_dwi.Arcuate_Fasciculus_R.stat.txt	1
+span(mm)	23.59,sub-50038_dwi.Arcuate_Fasciculus_R.stat.txt	2
+curl	4.82138,sub-50038_dwi.Arcuate_Fasciculus_R.stat.txt	3
+elongation	10.8704,sub-50038_dwi.Arcuate_Fasciculus_R.stat.txt	4
+diameter(mm)	10.4629,sub-50038_dwi.Arcuate_Fasciculus_R.stat.txt	5
+volume(mm^3)	9779.04,sub-50038_dwi.Arcuate_Fasciculus_R.stat.txt	6
+trunk volume(mm^3)	7120.31,sub-50038_dwi.Arcuate_Fasciculus_R.stat.txt	7
+branch volume(mm^3)	2658.73,sub-50038_dwi.Arcuate_Fasciculus_R.stat.txt	8
+total surface area(mm^2)	24232.2,sub-50038_dwi.Arcuate_Fasciculus_R.stat.txt	9
+total radius of end regions(mm)	18.8551,sub-50038_dwi.Arcuate_Fasciculus_R.stat.txt	10
+total area of end regions(mm^2)	1633.43,sub-50038_dwi.Arcuate_Fasciculus_R.stat.txt	11
+irregularity	6.4817,sub-50038_dwi.Arcuate_Fasciculus_R.stat.txt	12
+area of end region 1(mm^2)	1007.67,sub-50038_dwi.Arcuate_Fasciculus_R.stat.txt	13
+radius of end region 1(mm)	11.0857,sub-50038_dwi.Arcuate_Fasciculus_R.stat.txt	14
+irregularity of end region 1	0.383139,sub-50038_dwi.Arcuate_Fasciculus_R.stat.txt	15
+area of end region 2(mm^2)	625.757,sub-50038_dwi.Arcuate_Fasciculus_R.stat.txt	16
+radius of end region 2(mm)	7.76943,sub-50038_dwi.Arcuate_Fasciculus_R.stat.txt	17
+irregularity of end region 2	0.303056,sub-50038_dwi.Arcuate_Fasciculus_R.stat.txt	18
+qa	0.26017,sub-50038_dwi.Arcuate_Fasciculus_R.stat.txt	19
+dti_fa	0.466003,sub-50038_dwi.Arcuate_Fasciculus_R.stat.txt	20
+md	0.723952,sub-50038_dwi.Arcuate_Fasciculus_R.stat.txt	21
+ad	1.09729,sub-50038_dwi.Arcuate_Fasciculus_R.stat.txt	22
+rd	0.537284,sub-50038_dwi.Arcuate_Fasciculus_R.stat.txt	23
+iso	0.613911,sub-50038_dwi.Arcuate_Fasciculus_R.stat.txt	24
+rdi	0.422693,sub-50038_dwi.Arcuate_Fasciculus_R.stat.txt	25
+nrdi02L	0.540973,sub-50038_dwi.Arcuate_Fasciculus_R.stat.txt	26
+nrdi04L	0.211929,sub-50038_dwi.Arcuate_Fasciculus_R.stat.txt	27
+nrdi06L	0.0322289,sub-50038_dwi.Arcuate_Fasciculus_R.stat.txt	28
+,sub-50038_dwi.Arcuate_Fasciculus_R.stat.txt	29
+number of tracts	13597,sub-50043_dwi.Arcuate_Fasciculus_R.stat.txt	0
+mean length(mm)	134.275,sub-50043_dwi.Arcuate_Fasciculus_R.stat.txt	1
+span(mm)	27.2596,sub-50043_dwi.Arcuate_Fasciculus_R.stat.txt	2
+curl	4.92579,sub-50043_dwi.Arcuate_Fasciculus_R.stat.txt	3
+elongation	8.44025,sub-50043_dwi.Arcuate_Fasciculus_R.stat.txt	4
+diameter(mm)	15.9089,sub-50043_dwi.Arcuate_Fasciculus_R.stat.txt	5
+volume(mm^3)	26691.1,sub-50043_dwi.Arcuate_Fasciculus_R.stat.txt	6
+trunk volume(mm^3)	15492.1,sub-50043_dwi.Arcuate_Fasciculus_R.stat.txt	7
+branch volume(mm^3)	11199,sub-50043_dwi.Arcuate_Fasciculus_R.stat.txt	8
+total surface area(mm^2)	51977,sub-50043_dwi.Arcuate_Fasciculus_R.stat.txt	9
+total radius of end regions(mm)	26.2733,sub-50043_dwi.Arcuate_Fasciculus_R.stat.txt	10
+total area of end regions(mm^2)	4360.71,sub-50043_dwi.Arcuate_Fasciculus_R.stat.txt	11
+irregularity	7.74506,sub-50043_dwi.Arcuate_Fasciculus_R.stat.txt	12
+area of end region 1(mm^2)	2354.18,sub-50043_dwi.Arcuate_Fasciculus_R.stat.txt	13
+radius of end region 1(mm)	15.0916,sub-50043_dwi.Arcuate_Fasciculus_R.stat.txt	14
+irregularity of end region 1	0.303934,sub-50043_dwi.Arcuate_Fasciculus_R.stat.txt	15
+area of end region 2(mm^2)	2006.53,sub-50043_dwi.Arcuate_Fasciculus_R.stat.txt	16
+radius of end region 2(mm)	11.1817,sub-50043_dwi.Arcuate_Fasciculus_R.stat.txt	17
+irregularity of end region 2	0.195757,sub-50043_dwi.Arcuate_Fasciculus_R.stat.txt	18
+qa	0.202822,sub-50043_dwi.Arcuate_Fasciculus_R.stat.txt	19
+dti_fa	0.469134,sub-50043_dwi.Arcuate_Fasciculus_R.stat.txt	20
+md	0.742485,sub-50043_dwi.Arcuate_Fasciculus_R.stat.txt	21
+ad	1.14238,sub-50043_dwi.Arcuate_Fasciculus_R.stat.txt	22
+rd	0.542538,sub-50043_dwi.Arcuate_Fasciculus_R.stat.txt	23
+iso	0.478216,sub-50043_dwi.Arcuate_Fasciculus_R.stat.txt	24
+rdi	0.326173,sub-50043_dwi.Arcuate_Fasciculus_R.stat.txt	25
+nrdi02L	0.417571,sub-50043_dwi.Arcuate_Fasciculus_R.stat.txt	26
+nrdi04L	0.163647,sub-50043_dwi.Arcuate_Fasciculus_R.stat.txt	27
+nrdi06L	0.0249381,sub-50043_dwi.Arcuate_Fasciculus_R.stat.txt	28
+,sub-50043_dwi.Arcuate_Fasciculus_R.stat.txt	29
+number of tracts	10992,sub-50047_dwi.Arcuate_Fasciculus_R.stat.txt	0
+mean length(mm)	111.852,sub-50047_dwi.Arcuate_Fasciculus_R.stat.txt	1
+span(mm)	28.7963,sub-50047_dwi.Arcuate_Fasciculus_R.stat.txt	2
+curl	3.88425,sub-50047_dwi.Arcuate_Fasciculus_R.stat.txt	3
+elongation	7.70272,sub-50047_dwi.Arcuate_Fasciculus_R.stat.txt	4
+diameter(mm)	14.5211,sub-50047_dwi.Arcuate_Fasciculus_R.stat.txt	5
+volume(mm^3)	18524,sub-50047_dwi.Arcuate_Fasciculus_R.stat.txt	6
+trunk volume(mm^3)	6974.4,sub-50047_dwi.Arcuate_Fasciculus_R.stat.txt	7
+branch volume(mm^3)	11549.6,sub-50047_dwi.Arcuate_Fasciculus_R.stat.txt	8
+total surface area(mm^2)	30696.4,sub-50047_dwi.Arcuate_Fasciculus_R.stat.txt	9
+total radius of end regions(mm)	19.5004,sub-50047_dwi.Arcuate_Fasciculus_R.stat.txt	10
+total area of end regions(mm^2)	2297.38,sub-50047_dwi.Arcuate_Fasciculus_R.stat.txt	11
+irregularity	6.01579,sub-50047_dwi.Arcuate_Fasciculus_R.stat.txt	12
+area of end region 1(mm^2)	1776.41,sub-50047_dwi.Arcuate_Fasciculus_R.stat.txt	13
+radius of end region 1(mm)	9.89521,sub-50047_dwi.Arcuate_Fasciculus_R.stat.txt	14
+irregularity of end region 1	0.173164,sub-50047_dwi.Arcuate_Fasciculus_R.stat.txt	15
+area of end region 2(mm^2)	520.974,sub-50047_dwi.Arcuate_Fasciculus_R.stat.txt	16
+radius of end region 2(mm)	9.60518,sub-50047_dwi.Arcuate_Fasciculus_R.stat.txt	17
+irregularity of end region 2	0.556346,sub-50047_dwi.Arcuate_Fasciculus_R.stat.txt	18
+qa	0.320011,sub-50047_dwi.Arcuate_Fasciculus_R.stat.txt	19
+dti_fa	0.437252,sub-50047_dwi.Arcuate_Fasciculus_R.stat.txt	20
+md	0.808766,sub-50047_dwi.Arcuate_Fasciculus_R.stat.txt	21
+ad	1.18801,sub-50047_dwi.Arcuate_Fasciculus_R.stat.txt	22
+rd	0.619143,sub-50047_dwi.Arcuate_Fasciculus_R.stat.txt	23
+iso	0.776348,sub-50047_dwi.Arcuate_Fasciculus_R.stat.txt	24
+rdi	0.53004,sub-50047_dwi.Arcuate_Fasciculus_R.stat.txt	25
+nrdi02L	0.679632,sub-50047_dwi.Arcuate_Fasciculus_R.stat.txt	26
+nrdi04L	0.266861,sub-50047_dwi.Arcuate_Fasciculus_R.stat.txt	27
+nrdi06L	0.0411017,sub-50047_dwi.Arcuate_Fasciculus_R.stat.txt	28
+,sub-50047_dwi.Arcuate_Fasciculus_R.stat.txt	29
+number of tracts	9773,sub-50048_dwi.Arcuate_Fasciculus_R.stat.txt	0
+mean length(mm)	117.064,sub-50048_dwi.Arcuate_Fasciculus_R.stat.txt	1
+span(mm)	34.2829,sub-50048_dwi.Arcuate_Fasciculus_R.stat.txt	2
+curl	3.41466,sub-50048_dwi.Arcuate_Fasciculus_R.stat.txt	3
+elongation	8.57969,sub-50048_dwi.Arcuate_Fasciculus_R.stat.txt	4
+diameter(mm)	13.6444,sub-50048_dwi.Arcuate_Fasciculus_R.stat.txt	5
+volume(mm^3)	17116.8,sub-50048_dwi.Arcuate_Fasciculus_R.stat.txt	6
+trunk volume(mm^3)	14559.9,sub-50048_dwi.Arcuate_Fasciculus_R.stat.txt	7
+branch volume(mm^3)	2556.89,sub-50048_dwi.Arcuate_Fasciculus_R.stat.txt	8
+total surface area(mm^2)	32905.6,sub-50048_dwi.Arcuate_Fasciculus_R.stat.txt	9
+total radius of end regions(mm)	20.5363,sub-50048_dwi.Arcuate_Fasciculus_R.stat.txt	10
+total area of end regions(mm^2)	2245.48,sub-50048_dwi.Arcuate_Fasciculus_R.stat.txt	11
+irregularity	6.55755,sub-50048_dwi.Arcuate_Fasciculus_R.stat.txt	12
+area of end region 1(mm^2)	1327.9,sub-50048_dwi.Arcuate_Fasciculus_R.stat.txt	13
+radius of end region 1(mm)	11.8179,sub-50048_dwi.Arcuate_Fasciculus_R.stat.txt	14
+irregularity of end region 1	0.330419,sub-50048_dwi.Arcuate_Fasciculus_R.stat.txt	15
+area of end region 2(mm^2)	917.581,sub-50048_dwi.Arcuate_Fasciculus_R.stat.txt	16
+radius of end region 2(mm)	8.71844,sub-50048_dwi.Arcuate_Fasciculus_R.stat.txt	17
+irregularity of end region 2	0.260245,sub-50048_dwi.Arcuate_Fasciculus_R.stat.txt	18
+qa	0.193272,sub-50048_dwi.Arcuate_Fasciculus_R.stat.txt	19
+dti_fa	0.44903,sub-50048_dwi.Arcuate_Fasciculus_R.stat.txt	20
+md	0.836907,sub-50048_dwi.Arcuate_Fasciculus_R.stat.txt	21
+ad	1.23352,sub-50048_dwi.Arcuate_Fasciculus_R.stat.txt	22
+rd	0.6386,sub-50048_dwi.Arcuate_Fasciculus_R.stat.txt	23
+iso	0.437326,sub-50048_dwi.Arcuate_Fasciculus_R.stat.txt	24
+rdi	0.301219,sub-50048_dwi.Arcuate_Fasciculus_R.stat.txt	25
+nrdi02L	0.386524,sub-50048_dwi.Arcuate_Fasciculus_R.stat.txt	26
+nrdi04L	0.151912,sub-50048_dwi.Arcuate_Fasciculus_R.stat.txt	27
+nrdi06L	0.02352,sub-50048_dwi.Arcuate_Fasciculus_R.stat.txt	28
+,sub-50048_dwi.Arcuate_Fasciculus_R.stat.txt	29
+number of tracts	4238,sub-50049_dwi.Arcuate_Fasciculus_R.stat.txt	0
+mean length(mm)	132.51,sub-50049_dwi.Arcuate_Fasciculus_R.stat.txt	1
+span(mm)	32.3824,sub-50049_dwi.Arcuate_Fasciculus_R.stat.txt	2
+curl	4.09204,sub-50049_dwi.Arcuate_Fasciculus_R.stat.txt	3
+elongation	13.3287,sub-50049_dwi.Arcuate_Fasciculus_R.stat.txt	4
+diameter(mm)	9.94169,sub-50049_dwi.Arcuate_Fasciculus_R.stat.txt	5
+volume(mm^3)	10286.3,sub-50049_dwi.Arcuate_Fasciculus_R.stat.txt	6
+trunk volume(mm^3)	7564.9,sub-50049_dwi.Arcuate_Fasciculus_R.stat.txt	7
+branch volume(mm^3)	2721.4,sub-50049_dwi.Arcuate_Fasciculus_R.stat.txt	8
+total surface area(mm^2)	22595.8,sub-50049_dwi.Arcuate_Fasciculus_R.stat.txt	9
+total radius of end regions(mm)	16.2548,sub-50049_dwi.Arcuate_Fasciculus_R.stat.txt	10
+total area of end regions(mm^2)	1127.15,sub-50049_dwi.Arcuate_Fasciculus_R.stat.txt	11
+irregularity	5.4597,sub-50049_dwi.Arcuate_Fasciculus_R.stat.txt	12
+area of end region 1(mm^2)	368.207,sub-50049_dwi.Arcuate_Fasciculus_R.stat.txt	13
+radius of end region 1(mm)	8.82828,sub-50049_dwi.Arcuate_Fasciculus_R.stat.txt	14
+irregularity of end region 1	0.664982,sub-50049_dwi.Arcuate_Fasciculus_R.stat.txt	15
+area of end region 2(mm^2)	758.938,sub-50049_dwi.Arcuate_Fasciculus_R.stat.txt	16
+radius of end region 2(mm)	7.42656,sub-50049_dwi.Arcuate_Fasciculus_R.stat.txt	17
+irregularity of end region 2	0.228307,sub-50049_dwi.Arcuate_Fasciculus_R.stat.txt	18
+qa	0.149988,sub-50049_dwi.Arcuate_Fasciculus_R.stat.txt	19
+dti_fa	0.452878,sub-50049_dwi.Arcuate_Fasciculus_R.stat.txt	20
+md	0.818687,sub-50049_dwi.Arcuate_Fasciculus_R.stat.txt	21
+ad	1.23391,sub-50049_dwi.Arcuate_Fasciculus_R.stat.txt	22
+rd	0.611076,sub-50049_dwi.Arcuate_Fasciculus_R.stat.txt	23
+iso	0.341358,sub-50049_dwi.Arcuate_Fasciculus_R.stat.txt	24
+rdi	0.233918,sub-50049_dwi.Arcuate_Fasciculus_R.stat.txt	25
+nrdi02L	0.299943,sub-50049_dwi.Arcuate_Fasciculus_R.stat.txt	26
+nrdi04L	0.117778,sub-50049_dwi.Arcuate_Fasciculus_R.stat.txt	27
+nrdi06L	0.0181418,sub-50049_dwi.Arcuate_Fasciculus_R.stat.txt	28
+,sub-50049_dwi.Arcuate_Fasciculus_R.stat.txt	29
