@@ -1,0 +1,1087 @@
+0,N
+number of tracts	1925,sub-10171_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	115.703,sub-10171_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	37.6772,sub-10171_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	3.0709,sub-10171_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	14.0523,sub-10171_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	8.2337,sub-10171_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	6160.62,sub-10171_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	4117.85,sub-10171_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	2042.77,sub-10171_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	14554,sub-10171_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	11.1492,sub-10171_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	654.156,sub-10171_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	4.86287,sub-10171_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	309.451,sub-10171_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	6.94258,sub-10171_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	0.489328,sub-10171_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	344.705,sub-10171_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	4.20666,sub-10171_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.161279,sub-10171_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.224562,sub-10171_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.4821,sub-10171_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.844124,sub-10171_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.32023,sub-10171_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.60607,sub-10171_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.436916,sub-10171_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.308918,sub-10171_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.396064,sub-10171_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.155497,sub-10171_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0239317,sub-10171_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10171_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+,sub-10189_dwi.Superior_Longitudinal_Fasciculus1_R.no_result.txt	0
+number of tracts	426,sub-10206_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	82.1929,sub-10206_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	23.565,sub-10206_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	3.48792,sub-10206_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	13.9605,sub-10206_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	5.88753,sub-10206_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	2237.64,sub-10206_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	1187.86,sub-10206_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	1049.78,sub-10206_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	6658.09,sub-10206_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	15.596,sub-10206_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	266.363,sub-10206_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	4.37958,sub-10206_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	136.119,sub-10206_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	12.9684,sub-10206_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	3.88154,sub-10206_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	130.244,sub-10206_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	2.62757,sub-10206_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.166534,sub-10206_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.0960547,sub-10206_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.477466,sub-10206_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.822721,sub-10206_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.27024,sub-10206_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.598963,sub-10206_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.211342,sub-10206_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.145632,sub-10206_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.186757,sub-10206_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.0733417,sub-10206_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0113044,sub-10206_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10206_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+number of tracts	7201,sub-10217_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	97.1242,sub-10217_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	31.4318,sub-10217_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	3.09,sub-10217_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	8.02809,sub-10217_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	12.098,sub-10217_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	11164.7,sub-10217_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	10442,sub-10217_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	722.705,sub-10217_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	21252.2,sub-10217_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	14.1998,sub-10217_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	1875.31,sub-10217_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	5.75721,sub-10217_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	774.607,sub-10217_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	5.23865,sub-10217_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	0.111303,sub-10217_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	1100.71,sub-10217_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	8.9612,sub-10217_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.229198,sub-10217_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.194605,sub-10217_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.451815,sub-10217_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.807171,sub-10217_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.20504,sub-10217_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.608235,sub-10217_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.44901,sub-10217_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.309405,sub-10217_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.396649,sub-10217_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.155708,sub-10217_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0239484,sub-10217_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10217_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+,sub-10225_dwi.Superior_Longitudinal_Fasciculus1_R.no_result.txt	0
+number of tracts	5021,sub-10227_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	93.0938,sub-10227_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	28.1392,sub-10227_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	3.30833,sub-10227_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	6.7902,sub-10227_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	13.71,sub-10227_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	13743.1,sub-10227_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	10708.4,sub-10227_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	3034.77,sub-10227_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	27733.1,sub-10227_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	20.039,sub-10227_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	2168.11,sub-10227_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	6.91655,sub-10227_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	536.643,sub-10227_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	8.47649,sub-10227_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	0.420626,sub-10227_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	1631.47,sub-10227_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	11.5625,sub-10227_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.257441,sub-10227_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.17229,sub-10227_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.485332,sub-10227_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.820941,sub-10227_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.26321,sub-10227_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.599806,sub-10227_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.364442,sub-10227_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.253767,sub-10227_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.325482,sub-10227_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.127847,sub-10227_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0197276,sub-10227_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10227_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+,sub-10228_dwi.Superior_Longitudinal_Fasciculus1_R.no_result.txt	0
+number of tracts	1934,sub-10235_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	114.809,sub-10235_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	24.3385,sub-10235_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	4.71719,sub-10235_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	11.1669,sub-10235_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	10.2812,sub-10235_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	9531.28,sub-10235_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	2043.75,sub-10235_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	7487.54,sub-10235_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	23323.4,sub-10235_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	24.816,sub-10235_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	958.71,sub-10235_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	6.2896,sub-10235_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	452.425,sub-10235_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	16.6813,sub-10235_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	1.93224,sub-10235_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	506.285,sub-10235_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	8.13476,sub-10235_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.410624,sub-10235_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.244831,sub-10235_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.406093,sub-10235_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.909729,sub-10235_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.29668,sub-10235_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.716251,sub-10235_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.583809,sub-10235_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.399374,sub-10235_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.513217,sub-10235_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.202057,sub-10235_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.031573,sub-10235_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10235_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+number of tracts	350,sub-10269_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	61.2914,sub-10269_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	15.3526,sub-10269_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	3.99225,sub-10269_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	8.85705,sub-10269_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	6.92007,sub-10269_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	2305.21,sub-10269_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	1205.49,sub-10269_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	1099.73,sub-10269_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	8298.38,sub-10269_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	16.5729,sub-10269_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	247.757,sub-10269_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	6.22777,sub-10269_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	129.264,sub-10269_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	10.0477,sub-10269_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	2.45362,sub-10269_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	118.492,sub-10269_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	6.52521,sub-10269_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	1.12888,sub-10269_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.11511,sub-10269_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.391942,sub-10269_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.814857,sub-10269_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.14401,sub-10269_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.650279,sub-10269_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.328631,sub-10269_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.219783,sub-10269_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.281924,sub-10269_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.110752,sub-10269_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0171016,sub-10269_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10269_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+number of tracts	201,sub-10271_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	93.1334,sub-10271_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	27.3858,sub-10271_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	3.40079,sub-10271_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	21.6441,sub-10271_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	4.30294,sub-10271_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	1354.34,sub-10271_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	875.472,sub-10271_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	478.866,sub-10271_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	4893.44,sub-10271_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	6.28273,sub-10271_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	169.415,sub-10271_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	3.88681,sub-10271_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	93.0311,sub-10271_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	3.45214,sub-10271_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	0.402438,sub-10271_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	76.3835,sub-10271_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	2.83058,sub-10271_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.329535,sub-10271_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.109059,sub-10271_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.441605,sub-10271_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.754713,sub-10271_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.13978,sub-10271_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.562181,sub-10271_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.268955,sub-10271_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.182892,sub-10271_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.234166,sub-10271_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.0917822,sub-10271_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.013997,sub-10271_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10271_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+number of tracts	6404,sub-10273_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	77.7321,sub-10273_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	21.5486,sub-10273_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	3.60729,sub-10273_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	5.21066,sub-10273_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	14.9179,sub-10273_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	13586.5,sub-10273_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	9719.31,sub-10273_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	3867.16,sub-10273_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	26614.7,sub-10273_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	18.4263,sub-10273_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	2192.6,sub-10273_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	7.30573,sub-10273_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	1295.58,sub-10273_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	9.7653,sub-10273_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	0.231237,sub-10273_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	897.016,sub-10273_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	8.66099,sub-10273_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.262715,sub-10273_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.166798,sub-10273_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.391261,sub-10273_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.884451,sub-10273_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.21017,sub-10273_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.72159,sub-10273_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.45151,sub-10273_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.304836,sub-10273_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.391713,sub-10273_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.154211,sub-10273_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0240892,sub-10273_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10273_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+number of tracts	207,sub-10274_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	70.2773,sub-10274_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	19.6935,sub-10274_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	3.56855,sub-10274_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	11.2667,sub-10274_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	6.23762,sub-10274_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	2147.55,sub-10274_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	540.56,sub-10274_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	1606.99,sub-10274_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	7787.2,sub-10274_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	18.1242,sub-10274_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	176.27,sub-10274_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	5.65454,sub-10274_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	65.6114,sub-10274_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	10.6406,sub-10274_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	5.4213,sub-10274_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	110.658,sub-10274_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	7.48361,sub-10274_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	1.58997,sub-10274_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.0940937,sub-10274_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.420492,sub-10274_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.755994,sub-10274_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.09735,sub-10274_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.585315,sub-10274_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.247,sub-10274_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.167609,sub-10274_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.214632,sub-10274_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.0841417,sub-10274_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0128453,sub-10274_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10274_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+number of tracts	883,sub-10280_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	145.271,sub-10280_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	22.4639,sub-10280_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	6.46685,sub-10280_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	25.7559,sub-10280_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	5.64028,sub-10280_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	3629.68,sub-10280_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	2858.5,sub-10280_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	771.179,sub-10280_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	10633,sub-10280_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	9.48031,sub-10280_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	281.052,sub-10280_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	4.13073,sub-10280_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	122.409,sub-10280_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	5.47649,sub-10280_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	0.769731,sub-10280_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	158.643,sub-10280_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	4.00383,sub-10280_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.317454,sub-10280_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.17615,sub-10280_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.433517,sub-10280_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.904591,sub-10280_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.31156,sub-10280_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.701103,sub-10280_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.390276,sub-10280_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.268115,sub-10280_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.344512,sub-10280_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.135622,sub-10280_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0211799,sub-10280_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10280_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+number of tracts	4860,sub-10290_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	97.8746,sub-10290_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	29.6139,sub-10290_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	3.30503,sub-10290_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	7.91108,sub-10290_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	12.3718,sub-10290_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	11766,sub-10290_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	10990.4,sub-10290_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	775.586,sub-10290_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	21961.2,sub-10290_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	14.2827,sub-10290_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	1732.34,sub-10290_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	5.77301,sub-10290_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	559.166,sub-10290_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	5.67019,sub-10290_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	0.180636,sub-10290_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	1173.17,sub-10290_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	8.61247,sub-10290_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.198629,sub-10290_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.282465,sub-10290_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.473419,sub-10290_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.820005,sub-10290_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.25415,sub-10290_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.60293,sub-10290_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.613027,sub-10290_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.423885,sub-10290_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.543603,sub-10290_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.213489,sub-10290_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0329136,sub-10290_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10290_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+number of tracts	103,sub-10292_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	50.6067,sub-10292_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	13.2801,sub-10292_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	3.81073,sub-10292_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	9.06482,sub-10292_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	5.58276,sub-10292_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	1238.78,sub-10292_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	469.073,sub-10292_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	769.71,sub-10292_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	5849.21,sub-10292_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	17.3461,sub-10292_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	96.9482,sub-10292_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	6.59008,sub-10292_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	36.2332,sub-10292_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	9.14804,sub-10292_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	7.25603,sub-10292_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	60.7151,sub-10292_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	8.19806,sub-10292_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	3.47756,sub-10292_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.0646927,sub-10292_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.327651,sub-10292_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.9024,sub-10292_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.19927,sub-10292_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.753965,sub-10292_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.215443,sub-10292_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.140637,sub-10292_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.180691,sub-10292_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.0711224,sub-10292_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0110992,sub-10292_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10292_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+number of tracts	2661,sub-10304_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	90.9808,sub-10304_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	28.657,sub-10304_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	3.17482,sub-10304_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	8.1582,sub-10304_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	11.1521,sub-10304_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	8886.92,sub-10304_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	1616.78,sub-10304_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	7270.14,sub-10304_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	22670.2,sub-10304_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	20.5402,sub-10304_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	1270.12,sub-10304_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	7.11214,sub-10304_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	514.119,sub-10304_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	8.95186,sub-10304_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	0.48968,sub-10304_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	756,sub-10304_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	11.5884,sub-10304_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.55805,sub-10304_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.18974,sub-10304_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.492208,sub-10304_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.713091,sub-10304_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.10163,sub-10304_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.518819,sub-10304_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.446164,sub-10304_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.306923,sub-10304_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.392443,sub-10304_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.153567,sub-10304_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0232062,sub-10304_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10304_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+number of tracts	2759,sub-10316_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	67.6125,sub-10316_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	21.0113,sub-10316_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	3.2179,sub-10316_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	6.01002,sub-10316_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	11.25,sub-10316_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	6720.77,sub-10316_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	4280.41,sub-10316_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	2440.35,sub-10316_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	14779.2,sub-10316_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	15.0803,sub-10316_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	1128.12,sub-10316_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	6.18477,sub-10316_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	559.166,sub-10316_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	7.25502,sub-10316_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	0.295724,sub-10316_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	568.959,sub-10316_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	7.82531,sub-10316_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.338121,sub-10316_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.144539,sub-10316_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.412434,sub-10316_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.75712,sub-10316_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.09192,sub-10316_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.589721,sub-10316_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.408386,sub-10316_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.272775,sub-10316_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.349441,sub-10316_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.137057,sub-10316_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0209794,sub-10316_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10316_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+number of tracts	2448,sub-10321_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	89.2012,sub-10321_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	28.9839,sub-10321_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	3.07761,sub-10321_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	8.33847,sub-10321_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	10.6975,sub-10321_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	8017.33,sub-10321_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	4126.67,sub-10321_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	3890.66,sub-10321_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	18795.2,sub-10321_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	19.0747,sub-10321_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	1010.61,sub-10321_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	6.26964,sub-10321_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	428.923,sub-10321_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	11.3472,sub-10321_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	0.943074,sub-10321_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	581.689,sub-10321_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	7.72752,sub-10321_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.322507,sub-10321_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.127514,sub-10321_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.463279,sub-10321_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.760398,sub-10321_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.13454,sub-10321_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.573326,sub-10321_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.29823,sub-10321_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.206794,sub-10321_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.264854,sub-10321_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.103851,sub-10321_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0158719,sub-10321_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10321_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+number of tracts	7190,sub-10325_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	86.2597,sub-10325_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	25.5009,sub-10325_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	3.38261,sub-10325_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	6.24904,sub-10325_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	13.8037,sub-10325_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	12908.8,sub-10325_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	9695.8,sub-10325_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	3213,sub-10325_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	25527.7,sub-10325_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	20.7748,sub-10325_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	2612.71,sub-10325_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	6.82434,sub-10325_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	1252.49,sub-10325_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	9.1129,sub-10325_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	0.208299,sub-10325_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	1360.21,sub-10325_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	11.6619,sub-10325_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.31411,sub-10325_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.199608,sub-10325_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.460511,sub-10325_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.764087,sub-10325_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.16597,sub-10325_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.563145,sub-10325_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.460984,sub-10325_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.317511,sub-10325_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.406659,sub-10325_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.159455,sub-10325_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0243706,sub-10325_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10325_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+number of tracts	1004,sub-10329_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	102.585,sub-10329_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	32.7303,sub-10329_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	3.13424,sub-10329_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	12.0277,sub-10329_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	8.529,sub-10329_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	5860.96,sub-10329_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	2423.71,sub-10329_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	3437.26,sub-10329_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	14602,sub-10329_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	16.7665,sub-10329_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	551.332,sub-10329_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	5.31228,sub-10329_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	273.218,sub-10329_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	11.6723,sub-10329_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	1.56658,sub-10329_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	278.114,sub-10329_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	5.09425,sub-10329_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.293149,sub-10329_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.225516,sub-10329_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.479122,sub-10329_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.834744,sub-10329_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.29746,sub-10329_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.603384,sub-10329_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.484167,sub-10329_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.334328,sub-10329_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.428766,sub-10329_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.168396,sub-10329_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0259668,sub-10329_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10329_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+number of tracts	591,sub-10339_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	99.3205,sub-10339_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	24.0696,sub-10339_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	4.12639,sub-10339_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	16.329,sub-10339_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	6.08244,sub-10339_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	2885.92,sub-10339_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	2102.5,sub-10339_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	783.42,sub-10339_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	7965.42,sub-10339_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	6.60127,sub-10339_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	269.301,sub-10339_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	4.19703,sub-10339_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	79.3213,sub-10339_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	2.00282,sub-10339_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	0.158871,sub-10339_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	189.979,sub-10339_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	4.59845,sub-10339_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.349676,sub-10339_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.154279,sub-10339_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.473854,sub-10339_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.803338,sub-10339_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.22021,sub-10339_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.594902,sub-10339_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.318352,sub-10339_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.223682,sub-10339_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.286731,sub-10339_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.112547,sub-10339_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0173003,sub-10339_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10339_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+number of tracts	1511,sub-10340_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	108.831,sub-10340_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	31.617,sub-10340_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	3.44215,sub-10340_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	13.3889,sub-10340_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	8.12844,sub-10340_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	5647.48,sub-10340_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	1525.71,sub-10340_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	4121.77,sub-10340_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	15485.3,sub-10340_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	18.0981,sub-10340_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	560.145,sub-10340_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	5.572,sub-10340_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	199.772,sub-10340_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	6.88829,sub-10340_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	0.74617,sub-10340_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	360.373,sub-10340_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	11.2098,sub-10340_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	1.09545,sub-10340_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.144405,sub-10340_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.424045,sub-10340_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.824596,sub-10340_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.21006,sub-10340_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.631864,sub-10340_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.355883,sub-10340_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.241961,sub-10340_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.310189,sub-10340_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.121768,sub-10340_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0187287,sub-10340_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10340_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+number of tracts	8970,sub-10345_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	117.584,sub-10345_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	38.7322,sub-10345_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	3.03582,sub-10345_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	7.80325,sub-10345_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	15.0686,sub-10345_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	20969.2,sub-10345_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	10681.9,sub-10345_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	10287.3,sub-10345_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	36960.8,sub-10345_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	21.0888,sub-10345_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	3483.28,sub-10345_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	6.64005,sub-10345_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	1380.78,sub-10345_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	9.70715,sub-10345_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	0.214392,sub-10345_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	2102.5,sub-10345_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	11.3817,sub-10345_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.193564,sub-10345_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.290619,sub-10345_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.522583,sub-10345_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.755991,sub-10345_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.23469,sub-10345_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.516642,sub-10345_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.591855,sub-10345_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.411648,sub-10345_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.527193,sub-10345_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.206702,sub-10345_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0315786,sub-10345_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10345_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+number of tracts	4841,sub-10347_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	103.423,sub-10347_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	28.0495,sub-10347_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	3.68715,sub-10347_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	7.92204,sub-10347_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	13.055,sub-10347_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	13844,sub-10347_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	8375.74,sub-10347_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	5468.27,sub-10347_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	26977.1,sub-10347_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	17.5859,sub-10347_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	1820.47,sub-10347_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	6.35991,sub-10347_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	985.151,sub-10347_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	9.49031,sub-10347_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	0.287216,sub-10347_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	835.322,sub-10347_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	8.09564,sub-10347_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.246489,sub-10347_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.165494,sub-10347_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.435433,sub-10347_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.860659,sub-10347_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.27728,sub-10347_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.652351,sub-10347_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.386387,sub-10347_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.263586,sub-10347_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.338264,sub-10347_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.132958,sub-10347_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0205924,sub-10347_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10347_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+number of tracts	403,sub-10356_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	128.676,sub-10356_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	44.4194,sub-10356_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	2.89683,sub-10356_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	31.3554,sub-10356_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	4.10378,sub-10356_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	1701.98,sub-10356_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	1448.35,sub-10356_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	253.632,sub-10356_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	5710.15,sub-10356_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	9.29506,sub-10356_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	168.435,sub-10356_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	3.44205,sub-10356_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	68.5493,sub-10356_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	6.25641,sub-10356_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	1.7939,sub-10356_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	99.8861,sub-10356_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	3.03866,sub-10356_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.290408,sub-10356_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.222493,sub-10356_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.462511,sub-10356_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.881868,sub-10356_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.33362,sub-10356_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.655994,sub-10356_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.468285,sub-10356_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.324987,sub-10356_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.417187,sub-10356_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.164041,sub-10356_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0254601,sub-10356_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10356_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+number of tracts	5004,sub-10361_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	83.0566,sub-10361_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	22.763,sub-10361_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	3.64876,sub-10361_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	6.62967,sub-10361_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	12.528,sub-10361_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	10238.3,sub-10361_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	8196.53,sub-10361_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	2041.79,sub-10361_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	18313.4,sub-10361_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	13.5336,sub-10361_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	1457.16,sub-10361_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	5.60226,sub-10361_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	898.975,sub-10361_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	6.66535,sub-10361_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	0.155256,sub-10361_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	558.187,sub-10361_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	6.86828,sub-10361_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.265501,sub-10361_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.16266,sub-10361_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.411654,sub-10361_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.795393,sub-10361_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.1543,sub-10361_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.61594,sub-10361_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.442094,sub-10361_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.296162,sub-10361_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.379649,sub-10361_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.149024,sub-10361_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0229114,sub-10361_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10361_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+number of tracts	5647,sub-10376_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	113.484,sub-10376_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	37.5547,sub-10376_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	3.02182,sub-10376_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	10.7691,sub-10376_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	10.5378,sub-10376_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	9897.53,sub-10376_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	7498.31,sub-10376_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	2399.22,sub-10376_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	20226.9,sub-10376_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	20.0131,sub-10376_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	1596.22,sub-10376_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	5.38387,sub-10376_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	572.876,sub-10376_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	12.8448,sub-10376_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	0.904782,sub-10376_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	1023.34,sub-10376_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	7.1683,sub-10376_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.157747,sub-10376_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.296004,sub-10376_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.433195,sub-10376_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.836795,sub-10376_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.24218,sub-10376_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.634102,sub-10376_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.686529,sub-10376_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.470781,sub-10376_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.603769,sub-10376_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.23713,sub-10376_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0365679,sub-10376_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10376_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+number of tracts	3375,sub-10377_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	81.59,sub-10377_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	24.9463,sub-10377_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	3.27063,sub-10377_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	6.67115,sub-10377_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	12.2303,sub-10377_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	9585.14,sub-10377_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	4921.84,sub-10377_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	4663.31,sub-10377_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	18568,sub-10377_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	16.9203,sub-10377_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	1341.61,sub-10377_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	5.92302,sub-10377_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	589.524,sub-10377_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	10.8262,sub-10377_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	0.624602,sub-10377_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	752.083,sub-10377_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	6.09411,sub-10377_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.155133,sub-10377_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.141883,sub-10377_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.447002,sub-10377_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.793573,sub-10377_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.16981,sub-10377_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.605453,sub-10377_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.349381,sub-10377_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.237279,sub-10377_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.304284,sub-10377_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.119497,sub-10377_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0184185,sub-10377_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10377_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+number of tracts	6390,sub-10388_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	99.8554,sub-10388_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	29.4812,sub-10388_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	3.38709,sub-10388_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	8.00266,sub-10388_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	12.4778,sub-10388_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	12210.6,sub-10388_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	10305.9,sub-10388_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	1904.69,sub-10388_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	22966.9,sub-10388_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	16.2019,sub-10388_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	1924.28,sub-10388_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	5.86738,sub-10388_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	708.995,sub-10388_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	7.37603,sub-10388_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	0.241075,sub-10388_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	1215.28,sub-10388_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	8.82583,sub-10388_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.201365,sub-10388_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.244846,sub-10388_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.431217,sub-10388_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.832253,sub-10388_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.21869,sub-10388_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.639033,sub-10388_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.567128,sub-10388_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.391533,sub-10388_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.502166,sub-10388_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.19724,sub-10388_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0304294,sub-10388_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10388_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+,sub-10429_dwi.Superior_Longitudinal_Fasciculus1_R.no_result.txt	0
+number of tracts	6591,sub-10438_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	106.343,sub-10438_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	31.6514,sub-10438_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	3.35983,sub-10438_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	7.77686,sub-10438_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	13.6743,sub-10438_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	15617.5,sub-10438_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	6509.24,sub-10438_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	9108.24,sub-10438_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	29551.6,sub-10438_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	18.8834,sub-10438_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	2154.41,sub-10438_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	6.46868,sub-10438_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	1356.3,sub-10438_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	12.4604,sub-10438_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	0.359631,sub-10438_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	798.109,sub-10438_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	6.42303,sub-10438_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.162393,sub-10438_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.0957926,sub-10438_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.409259,sub-10438_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.868255,sub-10438_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.24953,sub-10438_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.677615,sub-10438_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.236835,sub-10438_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.161173,sub-10438_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.206874,sub-10438_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.0813324,sub-10438_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0126119,sub-10438_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10438_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+number of tracts	5869,sub-10440_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	98.0116,sub-10440_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	33.8026,sub-10440_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	2.89953,sub-10440_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	7.87026,sub-10440_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	12.4534,sub-10440_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	11938.3,sub-10440_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	7305.39,sub-10440_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	4632.95,sub-10440_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	23272.5,sub-10440_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	21.1278,sub-10440_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	2078.02,sub-10440_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	6.06914,sub-10440_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	1118.33,sub-10440_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	9.99046,sub-10440_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	0.280382,sub-10440_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	959.69,sub-10440_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	11.1374,sub-10440_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.406054,sub-10440_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.243543,sub-10440_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.468185,sub-10440_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.793617,sub-10440_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.22684,sub-10440_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.577003,sub-10440_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.550713,sub-10440_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.377042,sub-10440_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.483172,sub-10440_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.189584,sub-10440_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0290834,sub-10440_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10440_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+,sub-10448_dwi.Superior_Longitudinal_Fasciculus1_R.no_result.txt	0
+number of tracts	5907,sub-10455_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	99.3132,sub-10455_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	34.039,sub-10455_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	2.91763,sub-10455_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	7.66115,sub-10455_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	12.9632,sub-10455_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	13107.6,sub-10455_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	8328.73,sub-10455_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	4778.86,sub-10455_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	27082.8,sub-10455_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	18.4894,sub-10455_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	1960.51,sub-10455_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	6.69613,sub-10455_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	789.296,sub-10455_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	10.0897,sub-10455_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	0.405198,sub-10455_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	1171.21,sub-10455_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	8.39972,sub-10455_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.189253,sub-10455_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.124859,sub-10455_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.458574,sub-10455_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.785998,sub-10455_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.18728,sub-10455_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.585358,sub-10455_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.294129,sub-10455_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.201389,sub-10455_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.258123,sub-10455_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.101304,sub-10455_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0155599,sub-10455_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10455_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+number of tracts	4793,sub-10460_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	100.541,sub-10460_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	28.2818,sub-10460_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	3.55496,sub-10460_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	8.30734,sub-10460_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	12.1026,sub-10460_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	11566.2,sub-10460_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	5654.33,sub-10460_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	5911.88,sub-10460_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	24928.4,sub-10460_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	20.2472,sub-10460_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	1672.6,sub-10460_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	6.52114,sub-10460_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	1120.29,sub-10460_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	8.9328,sub-10460_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	0.223766,sub-10460_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	552.311,sub-10460_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	11.3144,sub-10460_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.728167,sub-10460_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.232306,sub-10460_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.425053,sub-10460_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.777127,sub-10460_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.13722,sub-10460_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.597082,sub-10460_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.622014,sub-10460_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.418765,sub-10460_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.536683,sub-10460_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.210602,sub-10460_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0323257,sub-10460_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10460_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+number of tracts	1431,sub-10471_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	114.314,sub-10471_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	32.305,sub-10471_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	3.53858,sub-10471_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	14.92,sub-10471_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	7.66178,sub-10471_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	5270.46,sub-10471_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	3211.04,sub-10471_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	2059.42,sub-10471_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	13777.4,sub-10471_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	16.642,sub-10471_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	541.539,sub-10471_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	5.00713,sub-10471_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	152.767,sub-10471_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	8.47507,sub-10471_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	1.47709,sub-10471_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	388.772,sub-10471_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	8.16692,sub-10471_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.538979,sub-10471_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.13472,sub-10471_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.438713,sub-10471_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.852328,sub-10471_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.26372,sub-10471_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.646634,sub-10471_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.316062,sub-10471_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.216471,sub-10471_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.277826,sub-10471_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.109214,sub-10471_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0169244,sub-10471_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10471_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+number of tracts	6716,sub-10478_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	108.2,sub-10478_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	29.4247,sub-10478_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	3.67719,sub-10478_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	8.07283,sub-10478_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	13.403,sub-10478_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	15265.9,sub-10478_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	9822.13,sub-10478_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	5443.79,sub-10478_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	30002.1,sub-10478_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	20.966,sub-10478_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	2146.57,sub-10478_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	6.58522,sub-10478_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	1180.03,sub-10478_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	10.7331,sub-10478_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	0.306694,sub-10478_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	966.545,sub-10478_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	10.2329,sub-10478_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.340349,sub-10478_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.284889,sub-10478_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.463726,sub-10478_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.791477,sub-10478_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.19222,sub-10478_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.591104,sub-10478_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.624748,sub-10478_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.433682,sub-10478_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.555844,sub-10478_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.218141,sub-10478_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0335002,sub-10478_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10478_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+,sub-10487_dwi.Superior_Longitudinal_Fasciculus1_R.no_result.txt	0
+number of tracts	7286,sub-10492_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	95.5535,sub-10492_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	25.8049,sub-10492_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	3.70292,sub-10492_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	6.69302,sub-10492_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	14.2766,sub-10492_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	15296.3,sub-10492_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	6716.85,sub-10492_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	8579.43,sub-10492_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	30857.9,sub-10492_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	25.394,sub-10492_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	2442.31,sub-10492_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	7.20022,sub-10492_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	1096.79,sub-10492_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	12.9001,sub-10492_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	0.476665,sub-10492_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	1345.52,sub-10492_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	12.4939,sub-10492_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.364462,sub-10492_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.170986,sub-10492_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.423508,sub-10492_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.881054,sub-10492_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.27108,sub-10492_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.686042,sub-10492_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.428884,sub-10492_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.289395,sub-10492_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.37177,sub-10492_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.146312,sub-10492_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0228148,sub-10492_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10492_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+number of tracts	94,sub-10506_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	141.198,sub-10506_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	20.6997,sub-10506_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	6.82124,sub-10506_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	49.8097,sub-10506_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	2.83475,sub-10506_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	891.14,sub-10506_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	825.529,sub-10506_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	65.6114,sub-10506_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	3861.28,sub-10506_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	3.94524,sub-10506_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	72.4664,sub-10506_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	3.07072,sub-10506_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	53.8601,sub-10506_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	2.6897,sub-10506_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	0.421977,sub-10506_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	18.6062,sub-10506_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	1.25554,sub-10506_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.266167,sub-10506_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.179037,sub-10506_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.438857,sub-10506_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.831435,sub-10506_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.22178,sub-10506_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.636264,sub-10506_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.419094,sub-10506_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.28612,sub-10506_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.367009,sub-10506_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.144173,sub-10506_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0222587,sub-10506_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10506_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+number of tracts	7438,sub-10517_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	113.616,sub-10517_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	26.5924,sub-10517_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	4.27249,sub-10517_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	9.37716,sub-10517_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	12.1162,sub-10517_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	13099.8,sub-10517_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	6123.41,sub-10517_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	6976.36,sub-10517_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	28468.5,sub-10517_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	21.3181,sub-10517_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	1759.76,sub-10517_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	6.58277,sub-10517_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	498.451,sub-10517_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	12.9181,sub-10517_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	1.05177,sub-10517_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	1261.31,sub-10517_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	8.4,sub-10517_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.175747,sub-10517_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.155137,sub-10517_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.425973,sub-10517_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.851051,sub-10517_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.2465,sub-10517_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.653324,sub-10517_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.360995,sub-10517_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.246949,sub-10517_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.316833,sub-10517_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.124495,sub-10517_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0192486,sub-10517_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10517_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29
+number of tracts	1134,sub-10523_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	0
+mean length(mm)	113.752,sub-10523_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	1
+span(mm)	40.677,sub-10523_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	2
+curl	2.79648,sub-10523_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	3
+elongation	16.8964,sub-10523_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	4
+diameter(mm)	6.73233,sub-10523_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	5
+volume(mm^3)	4049.3,sub-10523_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	6
+trunk volume(mm^3)	3406.9,sub-10523_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	7
+branch volume(mm^3)	642.404,sub-10523_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	8
+total surface area(mm^2)	11017.8,sub-10523_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	9
+total radius of end regions(mm)	14.1359,sub-10523_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	10
+total area of end regions(mm^2)	405.42,sub-10523_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	11
+irregularity	4.57953,sub-10523_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	12
+area of end region 1(mm^2)	132.202,sub-10523_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	13
+radius of end region 1(mm)	6.19978,sub-10523_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	14
+irregularity of end region 1	0.913407,sub-10523_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	15
+area of end region 2(mm^2)	273.218,sub-10523_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	16
+radius of end region 2(mm)	7.93613,sub-10523_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	17
+irregularity of end region 2	0.7242,sub-10523_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	18
+qa	0.107219,sub-10523_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	19
+dti_fa	0.494775,sub-10523_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	20
+md	0.792445,sub-10523_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	21
+ad	1.21979,sub-10523_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	22
+rd	0.578774,sub-10523_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	23
+iso	0.228341,sub-10523_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	24
+rdi	0.15952,sub-10523_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	25
+nrdi02L	0.204545,sub-10523_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	26
+nrdi04L	0.0803173,sub-10523_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	27
+nrdi06L	0.0123709,sub-10523_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	28
+,sub-10523_dwi.Superior_Longitudinal_Fasciculus1_R.stat.txt	29

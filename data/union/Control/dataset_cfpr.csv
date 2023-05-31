@@ -1,0 +1,1261 @@
+0,N
+number of tracts	7377,sub-10171_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	95.4999,sub-10171_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	41.7525,sub-10171_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.28729,sub-10171_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	7.20347,sub-10171_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	13.2575,sub-10171_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	13183,sub-10171_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	10871.9,sub-10171_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	2311.09,sub-10171_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	26856.6,sub-10171_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	21.2875,sub-10171_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	3363.81,sub-10171_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	6.75208,sub-10171_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	1304.39,sub-10171_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	9.17516,sub-10171_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.202754,sub-10171_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	2059.42,sub-10171_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	12.1123,sub-10171_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.2238,sub-10171_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.227633,sub-10171_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.489965,sub-10171_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.836811,sub-10171_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.32314,sub-10171_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.593648,sub-10171_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.435008,sub-10171_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.308456,sub-10171_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.395362,sub-10171_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.155169,sub-10171_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0238367,sub-10171_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10171_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	5281,sub-10189_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	89.6485,sub-10189_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	40.675,sub-10189_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.20402,sub-10189_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	6.97193,sub-10189_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	12.8585,sub-10189_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	11641.6,sub-10189_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	5692.53,sub-10189_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	5949.1,sub-10189_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	22781.9,sub-10189_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	21.489,sub-10189_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	2923.14,sub-10189_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	6.2908,sub-10189_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	1090.91,sub-10189_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	10.988,sub-10189_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.347697,sub-10189_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	1832.22,sub-10189_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	10.501,sub-10189_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.189073,sub-10189_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.0924112,sub-10189_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.52417,sub-10189_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.748092,sub-10189_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.21744,sub-10189_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.513417,sub-10189_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.180362,sub-10189_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.127716,sub-10189_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.163465,sub-10189_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.0640436,sub-10189_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.00974401,sub-10189_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10189_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	5397,sub-10206_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	83.3139,sub-10206_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	36.4895,sub-10206_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.28323,sub-10206_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	7.35062,sub-10206_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	11.3343,sub-10206_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	8406.1,sub-10206_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	6168.45,sub-10206_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	2237.64,sub-10206_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	17086.4,sub-10206_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	18.5371,sub-10206_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	2349.28,sub-10206_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	5.75956,sub-10206_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	1115.39,sub-10206_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	10.1814,sub-10206_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.291966,sub-10206_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	1233.89,sub-10206_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	8.3557,sub-10206_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.177763,sub-10206_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.109275,sub-10206_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.54226,sub-10206_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.780124,sub-10206_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.29691,sub-10206_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.521732,sub-10206_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.195555,sub-10206_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.141182,sub-10206_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.180748,sub-10206_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.0708379,sub-10206_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0107971,sub-10206_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10206_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	7852,sub-10217_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	103.221,sub-10217_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	45.4296,sub-10217_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.2721,sub-10217_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	8.93997,sub-10217_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	11.546,sub-10217_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	10807.3,sub-10217_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	8843.83,sub-10217_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	1963.45,sub-10217_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	21223.8,sub-10217_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	19.6448,sub-10217_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	3308.97,sub-10217_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	5.66862,sub-10217_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	1718.63,sub-10217_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	8.59776,sub-10217_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.135126,sub-10217_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	1590.34,sub-10217_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	11.047,sub-10217_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.241073,sub-10217_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.211388,sub-10217_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.523092,sub-10217_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.752522,sub-10217_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.24419,sub-10217_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.50669,sub-10217_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.425406,sub-10217_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.296856,sub-10217_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.379955,sub-10217_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.148864,sub-10217_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0226513,sub-10217_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10217_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	6186,sub-10225_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	84.8537,sub-10225_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	37.5528,sub-10225_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.25958,sub-10225_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	7.60512,sub-10225_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	11.1574,sub-10225_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	8296.42,sub-10225_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	6038.21,sub-10225_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	2258.21,sub-10225_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	18018.7,sub-10225_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	18.7676,sub-10225_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	2529.47,sub-10225_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	6.05811,sub-10225_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	1434.64,sub-10225_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	11.1844,sub-10225_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.273926,sub-10225_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	1094.83,sub-10225_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	7.58323,sub-10225_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.16501,sub-10225_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.293882,sub-10225_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.56805,sub-10225_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.776761,sub-10225_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.31839,sub-10225_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.505945,sub-10225_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.499612,sub-10225_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.364264,sub-10225_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.466205,sub-10225_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.182643,sub-10225_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0277797,sub-10225_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10225_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	5129,sub-10227_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	97.1186,sub-10227_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	40.5173,sub-10227_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.39697,sub-10227_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	8.54739,sub-10227_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	11.3624,sub-10227_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	9847.59,sub-10227_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	3362.83,sub-10227_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	6484.76,sub-10227_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	22105.2,sub-10227_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	22.4012,sub-10227_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	2636.21,sub-10227_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	6.37636,sub-10227_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	951.855,sub-10227_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	11.1882,sub-10227_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.413141,sub-10227_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	1684.35,sub-10227_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	11.213,sub-10227_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.234511,sub-10227_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.180785,sub-10227_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.531278,sub-10227_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.764143,sub-10227_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.25287,sub-10227_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.519781,sub-10227_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.340952,sub-10227_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.242247,sub-10227_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.310162,sub-10227_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.121569,sub-10227_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0185395,sub-10227_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10227_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	6273,sub-10228_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	97.0641,sub-10228_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	42.2857,sub-10228_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.29543,sub-10228_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	8.26762,sub-10228_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	11.7403,sub-10228_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	10507.6,sub-10228_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	7895.9,sub-10228_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	2611.73,sub-10228_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	22721.1,sub-10228_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	21.9861,sub-10228_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	2730.22,sub-10228_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	6.34664,sub-10228_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	896.037,sub-10228_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	11.1132,sub-10228_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.433012,sub-10228_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	1834.18,sub-10228_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	10.873,sub-10228_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.20249,sub-10228_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.262623,sub-10228_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.510909,sub-10228_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.787814,sub-10228_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.28194,sub-10228_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.540754,sub-10228_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.502349,sub-10228_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.353674,sub-10228_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.452909,sub-10228_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.177558,sub-10228_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0271104,sub-10228_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10228_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	5889,sub-10235_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	87.2377,sub-10235_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	37.0556,sub-10235_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.35423,sub-10235_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	7.65278,sub-10235_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	11.3995,sub-10235_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	8903.57,sub-10235_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	5287.11,sub-10235_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	3616.46,sub-10235_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	20742,sub-10235_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	22.1273,sub-10235_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	2476.59,sub-10235_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	6.63914,sub-10235_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	1084.06,sub-10235_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	11.5171,sub-10235_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.384398,sub-10235_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	1392.53,sub-10235_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	10.6103,sub-10235_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.25398,sub-10235_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.255864,sub-10235_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.480198,sub-10235_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.810041,sub-10235_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.26942,sub-10235_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.58035,sub-10235_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.526825,sub-10235_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.369387,sub-10235_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.473254,sub-10235_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.185641,sub-10235_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0284348,sub-10235_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10235_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	5677,sub-10269_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	87.4177,sub-10269_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	37.963,sub-10269_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.30271,sub-10269_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	7.6981,sub-10269_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	11.3558,sub-10269_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	8853.63,sub-10269_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	5515.28,sub-10269_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	3338.35,sub-10269_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	19069.4,sub-10269_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	22.0544,sub-10269_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	2464.84,sub-10269_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	6.11466,sub-10269_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	1211.36,sub-10269_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	13.4919,sub-10269_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.472085,sub-10269_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	1253.47,sub-10269_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	8.56252,sub-10269_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.183755,sub-10269_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.144748,sub-10269_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.514914,sub-10269_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.799323,sub-10269_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.29651,sub-10269_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.550728,sub-10269_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.286442,sub-10269_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.200654,sub-10269_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.257145,sub-10269_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.100902,sub-10269_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0154836,sub-10269_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10269_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	5552,sub-10271_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	91.1258,sub-10271_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	41.1159,sub-10271_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.21631,sub-10271_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	8.68382,sub-10271_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	10.4937,sub-10271_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	7881.21,sub-10271_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	6264.42,sub-10271_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	1616.78,sub-10271_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	17137.3,sub-10271_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	17.6815,sub-10271_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	2470.71,sub-10271_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	5.70454,sub-10271_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	1094.83,sub-10271_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	9.37036,sub-10271_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.251951,sub-10271_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	1375.88,sub-10271_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	8.31114,sub-10271_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.157721,sub-10271_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.113549,sub-10271_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.480607,sub-10271_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.731589,sub-10271_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.1459,sub-10271_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.524434,sub-10271_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.259727,sub-10271_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.179184,sub-10271_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.229296,sub-10271_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.0898147,sub-10271_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0136475,sub-10271_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10271_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	4716,sub-10273_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	96.0127,sub-10273_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	41.7889,sub-10273_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.29756,sub-10273_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	8.97172,sub-10273_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	10.7017,sub-10273_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	8636.23,sub-10273_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	4653.52,sub-10273_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	3982.71,sub-10273_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	19218.3,sub-10273_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	22.9048,sub-10273_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	2231.77,sub-10273_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	5.95365,sub-10273_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	904.85,sub-10273_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	10.841,sub-10273_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.408048,sub-10273_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	1326.92,sub-10273_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	12.0638,sub-10273_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.344567,sub-10273_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.211943,sub-10273_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.510096,sub-10273_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.799666,sub-10273_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.29421,sub-10273_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.552393,sub-10273_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.417979,sub-10273_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.293465,sub-10273_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.375955,sub-10273_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.147461,sub-10273_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0225759,sub-10273_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10273_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	4782,sub-10274_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	84.3177,sub-10274_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	37.4035,sub-10274_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.25427,sub-10274_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	7.88186,sub-10274_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	10.6977,sub-10274_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	7578.61,sub-10274_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	6287.93,sub-10274_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	1290.68,sub-10274_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	14992.7,sub-10274_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	17.9464,sub-10274_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	2089.77,sub-10274_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	5.29079,sub-10274_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	495.513,sub-10274_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	9.4165,sub-10274_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.562178,sub-10274_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	1594.26,sub-10274_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	8.52985,sub-10274_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.143375,sub-10274_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.110977,sub-10274_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.500812,sub-10274_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.736475,sub-10274_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.18425,sub-10274_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.512589,sub-10274_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.239001,sub-10274_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.166726,sub-10274_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.213344,sub-10274_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.0835617,sub-10274_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0126933,sub-10274_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10274_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	6367,sub-10280_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	94.0166,sub-10280_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	39.5727,sub-10280_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.37579,sub-10280_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	7.9426,sub-10280_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	11.837,sub-10280_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	10346.1,sub-10280_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	6527.26,sub-10280_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	3818.88,sub-10280_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	20338.6,sub-10280_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	20.0867,sub-10280_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	2788.98,sub-10280_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	5.81733,sub-10280_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	972.42,sub-10280_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	9.75215,sub-10280_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.307253,sub-10280_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	1816.56,sub-10280_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	10.3345,sub-10280_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.184707,sub-10280_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.175118,sub-10280_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.508805,sub-10280_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.803864,sub-10280_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.30172,sub-10280_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.554936,sub-10280_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.33314,sub-10280_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.235471,sub-10280_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.301642,sub-10280_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.118304,sub-10280_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0181045,sub-10280_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10280_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	7408,sub-10290_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	103.392,sub-10290_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	46.0486,sub-10290_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.24528,sub-10290_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	8.80373,sub-10290_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	11.7441,sub-10290_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	11200,sub-10290_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	6557.23,sub-10290_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	4642.74,sub-10290_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	22723.1,sub-10290_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	24.4418,sub-10290_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	3340.31,sub-10290_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	5.95677,sub-10290_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	1287.75,sub-10290_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	12.0163,sub-10290_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.352259,sub-10290_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	2052.56,sub-10290_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	12.4255,sub-10290_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.236309,sub-10290_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.306354,sub-10290_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.536536,sub-10290_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.754419,sub-10290_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.26474,sub-10290_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.499257,sub-10290_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.590495,sub-10290_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.413848,sub-10290_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.529737,sub-10290_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.207568,sub-10290_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0316003,sub-10290_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10290_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	429,sub-10292_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	66.3382,sub-10292_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	30.7848,sub-10292_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.1549,sub-10292_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	13.2088,sub-10292_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	5.02229,sub-10292_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	1314.19,sub-10292_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	868.617,sub-10292_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	445.57,sub-10292_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	4695.62,sub-10292_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	16.0163,sub-10292_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	246.777,sub-10292_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	4.48619,sub-10292_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	89.114,sub-10292_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	9.87069,sub-10292_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	3.43478,sub-10292_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	157.663,sub-10292_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	6.14561,sub-10292_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.752574,sub-10292_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.100758,sub-10292_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.519534,sub-10292_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.772346,sub-10292_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.27333,sub-10292_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.521856,sub-10292_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.193289,sub-10292_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.13606,sub-10292_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.174178,sub-10292_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.0682568,sub-10292_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0103984,sub-10292_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10292_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	6700,sub-10304_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	93.2079,sub-10304_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	38.1206,sub-10304_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.44508,sub-10304_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	7.19939,sub-10304_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	12.9466,sub-10304_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	12270.3,sub-10304_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	8647,sub-10304_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	3623.32,sub-10304_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	24227.3,sub-10304_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	20.3754,sub-10304_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	3188.52,sub-10304_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	6.39066,sub-10304_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	1207.45,sub-10304_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	11.4973,sub-10304_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.34393,sub-10304_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	1981.07,sub-10304_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	8.87818,sub-10304_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.124996,sub-10304_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.209494,sub-10304_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.532297,sub-10304_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.741509,sub-10304_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.22739,sub-10304_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.498571,sub-10304_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.418428,sub-10304_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.293014,sub-10304_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.374818,sub-10304_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.146747,sub-10304_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0222404,sub-10304_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10304_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	5449,sub-10316_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	86.9264,sub-10316_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	37.9471,sub-10316_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.29072,sub-10316_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	7.88406,sub-10316_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	11.0256,sub-10316_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	8299.36,sub-10316_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	7133.04,sub-10316_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	1166.32,sub-10316_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	17594.6,sub-10316_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	18.4096,sub-10316_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	2424.69,sub-10316_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	5.84356,sub-10316_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	1225.07,sub-10316_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	10.1749,sub-10316_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.265489,sub-10316_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	1199.61,sub-10316_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	8.23474,sub-10316_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.177586,sub-10316_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.173079,sub-10316_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.518584,sub-10316_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.735363,sub-10316_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.19461,sub-10316_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.505738,sub-10316_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.361001,sub-10316_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.251727,sub-10316_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.322224,sub-10316_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.12626,sub-10316_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0192242,sub-10316_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10316_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	6670,sub-10321_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	101.179,sub-10321_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	44.6316,sub-10321_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.26699,sub-10321_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	8.57567,sub-10321_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	11.7984,sub-10321_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	11061.9,sub-10321_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	7886.1,sub-10321_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	3175.79,sub-10321_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	24624.9,sub-10321_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	25.3465,sub-10321_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	3043.59,sub-10321_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	6.56611,sub-10321_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	1341.61,sub-10321_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	12.8796,sub-10321_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.388445,sub-10321_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	1701.98,sub-10321_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	12.4669,sub-10321_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.286887,sub-10321_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.147151,sub-10321_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.565277,sub-10321_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.732242,sub-10321_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.2525,sub-10321_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.472112,sub-10321_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.269206,sub-10321_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.191642,sub-10321_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.245183,sub-10321_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.096011,sub-10321_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0145666,sub-10321_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10321_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	7015,sub-10325_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	85.0133,sub-10325_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	36.7208,sub-10325_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.31513,sub-10325_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	6.4884,sub-10325_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	13.1024,sub-10325_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	11462.4,sub-10325_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	9298.22,sub-10325_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	2164.2,sub-10325_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	21958.3,sub-10325_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	18.6014,sub-10325_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	3557.71,sub-10325_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	6.27497,sub-10325_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	1450.31,sub-10325_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	9.16941,sub-10325_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.182126,sub-10325_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	2107.4,sub-10325_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	9.43199,sub-10325_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.13262,sub-10325_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.215433,sub-10325_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.511387,sub-10325_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.748368,sub-10325_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.22578,sub-10325_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.509662,sub-10325_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.442772,sub-10325_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.30924,sub-10325_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.395832,sub-10325_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.155097,sub-10325_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0236104,sub-10325_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10325_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	8183,sub-10329_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	93.3616,sub-10329_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	40.7936,sub-10329_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.28863,sub-10329_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	6.22661,sub-10329_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	14.994,sub-10329_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	16485.1,sub-10329_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	12381,sub-10329_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	4104.14,sub-10329_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	30278.2,sub-10329_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	23.861,sub-10329_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	4300,sub-10329_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	6.88486,sub-10329_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	1865.52,sub-10329_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	11.7565,sub-10329_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.232757,sub-10329_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	2434.48,sub-10329_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	12.1045,sub-10329_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.189077,sub-10329_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.241628,sub-10329_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.531492,sub-10329_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.802719,sub-10329_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.33945,sub-10329_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.534353,sub-10329_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.444965,sub-10329_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.31458,sub-10329_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.402916,sub-10329_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.157992,sub-10329_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0241517,sub-10329_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10329_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	3866,sub-10339_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	77.7838,sub-10339_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	34.8279,sub-10339_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.23337,sub-10339_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	8.12393,sub-10339_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	9.57465,sub-10339_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	5600.47,sub-10339_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	4681.91,sub-10339_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	918.56,sub-10339_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	12618,sub-10339_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	16.2865,sub-10339_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	1778.36,sub-10339_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	5.39296,sub-10339_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	625.757,sub-10339_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	7.47369,sub-10339_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.280423,sub-10339_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	1152.61,sub-10339_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	8.81277,sub-10339_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.211687,sub-10339_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.169191,sub-10339_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.515725,sub-10339_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.789021,sub-10339_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.26912,sub-10339_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.548973,sub-10339_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.306693,sub-10339_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.222137,sub-10339_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.284471,sub-10339_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.111526,sub-10339_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.017031,sub-10339_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10339_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	8732,sub-10340_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	104.586,sub-10340_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	43.871,sub-10340_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.38393,sub-10340_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	7.76822,sub-10340_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	13.4633,sub-10340_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	14888.9,sub-10340_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	14137.8,sub-10340_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	751.104,sub-10340_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	29876.7,sub-10340_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	25.6994,sub-10340_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	4436.12,sub-10340_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	6.75399,sub-10340_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	2425.66,sub-10340_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	12.6651,sub-10340_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.207747,sub-10340_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	2010.45,sub-10340_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	13.0344,sub-10340_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.265482,sub-10340_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.156418,sub-10340_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.500817,sub-10340_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.799144,sub-10340_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.28864,sub-10340_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.554394,sub-10340_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.313058,sub-10340_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.218554,sub-10340_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.279927,sub-10340_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.109766,sub-10340_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0167804,sub-10340_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10340_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	8943,sub-10345_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	118.288,sub-10345_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	45.8203,sub-10345_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.58156,sub-10345_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	8.39702,sub-10345_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	14.0869,sub-10345_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	18435.8,sub-10345_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	17821.8,sub-10345_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	614.006,sub-10345_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	32982,sub-10345_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	23.948,sub-10345_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	4670.16,sub-10345_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	6.30043,sub-10345_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	1323.98,sub-10345_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	11.8036,sub-10345_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.330593,sub-10345_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	3346.18,sub-10345_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	12.1445,sub-10345_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.138471,sub-10345_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.296253,sub-10345_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.562131,sub-10345_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.720484,sub-10345_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.23273,sub-10345_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.464359,sub-10345_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.55371,sub-10345_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.391131,sub-10345_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.500432,sub-10345_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.195977,sub-10345_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.029744,sub-10345_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10345_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	8026,sub-10347_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	110.072,sub-10347_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	44.5436,sub-10347_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.47111,sub-10347_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	7.79079,sub-10347_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	14.1285,sub-10347_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	17256.8,sub-10347_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	12893.1,sub-10347_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	4363.65,sub-10347_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	33487.3,sub-10347_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	26.2706,sub-10347_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	4401.84,sub-10347_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	6.85419,sub-10347_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	2188.68,sub-10347_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	11.8751,sub-10347_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.202413,sub-10347_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	2213.16,sub-10347_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	14.3955,sub-10347_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.294166,sub-10347_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.168143,sub-10347_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.493004,sub-10347_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.794678,sub-10347_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.25961,sub-10347_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.562214,sub-10347_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.342724,sub-10347_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.239829,sub-10347_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.307246,sub-10347_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.120513,sub-10347_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0184514,sub-10347_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10347_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	9036,sub-10356_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	107.569,sub-10356_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	46.2083,sub-10356_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.32791,sub-10356_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	7.70386,sub-10356_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	13.963,sub-10356_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	16471.4,sub-10356_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	12447.6,sub-10356_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	4023.84,sub-10356_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	30923.6,sub-10356_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	22.5617,sub-10356_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	4192.28,sub-10356_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	6.55354,sub-10356_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	1375.88,sub-10356_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	9.27449,sub-10356_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.196403,sub-10356_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	2816.4,sub-10356_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	13.2872,sub-10356_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.196936,sub-10356_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.213204,sub-10356_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.481611,sub-10356_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.824202,sub-10356_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.30711,sub-10356_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.582749,sub-10356_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.438848,sub-10356_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.304654,sub-10356_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.390425,sub-10356_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.153201,sub-10356_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0235091,sub-10356_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10356_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	6651,sub-10361_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	81.9431,sub-10361_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	35.3719,sub-10361_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.31662,sub-10361_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	6.7648,sub-10361_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	12.1132,sub-10361_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	9443.15,sub-10361_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	7907.65,sub-10361_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	1535.5,sub-10361_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	19553.2,sub-10361_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	21.7606,sub-10361_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	3085.7,sub-10361_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	6.27044,sub-10361_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	1461.08,sub-10361_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	11.0344,sub-10361_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.261801,sub-10361_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	1624.62,sub-10361_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	10.7263,sub-10361_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.222483,sub-10361_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.186816,sub-10361_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.508781,sub-10361_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.763713,sub-10361_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.23832,sub-10361_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.526412,sub-10361_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.393817,sub-10361_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.27305,sub-10361_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.349585,sub-10361_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.137013,sub-10361_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0208882,sub-10361_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10361_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	6915,sub-10376_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	98.5737,sub-10376_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	43.2545,sub-10376_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.27892,sub-10376_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	7.70997,sub-10376_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	12.7852,sub-10376_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	12655.2,sub-10376_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	5450.65,sub-10376_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	7204.53,sub-10376_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	26879.1,sub-10376_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	26.6041,sub-10376_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	3410.82,sub-10376_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	6.78885,sub-10376_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	1411.14,sub-10376_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	14.5989,sub-10376_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.474483,sub-10376_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	1999.68,sub-10376_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	12.0052,sub-10376_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.226427,sub-10376_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.285056,sub-10376_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.491506,sub-10376_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.805739,sub-10376_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.27395,sub-10376_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.571634,sub-10376_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.568156,sub-10376_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.399814,sub-10376_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.512227,sub-10376_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.200925,sub-10376_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0307725,sub-10376_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10376_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	7969,sub-10377_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	98.9946,sub-10377_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	45.9424,sub-10377_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.15475,sub-10377_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	7.69946,sub-10377_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	12.8573,sub-10377_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	12853,sub-10377_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	9350.12,sub-10377_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	3502.87,sub-10377_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	23634.8,sub-10377_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	22.5242,sub-10377_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	3744.75,sub-10377_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	5.91071,sub-10377_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	1385.67,sub-10377_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	12.3122,sub-10377_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.343687,sub-10377_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	2359.07,sub-10377_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	10.212,sub-10377_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.138877,sub-10377_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.163819,sub-10377_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.55053,sub-10377_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.74602,sub-10377_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.27349,sub-10377_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.482283,sub-10377_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.309974,sub-10377_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.218351,sub-10377_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.279437,sub-10377_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.109464,sub-10377_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0166408,sub-10377_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10377_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	5346,sub-10388_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	88.6274,sub-10388_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	37.488,sub-10388_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.36415,sub-10388_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	6.80636,sub-10388_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	13.0213,sub-10388_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	11802.2,sub-10388_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	9325.64,sub-10388_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	2476.59,sub-10388_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	25210.5,sub-10388_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	21.9307,sub-10388_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	2947.62,sub-10388_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	6.9536,sub-10388_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	1255.43,sub-10388_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	9.41505,sub-10388_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.221821,sub-10388_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	1692.19,sub-10388_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	12.5157,sub-10388_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.290811,sub-10388_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.271382,sub-10388_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.506786,sub-10388_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.780468,sub-10388_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.24921,sub-10388_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.546099,sub-10388_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.525714,sub-10388_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.372398,sub-10388_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.476973,sub-10388_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.187033,sub-10388_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0285922,sub-10388_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10388_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	7110,sub-10429_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	90.4139,sub-10429_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	38.887,sub-10429_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.32504,sub-10429_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	6.78192,sub-10429_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	13.3316,sub-10429_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	12620.9,sub-10429_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	9232.61,sub-10429_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	3388.29,sub-10429_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	25090,sub-10429_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	22.1341,sub-10429_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	3444.11,sub-10429_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	6.62572,sub-10429_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	1441.49,sub-10429_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	11.9075,sub-10429_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.309012,sub-10429_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	2002.62,sub-10429_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	10.2266,sub-10429_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.164065,sub-10429_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.194792,sub-10429_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.481446,sub-10429_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.788364,sub-10429_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.24477,sub-10429_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.560163,sub-10429_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.443002,sub-10429_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.303869,sub-10429_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.389198,sub-10429_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.152614,sub-10429_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0233298,sub-10429_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10429_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	6389,sub-10438_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	88.0359,sub-10438_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	39.7556,sub-10438_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.21443,sub-10438_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	6.78952,sub-10438_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	12.9664,sub-10438_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	11625,sub-10438_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	7263.28,sub-10438_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	4361.69,sub-10438_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	23896.3,sub-10438_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	22.0399,sub-10438_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	3168.93,sub-10438_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	6.66345,sub-10438_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	1667.71,sub-10438_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	12.109,sub-10438_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.276214,sub-10438_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	1501.23,sub-10438_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	9.93089,sub-10438_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.206386,sub-10438_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.115229,sub-10438_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.520891,sub-10438_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.810319,sub-10438_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.33475,sub-10438_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.548104,sub-10438_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.214983,sub-10438_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.152154,sub-10438_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.194924,sub-10438_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.0764554,sub-10438_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0117052,sub-10438_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10438_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	8943,sub-10440_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	108.224,sub-10440_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	48.4317,sub-10440_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.23456,sub-10440_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	8.36829,sub-10440_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	12.9326,sub-10440_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	14216.1,sub-10440_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	9039.69,sub-10440_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	5176.45,sub-10440_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	28547.8,sub-10440_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	23.1721,sub-10440_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	4008.17,sub-10440_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	6.49257,sub-10440_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	1961.49,sub-10440_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	11.5436,sub-10440_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.213425,sub-10440_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	2046.68,sub-10440_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	11.6285,sub-10440_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.207562,sub-10440_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.258202,sub-10440_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.533686,sub-10440_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.755737,sub-10440_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.2685,sub-10440_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.499355,sub-10440_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.505257,sub-10440_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.35338,sub-10440_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.45234,sub-10440_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.177243,sub-10440_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0269848,sub-10440_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10440_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	5316,sub-10448_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	78.9515,sub-10448_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	36.0331,sub-10448_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.19108,sub-10448_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	7.7163,sub-10448_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	10.2318,sub-10448_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	6491.61,sub-10448_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	5201.91,sub-10448_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	1289.71,sub-10448_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	13486.6,sub-10448_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	17.3699,sub-10448_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	2113.28,sub-10448_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	5.31423,sub-10448_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	753.063,sub-10448_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	6.96104,sub-10448_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.202147,sub-10448_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	1360.21,sub-10448_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	10.4089,sub-10448_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.250236,sub-10448_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.101174,sub-10448_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.452396,sub-10448_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.781117,sub-10448_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.18561,sub-10448_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.578872,sub-10448_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.230868,sub-10448_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.159552,sub-10448_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.204344,sub-10448_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.0801223,sub-10448_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0122434,sub-10448_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10448_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	7666,sub-10455_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	91.7636,sub-10455_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	40.5611,sub-10455_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.26236,sub-10455_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	6.31784,sub-10455_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	14.5245,sub-10455_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	15204.2,sub-10455_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	8450.17,sub-10455_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	6754.06,sub-10455_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	31015.6,sub-10455_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	23.355,sub-10455_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	3939.62,sub-10455_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	7.40727,sub-10455_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	1962.47,sub-10455_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	10.2119,sub-10455_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.166939,sub-10455_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	1977.16,sub-10455_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	13.1431,sub-10455_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.274478,sub-10455_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.136989,sub-10455_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.527132,sub-10455_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.736217,sub-10455_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.20842,sub-10455_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.500116,sub-10455_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.276862,sub-10455_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.193594,sub-10455_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.247761,sub-10455_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.0970592,sub-10455_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0147583,sub-10455_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10455_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	8265,sub-10460_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	96.3899,sub-10460_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	43.6895,sub-10460_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.20625,sub-10460_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	7.1226,sub-10460_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	13.533,sub-10460_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	13864.6,sub-10460_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	11416.4,sub-10460_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	2448.19,sub-10460_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	25240.8,sub-10460_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	22.309,sub-10460_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	3713.41,sub-10460_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	6.15927,sub-10460_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	1369.03,sub-10460_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	11.5326,sub-10460_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.305207,sub-10460_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	2344.38,sub-10460_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	10.7764,sub-10460_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.155621,sub-10460_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.252148,sub-10460_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.520368,sub-10460_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.740904,sub-10460_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.22147,sub-10460_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.500621,sub-10460_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.528232,sub-10460_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.366086,sub-10460_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.468429,sub-10460_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.183463,sub-10460_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.027861,sub-10460_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10460_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	4251,sub-10471_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	84.7131,sub-10471_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	36.4039,sub-10471_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.32704,sub-10471_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	7.75799,sub-10471_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	10.9195,sub-10471_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	7933.11,sub-10471_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	4512.5,sub-10471_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	3420.61,sub-10471_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	17668.1,sub-10471_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	19.3687,sub-10471_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	2116.21,sub-10471_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	6.07977,sub-10471_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	814.757,sub-10471_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	8.54703,sub-10471_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.281678,sub-10471_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	1301.46,sub-10471_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	10.8217,sub-10471_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.28269,sub-10471_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.148387,sub-10471_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.503684,sub-10471_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.81158,sub-10471_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.31926,sub-10471_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.557741,sub-10471_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.293636,sub-10471_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.205921,sub-10471_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.263837,sub-10471_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.103501,sub-10471_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0158592,sub-10471_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10471_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	5152,sub-10478_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	91.915,sub-10478_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	40.9178,sub-10478_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.24633,sub-10478_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	7.94917,sub-10478_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	11.5628,sub-10478_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	9651.74,sub-10478_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	5100.06,sub-10478_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	4551.67,sub-10478_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	21804.5,sub-10478_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	23.9367,sub-10478_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	2723.36,sub-10478_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	6.53049,sub-10478_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	1315.17,sub-10478_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	10.9125,sub-10478_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.284456,sub-10478_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	1408.2,sub-10478_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	13.0243,sub-10478_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.378436,sub-10478_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.284033,sub-10478_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.519442,sub-10478_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.762106,sub-10478_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.24731,sub-10478_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.519505,sub-10478_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.542816,sub-10478_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.382381,sub-10478_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.489495,sub-10478_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.191817,sub-10478_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0292171,sub-10478_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10478_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	6328,sub-10487_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	101.951,sub-10487_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	45.4402,sub-10487_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.24362,sub-10487_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	9.62913,sub-10487_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	10.5877,sub-10487_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	8976.04,sub-10487_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	7957.59,sub-10487_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	1018.45,sub-10487_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	18335,sub-10487_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	19.5066,sub-10487_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	2470.71,sub-10487_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	5.40677,sub-10487_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	735.436,sub-10487_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	9.85873,sub-10487_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.41519,sub-10487_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	1735.28,sub-10487_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	9.64783,sub-10487_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.168516,sub-10487_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.100165,sub-10487_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.521465,sub-10487_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.809429,sub-10487_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.31679,sub-10487_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.555747,sub-10487_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.179575,sub-10487_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.129452,sub-10487_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.165811,sub-10487_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.0650216,sub-10487_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.00994253,sub-10487_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10487_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	5583,sub-10492_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	84.3736,sub-10492_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	36.3607,sub-10492_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.32046,sub-10492_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	6.86624,sub-10492_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	12.2882,sub-10492_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	10006.2,sub-10492_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	5171.55,sub-10492_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	4834.68,sub-10492_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	22163,sub-10492_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	23.1697,sub-10492_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	2535.34,sub-10492_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	6.80431,sub-10492_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	1059.58,sub-10492_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	12.0164,sub-10492_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.428121,sub-10492_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	1475.77,sub-10492_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	11.1533,sub-10492_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.264811,sub-10492_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.174665,sub-10492_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.480394,sub-10492_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.816667,sub-10492_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.27253,sub-10492_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.588735,sub-10492_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.375731,sub-10492_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.259458,sub-10492_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.332544,sub-10492_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.130508,sub-10492_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0200429,sub-10492_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10492_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	7688,sub-10506_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	91.0269,sub-10506_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	39.5729,sub-10506_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.30023,sub-10506_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	7.33152,sub-10506_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	12.4158,sub-10506_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	11020.8,sub-10506_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	7918.42,sub-10506_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	3102.34,sub-10506_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	23680.8,sub-10506_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	22.6772,sub-10506_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	3141.51,sub-10506_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	6.66962,sub-10506_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	1382.74,sub-10506_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	11.7762,sub-10506_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.315081,sub-10506_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	1758.78,sub-10506_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	10.901,sub-10506_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.21226,sub-10506_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.162061,sub-10506_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.484489,sub-10506_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.778454,sub-10506_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.23099,sub-10506_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.552188,sub-10506_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.353907,sub-10506_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.245392,sub-10506_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.314218,sub-10506_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.123172,sub-10506_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0187955,sub-10506_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10506_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	4998,sub-10517_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	83.2871,sub-10517_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	37.1467,sub-10517_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.24211,sub-10517_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	7.11698,sub-10517_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	11.7026,sub-10517_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	8958.41,sub-10517_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	4990.39,sub-10517_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	3968.02,sub-10517_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	21337.4,sub-10517_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	23.4309,sub-10517_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	2238.62,sub-10517_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	6.9684,sub-10517_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	737.394,sub-10517_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	11.6899,sub-10517_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.582199,sub-10517_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	1501.23,sub-10517_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	11.741,sub-10517_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.288478,sub-10517_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.157967,sub-10517_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.493283,sub-10517_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.807584,sub-10517_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.27313,sub-10517_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.574813,sub-10517_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.307068,sub-10517_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.218268,sub-10517_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.279611,sub-10517_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.109667,sub-10517_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0167852,sub-10517_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10517_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29
+number of tracts	6624,sub-10523_dwi.Cingulum_Frontal_Parietal_R.stat.txt	0
+mean length(mm)	95.8254,sub-10523_dwi.Cingulum_Frontal_Parietal_R.stat.txt	1
+span(mm)	41.1342,sub-10523_dwi.Cingulum_Frontal_Parietal_R.stat.txt	2
+curl	2.32958,sub-10523_dwi.Cingulum_Frontal_Parietal_R.stat.txt	3
+elongation	7.53491,sub-10523_dwi.Cingulum_Frontal_Parietal_R.stat.txt	4
+diameter(mm)	12.7175,sub-10523_dwi.Cingulum_Frontal_Parietal_R.stat.txt	5
+volume(mm^3)	12172.4,sub-10523_dwi.Cingulum_Frontal_Parietal_R.stat.txt	6
+trunk volume(mm^3)	6620.88,sub-10523_dwi.Cingulum_Frontal_Parietal_R.stat.txt	7
+branch volume(mm^3)	5551.51,sub-10523_dwi.Cingulum_Frontal_Parietal_R.stat.txt	8
+total surface area(mm^2)	23171.6,sub-10523_dwi.Cingulum_Frontal_Parietal_R.stat.txt	9
+total radius of end regions(mm)	21.0992,sub-10523_dwi.Cingulum_Frontal_Parietal_R.stat.txt	10
+total area of end regions(mm^2)	2823.25,sub-10523_dwi.Cingulum_Frontal_Parietal_R.stat.txt	11
+irregularity	6.05234,sub-10523_dwi.Cingulum_Frontal_Parietal_R.stat.txt	12
+area of end region 1(mm^2)	895.057,sub-10523_dwi.Cingulum_Frontal_Parietal_R.stat.txt	13
+radius of end region 1(mm)	8.57608,sub-10523_dwi.Cingulum_Frontal_Parietal_R.stat.txt	14
+irregularity of end region 1	0.258153,sub-10523_dwi.Cingulum_Frontal_Parietal_R.stat.txt	15
+area of end region 2(mm^2)	1928.19,sub-10523_dwi.Cingulum_Frontal_Parietal_R.stat.txt	16
+radius of end region 2(mm)	12.5232,sub-10523_dwi.Cingulum_Frontal_Parietal_R.stat.txt	17
+irregularity of end region 2	0.255522,sub-10523_dwi.Cingulum_Frontal_Parietal_R.stat.txt	18
+qa	0.120232,sub-10523_dwi.Cingulum_Frontal_Parietal_R.stat.txt	19
+dti_fa	0.547027,sub-10523_dwi.Cingulum_Frontal_Parietal_R.stat.txt	20
+md	0.753639,sub-10523_dwi.Cingulum_Frontal_Parietal_R.stat.txt	21
+ad	1.27454,sub-10523_dwi.Cingulum_Frontal_Parietal_R.stat.txt	22
+rd	0.493191,sub-10523_dwi.Cingulum_Frontal_Parietal_R.stat.txt	23
+iso	0.222073,sub-10523_dwi.Cingulum_Frontal_Parietal_R.stat.txt	24
+rdi	0.157547,sub-10523_dwi.Cingulum_Frontal_Parietal_R.stat.txt	25
+nrdi02L	0.201626,sub-10523_dwi.Cingulum_Frontal_Parietal_R.stat.txt	26
+nrdi04L	0.0789846,sub-10523_dwi.Cingulum_Frontal_Parietal_R.stat.txt	27
+nrdi06L	0.0120088,sub-10523_dwi.Cingulum_Frontal_Parietal_R.stat.txt	28
+,sub-10523_dwi.Cingulum_Frontal_Parietal_R.stat.txt	29

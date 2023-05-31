@@ -1,0 +1,1261 @@
+0,N
+number of tracts	4055,sub-10171_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	80.834,sub-10171_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	14.9888,sub-10171_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	5.39297,sub-10171_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	6.05374,sub-10171_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	13.3527,sub-10171_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	11319.4,sub-10171_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	9239.46,sub-10171_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	2079.98,sub-10171_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	18854,sub-10171_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	18.7617,sub-10171_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	1878.25,sub-10171_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	5.56018,sub-10171_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	1212.34,sub-10171_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	8.37147,sub-10171_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.181605,sub-10171_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	665.907,sub-10171_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	10.3903,sub-10171_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.50932,sub-10171_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.176838,sub-10171_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.384583,sub-10171_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.872766,sub-10171_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.24669,sub-10171_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.685802,sub-10171_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.46635,sub-10171_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.312666,sub-10171_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.401216,sub-10171_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.157686,sub-10171_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.02441,sub-10171_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10171_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	3081,sub-10189_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	45.2558,sub-10189_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	17.035,sub-10189_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	2.65663,sub-10189_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	3.09389,sub-10189_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	14.6275,sub-10189_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	7605.05,sub-10189_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	5229.33,sub-10189_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	2375.72,sub-10189_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	14165.2,sub-10189_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	16.754,sub-10189_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	1469.89,sub-10189_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	6.8113,sub-10189_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	550.353,sub-10189_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	7.10402,sub-10189_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.288083,sub-10189_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	919.539,sub-10189_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	9.64998,sub-10189_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.31815,sub-10189_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.0590933,sub-10189_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.267022,sub-10189_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.911954,sub-10189_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.13979,sub-10189_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.798037,sub-10189_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.250869,sub-10189_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.160784,sub-10189_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.206546,sub-10189_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.0812875,sub-10189_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0126816,sub-10189_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10189_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	1823,sub-10206_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	39.1042,sub-10206_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	14.7693,sub-10206_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	2.64767,sub-10206_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	3.26055,sub-10206_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	11.9931,sub-10206_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	4417.51,sub-10206_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	4109.04,sub-10206_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	308.471,sub-10206_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	8943.72,sub-10206_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	11.0199,sub-10206_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	853.928,sub-10206_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	6.07034,sub-10206_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	185.083,sub-10206_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	4.1683,sub-10206_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.294918,sub-10206_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	668.845,sub-10206_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	6.85157,sub-10206_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.220498,sub-10206_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.0886636,sub-10206_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.353857,sub-10206_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.990693,sub-10206_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.34696,sub-10206_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.81256,sub-10206_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.25551,sub-10206_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.170205,sub-10206_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.218884,sub-10206_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.086253,sub-10206_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0135423,sub-10206_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10206_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	4153,sub-10217_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	52.4803,sub-10217_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	14.3708,sub-10217_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	3.65186,sub-10217_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	3.3364,sub-10217_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	15.7296,sub-10217_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	10198.2,sub-10217_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	6449.51,sub-10217_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	3748.67,sub-10217_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	16447.9,sub-10217_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	19.8186,sub-10217_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	1877.27,sub-10217_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	6.34229,sub-10217_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	890.161,sub-10217_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	9.44216,sub-10217_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.314647,sub-10217_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	987.109,sub-10217_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	10.3764,sub-10217_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.342671,sub-10217_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.133746,sub-10217_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.292473,sub-10217_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.950783,sub-10217_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.2172,sub-10217_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.817576,sub-10217_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.52465,sub-10217_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.337336,sub-10217_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.433874,sub-10217_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.171007,sub-10217_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0268986,sub-10217_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10217_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	1867,sub-10225_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	49.6928,sub-10225_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	20.586,sub-10225_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	2.41391,sub-10225_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	3.77995,sub-10225_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	13.1464,sub-10225_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	6745.25,sub-10225_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	3157.18,sub-10225_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	3588.06,sub-10225_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	15782,sub-10225_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	19.4045,sub-10225_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	1038.03,sub-10225_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	7.68973,sub-10225_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	302.596,sub-10225_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	9.27428,sub-10225_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.892992,sub-10225_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	735.436,sub-10225_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	10.1302,sub-10225_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.438374,sub-10225_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.222326,sub-10225_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.379024,sub-10225_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.79181,sub-10225_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.12014,sub-10225_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.627647,sub-10225_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.59551,sub-10225_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.400537,sub-10225_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.513434,sub-10225_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.201533,sub-10225_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.030982,sub-10225_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10225_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	4578,sub-10227_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	61.2027,sub-10227_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	9.57075,sub-10227_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	6.39476,sub-10227_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	3.71392,sub-10227_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	16.4792,sub-10227_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	13053.7,sub-10227_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	10550.7,sub-10227_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	2503.03,sub-10227_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	21903.4,sub-10227_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	19.7465,sub-10227_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	2804.64,sub-10227_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	6.91282,sub-10227_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	1489.48,sub-10227_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	9.56476,sub-10227_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.192959,sub-10227_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	1315.17,sub-10227_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	10.1817,sub-10227_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.247633,sub-10227_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.128117,sub-10227_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.362208,sub-10227_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.82761,sub-10227_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.13891,sub-10227_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.671961,sub-10227_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.406348,sub-10227_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.267657,sub-10227_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.343283,sub-10227_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.134834,sub-10227_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0208025,sub-10227_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10227_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	3305,sub-10228_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	64.0725,sub-10228_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	13.5599,sub-10228_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	4.72515,sub-10228_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	4.69142,sub-10228_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	13.6574,sub-10228_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	9386.35,sub-10228_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	3763.35,sub-10228_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	5623,sub-10228_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	17226.4,sub-10228_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	16.6249,sub-10228_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	1690.23,sub-10228_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	6.26622,sub-10228_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	1003.76,sub-10228_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	6.96087,sub-10228_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.151652,sub-10228_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	686.472,sub-10228_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	9.66399,sub-10228_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.427405,sub-10228_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.192554,sub-10228_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.354954,sub-10228_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.883433,sub-10228_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.2112,sub-10228_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.719549,sub-10228_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.582698,sub-10228_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.384331,sub-10228_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.493592,sub-10228_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.194195,sub-10228_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0302454,sub-10228_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10228_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	2066,sub-10235_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	52.7164,sub-10235_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	19.8205,sub-10235_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	2.65969,sub-10235_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	5.19478,sub-10235_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	10.148,sub-10235_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	4263.76,sub-10235_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	2110.34,sub-10235_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	2153.43,sub-10235_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	9449.03,sub-10235_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	15.9246,sub-10235_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	868.617,sub-10235_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	5.62228,sub-10235_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	307.492,sub-10235_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	6.57684,sub-10235_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.441926,sub-10235_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	561.125,sub-10235_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	9.34779,sub-10235_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.489225,sub-10235_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.224591,sub-10235_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.366526,sub-10235_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.866383,sub-10235_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.21301,sub-10235_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.693072,sub-10235_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.61797,sub-10235_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.411962,sub-10235_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.528682,sub-10235_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.207807,sub-10235_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0321902,sub-10235_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10235_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	3045,sub-10269_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	39.2988,sub-10269_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	11.5529,sub-10269_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	3.40165,sub-10269_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	2.49541,sub-10269_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	15.7484,sub-10269_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	7654.99,sub-10269_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	5618.1,sub-10269_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	2036.89,sub-10269_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	13618.8,sub-10269_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	15.8903,sub-10269_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	1522.77,sub-10269_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	7.0044,sub-10269_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	760.897,sub-10269_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	8.04521,sub-10269_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.267239,sub-10269_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	761.876,sub-10269_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	7.84508,sub-10269_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.253782,sub-10269_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.0959539,sub-10269_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.256646,sub-10269_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.958445,sub-10269_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.19659,sub-10269_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.83937,sub-10269_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.397103,sub-10269_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.25448,sub-10269_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.326963,sub-10269_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.1287,sub-10269_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0200888,sub-10269_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10269_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	2995,sub-10271_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	44.1313,sub-10271_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	11.4881,sub-10271_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	3.84147,sub-10271_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	2.96105,sub-10271_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	14.9039,sub-10271_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	7699.06,sub-10271_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	5242.06,sub-10271_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	2457,sub-10271_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	14464.9,sub-10271_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	18.2141,sub-10271_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	1470.87,sub-10271_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	7.00031,sub-10271_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	614.985,sub-10271_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	9.50414,sub-10271_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.461436,sub-10271_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	855.886,sub-10271_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	8.70995,sub-10271_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.278461,sub-10271_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.0965132,sub-10271_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.309532,sub-10271_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.967594,sub-10271_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.2491,sub-10271_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.826841,sub-10271_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.348215,sub-10271_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.22652,sub-10271_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.291141,sub-10271_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.114649,sub-10271_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0179396,sub-10271_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10271_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	2774,sub-10273_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	42.5668,sub-10273_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	13.5141,sub-10273_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	3.1498,sub-10273_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	2.71158,sub-10273_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	15.6981,sub-10273_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	8238.64,sub-10273_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	5008.01,sub-10273_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	3230.63,sub-10273_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	15713.4,sub-10273_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	18.2676,sub-10273_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	1369.03,sub-10273_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	7.4852,sub-10273_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	482.783,sub-10273_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	7.73381,sub-10273_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.389211,sub-10273_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	886.244,sub-10273_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	10.5338,sub-10273_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.393342,sub-10273_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.152315,sub-10273_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.303865,sub-10273_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.931753,sub-10273_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.20672,sub-10273_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.794272,sub-10273_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.57293,sub-10273_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.369753,sub-10273_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.475183,sub-10273_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.187105,sub-10273_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.029276,sub-10273_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10273_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	3612,sub-10274_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	47.0987,sub-10274_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	13.9732,sub-10274_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	3.37065,sub-10274_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	3.01992,sub-10274_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	15.596,sub-10274_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	8997.58,sub-10274_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	8070.21,sub-10274_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	927.374,sub-10274_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	13994.8,sub-10274_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	15.8215,sub-10274_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	1863.56,sub-10274_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	6.0645,sub-10274_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	792.234,sub-10274_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	7.55622,sub-10274_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.226415,sub-10274_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	1071.33,sub-10274_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	8.26527,sub-10274_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.200328,sub-10274_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.0774001,sub-10274_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.287935,sub-10274_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.894488,sub-10274_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.14066,sub-10274_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.771401,sub-10274_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.312434,sub-10274_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.200782,sub-10274_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.257812,sub-10274_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.101406,sub-10274_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0157687,sub-10274_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10274_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	2719,sub-10280_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	45.2539,sub-10280_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	9.04468,sub-10280_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	5.00337,sub-10280_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	2.4966,sub-10280_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	18.1262,sub-10280_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	11677.7,sub-10280_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	3948.44,sub-10280_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	7729.27,sub-10280_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	20546.2,sub-10280_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	20.7692,sub-10280_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	1813.62,sub-10280_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	7.97296,sub-10280_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	888.203,sub-10280_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	9.99182,sub-10280_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.353124,sub-10280_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	925.415,sub-10280_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	10.7774,sub-10280_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.394312,sub-10280_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.112038,sub-10280_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.265777,sub-10280_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	1.00392,sub-10280_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.25714,sub-10280_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.877314,sub-10280_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.460894,sub-10280_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.293554,sub-10280_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.37793,sub-10280_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.149131,sub-10280_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0235965,sub-10280_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10280_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	3761,sub-10290_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	53.8742,sub-10290_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	10.6926,sub-10290_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	5.03844,sub-10290_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	3.28096,sub-10290_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	16.4203,sub-10290_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	11408.6,sub-10290_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	9561.64,sub-10290_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	1846.91,sub-10290_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	20245.5,sub-10290_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	19.0314,sub-10290_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	2301.3,sub-10290_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	7.28481,sub-10290_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	1097.77,sub-10290_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	6.90143,sub-10290_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.136307,sub-10290_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	1203.53,sub-10290_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	12.13,sub-10290_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.384074,sub-10290_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.197964,sub-10290_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.32744,sub-10290_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.942987,sub-10290_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.24354,sub-10290_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.792711,sub-10290_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.652487,sub-10290_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.426196,sub-10290_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.547891,sub-10290_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.215814,sub-10290_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0338313,sub-10290_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10290_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	1667,sub-10292_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	31.3708,sub-10292_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	11.5561,sub-10292_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	2.71466,sub-10292_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	2.09956,sub-10292_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	14.9416,sub-10292_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	5500.59,sub-10292_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	2624.46,sub-10292_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	2876.13,sub-10292_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	12492.6,sub-10292_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	19.4988,sub-10292_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	1125.19,sub-10292_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	8.48361,sub-10292_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	585.607,sub-10292_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	8.40768,sub-10292_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.379225,sub-10292_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	539.581,sub-10292_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	11.0912,sub-10292_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.716222,sub-10292_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.0560271,sub-10292_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.207528,sub-10292_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	1.10406,sub-10292_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.31662,sub-10292_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.997786,sub-10292_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.270234,sub-10292_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.169968,sub-10292_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.219012,sub-10292_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.0865105,sub-10292_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0137583,sub-10292_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10292_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	2198,sub-10304_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	35.7497,sub-10304_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	10.1879,sub-10304_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	3.50903,sub-10304_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	2.72798,sub-10304_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	13.1048,sub-10304_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	4821.95,sub-10304_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	2303.26,sub-10304_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	2518.7,sub-10304_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	11320.4,sub-10304_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	17.5094,sub-10304_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	1206.47,sub-10304_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	7.69148,sub-10304_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	628.695,sub-10304_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	8.93505,sub-10304_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.398937,sub-10304_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	577.772,sub-10304_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	8.57438,sub-10304_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.399759,sub-10304_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.15088,sub-10304_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.289286,sub-10304_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.921967,sub-10304_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.19068,sub-10304_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.787613,sub-10304_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.568962,sub-10304_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.366522,sub-10304_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.47117,sub-10304_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.185583,sub-10304_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0290665,sub-10304_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10304_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	2068,sub-10316_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	37.4155,sub-10316_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	11.3091,sub-10316_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	3.30844,sub-10316_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	2.35821,sub-10316_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	15.8661,sub-10316_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	7397.44,sub-10316_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	0,sub-10316_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	7397.44,sub-10316_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	17008,sub-10316_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	22.9327,sub-10316_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	1443.45,sub-10316_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	9.11975,sub-10316_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	589.524,sub-10316_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	11.049,sub-10316_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.650573,sub-10316_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	853.928,sub-10316_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	11.8837,sub-10316_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.519555,sub-10316_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.136254,sub-10316_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.331705,sub-10316_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.87274,sub-10316_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.15482,sub-10316_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.7317,sub-10316_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.472386,sub-10316_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.307567,sub-10316_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.394821,sub-10316_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.155246,sub-10316_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0240998,sub-10316_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10316_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	4363,sub-10321_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	67.7964,sub-10321_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	9.3629,sub-10321_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	7.24097,sub-10321_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	4.39562,sub-10321_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	15.4236,sub-10321_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	12666.9,sub-10321_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	11671,sub-10321_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	995.923,sub-10321_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	19611.9,sub-10321_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	17.4764,sub-10321_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	2155.38,sub-10321_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	5.97003,sub-10321_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	782.441,sub-10321_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	9.36349,sub-10321_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.352025,sub-10321_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	1372.94,sub-10321_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	8.11293,sub-10321_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.15061,sub-10321_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.114373,sub-10321_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.374205,sub-10321_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.894964,sub-10321_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.23401,sub-10321_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.725439,sub-10321_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.338469,sub-10321_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.224181,sub-10321_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.287987,sub-10321_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.113343,sub-10321_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0176969,sub-10321_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10321_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	3825,sub-10325_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	51.7578,sub-10325_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	9.20431,sub-10325_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	5.62321,sub-10325_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	3.15183,sub-10325_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	16.4215,sub-10325_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	10962,sub-10325_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	7179.07,sub-10325_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	3782.94,sub-10325_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	19811.7,sub-10325_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	17.4402,sub-10325_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	2528.49,sub-10325_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	7.41967,sub-10325_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	1611.89,sub-10325_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	8.67085,sub-10325_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.146534,sub-10325_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	916.602,sub-10325_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	8.76939,sub-10325_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.263577,sub-10325_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.14331,sub-10325_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.344859,sub-10325_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.855148,sub-10325_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.16471,sub-10325_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.700367,sub-10325_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.470724,sub-10325_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.30703,sub-10325_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.393949,sub-10325_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.154814,sub-10325_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0239533,sub-10325_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10325_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	4206,sub-10329_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	66.7445,sub-10329_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	13.993,sub-10329_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	4.76987,sub-10329_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	3.98523,sub-10329_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	16.748,sub-10329_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	14703.8,sub-10329_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	6237.98,sub-10329_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	8465.83,sub-10329_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	26584.4,sub-10329_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	22.0667,sub-10329_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	2233.73,sub-10329_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	7.57005,sub-10329_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	1223.11,sub-10329_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	9.82353,sub-10329_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.247867,sub-10329_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	1010.61,sub-10329_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	12.2431,sub-10329_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.465963,sub-10329_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.172774,sub-10329_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.358933,sub-10329_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.926541,sub-10329_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.27361,sub-10329_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.753009,sub-10329_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.499715,sub-10329_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.332482,sub-10329_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.427147,sub-10329_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.16812,sub-10329_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0262351,sub-10329_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10329_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	3553,sub-10339_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	51.599,sub-10339_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	11.6779,sub-10339_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	4.41851,sub-10339_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	3.31969,sub-10339_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	15.5433,sub-10339_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	9790.79,sub-10339_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	8340.49,sub-10339_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	1450.31,sub-10339_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	17098.1,sub-10339_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	19.9826,sub-10339_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	2419.79,sub-10339_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	6.78601,sub-10339_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	1280.89,sub-10339_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	9.44609,sub-10339_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.218848,sub-10339_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	1138.9,sub-10339_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	10.5365,sub-10339_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.306238,sub-10339_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.106393,sub-10339_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.353626,sub-10339_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.876649,sub-10339_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.20192,sub-10339_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.714013,sub-10339_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.330763,sub-10339_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.217825,sub-10339_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.279683,sub-10339_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.110003,sub-10339_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0170994,sub-10339_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10339_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	4809,sub-10340_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	77.8681,sub-10340_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	15.43,sub-10340_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	5.04656,sub-10340_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	5.39731,sub-10340_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	14.4272,sub-10340_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	12729.6,sub-10340_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	10859.2,sub-10340_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	1870.42,sub-10340_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	22133.6,sub-10340_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	19.7921,sub-10340_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	2221.98,sub-10340_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	6.27133,sub-10340_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	1292.64,sub-10340_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	10.8525,sub-10340_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.286241,sub-10340_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	929.332,sub-10340_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	8.93963,sub-10340_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.270158,sub-10340_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.108381,sub-10340_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.354518,sub-10340_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.875625,sub-10340_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.20628,sub-10340_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.710297,sub-10340_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.326125,sub-10340_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.215851,sub-10340_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.277047,sub-10340_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.108917,sub-10340_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0168885,sub-10340_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10340_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	4618,sub-10345_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	63.7249,sub-10345_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	11.3006,sub-10345_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	5.63908,sub-10345_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	3.69311,sub-10345_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	17.2551,sub-10345_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	14901.6,sub-10345_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	8420.79,sub-10345_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	6480.84,sub-10345_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	25839.2,sub-10345_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	21.1039,sub-10345_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	2757.64,sub-10345_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	7.48,sub-10345_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	1408.2,sub-10345_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	9.64593,sub-10345_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.207575,sub-10345_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	1349.44,sub-10345_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	11.4579,sub-10345_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.305639,sub-10345_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.207984,sub-10345_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.353512,sub-10345_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.853871,sub-10345_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.16311,sub-10345_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.699253,sub-10345_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.685677,sub-10345_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.448138,sub-10345_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.575144,sub-10345_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.226087,sub-10345_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.035037,sub-10345_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10345_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	3869,sub-10347_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	60.1307,sub-10347_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	9.34067,sub-10347_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	6.43751,sub-10347_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	3.68557,sub-10347_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	16.3152,sub-10347_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	12571,sub-10347_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	10996.3,sub-10347_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	1574.67,sub-10347_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	21625.3,sub-10347_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	18.4806,sub-10347_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	2507.92,sub-10347_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	7.01658,sub-10347_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	1377.84,sub-10347_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	8.34899,sub-10347_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.158935,sub-10347_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	1130.08,sub-10347_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	10.1316,sub-10347_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.285363,sub-10347_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.120204,sub-10347_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.306372,sub-10347_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.928075,sub-10347_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.22224,sub-10347_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.780992,sub-10347_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.416174,sub-10347_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.27042,sub-10347_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.347469,sub-10347_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.136785,sub-10347_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0213641,sub-10347_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10347_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	4291,sub-10356_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	75.9831,sub-10356_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	13.5468,sub-10356_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	5.60891,sub-10356_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	4.50551,sub-10356_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	16.8645,sub-10356_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	16972.8,sub-10356_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	10266.7,sub-10356_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	6706.08,sub-10356_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	27634.2,sub-10356_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	22.8962,sub-10356_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	2378.66,sub-10356_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	6.86446,sub-10356_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	1276.97,sub-10356_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	9.84353,sub-10356_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.23838,sub-10356_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	1101.68,sub-10356_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	13.0526,sub-10356_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.485835,sub-10356_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.156401,sub-10356_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.350967,sub-10356_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.91606,sub-10356_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.24666,sub-10356_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.750762,sub-10356_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.475314,sub-10356_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.313028,sub-10356_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.402298,sub-10356_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.158413,sub-10356_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0247887,sub-10356_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10356_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	3776,sub-10361_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	58.8279,sub-10361_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	14.0984,sub-10361_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	4.17267,sub-10361_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	4.05625,sub-10361_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	14.503,sub-10361_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	9718.33,sub-10361_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	5906.99,sub-10361_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	3811.34,sub-10361_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	17235.2,sub-10361_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	16.3577,sub-10361_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	1958.55,sub-10361_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	6.43021,sub-10361_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	928.353,sub-10361_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	8.45184,sub-10361_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.241735,sub-10361_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	1030.2,sub-10361_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	7.90584,sub-10361_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.190601,sub-10361_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.14202,sub-10361_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.371882,sub-10361_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.839186,sub-10361_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.17162,sub-10361_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.672969,sub-10361_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.418954,sub-10361_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.277819,sub-10361_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.356461,sub-10361_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.140079,sub-10361_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0216716,sub-10361_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10361_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	4914,sub-10376_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	59.25,sub-10376_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	9.74476,sub-10376_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	6.0802,sub-10376_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	3.68756,sub-10376_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	16.0676,sub-10376_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	12013.7,sub-10376_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	9932.79,sub-10376_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	2080.96,sub-10376_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	19650.1,sub-10376_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	15.0281,sub-10376_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	2590.18,sub-10376_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	6.57018,sub-10376_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	1016.49,sub-10376_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	6.68864,sub-10376_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.138269,sub-10376_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	1573.7,sub-10376_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	8.33943,sub-10376_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.138836,sub-10376_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.178837,sub-10376_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.422603,sub-10376_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.827185,sub-10376_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.22196,sub-10376_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.629796,sub-10376_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.447568,sub-10376_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.303593,sub-10376_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.389174,sub-10376_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.152762,sub-10376_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0234858,sub-10376_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10376_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	5143,sub-10377_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	63.9796,sub-10377_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	11.4071,sub-10377_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	5.60874,sub-10377_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	3.56165,sub-10377_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	17.9635,sub-10377_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	16214.8,sub-10377_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	14364,sub-10377_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	1850.83,sub-10377_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	27909.3,sub-10377_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	21.6917,sub-10377_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	3568.48,sub-10377_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	7.72979,sub-10377_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	1974.22,sub-10377_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	9.94692,sub-10377_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.157446,sub-10377_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	1594.26,sub-10377_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	11.7447,sub-10377_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.271818,sub-10377_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.110681,sub-10377_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.377021,sub-10377_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.85581,sub-10377_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.19305,sub-10377_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.687191,sub-10377_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.326015,sub-10377_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.215624,sub-10377_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.276713,sub-10377_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.108768,sub-10377_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0168567,sub-10377_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10377_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	3409,sub-10388_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	49.245,sub-10388_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	9.01361,sub-10388_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	5.46341,sub-10388_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	3.26151,sub-10388_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	15.0989,sub-10388_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	8817.39,sub-10388_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	6238.96,sub-10388_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	2578.43,sub-10388_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	15592,sub-10388_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	15.2998,sub-10388_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	2096.63,sub-10388_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	6.67492,sub-10388_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	1233.89,sub-10388_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	7.47661,sub-10388_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.142326,sub-10388_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	862.741,sub-10388_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	7.82316,sub-10388_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.222861,sub-10388_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.192581,sub-10388_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.340473,sub-10388_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.923077,sub-10388_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.24928,sub-10388_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.759974,sub-10388_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.60637,sub-10388_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.397861,sub-10388_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.511053,sub-10388_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.201104,sub-10388_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0313502,sub-10388_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10388_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	3268,sub-10429_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	63.2579,sub-10429_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	12.4243,sub-10429_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	5.09145,sub-10429_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	3.74439,sub-10429_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	16.8941,sub-10429_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	14179.9,sub-10429_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	6962.65,sub-10429_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	7217.26,sub-10429_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	26206.4,sub-10429_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	20.3014,sub-10429_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	2120.13,sub-10429_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	7.80563,sub-10429_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	1139.88,sub-10429_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	9.01884,sub-10429_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.224178,sub-10429_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	980.254,sub-10429_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	11.2825,sub-10429_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.407965,sub-10429_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.165179,sub-10429_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.3451,sub-10429_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.89961,sub-10429_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.21851,sub-10429_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.740162,sub-10429_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.535721,sub-10429_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.350742,sub-10429_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.450447,sub-10429_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.177214,sub-10429_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0275866,sub-10429_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10429_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	4165,sub-10438_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	72.0383,sub-10438_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	8.74414,sub-10438_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	8.23846,sub-10438_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	4.80525,sub-10438_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	14.9916,sub-10438_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	12715.9,sub-10438_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	11071.7,sub-10438_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	1644.2,sub-10438_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	19821.5,sub-10438_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	18.5046,sub-10438_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	2381.6,sub-10438_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	5.84221,sub-10438_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	1320.06,sub-10438_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	7.71716,sub-10438_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.141733,sub-10438_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	1061.53,sub-10438_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	10.7875,sub-10438_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.344395,sub-10438_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.0807652,sub-10438_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.329255,sub-10438_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.940235,sub-10438_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.25586,sub-10438_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.782425,sub-10438_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.263927,sub-10438_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.172027,sub-10438_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.221126,sub-10438_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.0870903,sub-10438_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0136406,sub-10438_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10438_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	5309,sub-10440_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	78.8058,sub-10440_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	16.6163,sub-10440_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	4.74268,sub-10440_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	4.81009,sub-10440_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	16.3834,sub-10440_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	16613.4,sub-10440_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	11528,sub-10440_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	5085.38,sub-10440_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	26958.5,sub-10440_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	21.6878,sub-10440_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	3011.27,sub-10440_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	6.64633,sub-10440_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	1699.04,sub-10440_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	9.64323,sub-10440_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.171945,sub-10440_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	1312.23,sub-10440_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	12.0446,sub-10440_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.347315,sub-10440_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.186556,sub-10440_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.412517,sub-10440_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.821956,sub-10440_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.1967,sub-10440_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.634585,sub-10440_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.496289,sub-10440_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.333685,sub-10440_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.427886,sub-10440_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.168025,sub-10440_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0258906,sub-10440_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10440_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	4436,sub-10448_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	79.1184,sub-10448_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	14.1466,sub-10448_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	5.59276,sub-10448_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	4.68056,sub-10448_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	16.9036,sub-10448_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	17755.2,sub-10448_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	9454.9,sub-10448_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	8300.33,sub-10448_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	26614.7,sub-10448_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	21.3086,sub-10448_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	2224.91,sub-10448_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	6.33454,sub-10448_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	1145.75,sub-10448_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	10.1491,sub-10448_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.28243,sub-10448_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	1079.16,sub-10448_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	11.1595,sub-10448_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.36254,sub-10448_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.0849914,sub-10448_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.349756,sub-10448_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.859871,sub-10448_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.16819,sub-10448_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.705709,sub-10448_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.271666,sub-10448_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.178953,sub-10448_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.229638,sub-10448_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.0902543,sub-10448_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0139745,sub-10448_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10448_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	4683,sub-10455_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	54.83,sub-10455_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	11.8961,sub-10455_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	4.60909,sub-10455_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	3.01618,sub-10455_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	18.1786,sub-10455_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	14230.8,sub-10455_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	9801.56,sub-10455_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	4429.26,sub-10455_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	23628.9,sub-10455_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	21.2083,sub-10455_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	2850.67,sub-10455_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	7.54597,sub-10455_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	1449.33,sub-10455_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	8.93037,sub-10455_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.172871,sub-10455_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	1401.34,sub-10455_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	12.278,sub-10455_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.337954,sub-10455_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.0974872,sub-10455_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.325598,sub-10455_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.93096,sub-10455_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.22484,sub-10455_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.78402,sub-10455_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.342168,sub-10455_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.221693,sub-10455_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.285014,sub-10455_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.112276,sub-10455_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0176097,sub-10455_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10455_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	4440,sub-10460_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	67.2725,sub-10460_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	16.4534,sub-10460_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	4.08866,sub-10460_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	4.05577,sub-10460_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	16.5869,sub-10460_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	14536.4,sub-10460_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	2415.87,sub-10460_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	12120.5,sub-10460_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	25532.6,sub-10460_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	23.3499,sub-10460_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	2274.86,sub-10460_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	7.28357,sub-10460_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	1213.32,sub-10460_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	8.74887,sub-10460_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.198188,sub-10460_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	1061.53,sub-10460_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	14.6011,sub-10460_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.630935,sub-10460_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.191431,sub-10460_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.360831,sub-10460_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.872382,sub-10460_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.20969,sub-10460_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.703725,sub-10460_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.57693,sub-10460_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.380859,sub-10460_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.488752,sub-10460_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.192106,sub-10460_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0297551,sub-10460_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10460_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	3722,sub-10471_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	62.1218,sub-10471_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	16.4051,sub-10471_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	3.78673,sub-10471_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	4.03218,sub-10471_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	15.4065,sub-10471_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	11580.9,sub-10471_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	8088.81,sub-10471_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	3492.09,sub-10471_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	18423.1,sub-10471_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	20.5924,sub-10471_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	1905.67,sub-10471_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	6.12724,sub-10471_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	1071.33,sub-10471_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	9.04324,sub-10471_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.239815,sub-10471_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	834.342,sub-10471_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	11.5492,sub-10471_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.502236,sub-10471_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.100001,sub-10471_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.31965,sub-10471_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.932674,sub-10471_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.23395,sub-10471_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.782039,sub-10471_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.349937,sub-10471_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.226939,sub-10471_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.291935,sub-10471_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.115089,sub-10471_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0181293,sub-10471_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10471_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	3959,sub-10478_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	60.3214,sub-10478_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	14.4775,sub-10478_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	4.16655,sub-10478_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	3.45594,sub-10478_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	17.4544,sub-10478_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	14433.5,sub-10478_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	7736.27,sub-10478_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	6697.26,sub-10478_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	24578.8,sub-10478_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	20.8444,sub-10478_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	2603.89,sub-10478_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	7.43077,sub-10478_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	1383.72,sub-10478_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	8.40835,sub-10478_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.160518,sub-10478_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	1220.18,sub-10478_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	12.4361,sub-10478_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.398192,sub-10478_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.213736,sub-10478_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.383204,sub-10478_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.841064,sub-10478_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.19236,sub-10478_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.665417,sub-10478_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.635569,sub-10478_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.419678,sub-10478_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.538455,sub-10478_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.211587,sub-10478_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0327264,sub-10478_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10478_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	3466,sub-10487_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	60.6805,sub-10487_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	12.6296,sub-10487_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	4.80463,sub-10487_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	4.19188,sub-10487_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	14.4757,sub-10487_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	9986.65,sub-10487_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	5273.4,sub-10487_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	4713.25,sub-10487_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	18325.2,sub-10487_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	20.3818,sub-10487_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	1741.15,sub-10487_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	6.64062,sub-10487_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	983.192,sub-10487_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	11.4164,sub-10487_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.41646,sub-10487_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	757.959,sub-10487_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	8.96539,sub-10487_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.333152,sub-10487_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.0854716,sub-10487_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.354945,sub-10487_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.932247,sub-10487_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.27656,sub-10487_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.760092,sub-10487_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.245376,sub-10487_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.163021,sub-10487_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.209488,sub-10487_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.0824762,sub-10487_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.012891,sub-10487_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10487_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	3894,sub-10492_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	60.9175,sub-10492_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	11.1753,sub-10492_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	5.45109,sub-10492_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	3.72493,sub-10492_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	16.354,sub-10492_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	12796.2,sub-10492_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	6034.29,sub-10492_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	6761.89,sub-10492_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	23265.6,sub-10492_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	19.6466,sub-10492_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	2405.1,sub-10492_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	7.43358,sub-10492_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	1506.13,sub-10492_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	7.96834,sub-10492_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.132442,sub-10492_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	898.975,sub-10492_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	11.6783,sub-10492_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.476605,sub-10492_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.135901,sub-10492_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.323085,sub-10492_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.999357,sub-10492_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.31099,sub-10492_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.843538,sub-10492_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.434923,sub-10492_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.284521,sub-10492_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.366623,sub-10492_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.144831,sub-10492_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0230742,sub-10492_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10492_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	5349,sub-10506_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	64.3661,sub-10506_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	12.126,sub-10506_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	5.3081,sub-10506_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	3.55112,sub-10506_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	18.1256,sub-10506_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	16608.5,sub-10506_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	10489,sub-10506_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	6119.49,sub-10506_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	25671.7,sub-10506_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	21.2836,sub-10506_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	2846.75,sub-10506_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	7.00416,sub-10506_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	1627.56,sub-10506_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	9.61746,sub-10506_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.17854,sub-10506_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	1219.2,sub-10506_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	11.6661,sub-10506_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.350694,sub-10506_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.126235,sub-10506_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.318654,sub-10506_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.981978,sub-10506_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.28587,sub-10506_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.830031,sub-10506_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.436474,sub-10506_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.283008,sub-10506_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.364225,sub-10506_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.143665,sub-10506_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0226899,sub-10506_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10506_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	4504,sub-10517_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	67.8146,sub-10517_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	12.7667,sub-10517_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	5.31185,sub-10517_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	4.39738,sub-10517_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	15.4216,sub-10517_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	12666.9,sub-10517_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	8460.94,sub-10517_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	4205.99,sub-10517_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	19922.4,sub-10517_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	19.8463,sub-10517_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	2187.7,sub-10517_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	6.06372,sub-10517_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	1042.93,sub-10517_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	8.10051,sub-10517_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.197661,sub-10517_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	1144.77,sub-10517_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	11.7458,sub-10517_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.378615,sub-10517_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.118001,sub-10517_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.339976,sub-10517_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.959901,sub-10517_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.28641,sub-10517_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.796644,sub-10517_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.366612,sub-10517_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.240243,sub-10517_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.309394,sub-10517_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.12214,sub-10517_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0193868,sub-10517_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10517_dwi.Uncinate_Fasciculus_L.stat.txt	29
+number of tracts	3418,sub-10523_dwi.Uncinate_Fasciculus_L.stat.txt	0
+mean length(mm)	59.3034,sub-10523_dwi.Uncinate_Fasciculus_L.stat.txt	1
+span(mm)	14.8839,sub-10523_dwi.Uncinate_Fasciculus_L.stat.txt	2
+curl	3.98441,sub-10523_dwi.Uncinate_Fasciculus_L.stat.txt	3
+elongation	3.31713,sub-10523_dwi.Uncinate_Fasciculus_L.stat.txt	4
+diameter(mm)	17.878,sub-10523_dwi.Uncinate_Fasciculus_L.stat.txt	5
+volume(mm^3)	14886.9,sub-10523_dwi.Uncinate_Fasciculus_L.stat.txt	6
+trunk volume(mm^3)	8980.93,sub-10523_dwi.Uncinate_Fasciculus_L.stat.txt	7
+branch volume(mm^3)	5906.01,sub-10523_dwi.Uncinate_Fasciculus_L.stat.txt	8
+total surface area(mm^2)	26000.7,sub-10523_dwi.Uncinate_Fasciculus_L.stat.txt	9
+total radius of end regions(mm)	20.5713,sub-10523_dwi.Uncinate_Fasciculus_L.stat.txt	10
+total area of end regions(mm^2)	1947.78,sub-10523_dwi.Uncinate_Fasciculus_L.stat.txt	11
+irregularity	7.80617,sub-10523_dwi.Uncinate_Fasciculus_L.stat.txt	12
+area of end region 1(mm^2)	950.876,sub-10523_dwi.Uncinate_Fasciculus_L.stat.txt	13
+radius of end region 1(mm)	9.6245,sub-10523_dwi.Uncinate_Fasciculus_L.stat.txt	14
+irregularity of end region 1	0.306043,sub-10523_dwi.Uncinate_Fasciculus_L.stat.txt	15
+area of end region 2(mm^2)	996.902,sub-10523_dwi.Uncinate_Fasciculus_L.stat.txt	16
+radius of end region 2(mm)	10.9468,sub-10523_dwi.Uncinate_Fasciculus_L.stat.txt	17
+irregularity of end region 2	0.377635,sub-10523_dwi.Uncinate_Fasciculus_L.stat.txt	18
+qa	0.0831802,sub-10523_dwi.Uncinate_Fasciculus_L.stat.txt	19
+dti_fa	0.334414,sub-10523_dwi.Uncinate_Fasciculus_L.stat.txt	20
+md	0.902424,sub-10523_dwi.Uncinate_Fasciculus_L.stat.txt	21
+ad	1.20238,sub-10523_dwi.Uncinate_Fasciculus_L.stat.txt	22
+rd	0.752447,sub-10523_dwi.Uncinate_Fasciculus_L.stat.txt	23
+iso	0.285903,sub-10523_dwi.Uncinate_Fasciculus_L.stat.txt	24
+rdi	0.18603,sub-10523_dwi.Uncinate_Fasciculus_L.stat.txt	25
+nrdi02L	0.238914,sub-10523_dwi.Uncinate_Fasciculus_L.stat.txt	26
+nrdi04L	0.0939951,sub-10523_dwi.Uncinate_Fasciculus_L.stat.txt	27
+nrdi06L	0.0146355,sub-10523_dwi.Uncinate_Fasciculus_L.stat.txt	28
+,sub-10523_dwi.Uncinate_Fasciculus_L.stat.txt	29
