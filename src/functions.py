@@ -1,3 +1,11 @@
+import pandas as pd
+import sys
+assert sys.version_info >= (3, 5)
+import os
+from sklearn.impute import KNNImputer
+
+DATA_PATH = "../data"
+
 # Tiene el proceso de entrenamiento
 def modelos():
     st.sidebar.title("Visualizar Seteos")
@@ -50,4 +58,14 @@ def modelos():
         st.write('Modelo: ',algo, 'Accuracy Score: ', accuracy_score(y_test, yhat),'Precision Score: ',
           precision_score(y_test.values, yhat,average="weighted",pos_label="derecha"),'Recall Score: ',
           recall_score(y_test.values, yhat, average="weighted", pos_label="derecha"))
- 
+    
+    return modelos ## aqui falta arreglar el return
+
+def load_pat_data(data_path=DATA_PATH):
+    csv_path = os.path.join(data_path, "dataset_final_patol.csv")
+    return pd.read_csv(csv_path)
+
+def load_cnt_data(data_path=DATA_PATH):
+    csv_path = os.path.join(data_path, "dataset_final_control.csv")
+    return pd.read_csv(csv_path)
+
