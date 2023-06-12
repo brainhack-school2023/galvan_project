@@ -1,6 +1,6 @@
 import os
 import pandas as pd
-
+import numpy as np
 
 folder_paths = '../data/datasets'
 
@@ -33,3 +33,37 @@ def dataread():
     result1[['Et','id']]= result1.label.str.split(pat='\t',expand=True)
     result1.to_csv('../data/union/End/dataset_final.csv', index=False)
     return result1
+
+def datast(data):
+# Cambia los nombres, elimina columnas y transpone    
+    conditionlist = [
+            (data['Et'].str.contains('Arcuate_Fasciculus_L')),
+            (data['Et'].str.contains('Arcuate_Fasciculus_R')),
+            (data['Et'].str.contains('Cingulum_Frontal_Parietal_L')),
+            (data['Et'].str.contains('Cingulum_Frontal_Parietal_R')),
+            (data['Et'].str.contains('Frontal_Aslant_Tract_L')),
+            (data['Et'].str.contains('Frontal_Aslant_Tract_R')),
+            (data['Et'].str.contains('Superior_Longitudinal_Fasciculus1_L')),
+            (data['Et'].str.contains('Superior_Longitudinal_Fasciculus1_R')),
+            (data['Et'].str.contains('Uncinate_Fasciculus_L')),
+            (data['Et'].str.contains('Uncinate_Fasciculus_R')) ]
+
+    choicelist = ['afsl_',
+            'afsr_',
+            'cfpl_',
+            'cfpr_',
+            'fatl_',
+            'fatr_',
+            'slfl_',
+            'slfr_',
+            'ufsl_',
+            'ufsr_']
+    data.reindex(columns=['Et'])
+    data['Nc'] = np.select(conditionlist, choicelist, default='Not Specified')
+    data['Ncodigo'] = data['Nc']+data['Codigo']
+    data[['cod','scrup']]= data['Et'].str.split(r'[\_]dwi', expand=True)
+    data.drop(columns = ['data','label','Codigo','Et','Nc','scrup'], inplace=True)
+    data.reindex(columns=['cod'])
+    # pivotamos la tabla subject para que los valores de la columna Ncodigo se conviertan en columnas
+    datf = data.pivot(index=['cod'], columns='Ncodigo', values='values').reset_index()
+    return datf
