@@ -1,6 +1,9 @@
 import os
 import pandas as pd
 import numpy as np
+from utils import labelpre as lp
+from utils import clean as cl
+import seaborn as sns
 
 folder_paths = '../data/datasets'
 
@@ -31,7 +34,7 @@ def dataread():
     result1[['Codigo','values']]= result1.data.str.split(pat='\t',expand=True)
     result1.dropna(inplace=True)
     result1[['Et','id']]= result1.label.str.split(pat='\t',expand=True)
-    result1.to_csv('../data/union/End/dataset_final.csv', index=False)
+    #result1.to_csv('../data/union/End/dataset_final.csv', index=False)
     return result1
 
 def datast(data):
@@ -66,4 +69,11 @@ def datast(data):
     data.reindex(columns=['cod'])
     # pivotamos la tabla subject para que los valores de la columna Ncodigo se conviertan en columnas
     datf = data.pivot(index=['cod'], columns='Ncodigo', values='values').reset_index()
+    columnas = lp.custom()
+    datf.rename(columns=columnas, inplace=True)
+    datf['label'] = datf.cod.str.contains('sub-10').astype(int)
+    sns.heatmap(datf.isnull(), cbar=False)
+    datf = cl.missing_values(datf)
+    datf.to_csv('../data/union/End/dataset_final.csv', index=False)
+    
     return datf
