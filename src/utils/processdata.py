@@ -44,10 +44,15 @@ def datast(data):
             (data['Et'].str.contains('Arcuate_Fasciculus_R')),
             (data['Et'].str.contains('Cingulum_Frontal_Parietal_L')),
             (data['Et'].str.contains('Cingulum_Frontal_Parietal_R')),
+            (data['Et'].str.contains('Corpus_Callosum_Body')),#Nuevo
+            (data['Et'].str.contains('Extreme_Capsule_L')),#Nuevo
             (data['Et'].str.contains('Frontal_Aslant_Tract_L')),
             (data['Et'].str.contains('Frontal_Aslant_Tract_R')),
+            (data['Et'].str.contains('Inferior_Fronto_Occipital_Fasciculus_L')),#Nuevo
             (data['Et'].str.contains('Superior_Longitudinal_Fasciculus1_L')),
             (data['Et'].str.contains('Superior_Longitudinal_Fasciculus1_R')),
+            (data['Et'].str.contains('Superior_Longitudinal_Fasciculus2_L')), #Nuevo
+            (data['Et'].str.contains('Thalamic_Radiation_Anterior_L')), #Nuevo
             (data['Et'].str.contains('Uncinate_Fasciculus_L')),
             (data['Et'].str.contains('Uncinate_Fasciculus_R')) ]
 
@@ -55,10 +60,15 @@ def datast(data):
             'afsr_',
             'cfpl_',
             'cfpr_',
+            'ccbd_', #Nuevo
+            'ecpl_', #Nuevo
             'fatl_',
             'fatr_',
+            'ifol_', #Nuevo
             'slfl_',
             'slfr_',
+            'sl2l_', #Nuevo
+            'tral_', #Nuevo
             'ufsl_',
             'ufsr_']
     data.reindex(columns=['Et'])
