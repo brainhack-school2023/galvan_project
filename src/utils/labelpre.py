@@ -736,3 +736,28 @@ def filtro():
         'ufsr_volume',
         'label']
         return columnas
+
+def sel_colum():
+        columnas = [
+        'ccbd_diameter',
+        'sl2l_mean_length',
+        'ecpl_mean_length',
+        'ccbd_number_of_tracts',
+        'ifol_number_of_tracts',
+        'ifol_diameter',
+        'tral_mean_length',
+        'tral_number_of_tracts',
+        'sl2l_number_of_tracts',
+        'sl2l_diameter',
+        'ifol_volume',
+        'tral_diameter',
+        'ccbd_volume',
+        'ecpl_number_of_tracts',
+        'ccbd_mean_length',
+        'ecpl_diameter',
+        'sl2l_volume',
+        'ifol_mean_length',
+        'tral_volume',
+        'ecpl_volume',
+        'label']
+        return columnas
