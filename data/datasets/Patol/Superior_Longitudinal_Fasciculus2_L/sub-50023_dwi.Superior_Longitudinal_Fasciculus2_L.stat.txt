@@ -1,29 +1,29 @@
-number of tracts	13012
-mean length(mm)	83.6754
-span(mm)	16.5994
-curl	5.04085
-elongation	4.24515
-diameter(mm)	19.7108
-volume(mm^3)	25532.6
+number of tracts	13049
+mean length(mm)	83.7078
+span(mm)	16.6087
+curl	5.03998
+elongation	4.246
+diameter(mm)	19.7145
+volume(mm^3)	25552.2
 trunk volume(mm^3)	14890.9
-branch volume(mm^3)	10641.8
-total surface area(mm^2)	36639.6
-total radius of end regions(mm)	25.2507
-total area of end regions(mm^2)	3003.44
-irregularity	7.07129
-area of end region 1(mm^2)	1419.95
-radius of end region 1(mm)	12.3194
-irregularity of end region 1	0.335781
-area of end region 2(mm^2)	1583.49
-radius of end region 2(mm)	12.9313
-irregularity of end region 2	0.331758
-qa	0.152114
-dti_fa	0.401693
-md	0.840728
-ad	1.18982
-rd	0.666184
-iso	0.394775
-rdi	0.266307
-nrdi02L	0.341909
+branch volume(mm^3)	10661.4
+total surface area(mm^2)	36772.8
+total radius of end regions(mm)	25.3223
+total area of end regions(mm^2)	3011.27
+irregularity	7.0929
+area of end region 1(mm^2)	1428.76
+radius of end region 1(mm)	12.3872
+irregularity of end region 1	0.337392
+area of end region 2(mm^2)	1582.51
+radius of end region 2(mm)	12.9351
+irregularity of end region 2	0.332159
+qa	0.152151
+dti_fa	0.401824
+md	0.840497
+ad	1.1897
+rd	0.665897
+iso	0.39477
+rdi	0.266311
+nrdi02L	0.341912
 nrdi04L	0.134463
-nrdi06L	0.0208863
+nrdi06L	0.0208854
