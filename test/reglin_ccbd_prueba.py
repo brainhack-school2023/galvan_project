@@ -8,7 +8,7 @@ import statsmodels.api as sm
 from scipy.stats import levene, ttest_ind, mannwhitneyu, pearsonr, shapiro
 
 # Cargar el archivo CSV en un DataFrame
-df = pd.read_csv("C:/Users/Pablo/Desktop/SZ/hcgalvan_project/data/union/End/dataset_final.csv")
+df = pd.read_csv("C:/hcgalvan/repositorios/hcgalvan_project/data/union/End/dataset_final.csv")
 
 # Definir las variables predictoras
 predictors = ['ccbd_iso', 'ccbd_qa']
