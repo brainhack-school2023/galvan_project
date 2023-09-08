@@ -11,7 +11,7 @@ from sklearn.metrics import classification_report, roc_auc_score
 df = pd.read_csv("C:/Users/Pablo/Desktop/SZ/hcgalvan_project/data/union/End/dataset_combinado.csv")
 
 # Especificar las variables predictoras y la variable objetivo
-predictors = ['ccbd_qa', 'age', 'ccbd_diameter']  # 'gender' se eliminará temporalmente para la codificación one-hot
+predictors = ['ccbd_qa', 'age', 'ccbd_diameter']  
 outcome = 'label'
 
 # Codificación One-Hot para la variable 'gender'
