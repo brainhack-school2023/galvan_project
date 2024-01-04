@@ -1,0 +1,577 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+#### Librerías necesarias
+
+```{r}
+# install the package 
+# install.packages("ggstatsplot")
+# Load the package
+
+```
+
+```{r}
+library(ggplot2)
+library(gridExtra)
+library(MASS)
+library(fitdistrplus)
+library(ggstatsplot)
+```
+
+#### Funciones utilizadas
+
+```{r}
+fitData <- function(data, fit="gamma", sample=sample){
+ distrib = list()
+ numfit <- length(fit)
+ results = matrix(0, ncol=5, nrow=numfit)
+
+ for(i in 1:numfit){
+if((fit[i] == "gamma") | 
+     (fit[i] == "poisson") | 
+     (fit[i] == "weibull") | 
+     (fit[i] == "exponential") |
+     (fit[i] == "logistic") |
+     (fit[i] == "normal") | 
+     (fit[i] == "geometric")
+) 
+  distrib[[i]] = fit[i]
+else stop("Provide a valid distribution to fit data" )
+ }
+
+ # take a sample of dataset
+ n = round(length(data)*sample)
+ data = sample(data, size=n, replace=F)
+
+ for(i in 1:numfit) {
+  if(distrib[[i]] == "gamma") {
+  gf_shape = "gamma"
+  fd_g <- fitdistr(data, "gamma")
+  est_shape = fd_g$estimate[[1]]
+  est_rate = fd_g$estimate[[2]]
+
+  ks = ks.test(data, "pgamma", shape=est_shape, rate=est_rate)
+
+  # add to results
+  results[i,] = c(gf_shape, est_shape, est_rate, ks$statistic, ks$p.value)
+}
+
+else if(distrib[[i]] == "poisson"){
+  gf_shape = "poisson"
+  fd_p <- fitdistr(data, "poisson")
+  est_lambda = fd_p$estimate[[1]]
+
+  ks = ks.test(data, "ppois", lambda=est_lambda)
+  # add to results
+  results[i,] = c(gf_shape, est_lambda, "NA", ks$statistic, ks$p.value)
+}
+
+else if(distrib[[i]] == "weibull"){
+  gf_shape = "weibull"
+  fd_w <- fitdistr(data,densfun=dweibull,start=list(scale=1,shape=2))
+  est_shape = fd_w$estimate[[1]]
+  est_scale = fd_w$estimate[[2]]
+
+  ks = ks.test(data, "pweibull", shape=est_shape, scale=est_scale)
+  # add to results
+  results[i,] = c(gf_shape, est_shape, est_scale, ks$statistic, ks$p.value) 
+}
+
+else if(distrib[[i]] == "normal"){
+  gf_shape = "normal"
+  fd_n <- fitdistr(data, "normal")
+  est_mean = fd_n$estimate[[1]]
+  est_sd = fd_n$estimate[[2]]
+
+  ks = ks.test(data, "pnorm", mean=est_mean, sd=est_sd)
+  # add to results
+  results[i,] = c(gf_shape, est_mean, est_sd, ks$statistic, ks$p.value)
+}
+
+else if(distrib[[i]] == "exponential"){
+  gf_shape = "exponential"
+  fd_e <- fitdistr(data, "exponential")
+  est_rate = fd_e$estimate[[1]]
+  ks = ks.test(data, "pexp", rate=est_rate)
+  # add to results
+  results[i,] = c(gf_shape, est_rate, "NA", ks$statistic, ks$p.value)
+}
+
+else if(distrib[[i]] == "logistic"){
+  gf_shape = "logistic"
+  fd_l <- fitdistr(data, "logistic")
+  est_location = fd_l$estimate[[1]]
+  est_scale = fd_l$estimate[[2]]
+  ks = ks.test(data, "plogis", location=est_location, scale=est_scale)
+  # add to results
+  results[i,] = c(gf_shape, est_location, est_scale, ks$statistic,    ks$p.value) 
+    }
+  }
+  results = rbind(c("distribution", "param1", "param2", "ks stat", "ks    pvalue"),   results)
+  #print(results)
+  return(results)
+  }
+```
+
+### Obtener datos en dataframe y lista
+
+```{r}
+### Ubicacion de datos
+rm(list=ls())
+setwd("C:/hcgalvan/Repositorios/hcgalvan_project/data/union/End")
+ls()
+### obtener en dataframe y lista
+temp = gsub(".*target.*", "", readLines("seleccionestudio.csv"))
+data<-read.table(text=temp, sep=",", header=TRUE)
+names(data)
+sl2l_dm <- as.numeric(unlist(data['sl2l_diameter']))
+datos<-data.frame("sl2l_dm"= sl2l_dm)
+dim(data) 
+```
+
+Separamos los datos de la variable de estudio
+
+```{r}
+Control<-(as.numeric(unlist(subset(data, label==1, select=c(sl2l_diameter)))))
+Estudio<-(as.numeric(unlist(subset(data, label==0, select=c(sl2l_diameter)))))
+
+```
+
+Ajustamos los outliers en base a Primer barrido.
+
+```{r}
+Q <- quantile(data$sl2l_diameter, probs=c(.25, .75), na.rm = FALSE)
+iqr <- IQR(data$sl2l_diameter)
+up <-  Q[2]+1.5*iqr # Upper Range  
+low<- Q[1]-1.5*iqr # Lower Range
+datasinout<- subset(data, data$sl2l_diameter > (Q[1] - 1.5*iqr) & data$sl2l_diameter < (Q[2]+1.5*iqr))
+```
+
+Ajustamos los outliers en base a Segundor barrido.
+
+```{r}
+Q1 <- quantile(datasinout$sl2l_diameter, probs=c(.25, .75), na.rm = FALSE)
+iqr1 <- IQR(datasinout$sl2l_diameter)
+up1 <-  Q1[2]+1.5*iqr1 # Upper Range  
+low1<- Q1[1]-1.5*iqr1 # Lower Range
+datasinout1<- subset(datasinout, datasinout$sl2l_diameter > (Q1[1] - 1.5*iqr1) & datasinout$sl2l_diameter < (Q1[2]+1.5*iqr1))
+```
+
+Graficamos la evolución y separamos los datos en 2 grupos: Estudio y Control
+
+```{r}
+boxplot(Control, Estudio, datos$sl2l_dm, datasinout$sl2l_diameter, datasinout1$sl2l_diameter)$out
+```
+
+Graficamos las distribuciones obtenidos: Ajustade total, ajuste parcial, sin ajuste
+
+```{r}
+plotdist(datasinout1$sl2l_diameter, histo=TRUE, demp=TRUE)
+plotdist(datasinout$sl2l_diameter, histo=TRUE, demp=TRUE)
+plotdist(data$sl2l_diameter, histo=TRUE, demp=TRUE)
+
+```
+
+Realizamos descripcion de los valores descriptivos: Ajuste total, parcial y sin ajuste
+
+```{r}
+summary(datasinout1$sl2l_diameter)
+summary(datasinout$sl2l_diameter)
+summary(data$sl2l_diameter)
+```
+
+Graficamos la densidad de distribución: Ajuste Total, Parcial y sin ajustes
+
+```{r}
+descdist(datasinout1$sl2l_diameter, boot = 1000)
+descdist(datasinout$sl2l_diameter, boot = 1000)
+descdist(data$sl2l_diameter, boot = 1000)
+```
+
+Ajustamos los datos a la distribución normal y obtenemos
+
+```{r}
+library(glogis)
+total<-fitdist(datasinout1$sl2l_diameter, "norm")
+parcial<-fitdist(datasinout$sl2l_diameter, "norm")
+sinajuste<-fitdist(data$sl2l_diameter, "norm")
+fw<-fitdist(sl2l_dm, "logis")
+summary(total)
+summary(parcial)
+summary(sinajuste)
+summary(fw)
+
+```
+
+```{r}
+par(mfrow = c(2, 2), mar = c(4, 4, 2, 1))
+plot.legend <- c("Ajuste Total ~N", "Ajuste Parc ~N","Sin Ajuste ~N","Sin Ajuste ~Logis" )
+denscomp(total, legendtext = plot.legend[1])
+denscomp(parcial, legendtext = plot.legend[2])
+denscomp(sinajuste, legendtext = plot.legend[3])
+denscomp(fw, legendtext = plot.legend[4])
+```
+
+```{r}
+par(mfrow = c(2, 2), mar = c(4, 4, 2, 1))
+plot.legend <- c("Ajuste Total ~N", "Ajuste Parc ~N","Sin Ajuste ~N","Sin Ajuste ~Logis" )
+qqcomp(total, legendtext = plot.legend[1])
+qqcomp(parcial, legendtext = plot.legend[2])
+qqcomp(sinajuste, legendtext = plot.legend[3])
+qqcomp(fw, legendtext = plot.legend[4])
+```
+
+```{r}
+par(mfrow = c(2, 2), mar = c(4, 4, 2, 1))
+plot.legend <- c("Ajuste Total ~N", "Ajuste Parc ~N","Sin Ajuste ~N","Sin Ajuste ~Logis" )
+cdfcomp(total, legendtext = plot.legend[1])
+cdfcomp(parcial, legendtext = plot.legend[2])
+cdfcomp(sinajuste, legendtext = plot.legend[3])
+cdfcomp(fw, legendtext = plot.legend[4])
+```
+
+```{r}
+par(mfrow = c(2, 2), mar = c(4, 4, 2, 1))
+plot.legend <- c("Ajuste Total ~N", "Ajuste Parc ~N","Sin Ajuste ~N","Sin Ajuste ~Logis" )
+ppcomp(total, legendtext = plot.legend[1])
+ppcomp(parcial, legendtext = plot.legend[2])
+ppcomp(sinajuste, legendtext = plot.legend[3])
+ppcomp(fw, legendtext = plot.legend[4])
+```
+
+```{r}
+par(mfrow = c(2, 2), mar = c(4, 4, 2, 1))
+fg <- fitdist(sl2l_dm, "logis")
+fln <- fitdist(sl2l_dm, "norm")
+plot.legend <- c("logistic", "norm")
+denscomp(list(fw, fln, fg), legendtext = plot.legend)
+qqcomp(list(fw, fln, fg), legendtext = plot.legend)
+cdfcomp(list(fw, fln, fg), legendtext = plot.legend)
+ppcomp(list(fw, fln, fg), legendtext = plot.legend)
+```
+
+```{r}
+library(actuar)
+
+ATV1 <- datasinout1$sl2l_diameter
+datos1.n<-fitdist(ATV1, "norm")
+datos1.l<-fitdist(ATV1, "logis")
+datos1.b <- fitdist(ATV1, "burr", start = list(shape1 = 0.3, shape2 = 1, rate = 1))
+cdfcomp(list(datos1.n, datos1.l, datos1.b), xlogscale = TRUE, 
+        ylogscale = TRUE, legendtext = c("~N","~logis", "~burr"))
+
+ATV2 <- datasinout$sl2l_diameter
+datos2.n<-fitdist(ATV2, "norm")
+datos2.l<-fitdist(ATV2, "logis")
+datos2.b <- fitdist(ATV2, "burr", start = list(shape1 = 0.3, shape2 = 1, rate = 1))
+cdfcomp(list(datos2.n, datos2.l, datos2.b), xlogscale = TRUE, 
+        ylogscale = TRUE, legendtext = c("~N","~logis", "~burr"))
+
+ATV <- data$sl2l_diameter
+datos.n<-fitdist(ATV, "norm")
+datos.l<-fitdist(ATV, "logis")
+datos.b <- fitdist(ATV, "burr", start = list(shape1 = 0.3, shape2 = 1, rate = 1))
+cdfcomp(list(datos.n, datos.l, datos.b), xlogscale = TRUE, 
+        ylogscale = TRUE, legendtext = c("~N","~logis", "~burr"))
+
+
+```
+
+Buscamos la mediana o cuantil D5 - 50% de probabilidad de que el valor esté por encima como por debajo de esa cifra
+
+```{r}
+quantile(datos.n, probs = 0.05) # Sin Ajustes de outliers ~normal
+quantile(datos.l, probs = 0.05) # Sin Ajustes de outliers ~logistic
+quantile(datos1.n, probs = 0.05) # Ajuste total de outliers ~normal
+quantile(datos2.n, probs = 0.05) # Ajuste parcial de outliers ~normal
+
+```
+
+```{r}
+res = fitData(data$sl2l_diameter, fit=c("logistic","normal"),
+    sample=1)
+res
+```
+
+En base a los valores anteriores de ajustar los datos puros sin descartar los valores atípicos, me indica lo siguiente:
+
+Los datos se ajusta a distribuciones de densidad Normal y Logística. Sin embargo, el mejor ajuste es con la distribución logística.\
+Distribución Logística tiene media = 23.19 y DesvStandar = 1.38
+
+```{r}
+# Perform a KS test with the standard normal CDF as the reference
+ks.test(data$sl2l_diameter, y="pnorm")
+ks.test(datasinout$sl2l_diameter, y="pnorm")
+ks.test(datasinout1$sl2l_diameter, y="pnorm")
+ks.test(data$sl2l_diameter, y="plogis")
+
+```
+
+```{r}
+
+gofstat(list(datos.n, datos.l), fitnames = c("norm","Logis"))
+gofstat(list(datos1.n, datos1.l), fitnames = c("norm","Logis"))
+gofstat(list(datos2.n, datos2.l), fitnames = c("norm","Logis"))
+
+```
+
+```{r}
+datosboot.n <- bootdist(datos.n, niter = 1001)
+summary(datosboot.n)
+plot(datosboot.n)
+
+datosboot1.n <- bootdist(datos1.n, niter = 1001)
+summary(datosboot1.n)
+plot(datosboot1.n)
+
+```
+
+#### Estudios Avanzados de Distribución
+
+Ventana de Silverman
+
+Método de los Momentos
+
+Métodos de Maxima verosimilitud
+
+```{r}
+#ventana de silverman...
+h_sil1<-round((4*sd(datos$sl2l_dm)^5/3*length(datos$sl2l_dm))^(1/5),0)
+h_sil2<-1.06*min(sd(datos$sl2l_dm),IQR(datos$sl2l_dm)/1.349)*length(datos$sl2l_dm)^(1/5)
+h_sil2
+h_sil1
+sd(datos$sl2l_dm) # Desviación estandar
+IQR(datos$sl2l_dm)/1.349 # Desviación estandar - error estandar coincidente con distribucíón normal.
+
+ h<-h_sil1
+# la función density es la estimación
+hist(datos$sl2l_dm, freq = FALSE,ylim=c(0,0.2))
+lines(density(datos$sl2l_dm,kernel = "gaussian",width=h),col="yellowgreen",lwd=2)
+lines(density(datos$sl2l_dm,kernel = "epanechnikov",width=h),col="firebrick",lwd=2)
+lines(density(datos$sl2l_dm,kernel = "rectangular",width=h),col="steelblue",lwd=2)
+
+h<-h_sil2
+# la función density es la estimación
+hist(datos$sl2l_dm, freq = FALSE,ylim=c(0,0.2))
+lines(density(datos$sl2l_dm,kernel = "gaussian",width=h),col="yellowgreen",lwd=2)
+lines(density(datos$sl2l_dm,kernel = "epanechnikov",width=h),col="firebrick",lwd=2)
+lines(density(datos$sl2l_dm,kernel = "rectangular",width=h),col="steelblue",lwd=2)
+
+#--------------- VALORES AJUSTADOS DE OUTLIERS
+#ventana de silverman...
+h_sil3<-round((4*sd(datasinout1$sl2l_diameter)^5/3*length(datasinout1$sl2l_diameter))^(1/5),0)
+h_sil4<-1.06*min(sd(datasinout1$sl2l_diameter),IQR(datasinout1$sl2l_diameter)/1.349)*length(datasinout1$sl2l_diameter)^(1/5)
+h_sil3
+h_sil4
+sd(datasinout1$sl2l_diameter) # Desviación estandar
+IQR(datasinout1$sl2l_diameter)/1.349 # Desviación estandar - error estandar coincidente con distribucíón normal.
+
+ h1<-h_sil3
+# la función density es la estimación
+hist(datasinout1$sl2l_diameter, freq = FALSE,ylim=c(0,0.4))
+lines(density(datasinout1$sl2l_diameter,kernel = "gaussian",width=h1),col="yellowgreen",lwd=2)
+lines(density(datasinout1$sl2l_diameter,kernel = "epanechnikov",width=h1),col="firebrick",lwd=2)
+lines(density(datasinout1$sl2l_diameter,kernel = "rectangular",width=h1),col="steelblue",lwd=2)
+
+h1<-h_sil4
+# la función density es la estimación
+hist(datasinout1$sl2l_diameter, freq = FALSE,ylim=c(0,0.4))
+lines(density(datasinout1$sl2l_diameter,kernel = "gaussian",width=h1),col="yellowgreen",lwd=2)
+lines(density(datasinout1$sl2l_diameter,kernel = "epanechnikov",width=h1),col="firebrick",lwd=2)
+lines(density(datasinout1$sl2l_diameter,kernel = "rectangular",width=h1),col="steelblue",lwd=2)
+
+```
+
+bw.nrd0 = El valor predeterminado es 0,9 veces el mínimo de la desviación estándar y el rango intercuartil dividido por 1,34 veces el tamaño de la muestra elevado a la quinta potencia negativa (= 'regla general' de Silverman, Silverman (1986, página 48, ecuación (3.31)) ) a menos que coincidan los cuartiles cuando se garantizará un resultado positivo.
+
+```{r}
+#con otra funcion para el ancho de la ventana de selección
+bw.nrd(datos$sl2l_dm)
+bw.nrd0(datos$sl2l_dm)
+
+bw.nrd(datasinout1$sl2l_diameter)
+bw.nrd0(datasinout1$sl2l_diameter)
+```
+
+```{r}
+# Estimadores basados en nucleos
+
+# Estimacion Parzen
+uniforme<-function(u)
+{
+  ifelse(u>-1 & u<1,1,0)/2  # es mi indicadora y mi calcula el nucleo uniforme
+}
+
+#para nucleos
+f_sombrero<-function(x,k,datos,h) #datos= Xi
+{
+  s<-0
+  for(i in 1:length(datos))
+  {
+    c<-k((x-datos[i])/h)
+    s<-s+c
+  }
+  f<-s/(length(datos)*h)
+  return(f)
+}  
+
+# Otros nucleos
+epa<-function(u)
+{
+  ifelse(abs(u) < 1,3/4*(1-u^2),0)
+}
+
+densidad.est.parzen<-function(x,h,z) # x: datos, z:valor donde exaluo la f
+{
+  f_sombrero(z,uniforme,x,h)
+}
+
+
+```
+
+```{r}
+
+#ventana de CV (Convalidaci´on Cruzada por M´axima Verosimilitud)
+# primero veamos como funciona el calculo del segundo termino
+
+i<-1
+h<-3
+f.hat<-c()
+for(i in 1:length(datos$sl2l_dm))
+{
+  f.hat[i]<-f_sombrero(datos$sl2l_dm[i],epa,datos=datos$sl2l_dm[-i],h)
+}
+
+# para un h fijo, el segundo termino de LSCV(h)
+2*mean(f.hat)
+
+# ventana con LSCV (leave-one-out-Cross-Validation)
+
+lscv<-function(datos,k, h)
+{
+  f.hat.x<-c()
+  for(i in 1:length(datos))
+  {
+    f.hat.x[i]<-f_sombrero(datos[i],k,datos[-i],h)
+  }
+  LSCV<-integrate(Vectorize(f_sombrero,"x"),lower=-Inf,upper=Inf,k=k,datos=datos,h=h)$value-2*mean(f.hat.x)
+  return(LSCV)
+}
+
+h<-seq(10,28,1) # si la ventana es muy chiquita se queja...se queja por todo el integrate...
+
+LSCV_h<-c()
+for(j in 1:length(h))
+{
+  LSCV_h[j]<-lscv(datos$sl2l_dm,epa,h[j])
+}
+
+plot(h,LSCV_h,type="l") #pasa que para muchas ventanas no encontró datos...no las tengo en cuenta
+plot(h[2:6],LSCV_h[2:6],type = "l")
+h[which.max(LSCV_h)]
+
+```
+
+```{r}
+mledist()
+```
+
+```{r}
+data$sl2l_diameter[2]
+```
+
+```{r}
+# Ahora uso las formulas construidas en el ejercicio teorico para conseguir las estimaciones puntuales basadas en la muestra
+est_mom<-4*mean(data$sl2l_diameter)
+
+n1<-sum(data$sl2l_diameter<0)
+n2<-sum(data$sl2l_diameter>0)
+est_mv<-(n2-n1)/length(data$sl2l_diameter)
+
+# si quiero ver como se comportan mis estimadores, tendria que simular muchas veces, por ejemplo Nrep=1000
+
+Nrep<-length(data$sl2l_diameter)
+emo<-c()
+emv<-c()
+for(i in 1:Nrep)
+{
+  u<-data$sl2l_diameter[i]
+  x<-ifelse(u<0.45,u/0.9-0.5,(u-0.45)/1.1) # aca me "invente"mis n muestras de x
+  emo[i]<-4*mean(x)
+  emv[i]<-(sum(x>0)-sum(x<0))/Nrep
+}
+
+par(mfrow=c(1,2))
+hist(emo,freq=FALSE)
+hist(emv,freq=FALSE)
+par(mfrow=c(1,1))
+
+#veamos si apuntan a donde deben (insesgados?)
+
+plot(emo,pch=20)
+points(emv,pch=20)
+abline(h=tita, lwd=3,lty=2)
+
+# y si tienden a tita cuando n crece (consistencia?)
+
+n<-seq(1,10000,length=1000)
+emo<-c()
+emv<-c()
+i<-0
+for(ene in n)
+{
+  i<-i+1
+  u<-runif(ene)
+  x<-ifelse(u<0.45,u/0.9-0.5,(u-0.45)/1.1) # aca me "invente"mis n muestras de x
+  emo[i]<-4*mean(x)
+  emv[i]<-(sum(x>0)-sum(x<0))/ene
+}
+
+plot(emo,pch=20,col=col1)
+points(emv,pch=20,col=col2)
+abline(h=tita,col=col3, lwd=3,lty=2)
+
+```
+
+#### Cota de Rao-Cramer - Estimadores Insesgados
+
+Buscamos el límite o el que se aproxima a la cota Rao-Cramer. Esto incluye al indice fisher.
+
+El indice fisher mide la curvatura de aquello que me lleva al estimador
+
+```{r}
+library('BSSasymp')
+help(CRB)
+```
+
+```{r}
+f1<-function(x)
+{
+ gamma(5)*(1+(x*sqrt(9/7))^2/9)^(-5)/
+ (sqrt(9*pi/(9/7))*gamma(9/2))
+}
+
+f2<-function(x)
+{
+ exp(-(x)^2/2)/sqrt(2*pi)
+}
+
+CRB(sdf=c(f1,f2))
+
+CRB(sdf=c(f1, f2))
+```
+
+```{r}
+library(fastDummies)
+library(sjPlot)
+library (Rcpp)
+
+tab_model(Rg1,show.est=TRUE,show.se=TRUE,show.std=TRUE,show.df=TRUE,show.p=TRUE,show.fstat=TRUE,digits=2,title="Resumen del modelo",p.style="numeric_stars")
+
+```
+
+```{r}
+
+```

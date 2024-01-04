@@ -1,0 +1,297 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(ggplot2)
+library(gridExtra)
+library(MASS)
+library(fitdistrplus)
+library(ggstatsplot)
+library(BSSasymp) #Cramer-ca
+```
+
+```{r}
+### Ubicacion de datos
+setwd("C:/hcgalvan/Repositorios/hcgalvan_project/data/union/End")
+temp = gsub(".*target.*", "", readLines("seleccionestudio.csv"))
+data<-read.table(text=temp, sep=",", header=TRUE)
+sl2ldm <-data$sl2l_diameter
+```
+
+```{r}
+fitlog<-fitdist(sl2ldm,"logis")
+View(fitlog)
+summary(fitlog)
+```
+
+```{r}
+plot(fitlog)
+```
+
+```{r}
+plot(fitlog, demp=TRUE)
+```
+
+```{r}
+plot(fitlog, histo = FALSE, demp = TRUE)
+```
+
+```{r}
+cdfcomp(fitlog, addlegend=FALSE)
+```
+
+```{r}
+denscomp(fitlog, addlegend=FALSE)
+```
+
+```{r}
+ppcomp(fitlog, addlegend=FALSE)
+
+
+```
+
+```{r}
+qqcomp(fitlog, addlegend=FALSE)
+```
+
+Utilizando metodos de los momentos
+
+```{r}
+fitlogmme <- fitdist(sl2ldm, "logis", method="mme")
+View(fitlogmme)
+summary(fitlogmme)
+```
+
+```{r}
+plot(fitlogmme, demp=T)
+```
+
+```{r}
+gofstat(list(fitlog, fitlogmme), fitnames=c("Logis mle", "logis mme"))
+```
+
+```{r}
+# El método de la transformada inversa se utiliza para simular variables aleatorias continuas, mediante la función de distribución acumulada y la generación de números aleatorios con distribución uniforme en el intervalo (0,1).
+# funcion logística
+#23.19, 0.24
+alpha=30;beta=15
+u<-runif(100000,0,1)
+x<-alpha-beta*log((1-u)/u)
+hist(x,prob=T,main="",ylab="f(x)",ylim=c(0,0.016),col="grey")
+y<-function(x){
+exp(-(x-alpha)/beta)/(beta*( 1+exp(-(x-alpha)/beta))^2)
+}
+par(new=T)
+curve(y,-50,250,main="",axes=FALSE,lwd=2,ylab="")
+box()
+text(180,0.01,expression(paste(alpha==30)))
+text(180,0.009,expression(paste(beta==15)))
+
+```
+
+```{r}
+mu<-50;sigma<-6
+u1<-runif(100000,0,1)
+u2<-runif(100000,0,2*pi)
+x1<- (sqrt(-2*log(1-u1))*cos(2*pi*u2))*sigma+mu
+hist(x1,prob=TRUE,ylim=c(0,0.075), ylab="f(x)",col="grey",main=" Distribución normal estándar")
+curve(dnorm(x, mean=mu,sd=sigma), add = TRUE,lwd=2,ylim=c(0,0.55))
+box()
+```
+
+```{r}
+f1<-function(x)
+{
+ gamma(5)*(1+(x*sqrt(9/7))^2/9)^(-5)/
+ (sqrt(9*pi/(9/7))*gamma(9/2))
+}
+
+f2<-function(x)
+{
+ exp(-(x)^2/2)/sqrt(2*pi)
+}
+
+CRB(sdf=c(f1,f2))
+
+CRB(sdf=c(f1, f2))
+```
+
+### Compromiso Sesgo-Varianza
+
+```{r}
+library(nprobust)
+
+x <- sl2ldm
+est <- kdrobust(x)
+summary(est)
+
+est1 <- kdbwselect(x, bwselect="imse-dpi") #direct plug-ing
+summary(est1)
+
+est2 <- kdbwselect(x, bwselect="imse-rot") #regla de oro
+summary(est2)
+
+```
+
+```{r}
+
+gauss<-function(u)
+{
+  k<-exp(-(u^2)/2)/sqrt(2*pi)
+  return(k)
+}
+
+uniforme<-function(u)
+{
+  ifelse(u>-1 & u<1,1,0)/2  # es mi indicadora y mi calcula el nucleo uniforme
+}
+
+f_sombrero<-function(x,k,datos,h) #datos= Xi
+{
+  s<-0
+  for(i in 1:length(datos))
+  {
+    c<-k((x-datos[i])/h)
+    s<-s+c
+  }
+  f<-s/(length(datos)*h)
+  return(f)
+}  
+
+densidad.est.parzen<-function(x,h,z) # x: datos, z:valor donde exaluo la f
+{
+  f_sombrero(z,gauss,x,h)
+}
+
+nmax<-max(data$sl2l_diameter)
+nmin<-min(data$sl2l_diameter)
+largo<-length(data$sl2l_diameter)
+nuevos<-seq(nmin,nmax,length=largo) #los numeros, son los mínimos y maximos de la muestra
+
+#h<-3.011
+#h<-2.427
+h<-1.101516
+
+f_estimada1<-densidad.est.parzen(data$sl2l_diameter,h,nuevos)
+f_est<-data.frame("x"=nuevos,  "estimada1"=f_estimada1)
+
+summary(f_est)
+
+plotdist(data$sl2l_diameter, histo=TRUE)
+ggplot(f_est)+
+  geom_line(aes(x=x,y=estimada1),col="steelblue")+
+  theme_light()
+
+
+```
+
+```{r}
+estimamos<-function(x,h,Datos)
+{
+  p_est<-sum(Datos<=(x+h) & Datos>=(x-h))/length(Datos)
+  return(p_est)
+}
+x<-sort(data$sl2l_diameter) #los ordeno solo porque cuando los grafico quiero que me funcione bien el comando lines
+
+h<-2.427
+est1<-c()
+for(i in 1:length(data$sl2l_diameter))
+{
+  est1[i]<-estimamos(x[i],h,data$sl2l_diameter)
+  
+}
+
+```
+
+```{r}
+x<- data$sl2l_diameter
+n<- length(data$sl2l_diameter)
+# Rule-of-thumb
+bw.nrd(x = x)
+## [1] 0.4040319
+# bwd.nrd employs 1.34 as an approximation for diff(qnorm(c(0.25, 0.75)))
+
+# Same as
+iqr <- diff(quantile(x, c(0.25, 0.75))) / diff(qnorm(c(0.25, 0.75)))
+1.067 * n^(-1/5) * min(sd(x), iqr1)
+iqr1<-IQR(data$sl2l_diameter)/1.349
+
+## [1] 0.4040319
+```
+
+### Convalidación Cruzada
+
+```{r}
+#ventana de CV (Convalidaci´on Cruzada por M´axima Verosimilitud)
+# primero veamos como funciona el calculo del segundo termino
+
+# Uso mi función que da lo mismo que el density, pero la puedo evaluar en los puntos que yo quiero.
+gauss<-function(u)
+{
+  k<-exp(-(u^2)/2)/sqrt(2*pi)
+  return(k)
+}
+# Otros nucleos
+epa<-function(u)
+{
+  ifelse(abs(u) < 1,3/4*(1-u^2),0)
+} 
+
+i<-1
+h<-1
+f.hat<-c()
+for(i in 1:length(data$sl2l_diameter))
+{
+  f.hat[i]<-f_sombrero(data$sl2l_diameter[i],gauss,datos=data$sl2l_diameter[-i],h)
+}
+
+# para un h fijo, el segundo termino de LSCV(h)
+2*mean(f.hat)
+
+# ventana con LSCV (leave-one-out-Cross-Validation)
+
+lscv<-function(datos,k, h)
+{
+  f.hat.x<-c()
+  for(i in 1:length(datos))
+  {
+    f.hat.x[i]<-f_sombrero(datos[i],k,datos[-i],h)
+  }
+  LSCV<-integrate(Vectorize(f_sombrero,"x"),lower=-Inf,upper=Inf,k=k,datos=datos,h=h)$value-2*mean(f.hat.x)
+  return(LSCV)
+}
+
+h<-seq(1,8,1.6) # si la ventana es muy chiquita se queja...se queja por todo el integrate...
+
+LSCV_h<-c()
+for(j in 1:length(h))
+{
+  LSCV_h[j]<-lscv(data$sl2l_diameter,gauss,h[j])
+}
+
+plot(h,LSCV_h,type="l") #pasa que para muchas ventanas no encontró datos...no las tengo en cuenta
+plot(h[1:8],LSCV_h[1:8],type = "l")
+h[which.max(LSCV_h)] 
+```
+
+```{r}
+library(ks) #tamaño de la ventana
+hlscv(data$sl2l_diameter) 
+
+```
+
+```{r}
+h_sil1<-round((4*sd(data$sl2l_diameter)^5/3*length(data$sl2l_diameter))^(1/5),0)
+h_sil2<-1.06*min(sd(data$sl2l_diameter),IQR(data$sl2l_diameter)/1.349)*length(data$sl2l_diameter)^(1/5)
+sd(data$sl2l_diameter)
+IQR(data$sl2l_diameter)/1.349 # Desviación estandar - error estandar coincidente con distribucíón normal.
+h_sil1
+h_sil2
+mean(data$sl2l_diameter) #[1] 23.0926
+fw<-fitdist(data$sl2l_diameter, "logis")# 23.193508 | 1.384082
+sinajuste<-fitdist(data$sl2l_diameter, "norm") #23.092600 | 2.570926
+summary(fw)
+summary(sinajuste)
+```
