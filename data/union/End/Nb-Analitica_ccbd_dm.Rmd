@@ -1,0 +1,497 @@
+---
+title: "Analitica ccbd_dm"
+output: html_notebook
+---
+
+```{r}
+
+```
+
+### Conclusiones del Análisis ccbd_diameter
+
+En esta ocasión, se realiza una exploración de los datos referidos a ccbd_diameter. Podemos observar con y sin outliers la distribución se puede ajustar a Distribución teórica Weibull. Sin embargo, para lograr un mejor estimador de parámetros, es posible solo dejando afuera del estudio a los valores atípicos que se bien son pocos tienen efectos globales al estudio.
+
+Tanto desde el punto de vista de ajustar a una distribución teórica como analizar simplemente entiendo que tiene una distribución suavizada, se observa gráficamente logrado la curvatura similar en distribución paramétrica como no parámetrica. El estudio, al tener la aproximación a su curvatura, busca establecer los estimadores que guíen los estudios posteriores.
+
+Se realizan pruebas de bondad de ajuste a distribución teórica, para 3 casos posibles: Sin atípicos, con atípicos ajustados parcialmente, y sin ajustes en la muestra.
+
+```{r}
+library(ggplot2)
+library(gridExtra)
+library(MASS)
+library(fitdistrplus)
+library(ggstatsplot)
+library(BSSasymp) #Cramer-ca
+
+```
+
+```{r}
+### Ubicacion de datos
+setwd("C:/hcgalvan/Repositorios/hcgalvan_project/data/union/End")
+temp = gsub(".*target.*", "", readLines("seleccionestudio.csv"))
+data<-read.table(text=temp, sep=",", header=TRUE)
+ccdbdm <-data$ccbd_diameter
+```
+
+```{r}
+fitData <- function(data, fit="gamma", sample=sample){
+ distrib = list()
+ numfit <- length(fit)
+ results = matrix(0, ncol=5, nrow=numfit)
+
+ for(i in 1:numfit){
+if((fit[i] == "gamma") | 
+     (fit[i] == "poisson") | 
+     (fit[i] == "weibull") | 
+     (fit[i] == "exponential") |
+     (fit[i] == "logistic") |
+     (fit[i] == "normal") | 
+     (fit[i] == "geometric")
+) 
+  distrib[[i]] = fit[i]
+else stop("Provide a valid distribution to fit data" )
+ }
+
+ # take a sample of dataset
+ n = round(length(data)*sample)
+ data = sample(data, size=n, replace=F)
+
+ for(i in 1:numfit) {
+  if(distrib[[i]] == "gamma") {
+  gf_shape = "gamma"
+  fd_g <- fitdistr(data, "gamma")
+  est_shape = fd_g$estimate[[1]]
+  est_rate = fd_g$estimate[[2]]
+
+  ks = ks.test(data, "pgamma", shape=est_shape, rate=est_rate)
+
+  # add to results
+  results[i,] = c(gf_shape, est_shape, est_rate, ks$statistic, ks$p.value)
+}
+
+else if(distrib[[i]] == "poisson"){
+  gf_shape = "poisson"
+  fd_p <- fitdistr(data, "poisson")
+  est_lambda = fd_p$estimate[[1]]
+
+  ks = ks.test(data, "ppois", lambda=est_lambda)
+  # add to results
+  results[i,] = c(gf_shape, est_lambda, "NA", ks$statistic, ks$p.value)
+}
+
+else if(distrib[[i]] == "weibull"){
+  gf_shape = "weibull"
+  fd_w <- fitdistr(data,densfun=dweibull,start=list(scale=1,shape=2))
+  est_shape = fd_w$estimate[[1]]
+  est_scale = fd_w$estimate[[2]]
+
+  ks = ks.test(data, "pweibull", shape=est_shape, scale=est_scale)
+  # add to results
+  results[i,] = c(gf_shape, est_shape, est_scale, ks$statistic, ks$p.value) 
+}
+
+else if(distrib[[i]] == "normal"){
+  gf_shape = "normal"
+  fd_n <- fitdistr(data, "normal")
+  est_mean = fd_n$estimate[[1]]
+  est_sd = fd_n$estimate[[2]]
+
+  ks = ks.test(data, "pnorm", mean=est_mean, sd=est_sd)
+  # add to results
+  results[i,] = c(gf_shape, est_mean, est_sd, ks$statistic, ks$p.value)
+}
+
+else if(distrib[[i]] == "exponential"){
+  gf_shape = "exponential"
+  fd_e <- fitdistr(data, "exponential")
+  est_rate = fd_e$estimate[[1]]
+  ks = ks.test(data, "pexp", rate=est_rate)
+  # add to results
+  results[i,] = c(gf_shape, est_rate, "NA", ks$statistic, ks$p.value)
+}
+
+else if(distrib[[i]] == "logistic"){
+  gf_shape = "logistic"
+  fd_l <- fitdistr(data, "logistic")
+  est_location = fd_l$estimate[[1]]
+  est_scale = fd_l$estimate[[2]]
+  ks = ks.test(data, "plogis", location=est_location, scale=est_scale)
+  # add to results
+  results[i,] = c(gf_shape, est_location, est_scale, ks$statistic,    ks$p.value) 
+    }
+  }
+  results = rbind(c("distribution", "param1", "param2", "ks stat", "ks    pvalue"),   results)
+  #print(results)
+  return(results)
+  }
+```
+
+#### Tratamiento Ajustado a Distribución y comparativa con/sin outliers
+
+Separamos los datos de la variable de estudio
+
+```{r}
+Control<-(as.numeric(unlist(subset(data, label==1, select=c(ccbd_diameter)))))
+Estudio<-(as.numeric(unlist(subset(data, label==0, select=c(ccbd_diameter)))))
+```
+
+Ajustamos los outliers en base a Primer barrido.
+
+```{r}
+Q <- quantile(data$ccbd_diameter, probs=c(.25, .75), na.rm = FALSE) 
+iqr <- IQR(data$ccbd_diameter) 
+up <-  Q[2]+1.5*iqr # Upper Range   
+low<- Q[1]-1.5*iqr # Lower Range 
+datasinout<- subset(data, data$ccbd_diameter > (Q[1] - 1.5*iqr) & data$ccbd_diameter < (Q[2]+1.5*iqr))
+
+
+```
+
+Ajustamos los outliers en base a Segundor barrido.
+
+```{r}
+Q1 <- quantile(datasinout$ccbd_diameter, probs=c(.25, .75), na.rm = FALSE) 
+iqr1 <- IQR(datasinout$ccbd_diameter) 
+up1 <-  Q1[2]+1.5*iqr1 # Upper Range   
+low1<- Q1[1]-1.5*iqr1 # Lower Range 
+datasinout1<- subset(datasinout, datasinout$ccbd_diameter > (Q1[1] - 1.5*iqr1) & datasinout$ccbd_diameter < (Q1[2]+1.5*iqr1))
+```
+
+Graficamos la evolución y separamos los datos en 2 grupos: Estudio y Control
+
+En las 2 primeras gráficas colocamos la partición: control y de Estudio. En la 3er y 4ta gráfica se empieza a limpiar los outliers y la 5ta gráfica es la muestra libre de outliers.
+
+```{r}
+boxplot(Control, Estudio, data$ccbd_diameter, datasinout$ccbd_diameter, datasinout1$ccbd_diameter)$out
+```
+
+Graficamos las distribuciones obtenidos.
+
+```{r}
+par(mfrow = c(2, 2), mar = c(4, 4, 2, 1)) 
+plotdist(datasinout1$ccbd_diameter, histo=TRUE, demp=TRUE) #completamente ajustado
+plotdist(datasinout$ccbd_diameter, histo=TRUE, demp=TRUE) # ajustado parcialmente
+plotdist(data$ccbd_diameter, histo=TRUE, demp=TRUE) # sin ajustes en muestra
+```
+
+Realizamos descripcion de los valores descriptivos: Ajuste total, parcial y sin ajuste
+
+```{r}
+summary(datasinout1$ccbd_diameter) 
+summary(datasinout$ccbd_diameter) 
+summary(data$ccbd_diameter)
+```
+
+Graficamos la densidad de distribución: Ajuste Total, Parcial y sin ajustes
+
+```{r}
+descdist(datasinout1$ccbd_diameter, boot = 1000) 
+descdist(datasinout$ccbd_diameter, boot = 1000) 
+descdist(data$ccbd_diameter, boot = 1000)
+```
+
+Ajustamos los datos a la distribución weibull y gamma
+
+```{r}
+library(glogis) 
+total<-fitdist(datasinout1$ccbd_diameter, "weibull")
+parcial<-fitdist(datasinout$ccbd_diameter, "weibull") 
+sinajuste<-fitdist(data$ccbd_diameter, "weibull") 
+fw<-fitdist(ccdbdm, "gamma") 
+total
+summary(total) 
+summary(parcial) 
+summary(sinajuste) 
+summary(fw) 
+summary(gamm) 
+```
+
+```{r}
+par(mfrow = c(2, 2), mar = c(4, 4, 2, 1)) 
+plot.legend <- c("Ajuste Total ~Weibull", "Ajuste Parc ~Weibull","Sin Ajuste ~Weibull","Sin Ajuste ~gamma") 
+denscomp(total, legendtext = plot.legend[1]) 
+denscomp(parcial, legendtext = plot.legend[2]) 
+denscomp(sinajuste, legendtext = plot.legend[3]) 
+denscomp(fw, legendtext = plot.legend[4])
+
+```
+
+```{r}
+par(mfrow = c(2, 2), mar = c(4, 4, 2, 1)) 
+plot.legend <- c("Ajuste Total ~Weibull", "Ajuste Parc ~Weibull","Sin Ajuste ~Weibull","Sin Ajuste ~gamma" ) 
+qqcomp(total, legendtext = plot.legend[1]) 
+qqcomp(parcial, legendtext = plot.legend[2]) 
+qqcomp(sinajuste, legendtext = plot.legend[3]) 
+qqcomp(fw, legendtext = plot.legend[4])
+```
+
+```{r}
+par(mfrow = c(2, 2), mar = c(4, 4, 2, 1)) 
+plot.legend <- c("Ajuste Total ~Weibull", "Ajuste Parc ~Weibull","Sin Ajuste ~Weibull","Sin Ajuste ~gamma") 
+cdfcomp(total, legendtext = plot.legend[1]) 
+cdfcomp(parcial, legendtext = plot.legend[2]) 
+cdfcomp(sinajuste, legendtext = plot.legend[3]) 
+cdfcomp(fw, legendtext = plot.legend[4])
+```
+
+```{r}
+par(mfrow = c(2, 2), mar = c(4, 4, 2, 1)) 
+plot.legend <- c("Ajuste Total ~Weibull", "Ajuste Parc ~Weibull","Sin Ajuste ~Weibull","Sin Ajuste ~gamma") 
+ppcomp(total, legendtext = plot.legend[1]) 
+ppcomp(parcial, legendtext = plot.legend[2]) 
+ppcomp(sinajuste, legendtext = plot.legend[3]) 
+ppcomp(fw, legendtext = plot.legend[4])
+```
+
+```{r}
+par(mfrow = c(2, 2), mar = c(4, 4, 2, 1)) 
+fw <- fitdist(datasinout$ccbd_diameter, "weibull") 
+fg <- fitdist(datasinout$ccbd_diameter, "gamma") 
+fb <- fitdist(datasinout$ccbd_diameter, "lnorm") 
+plot.legend <- c("weibull", "gamma", "lnorm") 
+denscomp(list(fw, fg, fb), legendtext = plot.legend) 
+qqcomp(list(fw, fg, fb), legendtext = plot.legend) 
+cdfcomp(list(fw, fg, fb), legendtext = plot.legend) 
+ppcomp(list(fw, fg, fb), legendtext = plot.legend)
+```
+
+```{r}
+library(actuar)  
+
+ATV1 <- datasinout1$ccbd_diameter
+datos1.l<-fitdist(ATV1, "lnorm")
+datos1.w<-fitdist(ATV1, "weibull")
+datos1.g<-fitdist(ATV1, "gamma")
+cdfcomp(list(datos1.l, datos1.w, datos1.g), xlogscale = TRUE, 
+        ylogscale = TRUE, legendtext = c("~ln","~weib","~gamma"))
+
+ATV2 <- datasinout$ccbd_diameter
+datos2.l<-fitdist(ATV2, "lnorm")
+datos2.w<-fitdist(ATV2, "weibull")
+datos2.g<-fitdist(ATV2, "gamma")
+cdfcomp(list(datos2.l, datos2.w, datos2.g), xlogscale = TRUE, 
+        ylogscale = TRUE, legendtext = c("~ln","~weib","~gamma"))
+
+ATV <- data$ccbd_diameter
+datos.l<-fitdist(ATV, "lnorm")
+datos.w<-fitdist(ATV, "weibull")
+datos.g<-fitdist(ATV, "gamma")
+cdfcomp(list(datos.l, datos.w, datos.g), xlogscale = TRUE, 
+        ylogscale = TRUE, legendtext = c("~ln","~weib","~gamma"))
+
+```
+
+Buscamos la mediana o cuantil D5 - 50% de probabilidad de que el valor esté por encima como por debajo de esa cifra
+
+```{r}
+quantile(datos.w, probs = 0.05) # Sin Ajustes de outliers ~Weibull
+quantile(datos1.w, probs = 0.05) # Parcialmente Ajustados de outliers ~Weibull
+quantile(datos2.w, probs = 0.05) # Sin outliers ~Weibull
+
+```
+
+```{r}
+res = fitData(data$ccbd_diameter, fit=c("weibull","gamma"),
+    sample=1)
+res
+```
+
+En base a los valores anteriores de ajustar los datos puros sin descartar los valores atípicos, me indica lo siguiente:
+
+Los datos se ajusta a distribuciones de densidad Weibull y gamma. Sin embargo, el mejor ajuste es con la distribución weibull.\
+
+```{r}
+library(EnvStats)
+library(reliaR)
+library(maxLik)
+eweibull(datasinout1$ccbd_diameter, method = "mle")
+eweibull(datasinout1$ccbd_diameter, method = "mmue")
+eweibull(data$ccbd_diameter, method = "mle")
+ks.test(datasinout1$ccbd_diameter, "pweibull",scale=29.14202,shape=12.67301)
+ks.test(datasinout1$ccbd_diameter, "pweibull",scale=29.15273,shape=11.96926)
+ks.test(data$ccbd_diameter, "pweibull",scale=28.89843,shape=10.59719)
+ks.test(data$ccbd_diameter, "gamma")
+ks.test(data$ccbd_diameter, y="pnorm")
+ks.test(datasinout1$sl2l_diameter, y="plogis")
+ 
+```
+
+```{r}
+
+gofstat(list(datos.w, datos.g), fitnames = c("Weibull","Gamma"))
+gofstat(list(datos1.w, datos1.g), fitnames = c("Weibull","Gamma"))
+gofstat(list(datos2.w, datos2.g), fitnames = c("Weibull","Gamma"))
+
+```
+
+```{r}
+datosboot.w <- bootdist(datos.w, niter = 1001) #Sin ajustes
+summary(datosboot.w)
+plot(datosboot.w)
+
+datosboot1.w <- bootdist(datos1.w, niter = 1001) #ajuste parcial
+summary(datosboot1.w)
+plot(datosboot1.w)
+
+datosboot2.w <- bootdist(datos2.w, niter = 1001) #sin outliers
+summary(datosboot2.w)
+plot(datosboot2.w)
+```
+
+### Analítica NO PARAMÉTRICA; libre distribución
+
+```{r}
+gofstat(list(fitlog, fitlogmme), fitnames=c("Logis mle", "logis mme"))
+```
+
+```{r}
+f1<-function(x)
+{
+ gamma(5)*(1+(x*sqrt(9/7))^2/9)^(-5)/
+ (sqrt(9*pi/(9/7))*gamma(9/2))
+}
+
+f2<-function(x)
+{
+ exp(-(x)^2/2)/sqrt(2*pi)
+}
+
+CRB(sdf=c(f1,f2))
+
+CRB(sdf=c(f1, f2))
+```
+
+### Compromiso Sesgo-Varianza
+
+```{r}
+library(nprobust)
+library(ks) #tamaño de la ventana
+
+x <- sl2ldm
+est <- kdrobust(x)
+summary(est)
+
+est1 <- kdbwselect(x, bwselect="imse-dpi") #direct plug-ing
+summary(est1)
+
+est2 <- kdbwselect(x, bwselect="imse-rot") #regla de oro
+summary(est2)
+
+hlscv(data$ccbd_diameter) 
+```
+
+```{r}
+
+gauss<-function(u)
+{
+  k<-exp(-(u^2)/2)/sqrt(2*pi)
+  return(k)
+}
+
+uniforme<-function(u)
+{
+  ifelse(u>-1 & u<1,1,0)/2  # es mi indicadora y mi calcula el nucleo uniforme
+}
+
+f_sombrero<-function(x,k,datos,h) #datos= Xi
+{
+  s<-0
+  for(i in 1:length(datos))
+  {
+    c<-k((x-datos[i])/h)
+    s<-s+c
+  }
+  f<-s/(length(datos)*h)
+  return(f)
+}  
+
+densidad.est.parzen<-function(x,h,z) # x: datos, z:valor donde exaluo la f
+{
+  f_sombrero(z,gauss,x,h)
+}
+
+nmax<-max(data$ccbd_diameter)
+nmin<-min(data$ccbd_diameter)
+largo<-length(data$ccbd_diameter)
+nuevos<-seq(nmin,nmax,length=largo) #los numeros, son los mínimos y maximos de la muestra
+
+#h<-6.349
+#h<-3.011
+#h<-4.298
+h<-0.6712143
+
+f_estimada1<-densidad.est.parzen(data$ccbd_diameter,h,nuevos)
+f_est<-data.frame("x"=nuevos,  "estimada1"=f_estimada1)
+f_est2<-data.frame("x"=nuevos, "real"= data$ccbd_diameter, "estimada1"=f_estimada1)
+summary(f_est)
+
+plotdist(data$sl2l_diameter, histo=TRUE)
+
+hist(x=data$ccbd_diameter, freq=FALSE, main="")
+rug(x=data$ccbd_diameter, col="deepskyblue3")
+
+ggplot(f_est)+
+  geom_line(aes(x=x,y=estimada1),col="steelblue")+
+  theme_light()
+
+#max(f_est2[3])
+#f_est2
+#data$sl2l_diameter
+#22.83596	26.8996	0.161561752
+
+```
+
+### Convalidación Cruzada
+
+```{r}
+#ventana de CV (Convalidaci´on Cruzada por M´axima Verosimilitud)
+# primero veamos como funciona el calculo del segundo termino
+
+# Uso mi función que da lo mismo que el density, pero la puedo evaluar en los puntos que yo quiero.
+gauss<-function(u)
+{
+  k<-exp(-(u^2)/2)/sqrt(2*pi)
+  return(k)
+}
+# Otros nucleos
+epa<-function(u)
+{
+  ifelse(abs(u) < 1,3/4*(1-u^2),0)
+} 
+
+i<-1
+h<-1
+f.hat<-c()
+for(i in 1:length(data$sl2l_diameter))
+{
+  f.hat[i]<-f_sombrero(data$sl2l_diameter[i],gauss,datos=data$sl2l_diameter[-i],h)
+}
+
+# para un h fijo, el segundo termino de LSCV(h)
+2*mean(f.hat)
+
+# ventana con LSCV (leave-one-out-Cross-Validation)
+
+lscv<-function(datos,k, h)
+{
+  f.hat.x<-c()
+  for(i in 1:length(datos))
+  {
+    f.hat.x[i]<-f_sombrero(datos[i],k,datos[-i],h)
+  }
+  LSCV<-integrate(Vectorize(f_sombrero,"x"),lower=-Inf,upper=Inf,k=k,datos=datos,h=h)$value-2*mean(f.hat.x)
+  return(LSCV)
+}
+
+h<-seq(1,8,1.6) # si la ventana es muy chiquita se queja...se queja por todo el integrate...
+
+LSCV_h<-c()
+for(j in 1:length(h))
+{
+  LSCV_h[j]<-lscv(data$sl2l_diameter,gauss,h[j])
+}
+
+plot(h,LSCV_h,type="l") #pasa que para muchas ventanas no encontró datos...no las tengo en cuenta
+plot(h[1:8],LSCV_h[1:8],type = "l")
+h[which.max(LSCV_h)] 
+```

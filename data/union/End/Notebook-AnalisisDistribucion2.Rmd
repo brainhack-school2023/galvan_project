@@ -170,21 +170,39 @@ nmin<-min(data$sl2l_diameter)
 largo<-length(data$sl2l_diameter)
 nuevos<-seq(nmin,nmax,length=largo) #los numeros, son los mínimos y maximos de la muestra
 
+#h<-6.349
 #h<-3.011
-#h<-2.427
 h<-1.101516
 
 f_estimada1<-densidad.est.parzen(data$sl2l_diameter,h,nuevos)
 f_est<-data.frame("x"=nuevos,  "estimada1"=f_estimada1)
-
+f_est2<-data.frame("x"=nuevos, "real"= data$sl2l_diameter, "estimada1"=f_estimada1)
 summary(f_est)
 
 plotdist(data$sl2l_diameter, histo=TRUE)
+
+hist(x=data$sl2l_diameter, freq=FALSE, main="")
+rug(x=data$sl2l_diameter, col="deepskyblue3")
+
 ggplot(f_est)+
   geom_line(aes(x=x,y=estimada1),col="steelblue")+
   theme_light()
 
+#max(f_est2[3])
+#f_est2
+#data$sl2l_diameter
+#22.83596	26.8996	0.161561752
 
+```
+
+```{r}
+h1<-6.349
+#h1<-3.011
+#h1<-1.101516
+hist(data$sl2l_diameter, freq = FALSE,ylim=c(0,0.25))
+lines(density(data$sl2l_diameter,kernel = "gaussian",width=h1),col="yellowgreen",lwd=2)
+lines(density(data$sl2l_diameter,kernel = "epanechnikov",width=h1),col="firebrick",lwd=2)
+lines(density(data$sl2l_diameter,kernel = "rectangular",width=h1),col="steelblue",lwd=2)
 ```
 
 ```{r}
@@ -294,4 +312,52 @@ fw<-fitdist(data$sl2l_diameter, "logis")# 23.193508 | 1.384082
 sinajuste<-fitdist(data$sl2l_diameter, "norm") #23.092600 | 2.570926
 summary(fw)
 summary(sinajuste)
+```
+
+```{r}
+#Observed point location
+x1 <- 30
+#Smoothing
+bandwidth = 5
+# Range of values to calculate density
+X <- seq(20, 40, by = 1)
+
+#Calculation of KDF across range of values
+kernel_func <- 1/(2*pi) * exp(-0.5 * ((X - x1)/bandwidth)^2)
+
+plot(X, kernel_func, type = "l", col = "red", xlab = "X", ylab = "PDF")
+```
+
+```{r}
+
+n = length(data$sl2l_diameter)
+media<-c()
+var1<-c()
+var2<-c()
+for(i in 1:n)
+{
+  media[i]<-data$sl2l_diameter[i]/n
+}
+
+for(i in 1:n)
+{
+  var1[i]<-(data$sl2l_diameter[i]^2-mme^2)
+}
+
+for(i in 1:n)
+{
+  var2[i]<-((data$sl2l_diameter[i]-mme)^2)/n
+}
+
+mme_mean<-sum(data$sl2l_diameter)/n
+mme_var <-sum(var1)*(1/n)
+mmv_var <-sum(var2)
+mme_mean
+mme_var
+mmv_var
+sqrt(mme_var)
+mean(data$sl2l_diameter)
+var(data$sl2l_diameter)
+
+sd(data$sl2l_diameter)
 ```

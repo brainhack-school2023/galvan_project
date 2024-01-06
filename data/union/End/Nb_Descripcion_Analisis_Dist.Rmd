@@ -3,7 +3,7 @@ título: "Análisis de la distribución y estimadores de sl2l_diameter"
 output: html_notebook
 ---
 
-#### **Primer meta operativa:** 
+#### **Primer meta operativa:**
 
 1.  Obtener Funcion densidad y parámetros de features sl2l_diameter.
 
@@ -91,28 +91,28 @@ Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
 
 Ajustamos a una distribución utilizando max likelihood
 
-a) Ajuste a **distribución teórica Normal** de *muestra sin valores atípicos*
+a)  Ajuste a **distribución teórica Normal** de *muestra sin valores atípicos*
 
 |      |  estimate | Std. Error |
 |:-----|----------:|-----------:|
 | mean | 23.353744 |  0.2086411 |
 | sd   |  1.990309 |  0.1475314 |
 
-b) Ajuste a **distribución teórica Normal** de *muestra con quita parciales valores atípicos*
+b)  Ajuste a **distribución teórica Normal** de *muestra con quita parciales valores atípicos*
 
 |      |  estimate | Std. Error |
 |-----:|----------:|------------|
 | mean | 23.420027 | 0.2166463  |
 |   sd |  2.077999 | 0.1531919  |
 
-c) Ajuste a **distribución teórica Normal** de *muestra con valores atípicos*
+c)  Ajuste a **distribución teórica Normal** de *muestra con valores atípicos*
 
 |      |  estimate | Std. Error |
 |:-----|----------:|-----------:|
 | mean | 23.092600 |  0.2623940 |
 | sd   |  2.570926 |  0.1855405 |
 
-e) Ajuste a **distribución teórica Logística** de *muestra con valores atípicos*
+e)  Ajuste a **distribución teórica Logística** de *muestra con valores atípicos*
 
 |          |  estimate | Std. Error |
 |---------:|----------:|------------|
@@ -121,10 +121,10 @@ e) Ajuste a **distribución teórica Logística** de *muestra con valores atípi
 
 #### Cuantiles para cada distribución ajustada
 
-a) Buscamos la mediana o cuantil D5-\>50% de probabilidad de que el valor esté por encima como por debajo de esa cifra
+a)  Buscamos la mediana o cuantil D5-\>50% de probabilidad de que el valor esté por encima como por debajo de esa cifra
 
 |          |                          |                              |                          |                              |
-|---------|-----------|------------|------------|-------------|
+|----------|--------------------------|------------------------------|--------------------------|------------------------------|
 |          | Sin valores atipicos \~N | Parcial valores atipicos \~N | Con valores atipicos \~N | Con valores atipicos \~Logis |
 |          | p=0.05                   | p=0.05                       | p=0.05                   | p=0.05                       |
 | estimate | 20.07998                 | 20.00202                     | 18.8638                  | 19.11816                     |

@@ -1,0 +1,341 @@
+---
+title: "Analitica ecpl_volume"
+output: html_notebook
+---
+
+### Conclusiones del Análisis ecpl_volume
+
+El feature ecpl_volume tiene diferentes trabajos de limpieza para lograr un estimador de posición y establecer su distribución.
+
+Estos pasos siguientes fueron realizados a partir de exploración gráfica de los datos y bajo conocimiento de su captura y procesamiento.
+
+**Paso 1**: separar valores en control y estudio.\
+**Paso 2:** verificar valores repetidos. Esto sucede al rellenar valores nulos en su versión original y como criterio de inicio, tuvimos que tomar un punto medio.\
+**Paso 3:** Limpiar los outliers en esta ocasión en datos de control. Esta vez se ha realizado de esta forma, ya que al juntar control y estudio, vemos que se pierde las diferencias los datos de estudio. Esto genera mayor dispersión al finalizar.
+
+Luego, verificando y ajustando a distribuciones teóricas, se asemeja a la distribución normal. Realizamos los ajustes, aunque sus datos no logran ajustar del todo.\
+También, realizamos pruebas con distribución libre o sin Ajuste total a una distribución teórica, utilizamos diferentes nucleos y ancho de banda.
+
+Con prechequeo formal formal de normalidad (**shapiro-wilk y Anderson-Darling)**, sostiene la hipótesis de normalidad, aunque no ajuste correctamente a los datos, se indaga además en la estimación de densidad con núcleo y ancho de banda para lograr mayor aproximación a la distribución de densidad de la muestra, con estimadores más próximos.
+
+Los selectores de ancho de banda como: **Silverman** o **Scott son eficientes y rápidos con distribución normal**. También es viable utilizar la versión que más ajustada cuando tenemos dudas de distribución: **método Sheather y Jones**.
+
+Básicamente, estamos indicando que los estimadores seguirán el nucleo y ancho de banda utilizado, aportando mayor flexibilidad, aunque perdiendo eficiencia.
+
+La decisión está en sus estimadores y ajuste de distribución. Cuando ajustamos a una distribución teórica de la normal (es asintóticamente normal y de consistencia fuerte, es decir tanto la media y sd son insesgado) , observamos que sus estimadores de muestra limpia sin duplicados son iguales a la **media = 6859.254 y sd = 3227.612**, con error Std mayor que la obtenida en datos puros de la base, sin embargo estos datos de base tienen duplicados por ajustes y no por composición natural, e invalida cualquier conclusión comparado relacionado al error estandar entre estos estimadores. Observando de manera general, no logra ajustar correctamente a normal la muestra.
+
+Ahora bien, utilizando la muestra limpia de duplicados y outliers, al tomar una distribución libre (de comportamiento asintótico debilmente consistentes, su media es insesgado y sd posee sesgo), media y mediana se igualan **= 6889**, y no posee restricciones de supuestos; aunque sus cuartiles varían en base al método seleccionado. Nuevamente recordar que si nuestra distribución se acerca a una normal, el método Silverman, es sólido, donde ***1Q=1804 y 3Q=11974**. También es importante destacar los estimadores utilizados en Silverman y Scott poseen propiedades en este método que permiten utilizar LGN y TCL. Por otro lado podemos comparar con el método más libre* **Sheather y Jones *1Q=1872 y 3Q=11906, si bien este modelo no posee todas las propiedades de Silverman y Scott.***
+
+> **Podemos concluir, que la versión de Silverman se ajusta apropiadamente a la distribución de estos datos del feature ecpl_volume**
+
+#### Con Ajuste a una distribución teórica
+
+| Normal ajustado sin duplicados
+|             estimate Std. Error  mean **6859.254** 376.6596  sd **3227.612** 266.8772
+| 
+| Normal sin ajustes
+|              estimate Std. Error  mean **6884.02** 317.9694  sd **3119.48** 224.8383
+| 
+
+| Call:   density.default(x = dataendcleanun, kernel = "gaussian")
+| Data: dataendcleanun (73 obs.);       Bandwidth 'bw' = 1199
+| **Utilizo: Metodo Silverman**
+
+|        x               y           
+|  Min.   :-3280   Min.   :5.647e-08 
+|  ***1st Qu.: 1804*** 1st Qu.:8.561e-06 
+|  **Median : 6889** Median :5.074e-05 
+|  **Mean   : 6889** Mean   :4.912e-05 
+|  ***3rd Qu.:11974*** 3rd Qu.:8.195e-05 
+|  Max.   :17059   Max.   :1.221e-04 
+| 
+| Call:   density.default(x = dataendcleanun, **bw = "nrd0"**,kernel = "epanechnikov")
+| Data: dataendcleanun (73 obs.);       Bandwidth 'bw' = 1199
+| **Utilizo: Metodo Silverman (Es solida si son cercanas a distribución normal, sin embargo en no funciona bien en casos complicados.)**
+|        x               y           
+|  Min.   :-3280   Min.   :0.000e+00 
+|  ***1st Qu.: 1804*** 1st Qu.:9.925e-06 
+|  **Median : 6889** Median :4.903e-05 
+|  **Mean   : 6889** Mean   :4.912e-05 
+|  ***3rd Qu.:11974*** 3rd Qu.:8.044e-05 
+|  Max.   :17059   Max.   :1.175e-04 
+| 
+| Call:   density.default(x = dataendcleanun, **bw = "nrd"**, kernel = "gaussian")
+| Data: dataendcleanun (73 obs.);       Bandwidth 'bw' = 1412
+| **Utiliza Método Scott (Requerido tener distribución normal para tener significancia)**
+|        x               y           
+|  Min.   :-3919   Min.   :5.145e-08 
+|  ***1st Qu.: 1485*** 1st Qu.:6.386e-06 
+|  **Median : 6889** Median :4.441e-05 
+|  **Mean   : 6889** Mean   :4.621e-05 
+|  ***3rd Qu.:12294*** 3rd Qu.:7.812e-05 
+|  Max.   :17698   Max.   :1.164e-04 
+| 
+| Call:   density.default(x = dataendcleanun, **bw = "SJ"**, kernel = "gaussian")
+| Data: dataendcleanun (73 obs.);       Bandwidth 'bw' = 1153
+| Metodo **Sheather y Jones (Solo considera una distribución suave)**
+|        x               y           
+|  Min.   :-3145   Min.   :5.800e-08 
+|  ***1st Qu.: 1872*** 1st Qu.:9.230e-06 
+|  **Median : 6889** Median :5.213e-05 
+|  **Mean   : 6889** Mean   :4.978e-05 
+|  ***3rd Qu.:11906*** 3rd Qu.:8.319e-05 
+|  Max.   :16923   Max.   :1.235e-04 
+| 
+| Call:   density.default(x = dataendcleanun, **bw = "bcv"**, kernel = "gaussian")
+| Data: dataendcleanun (73 obs.);       Bandwidth 'bw' = 1569
+| Método Cross Validation Completo, utiliza de fondo selector de ancho de banda no paramétrico. Lo que implica solo tener
+|        x               y           
+|  Min.   :-4391   Min.   :4.909e-08 
+|  ***1st Qu.: 1249*** 1st Qu.:5.342e-06 
+|  **Median : 6889** Median :4.007e-05 
+|  **Mean   : 6889** Mean   :4.428e-05 
+|  ***3rd Qu.:12529*** 3rd Qu.:7.602e-05 
+|  Max.   :18169   Max.   :1.129e-04
+
+```{r}
+library(ggplot2)
+library(gridExtra)
+library(MASS)
+library(fitdistrplus)
+library(ggstatsplot)
+library(BSSasymp) #Cramer-ca
+
+```
+
+```{r}
+### Ubicacion de datos
+setwd("C:/hcgalvan/Repositorios/hcgalvan_project/data/union/End")
+temp = gsub(".*target.*", "", readLines("seleccionestudio.csv"))
+data<-read.table(text=temp, sep=",", header=TRUE)
+ecplvl <-data$ecpl_volume
+### ante valores duplicados, entendiendo que fueron resueltos por valores vacíos, buscamos establecer valores únicos reportados por la base.
+dataclean <-unique(data$ecpl_volume)
+```
+
+#### Tratamiento Ajustado a Distribución y comparativa con/sin outliers
+
+Separamos los datos de la variable de estudio
+
+```{r}
+Control<-(as.numeric(unlist(subset(data, label==1, select=c(ecpl_volume)))))
+Estudio<-(as.numeric(unlist(subset(data, label==0, select=c(ecpl_volume)))))
+Controlclean<-unique(Control)
+Estudioclean<-unique(Estudio)
+
+```
+
+```{r}
+Q <- quantile(Controlclean, probs=c(.25, .75), na.rm = FALSE) 
+iqr <- IQR(Controlclean) 
+up <-  Q[2]+1.5*iqr # Upper Range   
+low<- Q[1]-1.5*iqr # Lower Range 
+Ctrlclean<- subset(Controlclean, Controlclean > (Q[1] - 1.5*iqr) & Controlclean < (Q[2]+1.5*iqr))
+dataendclean<-append(Ctrlclean, Estudioclean)
+dataendcleanun<-unique(dataendclean)
+boxplot(Controlclean, Ctrlclean, Estudioclean, dataendclean, dataendcleanun)$out
+```
+
+Graficamos las distribuciones obtenidos.
+
+```{r}
+
+par(mfrow = c(2, 2), mar = c(4, 4, 2, 1)) 
+plotdist(dataendcleanun, histo=TRUE, demp=TRUE) #completamente ajustado
+
+```
+
+Realizamos descripcion de los valores descriptivos: Ajuste total, parcial y sin ajuste
+
+```{r}
+summary(dataendcleanun) 
+
+```
+
+Graficamos la densidad de distribución: Ajuste Total, Parcial y sin ajustes
+
+```{r}
+descdist(dataendcleanun, boot = 1000) 
+descdist(data$ecpl_volume, boot = 1000)
+```
+
+Ajustamos los datos a la distribución Normal
+
+```{r}
+library(glogis) 
+total<-fitdist(dataendclean, "norm")
+total2<-fitdist(dataendcleanun,"norm")
+sinajuste<-fitdist(data$ecpl_volume, "norm") 
+
+summary(total) 
+summary(total2)
+summary(sinajuste) 
+
+```
+
+```{r}
+
+```
+
+```{r}
+par(mfrow = c(2, 2), mar = c(4, 4, 2, 1)) 
+fb <- fitdist(dataendcleanun, "norm") 
+plot.legend <- c("norm") 
+denscomp(list(fb), legendtext = plot.legend) 
+qqcomp(list(fb), legendtext = plot.legend) 
+cdfcomp(list(fb), legendtext = plot.legend) 
+ppcomp(list(fb), legendtext = plot.legend)
+```
+
+```{r}
+library(actuar)  
+
+ATV2 <- dataendcleanun
+datos2.l<-fitdist(ATV2, "norm")
+cdfcomp(list(datos2.l), xlogscale = TRUE, 
+        ylogscale = TRUE, legendtext = c("~N"))
+
+ATV <- data$ecpl_volume
+datos.l<-fitdist(ATV, "norm")
+cdfcomp(list(datos.l), xlogscale = TRUE, 
+        ylogscale = TRUE, legendtext = c("~N"))
+
+```
+
+### Test formal de normalidad.
+
+```{r}
+library(EnvStats)
+library(nortest)
+shapiro.test(dataendcleanun)
+ad.test(dataendcleanun) #prueba de normalidad de Anderson-Darling
+
+```
+
+### Analítica NO PARAMÉTRICA; libre distribución
+
+### Estudio de
+
+```{r}
+bw.nrd0(dataendcleanun) #regla general de Silverman
+bw.nrd(dataendcleanun)  #regla general de Scott
+bw.bcv(dataendcleanun)  #convalidación cruzada
+bw.ucv(dataendcleanun)  #validación cruzada imparcial
+bw.SJ(dataendcleanun)   #Sheather & método Jones
+
+density.default(x = dataendcleanun, kernel = "gaussian")
+density.default(x = dataendcleanun, kernel = "epanechnikov")
+density.default(x = dataendcleanun, bw="nrd", kernel = "gaussian")
+density.default(x = dataendcleanun, bw="SJ", kernel = "gaussian")
+density.default(x = dataendcleanun, bw="bcv", kernel = "gaussian")
+```
+
+```{r}
+
+gauss<-function(u)
+{
+  k<-exp(-(u^2)/2)/sqrt(2*pi)
+  return(k)
+}
+
+uniforme<-function(u)
+{
+  ifelse(u>-1 & u<1,1,0)/2  # es mi indicadora y mi calcula el nucleo uniforme
+}
+
+f_sombrero<-function(x,k,datos,h) #datos= Xi
+{
+  s<-0
+  for(i in 1:length(datos))
+  {
+    c<-k((x-datos[i])/h)
+    s<-s+c
+  }
+  f<-s/(length(datos)*h)
+  return(f)
+}  
+
+densidad.est.parzen<-function(x,h,z) # x: datos, z:valor donde exaluo la f
+{
+  f_sombrero(z,gauss,x,h)
+}
+
+nmax<-max(dataendcleanun)
+nmin<-min(dataendcleanun)
+largo<-length(dataendcleanun)
+nuevos<-seq(nmin,nmax,length=largo) #los numeros, son los mínimos y maximos de la muestra
+
+h<-1153
+
+f_estimada1<-densidad.est.parzen(dataendcleanun,h,nuevos)
+f_est<-data.frame("x"=nuevos,  "estimada1"=f_estimada1)
+f_est2<-data.frame("x"=nuevos, "real"= dataendcleanun, "estimada1"=f_estimada1)
+summary(f_est)
+
+ggplot(f_est)+
+  geom_line(aes(x=x,y=estimada1),col="steelblue")+
+  theme_light()
+
+```
+
+```{r}
+require(graphics)
+
+plot(density(dataendclean))  # IQR = 0
+
+# The Old Faithful geyser data
+d <- density(dataendclean, bw = "sj")
+d
+plot(d)
+
+## Missing values:
+x <- xx <- dataendclean
+x[i.out <- sample(length(x), 10)] <- NA
+doR <- density(x, bw = 1198.516, na.rm = TRUE)
+lines(doR, col = "blue")
+points(xx[i.out], rep(0.01, 10))
+
+## Weighted observations:
+fe <- sort(dataendclean) # has quite a few non-unique values
+## use 'counts / n' as weights:
+dw <- density(unique(fe), weights = table(fe)/length(fe), bw = d$bw)
+utils::str(dw) ## smaller n: only 126, but identical estimate:
+stopifnot(all.equal(d[1:3], dw[1:3]))
+
+## simulation from a density() fit:
+# a kernel density fit is an equally-weighted mixture.
+fit <- density(xx)
+N <- length(dataendcleanun)
+x.new <- rnorm(N, sample(xx, size = N, replace = TRUE), fit$bw)
+plot(fit)
+lines(density(x.new), col = "blue")
+
+
+(kernels <- eval(formals(density.default)$kernel))
+
+##-------- Semi-advanced theoretic from here on -------------
+## <!-- %% i.e. "secondary example" in a new help system ... -->
+(RKs <- cbind(sapply(kernels,
+                     function(k) density(kernel = k, give.Rkern = TRUE))))
+100*round(RKs["epanechnikov",]/RKs, 4) ## Efficiencies
+bw <- bw.SJ(dataendcleanun) ## sensible automatic choice
+plot(density(dataendcleanun, bw = bw),
+     main = "same sd bandwidths, 7 different kernels")
+for(i in 2:length(kernels))
+   lines(density(dataendcleanun, bw = bw, kernel = kernels[i]), col = i)
+
+## Bandwidth Adjustment for "Exactly Equivalent Kernels"
+h.f <- sapply(kernels, function(k)density(kernel = k, give.Rkern = TRUE))
+(h.f <- (h.f["gaussian"] / h.f)^ .2)
+## -> 1, 1.01, .995, 1.007,... close to 1 => adjustment barely visible..
+
+plot(density(dataendcleanun, bw = bw),
+     main = "equivalent bandwidths, 7 different kernels")
+for(i in 2:length(kernels))
+   lines(density(dataendcleanun, bw = bw, adjust = h.f[i], kernel = kernels[i]),
+         col = i)
+legend(55, 0.035, legend = kernels, col = seq(kernels), lty = 1)
+
+```
+
+### 
