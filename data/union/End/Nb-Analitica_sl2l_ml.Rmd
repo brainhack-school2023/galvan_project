@@ -1,0 +1,226 @@
+---
+title: "Analitica sl2l_mean_length"
+output: html_notebook
+---
+
+### Conclusiones del Análisis sl2l_mean_length
+
+Buscamos en el feature sl2l_mean_length un estimador de posición y establecer su distribución.
+
+Estos pasos siguientes fueron realizados a partir de exploración gráfica de los datos y bajo conocimiento de su captura y procesamiento.
+
+**Paso 1**: separar valores en control y estudio.\
+**Paso 2:** verificar valores repetidos.En este caso no existen repetidos.\
+**Paso 3:** Limpiar los outliers, de manera general cuando existe cuando se juntan ambas particiones.
+
+Luego, verificando y ajustando a distribuciones teóricas, se asemeja a la distribución normal. Realizamos los ajustes, aunque sus datos no logran ajustar del todo.\
+También, realizamos pruebas con distribución libre o sin Ajuste total a una distribución teórica, utilizamos diferentes nucleos y ancho de banda.
+
+Con prechequeo formal formal de normalidad (**shapiro-wilk y Anderson-Darling)**, sostiene la hipótesis de normalidad.
+
+Por otro lado, es importante analizar las distribuciones separadas entre Control y Estudio en este features para verificar sus diferencias.
+
+Entonces, nuevamente es importante ajustar la distribución lo mejor posible a su promedio, para lograr diferenciar y llegar a la verdadera posición central. (ver la necesidad del tamaño de muestra ante el uso del sistema libre distribucion)
+
+Podemos pensar en una distribución teorica normal y pensar en Silverman para establecer la posición y sus desviaciones ajustadas.
+
+```{r}
+library(ggplot2)
+library(gridExtra)
+library(MASS)
+library(fitdistrplus)
+library(ggstatsplot)
+library(BSSasymp) #Cramer-ca
+
+```
+
+```{r}
+### Ubicacion de datos
+setwd("C:/hcgalvan/Repositorios/hcgalvan_project/data/union/End")
+temp = gsub(".*target.*", "", readLines("seleccionestudio.csv"))
+data<-read.table(text=temp, sep=",", header=TRUE)
+sl2lml <-data$sl2l_mean_length
+
+```
+
+#### Tratamiento Ajustado a Distribución y comparativa con/sin outliers
+
+Separamos los datos de la variable de estudio
+
+```{r}
+Control<-(as.numeric(unlist(subset(data, label==1, select=c(sl2l_mean_length)))))
+Estudio<-(as.numeric(unlist(subset(data, label==0, select=c(sl2l_mean_length)))))
+Controlclean<-unique(Control)
+Estudioclean<-unique(Estudio)
+
+```
+
+```{r}
+boxplot(Control, Estudio, sl2lml)$out
+```
+
+```{r}
+Q <- quantile(data$sl2l_mean_length, probs=c(.25, .75), na.rm = FALSE)
+iqr <- IQR(data$sl2l_mean_length)
+up <-  Q[2]+1.5*iqr # Upper Range  
+low<- Q[1]-1.5*iqr # Lower Range
+datasinout<- subset(data, data$sl2l_mean_length > (Q[1] - 1.5*iqr) & data$sl2l_mean_length < (Q[2]+1.5*iqr))
+```
+
+```{r}
+boxplot(datasinout$sl2l_mean_length)$out
+```
+
+Graficamos las distribuciones obtenidos.
+
+```{r}
+par(mfrow = c(2, 2), mar = c(4, 4, 2, 1)) 
+plotdist(datasinout$sl2l_mean_length, histo=TRUE, demp=TRUE) #completamente ajustado
+plotdist(data$sl2l_mean_length, histo=TRUE, demp=TRUE) #completamente ajustado
+
+```
+
+Realizamos descripcion de los valores descriptivos: Ajuste total, parcial y sin ajuste
+
+```{r}
+summary(datasinout$sl2l_mean_length) 
+summary(data$sl2l_mean_length)
+
+```
+
+Graficamos la densidad de distribución: Ajuste Total, Parcial y sin ajustes
+
+```{r}
+descdist(datasinout$sl2l_mean_length, boot = 1000)
+descdist(data$sl2l_mean_length, boot = 1000)
+```
+
+Ajustamos los datos a la distribución Normal
+
+```{r}
+library(glogis) 
+total<-fitdist(datasinout$sl2l_mean_length, "norm")
+sinajuste<-fitdist(data$sl2l_mean_length, "norm") 
+
+summary(total) 
+summary(sinajuste) 
+
+```
+
+```{r}
+par(mfrow = c(2, 2), mar = c(4, 4, 2, 1)) 
+fb <- fitdist(datasinout$sl2l_mean_length, "norm") 
+plot.legend <- c("norm") 
+denscomp(list(fb), legendtext = plot.legend) 
+qqcomp(list(fb), legendtext = plot.legend) 
+cdfcomp(list(fb), legendtext = plot.legend) 
+ppcomp(list(fb), legendtext = plot.legend)
+```
+
+```{r}
+library(actuar)  
+
+ATV1 <- datasinout$sl2l_mean_length
+datos1.l<-fitdist(ATV1, "norm")
+cdfcomp(list(datos1.l), xlogscale = TRUE, 
+        ylogscale = TRUE, legendtext = c("~N"))
+
+ATV <- data$sl2l_mean_length
+datos.l<-fitdist(ATV, "norm")
+cdfcomp(list(datos.l), xlogscale = TRUE, 
+        ylogscale = TRUE, legendtext = c("~N"))
+
+```
+
+### Test formal de normalidad.
+
+```{r}
+library(EnvStats)
+library(nortest)
+shapiro.test(datasinout$sl2l_mean_length)
+ad.test(datasinout$sl2l_mean_length) #prueba de normalidad de Anderson-Darling
+
+shapiro.test(data$sl2l_mean_length)
+ad.test(data$sl2l_mean_length) #prueba de normalidad de Anderson-Darling
+
+```
+
+### Analítica NO PARAMÉTRICA; libre distribución
+
+### Estudio de
+
+```{r}
+bw.nrd0(datasinout$sl2l_mean_length) #regla general de Silverman
+bw.nrd(datasinout$sl2l_mean_length)  #regla general de Scott
+bw.bcv(datasinout$sl2l_mean_length)  #convalidación cruzada
+bw.ucv(datasinout$sl2l_mean_length)  #validación cruzada imparcial
+bw.SJ(datasinout$sl2l_mean_length)   #Sheather & método Jones
+
+density.default(x = datasinout$sl2l_mean_length, kernel = "gaussian")
+density.default(x = datasinout$sl2l_mean_length, kernel = "epanechnikov")
+density.default(x = datasinout$sl2l_mean_length, bw="nrd", kernel = "gaussian")
+density.default(x = datasinout$sl2l_mean_length, bw="SJ", kernel = "gaussian")
+density.default(x = datasinout$sl2l_mean_length, bw="bcv", kernel = "gaussian")
+```
+
+```{r}
+require(graphics)
+
+plot(density(datasinout$sl2l_mean_length))  # IQR = 0
+
+# The Old Faithful geyser data
+d <- density(datasinout$sl2l_mean_length, bw = "sj")
+d
+plot(d)
+
+## Missing values:
+x <- xx <- datasinout$sl2l_mean_length
+x[i.out <- sample(length(x), 10)] <- NA
+doR <- density(x, bw = 1550.821, na.rm = TRUE)
+lines(doR, col = "blue")
+points(xx[i.out], rep(0.01, 10))
+
+## Weighted observations:
+fe <- sort(datasinout$sl2l_mean_length) # has quite a few non-unique values
+## use 'counts / n' as weights:
+dw <- density(unique(fe), weights = table(fe)/length(fe), bw = d$bw)
+utils::str(dw) ## smaller n: only 126, but identical estimate:
+stopifnot(all.equal(d[1:3], dw[1:3]))
+
+## simulation from a density() fit:
+# a kernel density fit is an equally-weighted mixture.
+fit <- density(xx)
+N <- length(datasinout$sl2l_mean_length)
+x.new <- rnorm(N, sample(xx, size = N, replace = TRUE), fit$bw)
+plot(fit)
+lines(density(x.new), col = "blue")
+
+
+(kernels <- eval(formals(density.default)$kernel))
+
+##-------- Semi-advanced theoretic from here on -------------
+## <!-- %% i.e. "secondary example" in a new help system ... -->
+(RKs <- cbind(sapply(kernels,
+                     function(k) density(kernel = k, give.Rkern = TRUE))))
+100*round(RKs["epanechnikov",]/RKs, 4) ## Efficiencies
+bw <- bw.SJ(datasinout$sl2l_mean_length) ## sensible automatic choice
+plot(density(datasinout$sl2l_mean_length, bw = bw),
+     main = "same sd bandwidths, 7 different kernels")
+for(i in 2:length(kernels))
+   lines(density(datasinout$sl2l_mean_length, bw = bw, kernel = kernels[i]), col = i)
+
+## Bandwidth Adjustment for "Exactly Equivalent Kernels"
+h.f <- sapply(kernels, function(k)density(kernel = k, give.Rkern = TRUE))
+(h.f <- (h.f["gaussian"] / h.f)^ .2)
+## -> 1, 1.01, .995, 1.007,... close to 1 => adjustment barely visible..
+
+plot(density(datasinout$sl2l_mean_length, bw = bw),
+     main = "equivalent bandwidths, 7 different kernels")
+for(i in 2:length(kernels))
+   lines(density(datasinout$sl2l_mean_length, bw = bw, adjust = h.f[i], kernel = kernels[i]),
+         col = i)
+legend(55, 0.035, legend = kernels, col = seq(kernels), lty = 1)
+
+```
+
+### 
