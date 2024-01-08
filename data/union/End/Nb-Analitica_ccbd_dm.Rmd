@@ -194,12 +194,13 @@ Ajustamos los datos a la distribución weibull y gamma
 
 ```{r}
 library(glogis) 
-total<-fitdist(datasinout1$ccbd_diameter, "weibull")
+total<-fitdist(datasinout1$ccbd_diameter, "norm")
+total1<-fitdist(datasinout1$ccbd_diameter, "weibull")
 parcial<-fitdist(datasinout$ccbd_diameter, "weibull") 
 sinajuste<-fitdist(data$ccbd_diameter, "weibull") 
-fw<-fitdist(ccdbdm, "gamma") 
+fw<-fitdist(ccdbdm, "norm") 
 total
-summary(total) 
+summary(total1) 
 summary(parcial) 
 summary(sinajuste) 
 summary(fw) 
@@ -259,7 +260,7 @@ ppcomp(list(fw, fg, fb), legendtext = plot.legend)
 library(actuar)  
 
 ATV1 <- datasinout1$ccbd_diameter
-datos1.l<-fitdist(ATV1, "lnorm")
+datos1.l<-fitdist(ATV1, "norm")
 datos1.w<-fitdist(ATV1, "weibull")
 datos1.g<-fitdist(ATV1, "gamma")
 cdfcomp(list(datos1.l, datos1.w, datos1.g), xlogscale = TRUE, 
@@ -273,7 +274,7 @@ cdfcomp(list(datos2.l, datos2.w, datos2.g), xlogscale = TRUE,
         ylogscale = TRUE, legendtext = c("~ln","~weib","~gamma"))
 
 ATV <- data$ccbd_diameter
-datos.l<-fitdist(ATV, "lnorm")
+datos.l<-fitdist(ATV, "norm")
 datos.w<-fitdist(ATV, "weibull")
 datos.g<-fitdist(ATV, "gamma")
 cdfcomp(list(datos.l, datos.w, datos.g), xlogscale = TRUE, 
@@ -285,6 +286,9 @@ Buscamos la mediana o cuantil D5 - 50% de probabilidad de que el valor esté po
 
 ```{r}
 quantile(datos.w, probs = 0.05) # Sin Ajustes de outliers ~Weibull
+quantile(datos.l, probs = 0.05) # Sin Ajustes de outliers ~Weibull
+quantile(datos1.l, probs = 0.05) # Parcialmente Ajustados de outliers ~Weibull
+quantile(datos1.w, probs = 0.05) # Parcialmente Ajustados de outliers ~Weibull
 quantile(datos1.w, probs = 0.05) # Parcialmente Ajustados de outliers ~Weibull
 quantile(datos2.w, probs = 0.05) # Sin outliers ~Weibull
 
@@ -339,6 +343,20 @@ plot(datosboot2.w)
 ```
 
 ### Analítica NO PARAMÉTRICA; libre distribución
+
+```{r}
+bw.nrd0(datasinout1$ccbd_diameter) #regla general de Silverman
+bw.nrd(datasinout1$ccbd_diameter)  #regla general de Scott
+bw.bcv(datasinout1$ccbd_diameter)  #convalidación cruzada
+bw.ucv(datasinout1$ccbd_diameter)  #validación cruzada imparcial
+bw.SJ(datasinout1$ccbd_diameter)   #Sheather & método Jones
+
+density.default(x = datasinout1$ccbd_diameter, kernel = "gaussian")
+density.default(x = datasinout1$ccbd_diameter, kernel = "epanechnikov")
+density.default(x = datasinout1$ccbd_diameter, bw="nrd", kernel = "gaussian")
+density.default(x = datasinout1$ccbd_diameter, bw="SJ", kernel = "gaussian")
+density.default(x = datasinout1$ccbd_diameter, bw="bcv", kernel = "gaussian")
+```
 
 ```{r}
 gofstat(list(fitlog, fitlogmme), fitnames=c("Logis mle", "logis mme"))

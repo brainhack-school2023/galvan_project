@@ -1,0 +1,182 @@
+---
+title: "Analítica de features"
+output: html_notebook
+---
+
+#### FEATURES : sl2l_diameter
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(gridExtra)
+library(MASS)
+library(fitdistrplus)
+library(ggstatsplot)
+library(BSSasymp) #Cramer-ca
+```
+
+```{r}
+setwd("C:/hcgalvan/Repositorios/hcgalvan_project/data/union/End")
+temp = gsub(".*target.*", "", readLines("seleccionestudio.csv"))
+data<-read.table(text=temp, sep=",", header=TRUE)
+sl2ldm <-data$sl2l_diameter
+ccdbdm <-data$ccbd_diameter
+ifoldm <-data$ifol_diameter
+ecplvl <-data$ecpl_volume
+dataclean <-unique(data$ecpl_volume)
+tralvl <-data$tral_volume
+sl2lml <-data$sl2l_mean_length
+ccbdlm <-data$ccbd_mean_length
+
+```
+
+```{r}
+Ctl_sl2ldm<-(as.numeric(unlist(subset(data, label==1, select=c(sl2l_diameter)))))
+Est_sl2ldm<-(as.numeric(unlist(subset(data, label==0, select=c(sl2l_diameter)))))
+
+Ctl_ccbdm<-(as.numeric(unlist(subset(data, label==1, select=c(ccbd_diameter)))))
+Est_ccbdm<-(as.numeric(unlist(subset(data, label==0, select=c(ccbd_diameter)))))
+
+Ctl_ifoldm<-(as.numeric(unlist(subset(data, label==1, select=c(ifol_diameter)))))
+Est_ifoldm<-(as.numeric(unlist(subset(data, label==0, select=c(ifol_diameter)))))
+
+Ctl_ecplvl<-(as.numeric(unlist(subset(data, label==1, select=c(ecpl_volume)))))
+Est_ecplvl<-(as.numeric(unlist(subset(data, label==0, select=c(ecpl_volume)))))
+
+Ctl_tralvl<-(as.numeric(unlist(subset(data, label==1, select=c(tral_volume)))))
+Est_tralvl<-(as.numeric(unlist(subset(data, label==0, select=c(tral_volume)))))
+
+Ctl_sl2lml<-(as.numeric(unlist(subset(data, label==1, select=c(sl2l_mean_length)))))
+Est_sl2lml<-(as.numeric(unlist(subset(data, label==0, select=c(sl2l_mean_length)))))
+
+Ctl_ccbdml<-(as.numeric(unlist(subset(data, label==1, select=c(ccbd_mean_length)))))
+Est_ccbdml<-(as.numeric(unlist(subset(data, label==0, select=c(ccbd_mean_length)))))
+
+
+
+
+```
+
+SL2L Diameter
+
+```{r}
+df_sl2ldm<-c()
+df_sl2ldm$Ctl_sl2ldm <- Ctl_sl2ldm
+Q <- quantile(df_sl2ldm$Ctl_sl2ldm, probs=c(.25, .75), na.rm = FALSE) 
+iqr <- IQR(df_sl2ldm$Ctl_sl2ldm) 
+up <-  Q[2]+1.5*iqr # Upper Range   
+low<- Q[1]-1.5*iqr # Lower Range 
+datasinout<- subset(df_sl2ldm$Ctl_sl2ldm, df_sl2ldm$Ctl_sl2ldm > (Q[1] - 1.5*iqr) & df_sl2ldm$Ctl_sl2ldm < (Q[2]+1.5*iqr))
+df_sl2ldm$Ctl_sl2ldm_SinOut<- datasinout
+df_sl2ldm$Est_sl2ldm <- Est_sl2ldm
+boxplot(df_sl2ldm, main="sl2l diameter" )
+
+```
+
+```{r}
+Ctl_ccbdm<-(as.numeric(unlist(subset(data, label==1, select=c(ccbd_diameter)))))
+Est_ccbdm<-(as.numeric(unlist(subset(data, label==0, select=c(ccbd_diameter)))))
+
+df_ccbdm<-c()
+df_ccbdm$Ctl_ccbdm <- Ctl_ccbdm
+df_ccbdm$Est_ccbdm <- Est_ccbdm
+
+boxplot(df_ccbdm, main="CCBD diameter Con Outliers")
+
+Q <- quantile(df_ccbdm$Ctl_ccbdm, probs=c(.25, .75), na.rm = FALSE) 
+iqr <- IQR(df_ccbdm$Ctl_ccbdm) 
+up <-  Q[2]+1.5*iqr # Upper Range   
+low<- Q[1]-1.5*iqr # Lower Range 
+datasinout<- subset(df_ccbdm$Ctl_ccbdm, df_ccbdm$Ctl_ccbdm > (Q[1] - 1.5*iqr) & df_ccbdm$Ctl_ccbdm < (Q[2]+1.5*iqr))
+df_ccbdm_sinOut<-c()
+df_ccbdm_sinOut$Ctl_ccbdm<- datasinout
+
+Q <- quantile(df_ccbdm$Est_ccbdm, probs=c(.25, .75), na.rm = FALSE) 
+iqr <- IQR(df_ccbdm$Est_ccbdm) 
+up <-  Q[2]+1.5*iqr # Upper Range   
+low<- Q[1]-1.5*iqr # Lower Range 
+datasinout<- subset(df_ccbdm$Est_ccbdm, df_ccbdm$Est_ccbdm > (Q[1] - 1.5*iqr) & df_ccbdm$Est_ccbdm < (Q[2]+1.5*iqr))
+df_ccbdm_sinOut$Est_ccbdm<- datasinout
+
+boxplot(df_ccbdm_sinOut, xlmain="CCBD diameter sin Outliers" )
+```
+
+```{r}
+
+
+Ctl_ifoldm<-(as.numeric(unlist(subset(data, label==1, select=c(ifol_diameter)))))
+Est_ifoldm<-(as.numeric(unlist(subset(data, label==0, select=c(ifol_diameter)))))
+
+df_ifoldm<-c()
+df_ifoldm$Ctl_ifoldm <- Ctl_ccbdm
+df_ifoldm$Est_ifoldm <- Est_ccbdm
+
+boxplot(df_ifoldm, main="IFOL diameter Con Outliers")
+boxplot(df_ifoldm, main="IFOL diameter Con Outliers", horizontal = TRUE )
+stripchart(df_ifoldm, method = "jitter", pch = 19, add = TRUE, col = "blue")
+
+Q <- quantile(df_ifoldm$Ctl_ifoldm, probs=c(.25, .75), na.rm = FALSE) 
+iqr <- IQR(df_ifoldm$Ctl_ifoldm) 
+up <-  Q[2]+1.5*iqr # Upper Range   
+low<- Q[1]-1.5*iqr # Lower Range 
+datasinout<- subset(df_ifoldm$Ctl_ifoldm, df_ifoldm$Ctl_ifoldm > (Q[1] - 1.5*iqr) & df_ifoldm$Ctl_ifoldm < (Q[2]+1.5*iqr))
+df_ifoldm_sinOut<-c()
+df_ifoldm_sinOut$Ctl_ifoldm<- datasinout
+
+Q <- quantile(df_ifoldm$Est_ifoldm, probs=c(.25, .75), na.rm = FALSE) 
+iqr <- IQR(df_ifoldm$Est_ifoldm) 
+up <-  Q[2]+1.5*iqr # Upper Range   
+low<- Q[1]-1.5*iqr # Lower Range 
+datasinout<- subset(df_ifoldm$Est_ifoldm, df_ifoldm$Est_ifoldm > (Q[1] - 1.5*iqr) & df_ifoldm$Est_ifoldm < (Q[2]+1.5*iqr))
+df_ifoldm_sinOut$Est_ifoldm<- datasinout
+
+boxplot(df_ifoldm_sinOut, main="IFOL diameter sin Outliers" )
+boxplot(df_ifoldm_sinOut, main="IFOL diameter sin Outliers", horizontal = TRUE )
+stripchart(df_ifoldm_sinOut, method = "jitter", pch = 19, add = TRUE, col = "blue")
+```
+
+```{r}
+
+Ctl_ecplvl<-(as.numeric(unlist(subset(data, label==1, select=c(ecpl_volume)))))
+Est_ecplvl<-(as.numeric(unlist(subset(data, label==0, select=c(ecpl_volume)))))
+ControlUniq<-unique(Ctl_ecplvl)
+EstudioUniq<-unique(Est_ecplvl)
+
+df_ecplvl<-c()
+df_ecplvl$Ctl_ecplvl <- Ctl_ecplvl
+df_ecplvl$Est_ecplvl <- Est_ecplvl
+df_ecplvl$CtlUniq <- ControlUniq
+df_ecplvl$EstUniq <- EstudioUniq
+
+
+boxplot(df_ecplvl, main="ECPL Volume Con Outliers")
+boxplot(df_ecplvl, main="ECPL Volume Con Outliers", horizontal = TRUE )
+stripchart(df_ecplvl, method = "jitter", pch = 19, add = TRUE, col = "blue")
+
+Q <- quantile(df_ecplvl$Ctl_ecplvl, probs=c(.25, .75), na.rm = FALSE) 
+iqr <- IQR(df_ecplvl$Ctl_ecplvl) 
+up <-  Q[2]+1.5*iqr # Upper Range   
+low<- Q[1]-1.5*iqr # Lower Range 
+datasinout<- subset(df_ecplvl$Ctl_ecplvl, df_ecplvl$Ctl_ecplvl > (Q[1] - 1.5*iqr) & df_ecplvl$Ctl_ecplvl < (Q[2]+1.5*iqr))
+df_ecplvl_sinOut<-c()
+df_ecplvl_sinOut$Ctl_ecplvl<- datasinout
+
+Q <- quantile(df_ecplvl$CtlUniq, probs=c(.25, .75), na.rm = FALSE) 
+iqr <- IQR(df_ecplvl$CtlUniq) 
+up <-  Q[2]+1.5*iqr # Upper Range   
+low<- Q[1]-1.5*iqr # Lower Range 
+datasinout<- subset(df_ecplvl$CtlUniq, df_ecplvl$CtlUniq > (Q[1] - 1.5*iqr) & df_ecplvl$CtlUniq < (Q[2]+1.5*iqr))
+df_ecplvl_sinOut$CtlUniq<- datasinout
+df_ecplvl_sinOut$Est_ecplvl<- Est_ecplvl
+
+boxplot(df_ecplvl_sinOut, main="ECPL Volume Sujetos Control: Con y Sin Repetidos además Outliers" )
+boxplot(df_ecplvl_sinOut, main="ECPL Volume Sujetos Control: Con y Sin Repetidos además Outliers", horizontal = TRUE )
+stripchart(df_ecplvl_sinOut, method = "jitter", pch = 19, add = TRUE, col = "blue")
+
+
+```
+
+```{r}
+
+
+```

@@ -132,6 +132,11 @@ cdfcomp(list(datos.l), xlogscale = TRUE,
 
 ```
 
+```{r}
+quantile(datos.l, probs = 0.05) # Sin Ajustes de outliers ~Normal
+quantile(datos1.l, probs = 0.05) # Parcialmente Ajustados de outliers ~Normal
+```
+
 ### Test formal de normalidad.
 
 ```{r}

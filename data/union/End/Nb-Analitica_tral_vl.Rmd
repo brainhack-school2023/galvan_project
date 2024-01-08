@@ -170,6 +170,7 @@ Graficamos las distribuciones obtenidos.
 par(mfrow = c(2, 2), mar = c(4, 4, 2, 1)) 
 plotdist(datasinout1$tral_volume, histo=TRUE, demp=TRUE) #completamente ajustado
 plotdist(datasinout$tral_volume, histo=TRUE, demp=TRUE) #completamente ajustado
+plotdist(data$tral_volume, histo=TRUE, demp=TRUE) #completamente ajustado
 
 ```
 
@@ -236,6 +237,12 @@ datos.l<-fitdist(ATV, "norm")
 cdfcomp(list(datos.l), xlogscale = TRUE, 
         ylogscale = TRUE, legendtext = c("~N"))
 
+```
+
+```{r}
+quantile(datos.l, probs = 0.05) # Sin Ajustes de outliers ~Normal
+quantile(datos1.l, probs = 0.05) # Sin Ajustes de outliers ~Normal
+quantile(datos2.l, probs = 0.05) # Parcialmente Ajustados de outliers ~Normal
 ```
 
 ### Test formal de normalidad.

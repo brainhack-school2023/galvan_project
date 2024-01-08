@@ -247,10 +247,12 @@ Ajustamos los datos a la distribución weibull y gamma
 ```{r}
 library(glogis) 
 
-totaln<-fitdist(datasinout2$ifol_diameter, "lnorm")
+totaln<-fitdist(datasinout3$ifol_diameter, "norm")
+totaln1<-fitdist(datasinout2$ifol_diameter, "lnorm")
 total<-fitdist(datasinout1$ifol_diameter, "weibull")
 parcial<-fitdist(datasinout$ifol_diameter, "weibull") 
-sinajuste<-fitdist(data$ifol_diameter, "weibull") 
+sinajuste<-fitdist(data$ifol_diameter, "norm") 
+sinajuste1<-fitdist(data$ifol_diameter, "weibull") 
 fw<-fitdist(ifoldm, "gamma") 
 summary(totaln) 
 summary(total) 
@@ -379,8 +381,11 @@ cdfcomp(list(datos4.l, datos4.w, datos4.g), xlogscale = TRUE,
 Buscamos la mediana o cuantil D5 - 50% de probabilidad de que el valor esté por encima como por debajo de esa cifra
 
 ```{r}
+quantile(datos.l, probs = 0.05) # Sin Ajustes de outliers ~Weibull
+quantile(datos4.l, probs = 0.05) # Sin Ajustes de outliers ~Weibull
 quantile(datos.w, probs = 0.05) # Sin Ajustes de outliers ~Weibull
 quantile(datos1.w, probs = 0.05) # Parcialmente Ajustados de outliers ~Weibull
+quantile(datos2.w, probs = 0.05) # Sin outliers ~Weibull
 quantile(datos2.w, probs = 0.05) # Sin outliers ~Weibull
 
 ```
@@ -438,6 +443,20 @@ plot(datosboot1.w)
 datosboot2.w <- bootdist(datos2.w, niter = 1001) #sin outliers
 summary(datosboot2.w)
 plot(datosboot2.w)
+```
+
+```{r}
+bw.nrd0(datasinout3$ifol_diameter) #regla general de Silverman
+bw.nrd(datasinout3$ifol_diameter)  #regla general de Scott
+bw.bcv(datasinout3$ifol_diameter)  #convalidación cruzada
+bw.ucv(datasinout3$ifol_diameter)  #validación cruzada imparcial
+bw.SJ(datasinout3$ifol_diameter)   #Sheather & método Jones
+
+density.default(x = datasinout3$ifol_diameter, kernel = "gaussian")
+density.default(x = datasinout3$ifol_diameter, kernel = "epanechnikov")
+density.default(x = datasinout3$ifol_diameter, bw="nrd", kernel = "gaussian")
+density.default(x = datasinout3$ifol_diameter, bw="SJ", kernel = "gaussian")
+density.default(x = datasinout3$ifol_diameter, bw="bcv", kernel = "gaussian")
 ```
 
 ### Analítica NO PARAMÉTRICA; libre distribución

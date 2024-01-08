@@ -136,12 +136,18 @@ dataendcleanun<-unique(dataendclean)
 boxplot(Controlclean, Ctrlclean, Estudioclean, dataendclean, dataendcleanun)$out
 ```
 
+```{r}
+descdist(dataendcleanun, boot = 1000)
+descdist(ecplvl, boot = 1000)
+```
+
 Graficamos las distribuciones obtenidos.
 
 ```{r}
 
 par(mfrow = c(2, 2), mar = c(4, 4, 2, 1)) 
 plotdist(dataendcleanun, histo=TRUE, demp=TRUE) #completamente ajustado
+plotdist(ecplvl, histo=TRUE, demp=TRUE) #completamente ajustado
 
 ```
 
@@ -149,6 +155,7 @@ Realizamos descripcion de los valores descriptivos: Ajuste total, parcial y sin 
 
 ```{r}
 summary(dataendcleanun) 
+summary(ecplvl) 
 
 ```
 
@@ -200,6 +207,11 @@ datos.l<-fitdist(ATV, "norm")
 cdfcomp(list(datos.l), xlogscale = TRUE, 
         ylogscale = TRUE, legendtext = c("~N"))
 
+```
+
+```{r}
+quantile(datos.l, probs = 0.05) # Sin Ajustes de outliers ~Weibull
+quantile(datos2.l, probs = 0.05) # Sin outliers ~Weibull
 ```
 
 ### Test formal de normalidad.
