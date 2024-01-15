@@ -69,8 +69,13 @@ low<- Q[1]-1.5*iqr # Lower Range
 datasinout<- subset(df_sl2ldm$Ctl_sl2ldm, df_sl2ldm$Ctl_sl2ldm > (Q[1] - 1.5*iqr) & df_sl2ldm$Ctl_sl2ldm < (Q[2]+1.5*iqr))
 df_sl2ldm$Ctl_sl2ldm_SinOut<- datasinout
 df_sl2ldm$Est_sl2ldm <- Est_sl2ldm
-boxplot(df_sl2ldm, main="sl2l diameter" )
 
+boxplot(df_sl2ldm, main="sl2l diameter" )
+boxplot(df_sl2ldm, main="sl2l diameter", horizontal = TRUE )
+stripchart(df_sl2ldm, method = "jitter", pch = 19, add = TRUE, col = "blue")
+
+descdist(df_sl2ldm$Ctl_sl2ldm_SinOut, boot = 1000)
+summary(df_sl2ldm$Ctl_sl2ldm_SinOut)
 ```
 
 ```{r}
@@ -90,15 +95,14 @@ low<- Q[1]-1.5*iqr # Lower Range
 datasinout<- subset(df_ccbdm$Ctl_ccbdm, df_ccbdm$Ctl_ccbdm > (Q[1] - 1.5*iqr) & df_ccbdm$Ctl_ccbdm < (Q[2]+1.5*iqr))
 df_ccbdm_sinOut<-c()
 df_ccbdm_sinOut$Ctl_ccbdm<- datasinout
+df_ccbdm_sinOut$Est_ccbdm <- Est_ccbdm
 
-Q <- quantile(df_ccbdm$Est_ccbdm, probs=c(.25, .75), na.rm = FALSE) 
-iqr <- IQR(df_ccbdm$Est_ccbdm) 
-up <-  Q[2]+1.5*iqr # Upper Range   
-low<- Q[1]-1.5*iqr # Lower Range 
-datasinout<- subset(df_ccbdm$Est_ccbdm, df_ccbdm$Est_ccbdm > (Q[1] - 1.5*iqr) & df_ccbdm$Est_ccbdm < (Q[2]+1.5*iqr))
-df_ccbdm_sinOut$Est_ccbdm<- datasinout
+boxplot(df_ccbdm_sinOut, main="CCBD diameter sin Outliers" )
+boxplot(df_ccbdm_sinOut, main="CCBD diameter sin Outliers", horizontal = TRUE )
+stripchart(df_ccbdm_sinOut, method = "jitter", pch = 19, add = TRUE, col = "blue")
 
-boxplot(df_ccbdm_sinOut, xlmain="CCBD diameter sin Outliers" )
+descdist(df_ccbdm_sinOut$Ctl_ccbdm, boot = 1000)
+summary(df_ccbdm_sinOut$Ctl_ccbdm)
 ```
 
 ```{r}
@@ -108,8 +112,8 @@ Ctl_ifoldm<-(as.numeric(unlist(subset(data, label==1, select=c(ifol_diameter))))
 Est_ifoldm<-(as.numeric(unlist(subset(data, label==0, select=c(ifol_diameter)))))
 
 df_ifoldm<-c()
-df_ifoldm$Ctl_ifoldm <- Ctl_ccbdm
-df_ifoldm$Est_ifoldm <- Est_ccbdm
+df_ifoldm$Ctl_ifoldm <- Ctl_ifoldm
+df_ifoldm$Est_ifoldm <- Est_ifoldm
 
 boxplot(df_ifoldm, main="IFOL diameter Con Outliers")
 boxplot(df_ifoldm, main="IFOL diameter Con Outliers", horizontal = TRUE )
@@ -122,17 +126,14 @@ low<- Q[1]-1.5*iqr # Lower Range
 datasinout<- subset(df_ifoldm$Ctl_ifoldm, df_ifoldm$Ctl_ifoldm > (Q[1] - 1.5*iqr) & df_ifoldm$Ctl_ifoldm < (Q[2]+1.5*iqr))
 df_ifoldm_sinOut<-c()
 df_ifoldm_sinOut$Ctl_ifoldm<- datasinout
+df_ifoldm_sinOut$Est_ifoldm <- Est_ifoldm
 
-Q <- quantile(df_ifoldm$Est_ifoldm, probs=c(.25, .75), na.rm = FALSE) 
-iqr <- IQR(df_ifoldm$Est_ifoldm) 
-up <-  Q[2]+1.5*iqr # Upper Range   
-low<- Q[1]-1.5*iqr # Lower Range 
-datasinout<- subset(df_ifoldm$Est_ifoldm, df_ifoldm$Est_ifoldm > (Q[1] - 1.5*iqr) & df_ifoldm$Est_ifoldm < (Q[2]+1.5*iqr))
-df_ifoldm_sinOut$Est_ifoldm<- datasinout
-
-boxplot(df_ifoldm_sinOut, main="IFOL diameter sin Outliers" )
+boxplot(df_ifoldm_sinOut, main="IFOL diameter sin Outliers" )$out
 boxplot(df_ifoldm_sinOut, main="IFOL diameter sin Outliers", horizontal = TRUE )
 stripchart(df_ifoldm_sinOut, method = "jitter", pch = 19, add = TRUE, col = "blue")
+
+descdist(df_ifoldm_sinOut$Ctl_ifoldm, boot = 1000)
+summary(df_ifoldm_sinOut$Ctl_ifoldm)
 ```
 
 ```{r}
@@ -169,14 +170,79 @@ datasinout<- subset(df_ecplvl$CtlUniq, df_ecplvl$CtlUniq > (Q[1] - 1.5*iqr) & df
 df_ecplvl_sinOut$CtlUniq<- datasinout
 df_ecplvl_sinOut$Est_ecplvl<- Est_ecplvl
 
-boxplot(df_ecplvl_sinOut, main="ECPL Volume Sujetos Control: Con y Sin Repetidos además Outliers" )
+boxplot(df_ecplvl_sinOut, main="ECPL Volume Sujetos Control: Con y Sin Repetidos además Outliers" )$out
 boxplot(df_ecplvl_sinOut, main="ECPL Volume Sujetos Control: Con y Sin Repetidos además Outliers", horizontal = TRUE )
 stripchart(df_ecplvl_sinOut, method = "jitter", pch = 19, add = TRUE, col = "blue")
 
+descdist(df_ecplvl_sinOut$CtlUniq, boot = 1000)
+summary(df_ecplvl_sinOut$CtlUniq)
 
 ```
 
 ```{r}
+Ctl_tralvl<-(as.numeric(unlist(subset(data, label==1, select=c(tral_volume)))))
+Est_tralvl<-(as.numeric(unlist(subset(data, label==0, select=c(tral_volume)))))
 
+df_tralvl<-c()
+df_tralvl$Ctl_tralvl <- Ctl_tralvl
+df_tralvl$Est_tralvl <- Est_tralvl
+
+boxplot(df_tralvl, main="TRAL Volume Con Outliers")$out
+boxplot(df_tralvl, main="TRAL Volume Con Outliers", horizontal = TRUE )
+stripchart(df_tralvl, method = "jitter", pch = 19, add = TRUE, col = "blue")
+
+descdist(df_tralvl$Ctl_tralvl, boot = 1000)
+summary(df_tralvl$Ctl_tralvl)
+```
+
+```{r}
+Ctl_sl2lml<-(as.numeric(unlist(subset(data, label==1, select=c(sl2l_mean_length)))))
+Est_sl2lml<-(as.numeric(unlist(subset(data, label==0, select=c(sl2l_mean_length)))))
+
+df_sl2lml<-c()
+df_sl2lml$Ctl_sl2lml <- Ctl_sl2lml
+datasinout<- subset(df_sl2lml$Ctl_sl2lml, df_sl2lml$Ctl_sl2lml > 60.0889 & df_sl2lml$Ctl_sl2lml < 95)
+df_sl2lml$Ctl_sl2lml_so <- datasinout
+df_sl2lml$Est_sl2lml <- Est_sl2lml
+min(df_sl2lml$Ctl_sl2lml)
+
+boxplot(df_sl2lml, main="sl2l Mean Length Con Outliers")$out
+
+boxplot(df_sl2lml, main="sl2l Mean Length Con Outliers", horizontal = TRUE )
+stripchart(df_sl2lml, method = "jitter", pch = 19, add = TRUE, col = "blue")
+
+descdist(df_sl2lml$Ctl_sl2lml_so, boot = 1000)
+summary(df_sl2lml$Ctl_sl2lml_so)
+```
+
+```{r}
+Ctl_ccbdml<-(as.numeric(unlist(subset(data, label==1, select=c(ccbd_mean_length)))))
+Est_ccbdml<-(as.numeric(unlist(subset(data, label==0, select=c(ccbd_mean_length)))))
+
+
+df_ccbdml<-c()
+df_ccbdml$Ctl_ccbdml <- Ctl_ccbdml
+df_ccbdml$Est_ccbdml <- Est_ccbdml
+
+boxplot(df_ccbdml, main="CCBD mean Length Con Outliers")$out
+boxplot(df_ccbdml, main="CCBD mean Length Con Outliers", horizontal = TRUE )
+stripchart(df_ccbdml, method = "jitter", pch = 19, add = TRUE, col = "blue")
+
+Q <- quantile(df_ccbdml$Ctl_ccbdml, probs=c(.25, .75), na.rm = FALSE) 
+iqr <- IQR(df_ccbdml$Ctl_ccbdml) 
+up <-  Q[2]+1.5*iqr # Upper Range   
+low<- Q[1]-1.5*iqr # Lower Range 
+datasinout<- subset(df_ccbdml$Ctl_ccbdml, df_ccbdml$Ctl_ccbdml > (Q[1] - 1.5*iqr) & df_ccbdml$Ctl_ccbdml < (Q[2]+1.5*iqr))
+df_ccbdml_sinOut<-c()
+df_ccbdml_sinOut$Ctl_ccbdml<- datasinout
+df_ccbdml_sinOut$Est_ccbdml <- Est_ccbdml
+
+
+boxplot(df_ccbdml_sinOut, main="CCBD mean Length sin Outliers")$out
+boxplot(df_ccbdml_sinOut, main="CCBD mean Length sin Outliers", horizontal = TRUE )
+stripchart(df_ccbdml_sinOut, method = "jitter", pch = 19, add = TRUE, col = "blue")
+
+descdist(df_ccbdml_sinOut$Ctl_ccbdml, boot = 1000)
+summary(df_ccbdml_sinOut$Ctl_ccbdml)
 
 ```
