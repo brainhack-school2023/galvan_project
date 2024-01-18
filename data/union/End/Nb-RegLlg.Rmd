@@ -1,0 +1,271 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(gridExtra)
+library(MASS)
+library(fitdistrplus)
+library(ggstatsplot)
+library(tibble)
+library(readr)
+
+
+```
+
+-   Como una regla heurística, se considera que debería haber al menos 10 observaciones de 1 o 0 por cada variable predictora. Por ejemplo, si y = 1 solo 30 veces en n = 1000 observaciones, el modelo no debería tener mas de tres variables predictoras, aunque el tamaño total de la muestra fuera grande
+
+-   Cuando un coeficiente es demasiado grande, con 3 digitos a más, en términos más generales, significa que probablemente esté intentando hacer "demasiado" con su modelo para el tamaño de su conjunto de datos (particularmente la cantidad de resultados observados). Es decir, para alguna combinación de parámetros, o todos obtuvieron el resultado o nadie tuvo el resultado, por lo que el coeficiente se dirige hacia el infinito (o el infinito negativo).
+
+```{r}
+setwd("C:/hcgalvan/Repositorios/hcgalvan_project/data/union/End")
+temp = gsub(".*target.*", "", readLines("cofunds_A.csv"))
+data<-read.table(text=temp, sep=",", header=TRUE)
+dataf<-data.frame(data)
+
+```
+
+```{r}
+tag<-filter(dataf, label==0)
+# Modelo de regresión logística
+logmodel <- glm(A ~ age + sl2l_iso, data = tag, family = binomial())
+
+
+# Bondad de ajuste del modelo Devianza y Chi2
+# Para saber la eficacia del modelo prediciendo la variable respuesta utilizamos el estadístico chi-cuadrado, que mide la diferencia entre el modelo en su estado actual y el modelo cuando sólo se incluyó la constante.
+
+dev <- logmodel$deviance
+nullDev <- logmodel$null.deviance
+modelChi <- nullDev - dev
+modelChi
+
+
+#como la probabilidad es menor que 0.05, podemos rechazar la hipótesis nula de que el modelo es mejor prediciendo la variable resultado que si elegimos por azar. Por tanto, podemos decir que, en general, el modelo tiene una aportación significativa en la perdición
+chigl <- logmodel$df.null - logmodel$df.residual
+chisq.prob <- 1 - pchisq(modelChi, chigl)
+chisq.prob
+
+# R^2
+R2.hl <- modelChi/logmodel$null.deviance
+R2.hl
+#coeficientes y z-statistic
+summary(logmodel)$coefficients
+
+# Odds ratio
+exp(logmodel$coefficients)
+## intervalos de confianza
+exp(confint(logmodel))
+
+
+# Diagnóstico del modelo
+tag$probabilidades.predichas <- fitted(logmodel)
+tag$studentized.residuals <- rstudent(logmodel)
+tag$dfbeta <- dfbeta(logmodel)
+tag$dffit <- dffits(logmodel)
+tag$leverage <- hatvalues(logmodel)
+
+head(tag[, c("age", "sl2l_iso","probabilidades.predichas")])
+head(tag[, c("leverage", "studentized.residuals", "dfbeta")])
+
+# Selección del modelo
+modelog <- glm(A ~ age+sl2l_iso, data = tag, family = binomial())
+summary(modelog)
+step(modelog, direction = "backward")
+
+####################################################
+# Supuestos del modelo Linealidad
+tag$logageInt <- log(tag$age) * tag$age
+tag$logsl2lInt <- log(tag$sl2l_iso) * tag$sl2l_iso
+#df$logvar2Int <- log(df$var2) * df$var2
+
+linealidad <- glm(A ~ age + sl2l_iso + logageInt + logsl2lInt, 
+    data = tag, family = binomial())
+summary(linealidad)
+
+## multicolinealidad
+library(car)
+vif(modelog)
+
+```
+
+```{r}
+logistic.regression.or.ci <- function(regress.out, level = 0.95) {
+  usual.output <- summary(regress.out)
+  z.quantile <- stats::qnorm(1 - (1 - level) / 2)
+  number.vars <- length(regress.out$coefficients)
+  OR <- exp(regress.out$coefficients[-1])
+  temp.store.result <- matrix(rep(NA, number.vars * 2), nrow = number.vars)
+  for (i in 1:number.vars) {
+    temp.store.result[i, ] <- summary(regress.out)$coefficients[i] +
+      c(-1, 1) * z.quantile * summary(regress.out)$coefficients[i + number.vars]
+  }
+  intercept.ci <- temp.store.result[1, ]
+  slopes.ci <- temp.store.result[-1, ]
+  OR.ci <- exp(slopes.ci)
+  output <- list(
+    regression.table = usual.output, intercept.ci = intercept.ci,
+    slopes.ci = slopes.ci, OR = OR, OR.ci = OR.ci
+  )
+  return(output)
+}
+```
+
+#### Agregar Zscore para reemplazar a X en la ecuación
+
+```{r}
+tag <- tag %>% 
+  mutate(zscore = (1/(1+exp(-(as.numeric(unlist(modelog$coefficients[1]))+as.numeric(unlist(modelog$coefficients[2]))*tag$age+as.numeric(unlist(modelog$coefficients[3]))*tag$sl2l_iso)))))
+```
+
+#### Encontrar delta δ de Ai — Delta (mayúscula Δ, minúscula δ)
+
+```{r}
+logistic.regression.or.ci(logmodel)
+
+deviance(logmodel)/df.residual(logmodel) # ratio varianza
+
+coef(modelog)
+exp(coef(modelog))
+# deviance(fit.reduced)/df.residual(fit.reduced)
+```
+
+#### Pruebas generales
+
+```{r}
+#library(fixest)
+#fitstat(logmodel, "g", simplify = TRUE)
+library(lme4)
+A ~ age+sl2l_iso
+logistic_MLM0 <- glmer(A ~ (1|age) + (1| sl2l_iso), data=tag, family="binomial")
+logistic_MLM1 <- glmer(A ~ age + (1| sl2l_iso), data=tag, family="binomial")
+summary(logistic_MLM0)
+summary(logistic_MLM1)
+
+```
+
+### [Rediseñar la base para el estudio causalidad]{.underline}
+
+```{r}
+dbd <- dataf[,c("A","label")]
+dbd<- dbd %>% 
+        mutate(zscore = (1/(1+exp(-(as.numeric(unlist(modelog$coefficients[1]))+as.numeric(unlist(modelog$coefficients[2]))*dataf$age+as.numeric(unlist(modelog$coefficients[3]))*dataf$sl2l_iso)))))
+```
+
+#### Aproximar con función no paramétrica λ de Zi
+
+La letra griega lambda (Mayuscula -\>Λ , Minúscula -\> λ)
+
+Tenemos 2 opciones por spline o regresion logística estratificada. Buscamos en este estudio por spline.
+
+```{r}
+library(splines)
+# vector of values
+# tag[,c("zscore")]
+# La Función sign() encuentra el signo de los elementos del vector numérico
+# La función diff() en R se utiliza para obtener la diferencia entre cada elemento de un vector de forma consecutiva
+# La funcion which() devuelve la posición o indice de la condicion satisfecha.
+# local maxima
+h<-dbd$zscore
+lmax <- h[c(1, which(diff(sign(diff(h)))==-2)+1, length(h))]
+
+# spline calculation
+spl <- spline(1:length(lmax), lmax)
+# visual inspection
+plot(spl)
+lines(spl)
+
+#spl es x
+h<-dbd$zscore
+modelo2<-lm(spl$y~bs(spl$x,knots = lmax ))
+summary(modelo2)
+
+#gráfico del modelo
+pre2<-predict(modelo2)
+plot(spl$x,spl$y,pch=16)
+lines(spl$x,pre2,lwd=2,col="red")
+```
+
+#### Propensity score
+
+<https://www.youtube.com/watch?v=4jWcf4nkUWk>
+
+<https://www.practicalpropensityscore.com/stratification.html>
+
+```{r}
+#generate statrum to quantile of zcore values continuos
+dbd$subclass <- cut(x=dbd$zscore,
+                              breaks=quantile(dbd$zscore, 
+                              prob = seq(0, 1, 1/5)),include.lowest=T)
+levels(dbd$subclass) <- 1:length(levels(dbd$subclass))
+
+```
+
+```{r}
+#examine common support
+xtabs(~A+subclass,dbd) #table of counts per stratum
+```
+
+```{r}
+library(tidyverse)
+library(gtsummary)
+library(survey)
+## regresión logística estratificada utilizando datos ponderados
+
+design<-svydesign(id=~1, data = dbd, weights = ~zscore, strata = ~subclass)
+
+reg1 <- svyglm(
+  label ~ A,
+  family = binomial,
+  design = subset(design, subclass=="1"))
+summary(reg1)
+tbl_regression(reg1)
+
+reg2 <- svyglm(
+  label ~ A,
+  family = binomial,
+  design = subset(design, subclass=="2"))
+summary(reg2)
+tbl_regression(reg2)
+
+reg3 <- svyglm(
+  label ~ A,
+  family = binomial,
+  design = subset(design, subclass=="3"))
+summary(reg3)
+tbl_regression(reg3)
+```
+
+```{r}
+# regresion logística condicional o estratificada
+# Realizo reg log de label(D) en A con estratos de quantiles obtenidos de zcore.
+# En este caso p-valor indica que no es significativo la inferencia obtenida. Lo que hace suponer la baja cantidad de observaciones.
+
+survival.clogit <-clogit(label~A+strata(subclass),data=dbd)
+summary(survival.clogit)
+```
+
+Xi​ (en mayúscula **Ξ**, en minúscula **ξ**
+
+<https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-019-0666-3>
+
+```{r}
+#library(survival)
+library(splines2)
+library(graphics)
+
+bsMat <- bSpline(dbd$zscore)
+
+matplot(dbd$zscore, bsMat, type = "l", ylab = "Piecewise constant B-spline bases")
+abline(v = knots, lty = 2, col = "gray")
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
