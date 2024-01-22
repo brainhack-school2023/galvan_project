@@ -1,0 +1,375 @@
+---
+title: "Regresión Logística con splines"
+output: html_notebook
+---
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(gridExtra)
+library(MASS)
+library(fitdistrplus)
+library(ggstatsplot)
+library(tibble)
+library(readr)
+```
+
+<https://towardsdatascience.com/from-logistic-regression-to-basis-expansions-and-splines-74d6bb3b8dc6>
+
+```{r}
+setwd("C:/hcgalvan/Repositorios/hcgalvan_project/data/union/End")
+temp = gsub(".*target.*", "", readLines("zscore.csv"))
+data<-read.table(text=temp, sep=",", header=TRUE)
+dz<-data.frame(data[,c("A","label","zscore")])
+dz1<-data.frame(data)
+
+```
+
+## Obtener funcion λ en Zi
+
+### Regresion Logistica con splines
+
+<https://community.rstudio.com/t/spline-transformation-predictor-in-the-logistic-regression/123190/6>
+
+#### Draft 1
+
+```{r}
+knots <- quantile(dz1$zscore, p = c(0.25, 0.5, 0.75))
+# Build the model
+library(splines)
+model <- glm (dz1$A ~ bs(dz1$zscore, degree=5, knots = knots), data = dz1, family=binomial)
+summary(model)
+# Make predictions
+pred.val.2 <- predict(model, type ="response")
+summary(pred.val.2)
+# Model performance
+library(caret)
+data.frame(
+  RMSE = RMSE(pred.val.2, dz1$A),
+  R2 = R2(pred.val.2, dz1$A)
+)
+```
+
+```{r}
+plot((1:length(dz1$zscore)), dz1$zscore, main = paste("spline[fun](.) through", 9, "points"))
+lines(spline((1:length(dz1$zscore)), dz1$zscore))
+lines(spline((1:length(dz1$zscore)), dz1$zscore, n = 30),lwd=2, col = 2)
+
+```
+
+#### Draft2
+
+```{r}
+form = "dz$A ~ dz$zscore + ns(dz$zscore,df=7)"
+form = formula(form)
+modelSpline = glm(form, data=dz, family=binomial )
+summary(modelSpline)
+backstep = step(modelSpline) # Backwards selection is the default
+summary(backstep)
+print( summary(backstep), digits=3 )
+
+# Model performance
+library(caret)
+data.frame(
+  RMSE = RMSE(pred.val.2, dz1$A),
+  R2 = R2(pred.val.2, dz1$A)
+)
+```
+
+```{r}
+drop1(step(model), test="Chisq")
+
+```
+
+#### Draft 3
+
+```{r}
+# Funcion cuadrática
+pos = function(x,s) (x-s)^2*(x>=s)
+#pos(dz$zscore,0.75)
+form = "dz$A ~ dz$zscore + pos(dz$zscore,0.25) + pos(dz$zscore,0.5)+pos(dz$zscore,0.75)"
+form = formula(form)
+reg = glm(form,data=dz,family=binomial)
+summary(reg)
+v = predict(reg,newdata=data.frame(dz$zscore),type="response")
+plot((1:length(dz$zscore)),v,type="l")
+points(dz$zscore,dz$label,pch=19)
+ht <- seq(0, 1, length.out = 96)
+#lines(ht, v)
+abline(v=ht,lty=2)
+# Model performance
+library(caret)
+data.frame(
+  RMSE = RMSE(v, dz1$A),
+  R2 = R2(v, dz1$A)
+)
+```
+
+#### Draft 4
+
+```{r}
+summary(model)
+
+
+```
+
+```{r}
+## Defino ubicaciones de nudos
+## Selecciono solo los sujetos de estudio y sobre estos realizo los ajustes de regresion logistica con
+require(mgcv)
+zsc<-(as.numeric(unlist(subset(dz, label==0, select=c(zscore)))))
+histo <- hist(zsc)
+# Bins and bin counts
+histo$breaks # Bk's
+
+histo$counts # vk's
+
+hist(zsc, probability = TRUE)
+
+A1<-(as.numeric(unlist(subset(dz, label==0, select=c(A)))))
+plk <-place.knots(dz$zscore,15)
+md<-glm(A1~bs(zsc, knots=plk, degree=7), family=binomial)
+summary(md)
+```
+
+```{r}
+
+y0 <- c(1., 2., 4., 3.)
+y0
+sfun0  <- stepfun(1:3, y0, f = 0)
+sfun.2 <- stepfun(1:3, y0, f = 0.2)
+sfun1  <- stepfun(1:3, y0, f = 1)
+sfun1c <- stepfun(1:3, y0, right = TRUE) # hence f=1
+sfun0
+summary(sfun0)
+summary(sfun.2)
+## look at the internal structure:
+unclass(sfun0)
+ls(envir = environment(sfun0))
+
+x0 <- seq(0.5, 3.5, by = 0.25)
+rbind(x = x0, f.f0 = sfun0(x0), f.f02 = sfun.2(x0),
+      f.f1 = sfun1(x0), f.f1c = sfun1c(x0))
+## Identities :
+stopifnot(identical(y0[-1], sfun0 (1:3)), # right = FALSE
+          identical(y0[-4], sfun1c(1:3))) # right = TRUE
+```
+
+```{r}
+Fn <- ecdf(dz$zscore) # busca distribucion
+plot(Fn)
+plot(Fn, verticals = TRUE, do.points = FALSE)
+Fn(dz$zscore)
+knots(Fn)
+summary(Fn)
+```
+
+```{r}
+##-- Simple didactical  ecdf  example :
+
+x <- rnorm(12)
+Fn <- ecdf(x)
+Fn     # a *function*
+Fn(x)  # returns the percentiles for x
+tt <- seq(-2, 2, by = 0.1)
+12 * Fn(tt) # Fn is a 'simple' function {with values k/12}
+Fn
+summary(Fn)
+##--> see below for graphics
+knots(Fn)  # the unique data values {12 of them if there were no ties}
+
+y <- round(rnorm(12), 1); y[3] <- y[1]
+Fn12 <- ecdf(y)
+Fn12
+knots(Fn12) # unique values (always less than 12!)
+summary(Fn12)
+summary.stepfun(Fn12)
+
+## Advanced: What's inside the function closure?
+ls(environment(Fn12))
+## "f"     "method" "na.rm"  "nobs"   "x"     "y"    "yleft"  "yright"
+utils::ls.str(environment(Fn12))
+stopifnot(all.equal(quantile(Fn12), quantile(y)))
+
+###----------------- Plotting --------------------------
+require(graphics)
+
+op <- par(mfrow = c(3, 1), mgp = c(1.5, 0.8, 0), mar =  .1+c(3,3,2,1))
+
+F10 <- ecdf(rnorm(10))
+summary(F10)
+
+plot(F10)
+plot(F10, verticals = TRUE, do.points = FALSE)
+
+plot(Fn12 , lwd = 2) ; mtext("lwd = 2", adj = 1)
+xx <- unique(sort(c(seq(-3, 2, length.out = 201), knots(Fn12))))
+lines(xx, Fn12(xx), col = "blue")
+abline(v = knots(Fn12), lty = 2, col = "gray70")
+
+plot(xx, Fn12(xx), type = "o", cex = .1)  #- plot.default {ugly}
+plot(Fn12, col.hor = "red", add =  TRUE)  #- plot method
+abline(v = knots(Fn12), lty = 2, col = "gray70")
+## luxury plot
+plot(Fn12, verticals = TRUE, col.points = "blue",
+     col.hor = "red", col.vert = "bisque")
+
+##-- this works too (automatic call to  ecdf(.)):
+plot.ecdf(rnorm(24))
+title("via  simple  plot.ecdf(x)", adj = 1)
+
+par(op)
+```
+
+```{r}
+# La funcion which() devuelve la posición o indice de la condicion satisfecha.
+h<-dbd$zscore
+# local maxima I obtain local maxima by utilizing the diff function.
+diff(sign(diff(h)))==-2
+which(diff(sign(diff(h)))==-2)+1
+h[c(1, which(diff(sign(diff(h)))==-2)+1, length(h))]
+lmax <- h[c(1, which(diff(sign(diff(h)))==-2)+1, length(h))]
+length(lmax)
+# spline calculation
+spl <- spline(1:length(lmax), lmax)
+length(spl$x)
+spl$y
+plot(spl)
+lines(spl)
+h
+
+spl$x
+spl$y
+
+spl[ceiling(x0)]
+spl$x[floor(x0) + 1]
+x = c(0:80)
+y = seq(0,18, length.out = length(x))
+y
+x0=10
+y[findInterval(x0, x)]
+
+x1<-spl[[c("x")]]
+y1<-spl[[c("y")]]
+x2 = 15.5
+y1
+y2=-0.558125429
+x1[ceiling(y2)]
+
+```
+
+```{r}
+library(rpart)
+x=dz$zscor
+y=dz$A
+df <- data.frame(x=dz$zscor, y=dz$A)
+tree <- rpart(y ~ x, data=df,control=rpart.control(minsplit=7, cp=.0001))
+"piecewise constant regressions"
+plot_tree <- function(tree, x, y) {
+  s <- seq(0, 1, by=.05)
+  plot(x, y)
+  lines(s, predict(tree, data.frame(x=s)))
+}
+plot_tree(tree, x, y)
+
+```
+
+```{r}
+# Función  constante por partes o escalonada
+# Definida en base a splines 
+## a function for integration on a piece
+piecewise_int <- function (hi, yi, bi, ci, di) {
+  yi * hi + bi * hi ^ 2 / 2 + ci * hi ^ 3 / 3 + di * hi ^ 4 / 4
+}
+
+xk <- dz$A
+yk <- dz$zscore
+f <- splinefun(xk, yk, "natural")  ## natural cubic spline
+f
+construction_info <- environment(f)$z
+
+## information for integration
+int_info <- with(construction_info,
+                 list(h = diff(x), y = y[-n], b = b[-n], c = c[-n], d = d[-n])
+                 )
+int_info
+## cubic spline integration on all pieces
+integral <- sum(do.call(piecewise_int, int_info))
+integral
+integrate(f, 0, 10)
+
+
+
+x<- dz$A
+y<- dz$zscore
+spline(x)
+plot(spline(x))
+cuts <- c( -Inf, -1.793, -1.304, -0.326, 0.625, 1.630, 2.119 )
+vals <- c(    0,  0.454,      0,  0.632,     0, 0.227,     0 )
+fx <- vals[findInterval(x, c(-Inf, cuts))]
+f <- stepfun(cuts[-1], vals)
+fx <- f(x)
+fx
+```
+
+```{r}
+
+m1 <- smooth.spline(dz$zscore, dz$A, df=5 )
+plot(dz$zscore,dz$A, cex = 0.5, col = "darkgrey", ylab = "wage (x 1000 $)", xlab = "age")
+lines(m1, col = "red", lwd = 2)
+```
+
+```{r}
+reg = glm(dz$A~bs(dz$zscore, knots=plk, degre=5), data=dz,family=binomial(link = "logit"))
+summary(reg)
+
+#coefficients(reg)[6:14]
+u = seq(0,1,length=96)
+v = predict(reg,newdata=data.frame(dz$zscore),type="response")
+plot(u,v,ylim=0:1,type="l",col="red",lwd=2)
+points(dz$zscore,dz$A,pch=19)
+#abline(v=c(5,15,25,55),lty=2)
+
+library(caret)
+data.frame(
+  RMSE = RMSE(v, dz$A),
+  R2 = R2(v, dz$A)
+)
+
+```
+
+```{r}
+# Random Forest (RF) es una buena herramienta cuando la forma funcional de la relación entre X e y es complicada (debido a las relaciones no lineales y al efecto de interacción). RF clasifica a las X según el mejor punto de corte (en términos de SSE mínimo) y no aplica la información del investigador sobre la forma funcional de relación. Por otro lado, la regresión MCO utiliza esta información. 
+library(randomForest)
+# Utilizo Random Forest
+form = "dz$A ~ dz$zscore"
+form = formula(form)
+modelrm <- randomForest(form, data=dz)
+predrm <- predict(modelrm ,dz)
+plot((1:96), predrm)
+lines((1:96), dz$zscore, col="blue")
+#points(y, pred2, col="blue")
+```
+
+```{r}
+
+## regresion logistica no parametrica
+library(gam)
+class<-gam(I(dz$A>0) ~ s(dz$zscore,df=7),data=dz,family="binomial")
+class1<-gam(dz$A ~ bs(dz$zscore,df=7),data=dz,family="binomial")
+summary(class)
+summary(class1)
+proba<-predict(class,newdata=data.frame(zscore=0.05:0.60),type="response")
+proba
+
+
+plot((1:96),proba,xlab="zcore",ylab="A ==1",type="l")
+ii<-which(dz$A==1)
+points(dz$zscore[ii],rep(max(proba),length(ii)),cex=0.5)
+points(dz$zscore[-ii],rep(0,nrow(dz$A)-length(ii)),cex=0.5)
+
+
+modgm<-gam(dz$A ~ ns(dz$zscore,df=7),data=dz,family="binomial")
+plot(class,se=TRUE)
+
+```

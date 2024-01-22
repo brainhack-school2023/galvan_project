@@ -18,7 +18,7 @@ library(readr)
 
 -   Como una regla heurística, se considera que debería haber al menos 10 observaciones de 1 o 0 por cada variable predictora. Por ejemplo, si y = 1 solo 30 veces en n = 1000 observaciones, el modelo no debería tener mas de tres variables predictoras, aunque el tamaño total de la muestra fuera grande
 
--   Cuando un coeficiente es demasiado grande, con 3 digitos a más, en términos más generales, significa que probablemente esté intentando hacer "demasiado" con su modelo para el tamaño de su conjunto de datos (particularmente la cantidad de resultados observados). Es decir, para alguna combinación de parámetros, o todos obtuvieron el resultado o nadie tuvo el resultado, por lo que el coeficiente se dirige hacia el infinito (o el infinito negativo).
+-   En regresión logística, cuando un coeficiente es demasiado grande, con 3 digitos a más, en términos más generales, significa que probablemente esté intentando hacer "demasiado" con su modelo para el tamaño de su conjunto de datos (particularmente la cantidad de resultados observados). Es decir, para alguna combinación de parámetros, o todos obtuvieron el resultado o nadie tuvo el resultado, por lo que el coeficiente se dirige hacia el infinito (o el infinito negativo).
 
 ```{r}
 setwd("C:/hcgalvan/Repositorios/hcgalvan_project/data/union/End")
@@ -28,7 +28,25 @@ dataf<-data.frame(data)
 
 ```
 
+### Regresión Logística de A en X (X = confusoras)
+
+1.  Realizamos sobre D=1 (Sujetos de estudio), regresión logística de A en X, donde:
+
+-   El feature A tiene valor 0 y 1, equivalente a decir 0=No Expuesto, 1=Expuesto. Se forma a partir de la composición de todos features seleccionados como predictoras.
+-   En una etapa anterior estas predictoras, features numéricos continuos, se los ajustó a su distribución de densidad originante, todas distribuciónes normales. Ver estudio "*Ajuste por distribución*"
+-   Con los quantiles 1 y 3 de esta distribución originante se genera un nuevo feature para cada feature predictora, con valor 0="No expuesto", son aquellos sujetos que caen dentro de los límites de los cuantiles 1 y 3, valor 1=Expuesto, aquellos sujetos de la muestra que están fuera de los límites establecidos.
+-   Se aplica un filtro a cada sujeto de la muestra que selecciona al 1="Expuesto", en cada feature resultante y se los deja como expuesto en el nuevo feature A, para aquellos que solo logran combinaciones de 1 y 0 se los deja como 0=No expuesto.
+
+2.  Se van realizando diferentes pruebas para obtener una regresión lo más parsimónica posible, buscando la optimización en una muestra de pocas observaciones.
+
+-   Como la cantidad de features son cercanos a 34, realizamos PCA y luego utilizamos las confusoras seleccionadas de los DAG realizados.
+
+-   El resultado: las confusoras del DAG fueron seleccionadas porque convergen más rápidamente.
+
+3.  Una vez logrado ajuste y comprobado la bondad de ajuste y los supuestos, se utilizará los coeficientes para generar las puntuaciones (propensity Z score)
+
 ```{r}
+
 tag<-filter(dataf, label==0)
 # Modelo de regresión logística
 logmodel <- glm(A ~ age + sl2l_iso, data = tag, family = binomial())
@@ -88,8 +106,10 @@ summary(linealidad)
 ## multicolinealidad
 library(car)
 vif(modelog)
-
+AIC(modelog)
 ```
+
+#### Función de regresion logistica para obtener or, ci
 
 ```{r}
 logistic.regression.or.ci <- function(regress.out, level = 0.95) {
@@ -115,6 +135,8 @@ logistic.regression.or.ci <- function(regress.out, level = 0.95) {
 
 #### Agregar Zscore para reemplazar a X en la ecuación
 
+Con la regresión logística de A en X a partir de sujetos de control, utilizamos los coeficientes para generar las puntuaciones zscore en todas las observaciones del estudio (sujetos de control y sujetos de estudio)
+
 ```{r}
 tag <- tag %>% 
   mutate(zscore = (1/(1+exp(-(as.numeric(unlist(modelog$coefficients[1]))+as.numeric(unlist(modelog$coefficients[2]))*tag$age+as.numeric(unlist(modelog$coefficients[3]))*tag$sl2l_iso)))))
@@ -122,14 +144,17 @@ tag <- tag %>%
 
 #### Encontrar delta δ de Ai — Delta (mayúscula Δ, minúscula δ)
 
+El escalar δ es la varianza obtenida en la regresión logística de A en X. Como se sabe este valor se logra con el ratio entre desviación que tiene el modelo y la desviación de los predichos.
+
 ```{r}
 logistic.regression.or.ci(logmodel)
 
-deviance(logmodel)/df.residual(logmodel) # ratio varianza
+δ<-deviance(logmodel)/df.residual(logmodel) # ratio varianza
 
 coef(modelog)
 exp(coef(modelog))
 # deviance(fit.reduced)/df.residual(fit.reduced)
+δ
 ```
 
 #### Pruebas generales
@@ -154,41 +179,163 @@ dbd<- dbd %>%
         mutate(zscore = (1/(1+exp(-(as.numeric(unlist(modelog$coefficients[1]))+as.numeric(unlist(modelog$coefficients[2]))*dataf$age+as.numeric(unlist(modelog$coefficients[3]))*dataf$sl2l_iso)))))
 ```
 
-#### Aproximar con función no paramétrica λ de Zi
+```{r}
+write.csv(dbd, "C:\\hcgalvan\\Repositorios\\hcgalvan_project\\data\\union\\End\\zscore.csv", row.names=FALSE)
+```
 
-La letra griega lambda (Mayuscula -\>Λ , Minúscula -\> λ)
+### Obtener funcion λ en Zi
 
-Tenemos 2 opciones por spline o regresion logística estratificada. Buscamos en este estudio por spline.
+#### ALTERNATIVA 1 - Aproximar con función no paramétrica λ de Zi
+
+La letra griega lambda (Mayuscula -\>**Λ** , Minúscula -\> **λ**)
+
+Tenemos 2 opciones por spline o regresion logística estratificada. Buscamos en este estudio por spline. Realizamos ambos estudios analíticos para ver su convergencia, sin embargo la limitación de estos métodos tiene que ver con el tamaño de muestra que poseen las features predictoras.
+
+En el siguiente paso realiza en siguiente proceso:
+
+1.  A partir de las diferencias entre cada observación o registro, se verifica el signo y si la diferencia es -2 entonces se busca el indice del dataframe y se suma 1 o dicho de otro modo se agrega una posición más. Este valor se guarda en unal ista.
+2.  Se calcula el spline en coordenadas x e y, luego se plotea
+3.  Se realiza ajuste de regresión lineal de los splines.
+4.  Cuál es la idea detras de la regresion por tramo o nudos? generar
+5.  <https://copyprogramming.com/howto/spline-interpolation-in-r>
 
 ```{r}
-library(splines)
+library(splines) # para utilizar con lm()
 # vector of values
 # tag[,c("zscore")]
 # La Función sign() encuentra el signo de los elementos del vector numérico
 # La función diff() en R se utiliza para obtener la diferencia entre cada elemento de un vector de forma consecutiva
+# 
 # La funcion which() devuelve la posición o indice de la condicion satisfecha.
-# local maxima
 h<-dbd$zscore
+# local maxima I obtain local maxima by utilizing the diff function.
+
 lmax <- h[c(1, which(diff(sign(diff(h)))==-2)+1, length(h))]
 
 # spline calculation
 spl <- spline(1:length(lmax), lmax)
+
 # visual inspection
 plot(spl)
 lines(spl)
+length(h)
 
 #spl es x
 h<-dbd$zscore
-modelo2<-lm(spl$y~bs(spl$x,knots = lmax ))
+plot(h)
+## utilizo el valor AIC de logistic regression de A en X para los degree
+max(dbd$zscore)
+min(dbd$zscore)
+modelo2<-lm(spl$y~bs(spl$x,degree = 30.56, knots = lmax ))
+modelo3<-lm(spl$y~bs(spl$x,degree = 30.56 ))
+modelo4<-lm(h~bs(h,degree = 30.56 ))
+modelo5<-lm(h~bs(dbd$A,degree = 30.56 ))
+modelo6<-lm(h~bs(dbd$subclass,degree = 30.56 ))
+modelo6<-lm(h~bs(dbd$subclass ))
+modelo7<-lm(dbs$h~bs((1:length(h)),degree = 30.56))
+spline <- glm(spl$y~ns(spl$x, knots = lmax ))
+m=model.matrix(~bs(spl$x,degree = 30.56))
+# prd=exp(coefficients(modelo3) %*% t(m)) como el mío no es logaritmo
+prd=(coefficients(modelo3) %*% t(m))
+prd[18]
+dbd$zscore[18]
+
+spline
+summary(modelo4)
 summary(modelo2)
+modelo2
+summary(modelo3)
+summary(modelo5)
+summary(modelo6)
+summary(modelo7)
+dbd$zscore[1]
+predict(modelo3)
+predict(modelo4)
+data = data.frame(dbd$zscore[1])
+dbd$zscore[1]
+data
+predict(spline, data, type="response")
 
 #gráfico del modelo
 pre2<-predict(modelo2)
+pre3<-predict(modelo3)
+pre4<-predict(modelo4)
+pre5<-predict(modelo5)
+pre6<-predict(modelo6)
 plot(spl$x,spl$y,pch=16)
 lines(spl$x,pre2,lwd=2,col="red")
+lines(spl$x,pre3,lwd=2,col="blue")
+plot(h,pch=16)
+lines(h,pre4,lwd=2,col="blue")
+plot(dbd$A,h,pch=16)
+lines(dbd$A,pre5,lwd=2,col="red")
+plot(h,dbd$subclass,pch=16)
+plot((1:length(h)),h,pch=16)
+lines((1:length(h)),predict(modelo6, dbd$zcores),lwd=2,col="red")
+lines(pre6,lwd=2,col="red")
+plot((1:length(h)),h,pch=16)
+
+plot
 ```
 
-#### Propensity score
+```{r}
+library(pacman)
+p_load(kirkegaard, rms)
+```
+
+```{r}
+library(arules)
+d = tibble(
+  x = 1:100,
+  
+  #even spline
+  k2_even = discretize(x, breaks = 3, labels = "number"),
+  
+  #default split used in rms - 10, 50, 90th centiles
+  k2_default = c(rep(1, 10), rep(2, 80), rep(3, 10)),
+  
+  #generate linear spline values
+  linear_spline = case_when(k2_even == 1 ~ x*1,
+                 k2_even == 2 ~ x*0 + 34,
+                 k2_even == 3 ~ x*2 - 100),
+  
+  #natural spline values -- actually a polynomial
+  natural_spline = 1*x + 5*x^2 - .1*x^3
+)
+```
+
+```{r}
+
+###Linear spline
+i_fit = ols(as.formula(glue::glue("linear_spline ~ lsp(dbd$zscore)")), data = d)
+
+###Natural spline
+i_fit = ols(as.formula(glue::glue("natural_spline ~ rcs(x, 3)")), data = d)
+```
+
+Xi​ (en mayúscula **Ξ**, en minúscula **ξ**
+
+<https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-019-0666-3>
+
+```{r}
+#####ALTERNATIVA DE SPLINE#######
+#library(survival)
+library(splines2)
+library(graphics)
+
+bsMat <- bSpline(dbd$zscore)
+
+matplot(dbd$zscore, bsMat, type = "l", ylab = "Piecewise constant B-spline bases")
+abline(v = knots, lty = 2, col = "gray")
+```
+
+#### ALTERNATIVA 2 - Utilizar stratified logistic regression
+
+Pasos realizados:
+
+1.  Genero los estratos de quantiles a partir de propensity Z score.
+2.  Genero stratified logistic regression de D en A condicionado por estratos.
+3.  Verifico p-value de validez de estudio
 
 <https://www.youtube.com/watch?v=4jWcf4nkUWk>
 
@@ -247,25 +394,24 @@ survival.clogit <-clogit(label~A+strata(subclass),data=dbd)
 summary(survival.clogit)
 ```
 
-Xi​ (en mayúscula **Ξ**, en minúscula **ξ**
+A partir de los valores anteriores obtenidos se genera la ecuación final de predicción.
 
-<https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-019-0666-3>
-
-```{r}
-#library(survival)
-library(splines2)
-library(graphics)
-
-bsMat <- bSpline(dbd$zscore)
-
-matplot(dbd$zscore, bsMat, type = "l", ylab = "Piecewise constant B-spline bases")
-abline(v = knots, lty = 2, col = "gray")
-```
+![](images/clipboard-3609003230.png)
 
 ```{r}
 
-```
+productoria <- function(D,lambda,a,deltaz){
+   result = prod((exp(D*(lambda*a)+deltaz))/(1+exp((lambda*a)+deltaz)))
+   return(result)
+}
 
-```{r}
+v<-c()
+
+for (variable in sbd) {
+  v[variable] <- -(lik(variable,x))
+}
+
+plot(v)
+abline(v=10,col="red")
 
 ```
