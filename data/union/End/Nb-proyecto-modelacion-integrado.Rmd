@@ -182,7 +182,7 @@ table(testing$A)
 table(testing$A, predA)
 testing$A
 as.factor(predA)
-confusionMatrix(testing$A, as.factor(predA))
+confusionMatrix(testing$A, as.factor(predA)) ## en general puede traer problemas este matriz de confusion porque sucede que a veces no logra tener los 0 y 1, de todos modos se mira el resto
 
 # Sensibilidad= 1 significa que tuvo algunos verdaderos positivos y ningún falso negativo: todos los casos reales se predijeron correctamente como positivos
 
