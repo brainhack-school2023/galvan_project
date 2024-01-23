@@ -54,6 +54,8 @@ dz11$subclass <- cut(x=dz11$zscore,
                               breaks=quantile(dz11$zscore, 
                               prob = seq(0, 1, 1/5)),include.lowest=T)
 levels(dz11$subclass) <- 1:length(levels(dz11$subclass))
+
+#### Prueba #####
 dz11
 survival.clogit <-clogit(label~A+strata(subclass),data=dz11)
 summary(survival.clogit)
@@ -80,8 +82,8 @@ productoria <- function(D,delta,A,lamdaz){
    result = prod((exp(D*(delta*A)+lamdaz))/(1+exp((delta*A)+lamdaz)))
    return(result)
 }
-productoria(1,0.8,1,.7)
-## donde D es label donde es 0 = Patologia, 1 sin patología, 
+productoria(1,1,1,1)
+## donde D es label donde es 1 = Patologia, 0 sin patología, 
 ## delta es la varianza de regresion logística estratificada entre A y estratos de los cuantiles de la puntuación de zscore 
 ## A es Expuesto y no Expuesto, variable dicotómica a partir de distribución densidad de sujetos de control 
 ## 
@@ -96,3 +98,5 @@ for(i in 1:nrow(dz1)) {       # for-loop over rows
 plot(v)
 abline(v=10,col="red")
 ```
+
+![](images/clipboard-3833433021.png)
