@@ -64,7 +64,7 @@ t<- t %>%
   mutate(ccbdmlExp = if_else((t$ccbd_mean_length > 112.62 & t$ccbd_mean_length < 123.81), 0, 1))
 ```
 
-### Guardar datos para su estudio en InfoStat 
+### Guardar datos para su estudio en InfoStat
 
 El estudio que realizo en InfoStat es para determinar que variable predictora debe estar en la regresión y continuar el estudio por R. InfoStat me arroja rapidamente cuales son las confusoras más importantes
 
