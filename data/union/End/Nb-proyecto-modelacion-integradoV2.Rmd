@@ -344,7 +344,7 @@ productoria <- function(D,delta,A,lamdaz){
    result = prod((exp(D*(delta*A)+lamdaz))/(1+exp((delta*A)+lamdaz)))
    return(result)
 }
-# productoria(1,1,1,1)
+# productoria(1,.9,1,2)
 ## donde D es label donde es 1 = Patologia, 0 sin patología, 
 ## delta es la varianza de regresion logística estratificada entre A y estratos de los cuantiles de la puntuación de zscore 
 ## 
@@ -367,6 +367,6 @@ for(i in 1:nrow(db)) {       # for-loop over rows
 db[1,c(strata(subclass))]
 strata(db[1,c("subclass")])
 strata(subclass)
-plot(log_ODDs_Ratios)
+plot(log_ODDs_Ratios,xlab = "Sujetos de la muestra - incluye Estudio y de Control",main="tracto Sl2l Diameter")
 plot(ODDs_Ratios, xlab = "Sujetos de la muestra - incluye Estudio y de Control",main="tracto Sl2l Diameter")
 ```
