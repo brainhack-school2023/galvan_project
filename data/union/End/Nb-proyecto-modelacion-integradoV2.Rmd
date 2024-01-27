@@ -164,7 +164,7 @@ sprintf("Prob(Ezq): %f", p)
 
 ```
 
-## Etapa 2: Regresion Logística con PCA
+## Etapa 2: Regresion Logística con PCA - Expuestos (A)
 
 Por lo que está sucediendo con los datos cuando trabajamos por features como A, y no en su conjunta, es que vamos a necesitar utilizar PCA para que pueda tener predictoras más ajustadas, que solo las elegidas. Esto se puede observar en la regresión logística obtenida, ya que no supera los p-value correctos. Es decir, no converge.
 
@@ -179,92 +179,23 @@ t2 <- subset(t2, select = -c(gender_F)) # Quito de tabla
 t2<- t2 %>% 
   mutate(A = if_else((t2$sl2l_diameter > 22.10 & t2$sl2l_diameter < 24.42), 0, 1))
 t2 <- subset(t2, select = -c(sl2l_diameter)) # Quito de tabla 
+#############
 
-t2
+t3 <- dplyr::select(dplyr::filter(data, label == 1), "sl2l_diameter","sl2l_qa", "sl2l_iso", "ccbd_iso", "ccbd_qa", "ifol_qa", "ifol_iso", "ecpl_qa", "ecpl_iso", "tral_qa", "tral_iso", "afsl_qa", "afsl_iso", "afsr_qa", "afsr_iso", "cfpl_iso", "cfpl_qa", "cfpr_iso", "cfpr_qa", "fatl_iso", "fatl_qa", "fatr_iso", "fatr_qa", "slfl_iso", "slfl_qa", "slfr_iso", "slfr_qa", "tral_iso", "tral_qa", "ufsl_iso", "ufsl_qa", "ufsr_iso", "ufsr_qa", "age", "gender_F")
+
+## Creo variable gender en una sola variable
+t3$gend_F <- ifelse(t3$gender_F == "True", 1, 0) #convierto en = o 1
+t3 <- subset(t3, select = -c(gender_F)) # Quito de tabla 
+
+##Creo la variable A desde sl2l_diameter
+t3<- t3 %>% 
+  mutate(A = if_else((t3$sl2l_diameter > 22.10 & t3$sl2l_diameter < 24.42), 0, 1))
+t3 <- subset(t3, select = -c(sl2l_diameter)) # Quito de tabla 
 ```
 
-### FORMA 1
+### 
 
-```{r}
-library(caret) #datapartition
-library(mlbench)
-inTrain <- createDataPartition(y=t2$A,
-                               p = 0.70,
-                               list = FALSE)
-
-training <- t2[inTrain, ]
-testing <- t2[-inTrain, ]
-training[,c(-33)]
-# Using PCA preprocessing data --------------------------------------------
-pca.out <- prcomp(training[,c(-33)],
-                  
-                  scale. = TRUE)
-pca.out
-#pca.out
-biplot(pca.out, scale = 0)
-pca.var <- pca.out$sdev^2  #autovalores
-
-pve <- pca.var/sum(pca.var)
-plot(pve, xlab = "Principal component", 
-     ylab = "Proportion of variation explained",
-     ylim = c(0, 1), 
-     type = 'b')
-
-plot(cumsum(pve), xlab = "Principal component", 
-     ylab = "Accumulative Prop. of variation explained",
-     ylim = c(0, 1), 
-     type = 'b')
-library(factoextra)
-fviz_screeplot(pca.out, addlabels = TRUE)
-# Cálculo de la varianza explicada acumulada 
-prop_varianza <- pca.out$sdev^2/sum(pca.out$sdev^2)
-prop_varianza_acum <- cumsum(prop_varianza)
-ggplot(data = data.frame(prop_varianza_acum, pc = factor(1:32)),
-       aes(x = pc, y = prop_varianza_acum, group = 1)) +
-  geom_point() +
-  geom_line() +
-  geom_label(aes(label = round(prop_varianza_acum,2))) +
-  theme_bw() +
-  labs(x = "Componentes principales", 
-       y = "Prop. varianza explicada acumulada")
-################################
-# Construct new data frame with PCA selected compoents 1:10 ---------------
-#training
-midatos <- data.frame(A = training[, "A"], pca.out$x[, 1:2])
-
-# Fit the logistic regressin model again ----------------------------------
-
-logRegPCA <- glm(A ~ .,  data = midatos, family = binomial)
-
-# Predict the scores on PC1 for the test set data
-# head(testing)
-test.p <- predict(pca.out, newdata = testing[, 1:33])
-#head(test.p)
-
-# Now use that to predict the class
-pred <- predict(logRegPCA, newdata = data.frame(test.p[, 1:5]), type = "response")
-summary(pred)
-#test.p[, 1:5]
-# cross-classification table 
-predA <- factor(ifelse(pred >= 0.5, 1, 0))
-#
-table(predA)
-table(testing$A)
-
-table(testing$A, predA)
-testing$A
-as.factor(predA)
-confusionMatrix(testing$A, as.factor(predA)) ## en general puede traer problemas este matriz de confusion porque sucede que a veces no logra tener los 0 y 1, de todos modos se mira el resto
-
-# Sensibilidad= 1 significa que tuvo algunos verdaderos positivos y ningún falso negativo: todos los casos reales se predijeron correctamente como positivos
-
-# Especificidad= 0 significa que tuvo algunos falsos positivos y ningún verdadero negativo: todos los no casos reales se predijeron incorrectamente como positivos
-
-# Entonces, tener ambos significa que se predijo que todo sería positivo, ya fuera un caso real o no.
-
-```
-
-### FORMA 2
+### FORMA 2 Reg Logística con PCA para Expuestas
 
 ```{r}
 pca.out2 <- prcomp(t2[,c(-33)],
@@ -281,79 +212,26 @@ summary(logRegPCA)$coefficients
 
 ```
 
-## Etapa 2: Regresión Logística entre A y Confusoras
-
-Aquí es un trabajo manual para cada prueba a realizar. Cada regresión tiene que ser ajustada.
+### Reg Logística con PCA para No expuestas
 
 ```{r}
 
-tag<-filter(t, label==0)
-### MODELO 1
-# Modelo de regresión logística
-form = "A ~ age + gend_F + sl2l_iso + ecpl_iso"
-form = formula(form)
-model1 <- glm(form, data = tag, family = binomial())
-summary(model1)
-step(model1, direction = "backward")
-
-### MODELO 2
-form = "A ~ age + gend_F+ sl2l_iso"
-form = formula(form)
-model2 <- glm(form, data = tag, family = binomial())
-summary(model2)
-step(model2, direction = "backward")
-
-logistic.regression.or.ci(model2)
-
-# Bondad de ajuste del modelo Devianza y Chi2
-# Para saber la eficacia del modelo prediciendo la variable respuesta utilizamos el estadístico chi-cuadrado, que mide la diferencia entre el modelo en su estado actual y el modelo cuando sólo se incluyó la constante.
-
-dev <- model2$deviance
-nullDev <- model2$null.deviance
-modelChi <- nullDev - dev
-modelChi
-
-
-#como la probabilidad es menor que 0.05, podemos rechazar la hipótesis nula de que el modelo es mejor prediciendo la variable resultado que si elegimos por azar. Por tanto, podemos decir que, en general, el modelo tiene una aportación significativa en la perdición
-chigl <- model2$df.null - model2$df.residual
-chisq.prob <- 1 - pchisq(modelChi, chigl)
-chisq.prob
-
-# R^2
-R2.hl <- modelChi/model2$null.deviance
-R2.hl
-#coeficientes y z-statistic
-summary(model2)$coefficients
-
-# Odds ratio
-exp(model2$coefficients)
-## intervalos de confianza
-exp(confint(model2))
-
-
-# Diagnóstico del modelo
-tag$probabilidades.predichas <- fitted(model2)
-tag$studentized.residuals <- rstudent(model2)
-tag$dfbeta <- dfbeta(model2)
-tag$dffit <- dffits(model2)
-tag$leverage <- hatvalues(model2)
-
-head(tag[, c("age", "sl2l_iso","probabilidades.predichas")])
-head(tag[, c("leverage", "studentized.residuals", "dfbeta")])
-
-# Selección del modelo
-modelog <- glm(A ~ age+sl2l_iso, data = tag, family = binomial())
-summary(modelog)
-step(modelog, direction = "backward")
-
-####################################################
-# Supuestos del modelo Linealidad
-tag$logageInt <- log(tag$age) * tag$age
-tag$logsl2lInt <- log(tag$sl2l_iso) * tag$sl2l_iso
-#df$logvar2Int <- log(df$var2) * df$var2
-
-
+pca.out3 <- prcomp(t3[,c(-33)],
+                  scale. = TRUE)
+pca.out3$x
+pca.var3 <- pca.out3$sdev^2  #autovalores
+pca.var3
+misdatos2 <- data.frame(A = t3[, "A"], pca.out3$x[, 1:2])
+pca.out3[1]
+logRegPCANoExp <- glm(A ~ .,  data = misdatos2, family = binomial)
+#summary(logRegPCA)
+logistic.regression.or.ci(logRegPCANoExp)
+summary(logRegPCANoExp)$coefficients
 ```
+
+## Etapa 2: Generación Propensity Z score
+
+Aquí es un trabajo manual para cada prueba a realizar. Cada regresión tiene que ser ajustada.
 
 ### Generación de Z Score
 
@@ -363,29 +241,22 @@ Usar una de ellas. La que mejor se ajusta a los datos.
 
 ```{r}
 
-pca.out2$x[,"PC1"]
-for(i in 1:46) {       # for-loop over rows
-      print(pca.out2$x[i,"PC1"])
-}
+############## PARA EXPUESTAS #######################
 zscores<-c()
 for(i in 1:46) {       # for-loop over rows
-    print((1/(1+exp(-(as.numeric(unlist(logRegPCA$coefficients[1]))+as.numeric(unlist(logRegPCA$coefficients[2]))*as.numeric(unlist(pca.out2$x[i,"PC1"]))+as.numeric(unlist(logRegPCA$coefficients[3]))*as.numeric(unlist(pca.out2$x[i,"PC2"])))))))
+    zscores[i] <-((1/(1+exp(-(as.numeric(unlist(logRegPCA$coefficients[1]))+as.numeric(unlist(logRegPCA$coefficients[2]))*as.numeric(unlist(pca.out2$x[i,"PC1"]))+as.numeric(unlist(logRegPCA$coefficients[3]))*as.numeric(unlist(pca.out2$x[i,"PC2"])))))))
 }
-
-zscores
-
-plot(exp_z)
-
-```
-
-### SIN PCA
-
-```{r}
-### Utilizo el modelo 2
-t<- t %>% 
-        mutate(zscore = (1/(1+exp(-(as.numeric(unlist(model2$coefficients[1]))+as.numeric(unlist(modelog$coefficients[2]))*data$age+as.numeric(unlist(model2$coefficients[3]))*data$sl2l_iso)))))
+t2$zscore <-zscores
+############## PARA EXPUESTAS #######################
+zscores2<-c()
+for(i in 1:50) {       # for-loop over rows
+    zscores2[i] <-((1/(1+exp(-(as.numeric(unlist(logRegPCANoExp$coefficients[1]))+as.numeric(unlist(logRegPCANoExp$coefficients[2]))*as.numeric(unlist(pca.out3$x[i,"PC1"]))+as.numeric(unlist(logRegPCANoExp$coefficients[3]))*as.numeric(unlist(pca.out3$x[i,"PC2"])))))))
+}
+t3$zscore <-zscores2
 
 ```
+
+### 
 
 #### Armado de Subclases del Zscore para estudio posterior
 
@@ -393,26 +264,58 @@ Tener en cuenta que se puede dividir de manera diferente, por otra cantidad de e
 
 ```{r}
 #########
+# Utilizo t2 - sujetos de estudio
 # Entonces utilizo el total
-t$subclass <- cut(x=t$zscore,
-                              breaks=quantile(t$zscore, 
+cuantil <-quantile(t2$zscore)
+t2$subclass <- cut(x=t2$zscore,
+                              breaks=quantile(cuantil, 
                               prob = seq(0, 1, 1/5)),include.lowest=T)
-levels(t$subclass) <- 1:length(levels(t$subclass))
+levels(t2$subclass) <- 1:length(levels(t2$subclass))
+###############
+quantile(t3$zscore)
+quantile(t2$zscore)
+# Utilizo los cuantiles de EXPUESTOS para armar stratos de zscore en LOS NO EXPUESTOS
+t3$subclass <- cut(x=t3$zscore,
+                              breaks=quantile(cuantil, 
+                              prob = seq(0, 1, 1/5)),include.lowest=T)
+levels(t3$subclass) <- 1:length(levels(t3$subclass))
+####
+# TENGO VALORES NA EN LA SUBCLASE DE LOS SUJETOS DE CONTROL, SON AQUELLOS FUERON DE LOS CUANTILES INFERIORES, ENTONCES
+# AGREGO VALOR 1
+####
+t3[is.na(t3)] = 1
+
 #examine common support
-xtabs(~A+subclass,t) #table of counts per stratum
+
+xtabs(~A+subclass,t2) #table of counts per stratum
+xtabs(~A+subclass,t3) #table of counts per stratum
+
 ```
+
+#### Realizar Reg Log Condicional
 
 #### Generar Función constante por partes/escalonada Lambda
 
 Aquí es una función que se obtiene de splines. No la tenemos todavía.
+
+```{r}
+# Al estratificar el puntaje de propensión basado en casos, creemos que la población está bien estratificada con un factor de pronóstico homogéneo. Segun 
+
+t2$D<-1
+t3$D<-0
+db = rbind(t2,t3)
+cuantil
+db
+```
 
 #### Generar Constante Delta
 
 Se utiliza o genera despues de realizar la regresión
 
 ```{r}
+
 #Regresion logística condicional o por estratos
-reglog.cond <-clogit(label~A+strata(subclass),data=t)
+reglog.cond <-clogit(D~A+strata(subclass),data=db)
 summary(reglog.cond)
 delta = coefficients(reglog.cond)[[1]]
 ```
@@ -441,18 +344,29 @@ productoria <- function(D,delta,A,lamdaz){
    result = prod((exp(D*(delta*A)+lamdaz))/(1+exp((delta*A)+lamdaz)))
    return(result)
 }
-productoria(1,1,1,1)
+# productoria(1,1,1,1)
 ## donde D es label donde es 1 = Patologia, 0 sin patología, 
 ## delta es la varianza de regresion logística estratificada entre A y estratos de los cuantiles de la puntuación de zscore 
 ## 
 
-v<-c()
-
+log_ODDs_Ratios<-c()
+ODDs_Ratios<-c()
 # delta = -0.6558704 este valor de delta proviene de reg log estrat
 
-for(i in 1:nrow(t)) {       # for-loop over rows
-  v[i] <- (productoria(t[i,c("label")], delta, t[i,c("A")], t[i,c("zscore")]))
+for(i in 1:nrow(db)) {       # for-loop over rows
+  log_ODDs_Ratios[i] <- (productoria(db[i,c("D")], delta, db[i,c("A")], db[i,c("zscore")]))
+  ODDs_Ratios[i]<- exp(log_ODDs_Ratios[i])
 }
-
-plot(v)
+##### Con estratos 
+log_ODDs_Ratios_tractos<-c()
+ODDs_Ratios_tractos<-c()
+for(i in 1:nrow(db)) {       # for-loop over rows
+  log_ODDs_Ratios[i] <- (productoria(db[i,c("D")], delta, db[i,c("A")], db[i,c(strata(subclass))]))
+  ODDs_Ratios[i]<- exp(log_ODDs_Ratios[i])
+}
+db[1,c(strata(subclass))]
+strata(db[1,c("subclass")])
+strata(subclass)
+plot(log_ODDs_Ratios)
+plot(ODDs_Ratios, xlab = "Sujetos de la muestra - incluye Estudio y de Control",main="tracto Sl2l Diameter")
 ```
