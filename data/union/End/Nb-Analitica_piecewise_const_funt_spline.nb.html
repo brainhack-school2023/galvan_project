@@ -2287,39 +2287,13 @@ stopifnot(identical(y0[-1], sfun0 (1:3)), # right = FALSE
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxueCA8LSBybm9ybSgxMilcbkZuIDwtIGVjZGYoeClcbkZuICAgICAjIGEgKmZ1bmN0aW9uKlxuXG5gYGAifQ== -->
-<pre class="r"><code>x &lt;- rnorm(12)
-Fn &lt;- ecdf(x)
-Fn     # a *function*
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuRm4oeCkgICMgcmV0dXJucyB0aGUgcGVyY2VudGlsZXMgZm9yIHhcblxuYGBgIn0= -->
+<pre class="r"><code>Fn(x)  # returns the percentiles for x
 </code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiRW1waXJpY2FsIENERiBcbkNhbGw6IGVjZGYoeClcbiB4WzE6MTJdID0gLTEuMzMyMSwgLTAuODMwMzMsIC0wLjU4NDgyLCAgLi4uLCAgMS42MTksIDEuNzE5MVxuIn0= -->
-<pre><code>Empirical CDF 
-Call: ecdf(x)
- x[1:12] = -1.3321, -0.83033, -0.58482,  ...,  1.619, 1.7191</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuRm4oeCkgICMgcmV0dXJucyB0aGUgcGVyY2VudGlsZXMgZm9yIHhcbmBgYCJ9 -->
-<pre class="r"><code>Fn(x)  # returns the percentiles for x</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiIFsxXSAwLjA4MzMzMzMzIDAuMzMzMzMzMzMgMC42NjY2NjY2NyAwLjUwMDAwMDAwIDAuODMzMzMzMzMgMC40MTY2NjY2NyAwLjU4MzMzMzMzIDAuOTE2NjY2NjcgMS4wMDAwMDAwMCAwLjI1MDAwMDAwXG5bMTFdIDAuMTY2NjY2NjcgMC43NTAwMDAwMFxuIn0= -->
-<pre><code> [1] 0.08333333 0.33333333 0.66666667 0.50000000 0.83333333 0.41666667 0.58333333 0.91666667 1.00000000 0.25000000
-[11] 0.16666667 0.75000000</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudHQgPC0gc2VxKC0yLCAyLCBieSA9IDAuMSlcbjEyICogRm4odHQpICMgRm4gaXMgYSAnc2ltcGxlJyBmdW5jdGlvbiB7d2l0aCB2YWx1ZXMgay8xMn1cbmBgYCJ9 -->
-<pre class="r"><code>tt &lt;- seq(-2, 2, by = 0.1)
-12 * Fn(tt) # Fn is a &#39;simple&#39; function {with values k/12}</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiIFsxXSAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMSAgMSAgMSAgMSAgMSAgMiAgMiAgMiAgMyAgMyAgNCAgNSAgNiAgNiAgNiAgOSAgOSAgOSAxMCAxMCAxMCAxMCAxMCAxMCAxMCAxMCAxMCAxMCAxMCAxMFxuWzM4XSAxMSAxMiAxMiAxMlxuIn0= -->
-<pre><code> [1]  0  0  0  0  0  0  0  1  1  1  1  1  2  2  2  3  3  4  5  6  6  6  9  9  9 10 10 10 10 10 10 10 10 10 10 10 10
-[38] 11 12 12 12</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuRm5cbmBgYCJ9 -->
-<pre class="r"><code>Fn</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiRW1waXJpY2FsIENERiBcbkNhbGw6IGVjZGYoeClcbiB4WzE6MTJdID0gLTEuMzMyMSwgLTAuODMwMzMsIC0wLjU4NDgyLCAgLi4uLCAgMS42MTksIDEuNzE5MVxuIn0= -->
-<pre><code>Empirical CDF 
-Call: ecdf(x)
- x[1:12] = -1.3321, -0.83033, -0.58482,  ...,  1.619, 1.7191</code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoiIFsxXSAwLjUwMDAwMDAwIDAuMjUwMDAwMDAgMC44MzMzMzMzMyAwLjkxNjY2NjY3IDAuNDE2NjY2NjcgMC4wODMzMzMzMyAxLjAwMDAwMDAwIDAuNTgzMzMzMzMgMC42NjY2NjY2N1xuWzEwXSAwLjE2NjY2NjY3IDAuNzUwMDAwMDAgMC4zMzMzMzMzM1xuIn0= -->
+<pre><code> [1] 0.50000000 0.25000000 0.83333333 0.91666667 0.41666667 0.08333333 1.00000000 0.58333333 0.66666667
+[10] 0.16666667 0.75000000 0.33333333</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->

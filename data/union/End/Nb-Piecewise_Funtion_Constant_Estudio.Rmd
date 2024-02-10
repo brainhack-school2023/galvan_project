@@ -1,0 +1,326 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+## Buscando la función Constante por partes
+
+La idea es encontrar una función constante por partes donde:
+
+-   La división sean knots
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(polynom)
+library(splines)
+library(plotly)
+```
+
+```{r}
+setwd("C:/hcgalvan/Repositorios/hcgalvan_project/data/union/End")
+temp = gsub(".*target.*", "", readLines("dbcasespieceswice.csv"))
+data<-read.table(text=temp, sep=",", header=TRUE)
+dz<-data.frame(data[,c("D","A","zscore","subclass")])
+pcwstd<-data.frame(dz)
+pcwstd
+
+```
+
+```{r}
+###########Posible FORMA 1 Cuando buscamos alguna división más de knots###########
+h<-as.numeric(unlist(pcwstd$zscore))
+lmax <- h[c(1, which(diff(sign(diff(h)))==-2)+1, length(h))]
+order(h, decreasing = FALSE)
+dataord <- h[order(h, decreasing = FALSE)]
+#plot(dataord)
+#####################################
+splineKnots.default <- function(object) attr(object, "knots")
+splineKnots(bs(dataord,degree=1, df = 5))
+#####################################
+```
+
+<https://rstudio-pubs-static.s3.amazonaws.com/888881_32c0a14da1e440e7ad9b6f1893fc26fd.html>
+
+<https://joshua-nugent.github.io/splines/>
+
+```{r}
+
+######################################
+# FORMA 2  - QUANTIL 1
+#####################################
+muestra1<-as.numeric(unlist(dplyr::select(dplyr::filter(pcwstd, subclass == 1,),"zscore")))
+poly.calc(sujetos, muestra1)
+sujetos <- c(1:length(muestra1))
+sujetos_seq <- seq(from=1, to=10, by=0.1)
+
+pol_muestra1 <- as.function(poly.calc(sujetos, muestra1))
+muestra_seq <- pol_muestra1(sujetos_seq)
+
+graf_2 <- ggplot()+
+  geom_vline(xintercept = 0, linetype="dashed")+
+  geom_hline(yintercept = 0, linetype="dashed")+
+  #Muestra 1
+  geom_line(aes(x=sujetos_seq, y=muestra_seq), color="green", size=1)+
+  geom_point(aes(x=sujetos, y=muestra1), color="dodgerblue3", size=3)+
+
+  labs(x="sujetos", y="Peso Muestra", title="Interpolación  2, inciso a)")+
+  theme_bw()
+
+ggplotly(graf_2)
+
+######################################
+# FORMA 2  - QUANTIL 2
+#####################################
+muestra2<-as.numeric(unlist(dplyr::select(dplyr::filter(pcwstd, subclass == 2,),"zscore")))
+
+sujetos2 <- c(1:length(muestra2))
+sujetos_seq2 <- seq(from=1, to=10, by=0.1)
+
+pol_muestra2 <- as.function(poly.calc(sujetos2, muestra2))
+muestra_seq2 <- pol_muestra2(sujetos_seq2)
+poly.calc(sujetos2, muestra2)
+
+graf_2 <- ggplot()+
+  geom_vline(xintercept = 0, linetype="dashed")+
+  geom_hline(yintercept = 0, linetype="dashed")+
+  #Muestra 1
+  geom_line(aes(x=sujetos_seq2, y=muestra_seq2), color="green", size=1)+
+  geom_point(aes(x=sujetos2, y=muestra2), color="dodgerblue3", size=3)+
+
+  labs(x="sujetos", y="Peso Muestra", title="Interpolación  2, inciso a)")+
+  theme_bw()
+
+ggplotly(graf_2)
+
+######################################
+# FORMA 2  - QUANTIL 3
+#####################################
+muestra3<-as.numeric(unlist(dplyr::select(dplyr::filter(pcwstd, subclass == 3,),"zscore")))
+
+sujetos3 <- c(1:length(muestra3))
+sujetos_seq3 <- seq(from=1, to=12, by=0.1)
+
+pol_muestra3 <- as.function(poly.calc(sujetos3, muestra3))
+muestra_seq3 <- pol_muestra3(sujetos_seq3)
+poly.calc(sujetos3, muestra3)
+
+graf_2 <- ggplot()+
+  geom_vline(xintercept = 0, linetype="dashed")+
+  geom_hline(yintercept = 0, linetype="dashed")+
+  #Muestra 1
+  geom_line(aes(x=sujetos_seq3, y=muestra_seq3), color="green", size=1)+
+  geom_point(aes(x=sujetos3, y=muestra3), color="dodgerblue3", size=3)+
+
+  labs(x="sujetos", y="Peso Muestra", title="Interpolación  2, inciso a)")+
+  theme_bw()
+
+ggplotly(graf_2)
+
+######################################
+# FORMA 2  - QUANTIL 4
+#####################################
+muestra4<-as.numeric(unlist(dplyr::select(dplyr::filter(pcwstd, subclass == 4,),"zscore")))
+
+sujetos4 <- c(1:length(muestra4))
+sujetos_seq4 <- seq(from=1, to=8, by=0.1)
+
+pol_muestra4 <- as.function(poly.calc(sujetos4, muestra4))
+muestra_seq4 <- pol_muestra4(sujetos_seq4)
+poly.calc(sujetos4, muestra4)
+
+graf_2 <- ggplot()+
+  geom_vline(xintercept = 0, linetype="dashed")+
+  geom_hline(yintercept = 0, linetype="dashed")+
+  #Muestra 1
+  geom_line(aes(x=sujetos_seq4, y=muestra_seq4), color="green", size=1)+
+  geom_point(aes(x=sujetos4, y=muestra4), color="dodgerblue3", size=3)+
+
+  labs(x="sujetos", y="Peso Muestra", title="Interpolación  2, inciso a)")+
+  theme_bw()
+
+ggplotly(graf_2)
+
+######################################
+# FORMA 2  - QUANTIL 5
+#####################################
+muestra5<-as.numeric(unlist(dplyr::select(dplyr::filter(pcwstd, subclass == 5,),"zscore")))
+
+sujetos5 <- c(1:length(muestra5))
+sujetos_seq5 <- seq(from=1, to=8, by=0.1)
+
+pol_muestra5 <- as.function(poly.calc(sujetos5, muestra5))
+muestra_seq5 <- pol_muestra5(sujetos_seq5)
+poly.calc(sujetos5, muestra5)
+
+graf_2 <- ggplot()+
+  geom_vline(xintercept = 0, linetype="dashed")+
+  geom_hline(yintercept = 0, linetype="dashed")+
+  #Muestra 1
+  geom_line(aes(x=sujetos_seq5, y=muestra_seq5), color="green", size=1)+
+  geom_point(aes(x=sujetos5, y=muestra5), color="dodgerblue3", size=3)+
+
+  labs(x="sujetos", y="Peso Muestra", title="Interpolación  2, inciso a)")+
+  theme_bw()
+
+ggplotly(graf_2)
+
+poly.calc(sujetos, muestra1)
+```
+
+```{r}
+### # Derivar el polinomio interpolante para obtener la ecuación que describe su pendiente y graficarla
+poly.calc(sujetos, muestra1)
+poly.calc(sujetos2, muestra2)
+poly.calc(sujetos3, muestra3)
+poly.calc(sujetos4, muestra4)
+poly.calc(sujetos5, muestra5)
+```
+
+```{r}
+
+
+deri_pol1 <- function(x){-6.122264 + 17.67111*x - 18.56562*x^2 + 10.44433*x^3 - 3.536183*x^4 + 0.7576271*x^5 - 0.1036324*x^6 + 0.008774759*x^7 - 0.000418757*x^8 + 8.6019e-06*x^9}
+
+deri_pol2 <- function(x){-0.2197296 + 2.0046*x - 1.811326*x^2 + 0.8375173*x^3 - 0.2182443*x^4 + 0.03246031*x^5 - 0.002569767*x^6 + 8.38559e-05*x^7}
+
+deri_pol3 <- function(x){4.793893 - 11.81498*x + 14.1384*x^2 - 9.532235*x^3 + 4.068752*x^4 - 1.159912*x^5 + 0.2257844*x^6 -  0.03004852*x^7 + 0.002683565*x^8 - 0.0001534813*x^9 + 5.071574e-06*x^10 - 7.35409e-08*x^11 }
+
+deri_pol4 <- function(x){2.512275 - 4.393058*x + 4.022133*x^2 - 1.838199*x^3 + 0.4632213*x^4 - 0.06537888*x^5 + 0.004842031*x^6 - 0.0001464992*x^7}
+
+deri_pol5 <- function(x){-4.94969 + 13.71929*x - 12.46775*x^2 + 5.722334*x^3 - 1.45807*x^4 + 0.2089239*x^5 - 0.01574029*x^6 + 0.0004847141*x^7}
+
+
+##################### GRAFICAMOS UNO DE ELLOS ###########
+x1 <- seq(from=1, to=10, by=0.1)
+y1 <- deri_pol1(sujetos_seq)
+
+graf_muestra_1 <- ggplot()+
+  #Ejes
+  geom_vline(xintercept = 0, linetype="dashed")+
+  geom_hline(yintercept = 0, linetype="dashed")+
+  #Pendiente
+    geom_line(aes(x1, y1), color="dodgerblue3", size=1)+
+    labs(x="dias", y="Peso Muestra", title="Pendiente de la muestra 1")+
+  theme_bw()
+ggplotly(graf_muestra_1)
+```
+
+```{r}
+### Obtengo los límites de zscore a partir del filtro subclase y utilizar en la función por partes
+
+lim1 <- max(as.numeric(unlist(dplyr::select(dplyr::filter(pcwstd, subclass == 1,),"zscore"))))
+lim2 <- max(as.numeric(unlist(dplyr::select(dplyr::filter(pcwstd, subclass == 2,),"zscore"))))
+lim3 <- max(as.numeric(unlist(dplyr::select(dplyr::filter(pcwstd, subclass == 3,),"zscore"))))
+lim4 <- max(as.numeric(unlist(dplyr::select(dplyr::filter(pcwstd, subclass == 4,),"zscore"))))
+lim5 <- max(as.numeric(unlist(dplyr::select(dplyr::filter(pcwstd, subclass == 5,),"zscore"))))
+
+
+sujetos1 <- c(1:length(muestra1))
+sujetos2 <- c(1:length(muestra2))
+sujetos3 <- c(1:length(muestra3))
+sujetos4 <- c(1:length(muestra4))
+sujetos5 <- c(1:length(muestra5))
+
+posicionax <- function(x, pos){
+  v <- NULL
+  h <- NULL
+  h<-as.numeric(unlist(dplyr::select(dplyr::filter(pcwstd, subclass == pos,),"zscore")))
+  div.1 <- round((h[order(h, decreasing = FALSE)] / x),4)
+  v<- which(div.1 == 1.0000,)
+  v
+}  
+  
+buscarx <- function(x){
+    d <- NULL
+    ifelse (x > 0 & x<= lim1, d <- posicionax(x, 1), 0)
+    ifelse (x>lim1 & x<=lim2, d <- posicionax(x, 2), 0)
+    ifelse (x>lim2 & x<=lim3, d <- posicionax(x, 3), 0)
+    ifelse (x>lim3 & x<=lim4, d <- posicionax(x, 4), 0)
+    ifelse (x>lim4, d <- posicionax(x, 5), 0)
+    d
+}
+
+fx <- function(x, dat){
+    f <- NULL
+    ifelse (x > 0 & x<= lim1, f <- deri_pol1(dat), 0)
+    ifelse (x>lim1 & x<=lim2, f <- deri_pol2(dat), 0)
+    ifelse (x>lim2 & x<=lim3, f <- deri_pol3(dat), 0)
+    ifelse (x>lim3 & x<=lim4, f <- deri_pol4(dat), 0)
+    ifelse (x>lim4, f <- deri_pol5(dat), 0)
+    f
+}
+
+x <- data.frame(pcwstd$zscore)
+for(i in 1:nrow(x)) {       # for-loop over rows
+  dat <- buscarx(pcwstd$zscore[[i]])
+  #print(dat)
+  #print(fx(pcwstd$zscore[[i]], dat))
+  lambd <-fx(pcwstd$zscore[[i]], dat)
+  pcwstd$lambda[i] <- lambd
+  }
+
+pcwstd
+
+plot(pcwstd$lambda, type="l", las=1)
+points(x)
+
+```
+
+```{r}
+form = "A ~ lambda"
+form = formula(form)
+reg = glm(form,data=pcwstd,family=binomial)
+summary(reg)
+
+```
+
+```{r}
+library(survival)
+#Regresion logística condicional o por estratos
+pcwstd
+reglog.cond <-clogit(A~Alambda,data=pcwstd)
+
+summary(reglog.cond)
+delta = coefficients(reglog.cond)[[1]]
+```
+
+```{r}
+############# Prueba de obtener los valores de cada nudo ###
+bsx <- data.frame(bs(x=pcwstd$zscore , knots=1:3/5))
+bsx
+
+####################
+x <- seq(from = 0, to = 6, by = .025)
+y <- sin(2*x) + x -.1*x^2 + 2 + rnorm(length(x), sd = .3)
+
+generate_design_matrix <- function(x, knot_vector, degree){
+  return(cbind(outer(x,1:degree,"^"),outer(x,knot_vector,">")*outer(x,knot_vector,"-")^degree))
+}
+
+design_matrix2 <- generate_design_matrix(degree = 1, knot_vector = c(1,2.5,4, 5.7), x = x)
+design_matrix2
+mod_ls2 <- lm(y~design_matrix2)
+mod_ls2
+design_matrix3 <- generate_design_matrix(degree = 1, knot_vector = seq(from = 0.1, to = 5.9, by = .2), x = x)
+mod_ls3 <- lm(y~design_matrix3)
+yhatbad <- predict(mod_ls3)
+ggplot() +
+  geom_point(aes(x = x, y = y), color = "black", alpha = .5) +
+  geom_line(aes(x = x, y = predict(mod_ls2)), color = "red") +
+  geom_line(aes(x = x, y = yhatbad), color = "blue") +
+  labs(title = "Piecewise linear spline - Good number vs. too many knots...")
+
+```
+
+```{r}
+X <- cbind(1, generate_design_matrix(degree = 3, knot_vector = c(2), x = x))
+betas <- solve(t(X) %*% X) %*% t(X) %*% y
+yhat <- X %*% betas
+ggplot() +
+  geom_point(aes(x = x, y = y), color = "black", alpha = .3) +
+  geom_line(aes(x = x, y = yhat), color = "black", alpha = 1) +
+  geom_vline(aes(xintercept = 2), color = "black", linetype = "dotdash") +
+  labs(title = "Cubic spline",
+       subtitle = "1 knot at x=2, no penalization, underfitting")
+```

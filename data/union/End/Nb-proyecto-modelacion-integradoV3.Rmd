@@ -1,0 +1,416 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(gridExtra)
+library(MASS)
+library(fitdistrplus)
+library(ggstatsplot)
+library(tibble)
+library(readr)
+```
+
+# Proyecto de modelación integrado en etapas dentro de la notebook
+
+## Etapa 1 - definición de los datos expuestos y no expuestos
+
+Esta parte realiza la lectura de datos y los convierte en trame
+
+```{r}
+# confusoras DAG= "sl2l_qa", "sl2l_iso","ecpl_qa", "ecpl_iso","age", "gender_F", 
+# features predictoras = "sl2l_diameter","ccbd_diameter","ifol_diameter","ecpl_volume","tral_volume","sl2l_mean_length","ccbd_mean_length"
+
+setwd("C:/hcgalvan/Repositorios/hcgalvan_project/data/union/End")
+temp = gsub(".*target.*", "", readLines("integrado.csv"))
+data<-read.table(text=temp, sep=",", header=TRUE)
+
+t<-data.frame(data[,c("sl2l_diameter","ccbd_diameter","ifol_diameter","ecpl_volume","tral_volume","sl2l_mean_length","ccbd_mean_length","label","sl2l_qa", "sl2l_iso","ecpl_qa", "ecpl_iso","age", "gender_F")])
+
+t$gend_F <- ifelse(t$gender_F == "True", 1, 0) #convierto en = o 1
+t <- subset(t, select = -c(gender_F)) # Quito de tabla 
+```
+
+### Creación de features expuestos y no expuestos
+
+Definición de nuevas variables como Expuesto y no Expuesto Se realizó estudio de cada variable: Su real distribución empírica Esta distribución se obtiene de los sujetos de control. las constantes definidas son el 1ero y 3er cuartil obtenida de distribución de densidad
+
+False = No Expuesto = 0; True = Expuesto = 1
+
+```{r}
+
+t<- t %>% 
+  mutate(sl2ldmExp = if_else((t$sl2l_diameter > 22.10 & t$sl2l_diameter < 24.42), 0, 1))
+
+t<- t %>% 
+  mutate(ccbdmExp = if_else((t$ccbd_diameter > 26.07 & t$ccbd_diameter < 30.23), 0, 1))
+
+t<- t %>% 
+  mutate(ifoldmExp = if_else((t$ifol_diameter > 14.68 & t$ifol_diameter < 16.51), 0, 1))
+
+t<- t %>% 
+  mutate(ecplvlExp = if_else((t$ecpl_volume > 6455 & t$ecpl_volume < 8918), 0, 1))
+
+t<- t %>% 
+  mutate(tralvlExp = if_else((t$tral_volume > 12366 & t$tral_volume < 18004), 0, 1))
+
+t<- t %>% 
+  mutate(sl2lmlExp = if_else((t$sl2l_mean_length > 72.18 & t$sl2l_mean_length < 80.61), 0, 1))
+
+t<- t %>% 
+  mutate(ccbdmlExp = if_else((t$ccbd_mean_length > 112.62 & t$ccbd_mean_length < 123.81), 0, 1))
+```
+
+### Guardar datos para su estudio en InfoStat
+
+El estudio que realizo en InfoStat es para determinar que variable predictora debe estar en la regresión y continuar el estudio por R. InfoStat me arroja rapidamente cuales son las confusoras más importantes
+
+Dependerá de variable A y las confusoras.
+
+```{r}
+write.csv(t, "C:\\hcgalvan\\Repositorios\\hcgalvan_project\\data\\union\\End\\dbfmodelo.csv", row.names=FALSE)
+```
+
+### Creación de variable A a partir de los expuestos y no expuestos
+
+OPCION 1: Variable con A con 5 features filtrados como expuestos.
+
+| t\<- t %\>% mutate(A = if_else((t$sl2ldmExp==1 & t$sl2lmlExp==1 & t$ccbdmExp==1 & t$ccbdmlExp==1 & t\$tralvlExp==1),1, 0)) # No agrego ecpl porque contiene mucho ruido
+
+OPCION 2: Variable como A con 5 features filtrados como expuestos
+
+| t\<- t %\>% mutate(A = if_else((t$sl2ldmExp==1 & t$sl2lmlExp==1 & t$ccbdmExp==1 & t$ccbdmlExp==1 & t$tralvlExp==1 & t$ifoldmExp ==1),1, 0)) # No agrego ecpl porque contiene mucho ruido filter(t, A==1)
+
+OPCION 3: Variable A Con una sola variable filtrada
+
+```{r}
+t<- t %>% 
+  mutate(A = if_else(t$sl2ldmExp==1,1, 0))
+
+```
+
+```{r}
+t$Esquiz <- ifelse(t$label == 0, "SI", "NO")
+t$sl2sdmd <- ifelse(t$sl2ldmExp == 0, "NO", "SI")
+########################
+xtabs(~sl2sdmd+Esquiz,t) #table of counts per stratum
+odd <- ((31/27)/(15/23))
+p <- (46/(23+15+27+31))
+sprintf("odd: %f", odd)
+sprintf("log odd: %f", log(odd))
+sprintf("Prob(Ezq): %f", p)
+v1 <- p*(27+31)
+v2 <- (27+31)-v1
+v3 <- p*(23+15)
+v4 <- (23+15)-v3
+pval <- 1-((v1/v2)/(v3/v3))
+pval
+((11.2/128.8)/(198.7/17.3))
+########################
+t$ccbdmd <- ifelse(t$ccbdmExp == 0, "NO", "SI")
+xtabs(~ccbdmd+Esquiz,t) #table of counts per stratum
+odd <- ((24/25)/(22/25)) ### ERROR
+p <- (46/(50))
+sprintf("odd: %f", odd)
+sprintf("log odd: %f", log(odd))
+sprintf("Prob(Ezq): %f", p)
+
+########################
+t$ifoldmd <- ifelse(t$ifoldmExp == 0, "NO", "SI")
+xtabs(~ifoldmd+Esquiz,t) #table of counts per stratum
+odd <- ((27/30)/(16/23)) ### ERROR
+p <- ((27+16)/(30+23))
+sprintf("odd: %f", odd)
+sprintf("log odd: %f", log(odd))
+sprintf("Prob(Ezq): %f", p)
+
+########################
+t$sl2lmld <- ifelse(t$sl2lmlExp == 0, "NO", "SI")
+xtabs(~sl2lmld+Esquiz,t) #table of counts per stratum
+odd <- ((24/25)/(22/25)) ### ERROR
+p <- ((24+22)/(25+25))
+sprintf("odd: %f", odd)
+sprintf("log odd: %f", log(odd))
+sprintf("Prob(Ezq): %f", p)
+########################
+t$ecplvld <- ifelse(t$ecplvlExp == 0, "NO", "SI")
+xtabs(~ecplvld+Esquiz,t) #table of counts per stratum
+odd <- ((30/24)/(16/26)) ### ERROR
+p <- ((30+16)/(24+26))
+sprintf("odd: %f", odd)
+sprintf("log odd: %f", log(odd))
+sprintf("Prob(Ezq): %f", p)
+
+########################
+t$tralvld <- ifelse(t$tralvlExp == 0, "NO", "SI")
+xtabs(~tralvld+Esquiz,t) #table of counts per stratum
+odd <- ((27/26)/(19/24)) ### ERROR
+p <- ((27+19)/(26+24))
+sprintf("odd: %f", odd)
+sprintf("log odd: %f", log(odd))
+sprintf("Prob(Ezq): %f", p)
+
+########################
+t$ccbdmld <- ifelse(t$ccbdmlExp == 0, "NO", "SI")
+xtabs(~ccbdmld+Esquiz,t) #table of counts per stratum
+odd <- ((33/26)/(13/24)) ### ERROR
+p <- ((33+13)/(26+24))
+sprintf("odd: %f", odd)
+sprintf("log odd: %f", log(odd))
+sprintf("Prob(Ezq): %f", p)
+
+```
+
+## Etapa 2: Regresion Logística con PCA - Expuestos (A)
+
+Por lo que está sucediendo con los datos cuando trabajamos por features como A, y no en su conjunta, es que vamos a necesitar utilizar PCA para que pueda tener predictoras más ajustadas, que solo las elegidas. Esto se puede observar en la regresión logística obtenida, ya que no supera los p-value correctos. Es decir, no converge.
+
+```{r}
+t2 <- dplyr::select(dplyr::filter(data, label == 0), "sl2l_diameter","sl2l_qa", "sl2l_iso", "ccbd_iso", "ccbd_qa", "ifol_qa", "ifol_iso", "ecpl_qa", "ecpl_iso", "tral_qa", "tral_iso", "afsl_qa", "afsl_iso", "afsr_qa", "afsr_iso", "cfpl_iso", "cfpl_qa", "cfpr_iso", "cfpr_qa", "fatl_iso", "fatl_qa", "fatr_iso", "fatr_qa", "slfl_iso", "slfl_qa", "slfr_iso", "slfr_qa", "tral_iso", "tral_qa", "ufsl_iso", "ufsl_qa", "ufsr_iso", "ufsr_qa", "age", "gender_F")
+
+## Creo variable gender en una sola variable
+t2$gend_F <- ifelse(t2$gender_F == "True", 1, 0) #convierto en = o 1
+t2 <- subset(t2, select = -c(gender_F)) # Quito de tabla 
+
+##Creo la variable A desde sl2l_diameter
+t2<- t2 %>% 
+  mutate(A = if_else((t2$sl2l_diameter > 22.10 & t2$sl2l_diameter < 24.42), 0, 1))
+t2 <- subset(t2, select = -c(sl2l_diameter)) # Quito de tabla 
+#############
+
+t3 <- dplyr::select(dplyr::filter(data, label == 1), "sl2l_diameter","sl2l_qa", "sl2l_iso", "ccbd_iso", "ccbd_qa", "ifol_qa", "ifol_iso", "ecpl_qa", "ecpl_iso", "tral_qa", "tral_iso", "afsl_qa", "afsl_iso", "afsr_qa", "afsr_iso", "cfpl_iso", "cfpl_qa", "cfpr_iso", "cfpr_qa", "fatl_iso", "fatl_qa", "fatr_iso", "fatr_qa", "slfl_iso", "slfl_qa", "slfr_iso", "slfr_qa", "tral_iso", "tral_qa", "ufsl_iso", "ufsl_qa", "ufsr_iso", "ufsr_qa", "age", "gender_F")
+
+## Creo variable gender en una sola variable
+t3$gend_F <- ifelse(t3$gender_F == "True", 1, 0) #convierto en = o 1
+t3 <- subset(t3, select = -c(gender_F)) # Quito de tabla 
+
+##Creo la variable A desde sl2l_diameter
+t3<- t3 %>% 
+  mutate(A = if_else((t3$sl2l_diameter > 22.10 & t3$sl2l_diameter < 24.42), 0, 1))
+t3 <- subset(t3, select = -c(sl2l_diameter)) # Quito de tabla 
+```
+
+### 
+
+### FORMA 2 Reg Logística con PCA para Expuestas
+
+```{r}
+pca.out2 <- prcomp(t2[,c(-33)],
+                  scale. = TRUE)
+pca.out2$x
+pca.var2 <- pca.out2$sdev^2  #autovalores
+pca.var2
+misdatos <- data.frame(A = t2[, "A"], pca.out2$x[, 1:2])
+pca.out2[1]
+logRegPCA <- glm(A ~ .,  data = misdatos, family = binomial)
+#summary(logRegPCA)
+logistic.regression.or.ci(logRegPCA)
+summary(logRegPCA)$coefficients
+
+```
+
+### Reg Logística con PCA para No expuestas
+
+```{r}
+
+pca.out3 <- prcomp(t3[,c(-33)],
+                  scale. = TRUE)
+pca.out3$x
+pca.var3 <- pca.out3$sdev^2  #autovalores
+pca.var3
+misdatos2 <- data.frame(A = t3[, "A"], pca.out3$x[, 1:2])
+pca.out3[1]
+logRegPCANoExp <- glm(A ~ .,  data = misdatos2, family = binomial)
+#summary(logRegPCA)
+logistic.regression.or.ci(logRegPCANoExp)
+summary(logRegPCANoExp)$coefficients
+```
+
+## Etapa 2: Generación Propensity Z score
+
+Aquí es un trabajo manual para cada prueba a realizar. Cada regresión tiene que ser ajustada.
+
+### Generación de Z Score
+
+Usar una de ellas. La que mejor se ajusta a los datos.
+
+### Con PCA
+
+```{r}
+
+############## PARA EXPUESTAS #######################
+zscores<-c()
+for(i in 1:46) {       # for-loop over rows
+    zscores[i] <-((1/(1+exp(-(as.numeric(unlist(logRegPCA$coefficients[1]))+as.numeric(unlist(logRegPCA$coefficients[2]))*as.numeric(unlist(pca.out2$x[i,"PC1"]))+as.numeric(unlist(logRegPCA$coefficients[3]))*as.numeric(unlist(pca.out2$x[i,"PC2"])))))))
+}
+t2$zscore <-zscores
+############## PARA EXPUESTAS #######################
+zscores2<-c()
+for(i in 1:50) {       # for-loop over rows
+    zscores2[i] <-((1/(1+exp(-(as.numeric(unlist(logRegPCANoExp$coefficients[1]))+as.numeric(unlist(logRegPCANoExp$coefficients[2]))*as.numeric(unlist(pca.out3$x[i,"PC1"]))+as.numeric(unlist(logRegPCANoExp$coefficients[3]))*as.numeric(unlist(pca.out3$x[i,"PC2"])))))))
+}
+t3$zscore <-zscores2
+
+```
+
+### 
+
+#### Armado de Subclases del Zscore para estudio posterior
+
+Tener en cuenta que se puede dividir de manera diferente, por otra cantidad de estratos como por ejemplo spline.
+
+```{r}
+#########
+# Utilizo t2 - sujetos de estudio
+# Entonces utilizo el total
+cuantil <-quantile(t2$zscore)
+t2$subclass <- cut(x=t2$zscore,
+                              breaks=quantile(cuantil, 
+                              prob = seq(0, 1, 1/5)),include.lowest=T)
+levels(t2$subclass) <- 1:length(levels(t2$subclass))
+###############
+quantile(t3$zscore)
+quantile(t2$zscore)
+# Utilizo los cuantiles de EXPUESTOS para armar stratos de zscore en LOS NO EXPUESTOS
+t3$subclass <- cut(x=t3$zscore,
+                              breaks=quantile(cuantil, 
+                              prob = seq(0, 1, 1/5)),include.lowest=T)
+levels(t3$subclass) <- 1:length(levels(t3$subclass))
+####
+# TENGO VALORES NA EN LA SUBCLASE DE LOS SUJETOS DE CONTROL, SON AQUELLOS FUERON DE LOS CUANTILES INFERIORES, ENTONCES
+# AGREGO VALOR 1
+####
+t3[is.na(t3)] = 1
+
+#examine common support
+
+xtabs(~A+subclass,t2) #table of counts per stratum
+xtabs(~A+subclass,t3) #table of counts per stratum
+
+```
+
+```{r}
+write.csv(t2, "C:\\hcgalvan\\Repositorios\\hcgalvan_project\\data\\union\\End\\dbcasespieceswice.csv", row.names=FALSE) ##guardo los casos
+write.csv(t3, "C:\\hcgalvan\\Repositorios\\hcgalvan_project\\data\\union\\End\\dbcontrolpieceswice.csv", row.names=FALSE) ##guardo los sujetos de control
+```
+
+### Espacio para utilizar con función constante por partes.
+
+```{r}
+setwd("C:/hcgalvan/Repositorios/hcgalvan_project/data/union/End")
+temp = gsub(".*target.*", "", readLines("dbcasespieceswice.csv"))
+data<-read.table(text=temp, sep=",", header=TRUE)
+dz<-data.frame(data[,c("D","A","zscore","subclass")])
+pcwstd<-data.frame(dz)
+```
+
+```{r}
+
+deri_pol1 <- function(x){-6.122264 + 17.67111*x - 18.56562*x^2 + 10.44433*x^3 - 3.536183*x^4 + 0.7576271*x^5 - 0.1036324*x^6 + 0.008774759*x^7 - 0.000418757*x^8 + 8.6019e-06*x^9}
+
+deri_pol2 <- function(x){-0.2197296 + 2.0046*x - 1.811326*x^2 + 0.8375173*x^3 - 0.2182443*x^4 + 0.03246031*x^5 - 0.002569767*x^6 + 8.38559e-05*x^7}
+
+deri_pol3 <- function(x){4.793893 - 11.81498*x + 14.1384*x^2 - 9.532235*x^3 + 4.068752*x^4 - 1.159912*x^5 + 0.2257844*x^6 -  0.03004852*x^7 + 0.002683565*x^8 - 0.0001534813*x^9 + 5.071574e-06*x^10 - 7.35409e-08*x^11 }
+
+deri_pol4 <- function(x){2.512275 - 4.393058*x + 4.022133*x^2 - 1.838199*x^3 + 0.4632213*x^4 - 0.06537888*x^5 + 0.004842031*x^6 - 0.0001464992*x^7}
+
+deri_pol5 <- function(x){-4.94969 + 13.71929*x - 12.46775*x^2 + 5.722334*x^3 - 1.45807*x^4 + 0.2089239*x^5 - 0.01574029*x^6 + 0.0004847141*x^7}
+
+### Obtengo los límites de zscore a partir del filtro subclase y utilizar en la función por partes
+
+lim1 <- max(as.numeric(unlist(dplyr::select(dplyr::filter(pcwstd, subclass == 1,),"zscore"))))
+lim2 <- max(as.numeric(unlist(dplyr::select(dplyr::filter(pcwstd, subclass == 2,),"zscore"))))
+lim3 <- max(as.numeric(unlist(dplyr::select(dplyr::filter(pcwstd, subclass == 3,),"zscore"))))
+lim4 <- max(as.numeric(unlist(dplyr::select(dplyr::filter(pcwstd, subclass == 4,),"zscore"))))
+lim5 <- max(as.numeric(unlist(dplyr::select(dplyr::filter(pcwstd, subclass == 5,),"zscore"))))
+
+
+posicionax <- function(x, pos){
+  v <- NULL
+  h <- NULL
+  h<-as.numeric(unlist(dplyr::select(dplyr::filter(pcwstd, subclass == pos,),"zscore")))
+  div.1 <- round((h[order(h, decreasing = FALSE)] / x),4)
+  v<- which(div.1 == 1.0000,)
+  v
+}  
+  
+buscarx <- function(x){
+    d <- NULL
+    ifelse (x > 0 & x<= lim1, d <- posicionax(x, 1), 0)
+    ifelse (x>lim1 & x<=lim2, d <- posicionax(x, 2), 0)
+    ifelse (x>lim2 & x<=lim3, d <- posicionax(x, 3), 0)
+    ifelse (x>lim3 & x<=lim4, d <- posicionax(x, 4), 0)
+    ifelse (x>lim4, d <- posicionax(x, 5), 0)
+    d
+}
+
+fx <- function(x, dat){
+    f <- NULL
+    ifelse (x > 0 & x<= lim1, f <- deri_pol1(dat), 0)
+    ifelse (x>lim1 & x<=lim2, f <- deri_pol2(dat), 0)
+    ifelse (x>lim2 & x<=lim3, f <- deri_pol3(dat), 0)
+    ifelse (x>lim3 & x<=lim4, f <- deri_pol4(dat), 0)
+    ifelse (x>lim4, f <- deri_pol5(dat), 0)
+    f
+}
+
+x <- data.frame(pcwstd$zscore)
+for(i in 1:nrow(x)) {       # for-loop over rows
+  dat <- buscarx(pcwstd$zscore[[i]])
+  #print(dat)
+  #print(fx(pcwstd$zscore[[i]], dat))
+  lambd <-fx(pcwstd$zscore[[i]], dat)
+  pcwstd$lambda[i] <- lambd
+  }
+
+plot(pcwstd$lambda, type="l", las=1)
+points(x)
+
+
+```
+
+#### Generar Constante Delta
+
+Se utiliza o genera despues de realizar la regresión
+
+```{r}
+### Regresion Logística de A en lambda
+form = "A ~ lambda"
+form = formula(form)
+reg = glm(form,data=pcwstd,family=binomial)
+summary(reg)
+
+### Se logra con la reg logistica entre A y lambda(z)
+δ<-deviance(reg)/df.residual(reg) # ratio varianza para Delta
+delta <-deviance(reg)/df.residual(reg)
+```
+
+## Modelo Final
+
+El modelo final tiene algunas dificultades, con respecto a si es por cada sujeto o es el total de sujetos.
+
+Deberíamos tener dos calculos
+
+```{r}
+##################################################################
+#función productoria
+productoria <- function(D,delta,A,lamdaz){
+   result = prod((exp(D*(delta*A)+lamdaz))/(1+exp((delta*A)+lamdaz)))
+   return(result)
+}
+# productoria(1,.9,1,2)
+## donde D es label donde es 1 = Patologia, 0 sin patología, 
+log_Ratio_odds = exp(pcwstd$D*(delta*pcwstd$A)+pcwstd$lambda) / (1+(exp((delta*pcwstd$A)+pcwstd$lambda)))
+plot(log_Ratio_odds)
+
+log_ODDs_Ratios <- productoria(pcwstd$D, delta, pcwstd$A, pcwstd$lambda)
+multiplica = 1
+for (i in 1:length(pcwstd$D)){
+  multiplica = multiplica*productoria(pcwstd$D[i], delta, pcwstd$A[i], pcwstd$lambda[i])
+}
+multiplica
+log_ODDs_Ratios
+```

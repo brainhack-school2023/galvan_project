@@ -292,6 +292,98 @@ xtabs(~A+subclass,t3) #table of counts per stratum
 
 ```
 
+```{r}
+write.csv(t2, "C:\\hcgalvan\\Repositorios\\hcgalvan_project\\data\\union\\End\\dbcasespieceswice.csv", row.names=FALSE) ##guardo los casos
+write.csv(t3, "C:\\hcgalvan\\Repositorios\\hcgalvan_project\\data\\union\\End\\dbcontrolpieceswice.csv", row.names=FALSE) ##guardo los sujetos de control
+```
+
+### Espacio para utilizar con función constante por partes.
+
+```{r}
+setwd("C:/hcgalvan/Repositorios/hcgalvan_project/data/union/End")
+temp = gsub(".*target.*", "", readLines("dbcasespieceswice.csv"))
+data<-read.table(text=temp, sep=",", header=TRUE)
+dz<-data.frame(data[,c("D","A","zscore","subclass")])
+pcwstd<-data.frame(dz)
+```
+
+```{r}
+
+deri_pol1 <- function(x){-6.122264 + 17.67111*x - 18.56562*x^2 + 10.44433*x^3 - 3.536183*x^4 + 0.7576271*x^5 - 0.1036324*x^6 + 0.008774759*x^7 - 0.000418757*x^8 + 8.6019e-06*x^9}
+
+deri_pol2 <- function(x){-0.2197296 + 2.0046*x - 1.811326*x^2 + 0.8375173*x^3 - 0.2182443*x^4 + 0.03246031*x^5 - 0.002569767*x^6 + 8.38559e-05*x^7}
+
+deri_pol3 <- function(x){4.793893 - 11.81498*x + 14.1384*x^2 - 9.532235*x^3 + 4.068752*x^4 - 1.159912*x^5 + 0.2257844*x^6 -  0.03004852*x^7 + 0.002683565*x^8 - 0.0001534813*x^9 + 5.071574e-06*x^10 - 7.35409e-08*x^11 }
+
+deri_pol4 <- function(x){2.512275 - 4.393058*x + 4.022133*x^2 - 1.838199*x^3 + 0.4632213*x^4 - 0.06537888*x^5 + 0.004842031*x^6 - 0.0001464992*x^7}
+
+deri_pol5 <- function(x){-4.94969 + 13.71929*x - 12.46775*x^2 + 5.722334*x^3 - 1.45807*x^4 + 0.2089239*x^5 - 0.01574029*x^6 + 0.0004847141*x^7}
+
+### Obtengo los límites de zscore a partir del filtro subclase y utilizar en la función por partes
+
+lim1 <- max(as.numeric(unlist(dplyr::select(dplyr::filter(pcwstd, subclass == 1,),"zscore"))))
+lim2 <- max(as.numeric(unlist(dplyr::select(dplyr::filter(pcwstd, subclass == 2,),"zscore"))))
+lim3 <- max(as.numeric(unlist(dplyr::select(dplyr::filter(pcwstd, subclass == 3,),"zscore"))))
+lim4 <- max(as.numeric(unlist(dplyr::select(dplyr::filter(pcwstd, subclass == 4,),"zscore"))))
+lim5 <- max(as.numeric(unlist(dplyr::select(dplyr::filter(pcwstd, subclass == 5,),"zscore"))))
+
+
+posicionax <- function(x, pos){
+  v <- NULL
+  h <- NULL
+  h<-as.numeric(unlist(dplyr::select(dplyr::filter(pcwstd, subclass == pos,),"zscore")))
+  div.1 <- round((h[order(h, decreasing = FALSE)] / x),4)
+  v<- which(div.1 == 1.0000,)
+  v
+}  
+  
+buscarx <- function(x){
+    d <- NULL
+    ifelse (x > 0 & x<= lim1, d <- posicionax(x, 1), 0)
+    ifelse (x>lim1 & x<=lim2, d <- posicionax(x, 2), 0)
+    ifelse (x>lim2 & x<=lim3, d <- posicionax(x, 3), 0)
+    ifelse (x>lim3 & x<=lim4, d <- posicionax(x, 4), 0)
+    ifelse (x>lim4, d <- posicionax(x, 5), 0)
+    d
+}
+
+fx <- function(x, dat){
+    f <- NULL
+    ifelse (x > 0 & x<= lim1, f <- deri_pol1(dat), 0)
+    ifelse (x>lim1 & x<=lim2, f <- deri_pol2(dat), 0)
+    ifelse (x>lim2 & x<=lim3, f <- deri_pol3(dat), 0)
+    ifelse (x>lim3 & x<=lim4, f <- deri_pol4(dat), 0)
+    ifelse (x>lim4, f <- deri_pol5(dat), 0)
+    f
+}
+
+x <- data.frame(pcwstd$zscore)
+for(i in 1:nrow(x)) {       # for-loop over rows
+  dat <- buscarx(pcwstd$zscore[[i]])
+  #print(dat)
+  #print(fx(pcwstd$zscore[[i]], dat))
+  lambd <-fx(pcwstd$zscore[[i]], dat)
+  pcwstd$lambda[i] <- lambd
+  }
+
+plot(pcwstd$lambda, type="l", las=1)
+points(x)
+
+
+```
+
+```{r}
+### Regresion Logística de A en lambda
+form = "A ~ lambda"
+form = formula(form)
+reg = glm(form,data=pcwstd,family=binomial)
+summary(reg)
+
+### Se logra con la reg logistica entre A y lambda(z)
+δ<-deviance(reg)/df.residual(reg) # ratio varianza para Delta
+delta <-deviance(reg)/df.residual(reg)
+```
+
 #### Realizar Reg Log Condicional
 
 #### Generar Función constante por partes/escalonada Lambda
