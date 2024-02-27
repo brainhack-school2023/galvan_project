@@ -14,7 +14,31 @@ library(tibble)
 library(readr)
 ```
 
-# Proyecto de modelación integrado en etapas dentro de la notebook
+# Modelo Causal Tractos Esquizofrenia
+
+Funciones
+
+```{r}
+logistic.regression.or.ci <- function(regress.out, level = 0.95) {
+  usual.output <- summary(regress.out)
+  z.quantile <- stats::qnorm(1 - (1 - level) / 2)
+  number.vars <- length(regress.out$coefficients)
+  OR <- exp(regress.out$coefficients[-1])
+  temp.store.result <- matrix(rep(NA, number.vars * 2), nrow = number.vars)
+  for (i in 1:number.vars) {
+    temp.store.result[i, ] <- summary(regress.out)$coefficients[i] +
+      c(-1, 1) * z.quantile * summary(regress.out)$coefficients[i + number.vars]
+  }
+  intercept.ci <- temp.store.result[1, ]
+  slopes.ci <- temp.store.result[-1, ]
+  OR.ci <- exp(slopes.ci)
+  output <- list(
+    regression.table = usual.output, intercept.ci = intercept.ci,
+    slopes.ci = slopes.ci, OR = OR, OR.ci = OR.ci
+  )
+  return(output)
+}
+```
 
 ## Etapa 1 - definición de los datos expuestos y no expuestos
 
@@ -28,7 +52,7 @@ setwd("C:/hcgalvan/Repositorios/hcgalvan_project/data/union/End")
 temp = gsub(".*target.*", "", readLines("integrado.csv"))
 data<-read.table(text=temp, sep=",", header=TRUE)
 
-t<-data.frame(data[,c("sl2l_diameter","ccbd_diameter","ifol_diameter","ecpl_volume","tral_volume","sl2l_mean_length","ccbd_mean_length","label","sl2l_qa", "sl2l_iso","ecpl_qa", "ecpl_iso","age", "gender_F")])
+t<-data.frame(data[,c("sl2l_diameter","ccbd_diameter","ifol_diameter","ecpl_volume","tral_volume","sl2l_mean_length","ccbd_mean_length","label","sl2l_qa", "sl2l_iso", "ccbd_iso", "ccbd_qa", "ifol_qa", "ifol_iso", "ecpl_qa", "ecpl_iso", "tral_qa", "tral_iso", "afsl_qa", "afsl_iso", "afsr_qa", "afsr_iso", "cfpl_iso", "cfpl_qa", "cfpr_iso", "cfpr_qa", "fatl_iso", "fatl_qa", "fatr_iso", "fatr_qa", "slfl_iso", "slfl_qa", "slfr_iso", "slfr_qa", "tral_iso", "tral_qa", "ufsl_iso", "ufsl_qa", "ufsr_iso", "ufsr_qa", "age", "gender_F")])
 
 t$gend_F <- ifelse(t$gender_F == "True", 1, 0) #convierto en = o 1
 t <- subset(t, select = -c(gender_F)) # Quito de tabla 
@@ -87,8 +111,14 @@ OPCION 2: Variable como A con 5 features filtrados como expuestos
 OPCION 3: Variable A Con una sola variable filtrada
 
 ```{r}
-t<- t %>% 
-  mutate(A = if_else(t$sl2ldmExp==1,1, 0))
+#t <- subset(t, select = -c(A)) # Quito de tabla 
+suma = 0
+resultado <- c()
+for (i in 1:length(t$label)){
+  suma = sum(t$sl2ldmExp[i], t$sl2lmlExp[i], t$ccbdmExp[i], t$ccbdmlExp[i], t$tralvlExp[i], t$ecplvlExp[i], t$ifoldmExp[i] )
+  resultado[length(resultado) + 1] <- if_else((suma >=1 ),1, 0)
+}
+t$A <- resultado
 
 ```
 
@@ -162,68 +192,81 @@ sprintf("odd: %f", odd)
 sprintf("log odd: %f", log(odd))
 sprintf("Prob(Ezq): %f", p)
 
-
 ```
 
 ## Etapa 2: Regresion Logística con PCA - Expuestos (A)
 
-Por lo que está sucediendo con los datos cuando trabajamos por features como A, y no en su conjunta, es que vamos a necesitar utilizar PCA para que pueda tener predictoras más ajustadas, que solo las elegidas. Esto se puede observar en la regresión logística obtenida, ya que no supera los p-value correctos. Es decir, no converge.
+Al trabajar solo con el features A, vamos a reducir con PCA las predictoras.
 
 ```{r}
-t2 <- dplyr::select(dplyr::filter(data, label == 0), "sl2l_diameter","sl2l_qa", "sl2l_iso", "ccbd_iso", "ccbd_qa", "ifol_qa", "ifol_iso", "ecpl_qa", "ecpl_iso", "tral_qa", "tral_iso", "afsl_qa", "afsl_iso", "afsr_qa", "afsr_iso", "cfpl_iso", "cfpl_qa", "cfpr_iso", "cfpr_qa", "fatl_iso", "fatl_qa", "fatr_iso", "fatr_qa", "slfl_iso", "slfl_qa", "slfr_iso", "slfr_qa", "tral_iso", "tral_qa", "ufsl_iso", "ufsl_qa", "ufsr_iso", "ufsr_qa", "age", "gender_F")
+### Son sujetos de estudio los seleccionados
+t2 <- dplyr::select(dplyr::filter(t, label == 0), "sl2l_qa", "sl2l_iso", "ccbd_iso", "ccbd_qa", "ifol_qa", "ifol_iso", "ecpl_qa", "ecpl_iso", "tral_qa", "tral_iso", "afsl_qa", "afsl_iso", "afsr_qa", "afsr_iso", "cfpl_iso", "cfpl_qa", "cfpr_iso", "cfpr_qa", "fatl_iso", "fatl_qa", "fatr_iso", "fatr_qa", "slfl_iso", "slfl_qa", "slfr_iso", "slfr_qa", "tral_iso", "tral_qa", "ufsl_iso", "ufsl_qa", "ufsr_iso", "ufsr_qa", "age", "gend_F", "A")
 
-## Creo variable gender en una sola variable
-t2$gend_F <- ifelse(t2$gender_F == "True", 1, 0) #convierto en = o 1
-t2 <- subset(t2, select = -c(gender_F)) # Quito de tabla 
+### Son sujetos de control los seleccionados
+t3 <- dplyr::select(dplyr::filter(t, label == 1), "sl2l_qa", "sl2l_iso", "ccbd_iso", "ccbd_qa", "ifol_qa", "ifol_iso", "ecpl_qa", "ecpl_iso", "tral_qa", "tral_iso", "afsl_qa", "afsl_iso", "afsr_qa", "afsr_iso", "cfpl_iso", "cfpl_qa", "cfpr_iso", "cfpr_qa", "fatl_iso", "fatl_qa", "fatr_iso", "fatr_qa", "slfl_iso", "slfl_qa", "slfr_iso", "slfr_qa", "tral_iso", "tral_qa", "ufsl_iso", "ufsl_qa", "ufsr_iso", "ufsr_qa", "age", "gend_F", "A")
 
-##Creo la variable A desde sl2l_diameter
-t2<- t2 %>% 
-  mutate(A = if_else((t2$sl2l_diameter > 22.10 & t2$sl2l_diameter < 24.42), 0, 1))
-t2 <- subset(t2, select = -c(sl2l_diameter)) # Quito de tabla 
-#############
-
-t3 <- dplyr::select(dplyr::filter(data, label == 1), "sl2l_diameter","sl2l_qa", "sl2l_iso", "ccbd_iso", "ccbd_qa", "ifol_qa", "ifol_iso", "ecpl_qa", "ecpl_iso", "tral_qa", "tral_iso", "afsl_qa", "afsl_iso", "afsr_qa", "afsr_iso", "cfpl_iso", "cfpl_qa", "cfpr_iso", "cfpr_qa", "fatl_iso", "fatl_qa", "fatr_iso", "fatr_qa", "slfl_iso", "slfl_qa", "slfr_iso", "slfr_qa", "tral_iso", "tral_qa", "ufsl_iso", "ufsl_qa", "ufsr_iso", "ufsr_qa", "age", "gender_F")
-
-## Creo variable gender en una sola variable
-t3$gend_F <- ifelse(t3$gender_F == "True", 1, 0) #convierto en = o 1
-t3 <- subset(t3, select = -c(gender_F)) # Quito de tabla 
-
-##Creo la variable A desde sl2l_diameter
-t3<- t3 %>% 
-  mutate(A = if_else((t3$sl2l_diameter > 22.10 & t3$sl2l_diameter < 24.42), 0, 1))
-t3 <- subset(t3, select = -c(sl2l_diameter)) # Quito de tabla 
 ```
 
 ### 
 
-### FORMA 2 Reg Logística con PCA para Expuestas
+### FORMA 2 Reg Logística con PCA para Sujetos de Estudio
 
 ```{r}
-pca.out2 <- prcomp(t2[,c(-33)],
+lista<-c("sl2l_qa", "sl2l_iso", "ccbd_iso", "ccbd_qa", "ifol_qa", "ifol_iso", "ecpl_qa", "ecpl_iso", "tral_qa", "tral_iso", "afsl_qa", "afsl_iso", "afsr_qa", "afsr_iso", "cfpl_iso", "cfpl_qa", "cfpr_iso", "cfpr_qa", "fatl_iso", "fatl_qa", "fatr_iso", "fatr_qa", "slfl_iso", "slfl_qa", "slfr_iso", "slfr_qa", "tral_iso", "tral_qa", "ufsl_iso", "ufsl_qa", "ufsr_iso", "ufsr_qa", "age", "gend_F")
+pca.out2 <- prcomp(t2[,c(lista)],
                   scale. = TRUE)
-pca.out2$x
 pca.var2 <- pca.out2$sdev^2  #autovalores
-pca.var2
+# Cálculo de la varianza explicada acumulada 
+prop_varianza <- pca.out2$sdev^2/sum(pca.out2$sdev^2)
+prop_varianza_acum <- cumsum(prop_varianza)
+ggplot(data = data.frame(prop_varianza_acum, pc = factor(1:34)),
+       aes(x = pc, y = prop_varianza_acum, group = 1)) +
+  geom_point() +
+  geom_line() +
+  geom_label(aes(label = round(prop_varianza_acum,2))) +
+  theme_bw() +
+  labs(x = "Componentes principales", 
+       y = "Prop. varianza explicada acumulada")
+
+```
+
+```{r}
 misdatos <- data.frame(A = t2[, "A"], pca.out2$x[, 1:2])
-pca.out2[1]
 logRegPCA <- glm(A ~ .,  data = misdatos, family = binomial)
 #summary(logRegPCA)
 logistic.regression.or.ci(logRegPCA)
 summary(logRegPCA)$coefficients
-
 ```
 
-### Reg Logística con PCA para No expuestas
+### Reg Logística con PCA para Sujetos de Control
 
 ```{r}
 
-pca.out3 <- prcomp(t3[,c(-33)],
+pca.out3 <- prcomp(t3[,c(lista)],
                   scale. = TRUE)
-pca.out3$x
+#pca.out3$x
 pca.var3 <- pca.out3$sdev^2  #autovalores
-pca.var3
+# Cálculo de la varianza explicada acumulada 
+prop_varianza <- pca.out3$sdev^2/sum(pca.out3$sdev^2)
+prop_varianza_acum <- cumsum(prop_varianza)
+ggplot(data = data.frame(prop_varianza_acum, pc = factor(1:34)),
+       aes(x = pc, y = prop_varianza_acum, group = 1)) +
+  geom_point() +
+  geom_line() +
+  geom_label(aes(label = round(prop_varianza_acum,2))) +
+  theme_bw() +
+  labs(x = "Componentes principales", 
+       y = "Prop. varianza explicada acumulada")
+
+
+
+
+```
+
+```{r}
+#pca.var3
 misdatos2 <- data.frame(A = t3[, "A"], pca.out3$x[, 1:2])
-pca.out3[1]
+#pca.out3[1]
 logRegPCANoExp <- glm(A ~ .,  data = misdatos2, family = binomial)
 #summary(logRegPCA)
 logistic.regression.or.ci(logRegPCANoExp)
@@ -242,13 +285,13 @@ Usar una de ellas. La que mejor se ajusta a los datos.
 
 ```{r}
 
-############## PARA EXPUESTAS #######################
+############## PARA SUJETOS DE ESTUDIO #######################
 zscores<-c()
 for(i in 1:46) {       # for-loop over rows
     zscores[i] <-((1/(1+exp(-(as.numeric(unlist(logRegPCA$coefficients[1]))+as.numeric(unlist(logRegPCA$coefficients[2]))*as.numeric(unlist(pca.out2$x[i,"PC1"]))+as.numeric(unlist(logRegPCA$coefficients[3]))*as.numeric(unlist(pca.out2$x[i,"PC2"])))))))
 }
 t2$zscore <-zscores
-############## PARA EXPUESTAS #######################
+############## PARA SUJETOS DE CONTROL #######################
 zscores2<-c()
 for(i in 1:50) {       # for-loop over rows
     zscores2[i] <-((1/(1+exp(-(as.numeric(unlist(logRegPCANoExp$coefficients[1]))+as.numeric(unlist(logRegPCANoExp$coefficients[2]))*as.numeric(unlist(pca.out3$x[i,"PC1"]))+as.numeric(unlist(logRegPCANoExp$coefficients[3]))*as.numeric(unlist(pca.out3$x[i,"PC2"])))))))
