@@ -600,6 +600,11 @@ lapply(1:nrow(coef_opt), function(i){
 # http://www.sthda.com/english/articles/36-classification-methods-essentials/149-penalized-logistic-regression-essentials-in-r-ridge-lasso-and-elastic-net/
 # https://www.analyticsvidhya.com/blog/2018/07/introductory-guide-maximum-likelihood-estimation-case-study-r/
 # https://stackoverflow.com/questions/24811598/error-in-dropy-rep1-nc-error-for-cv-glmnet-in-glmnet-r-package
+#
+# https://rpubs.com/vanessa1217/645522   Proyecto Final Big Data
+# https://stats.stackexchange.com/questions/219828/interpretation-of-coefficients-in-logistic-regression-output
+# https://tidystat.com/meaning-of-hessian-matrix-from-optim-in-r/
+# 
 ####################################################################################################
 ```
 
@@ -656,46 +661,34 @@ Interpretación de resultados de ratios de la varianza:
 
 -   Al interpretar la matriz de relación de varianza asintótica en el contexto de su problema específico y combinarla con otros diagnósticos del modelo, puede obtener información valiosa sobre la precisión relativa de las estimaciones de sus parámetros e identificar áreas potenciales para una mayor investigación o refinamiento del modelo.
 
-```{r}
-library(optimx)
+### Resampling approach with boostrap, para reg log estratificada y obtener varianza
 
-# Define the objective function
-obj_fn <- function(par, x, y) {
-  a <- par[1]
-  b <- par[2]
-  sum((y - a * exp(-b * x))^2)
+```{r}
+
+# deviance(reg)/df.residual(reg)
+# df.residual(datglmrob)
+# deviance(datglmrob)
+# pscl::pR2(datglmrob)["McFadden"]
+
+# Install the boot package if not installed
+# install.packages("boot")
+
+# Load the package
+library(boot)
+
+# Define a function to calculate the statistic of interest
+# variance on regression stratific logistic
+stat_func <- function(t, indices) {
+  # Calculate the statistic on the resampled data
+  #Regresion logística condicional o por estratos
+  reglog.cond <-clogit(D~A+strata(subclass),data=t)
+  coefficients(reglog.cond)[[1]]
 }
 
-# Generate some example data
-set.seed(123)
-x <- runif(100, 0, 10)
-y <- 2 * exp(-0.3 * x) + rnorm(100, 0, 0.1)
-
-# Fit the model
-fit <- optimx(par = c(1, 1), fn = obj_fn, x = x, y = y)
-
-# Extract the Hessian matrix
-hessian <- fit$hessian
-
-# Calculate the asymptotic variance-covariance matrix
-n <- length(x)
-avar_cov <- solve(hessian) / n
-
-# Extract the asymptotic variances
-asymptotic_variances <- diag(avar_cov)
-
-# Calculate the asymptotic variance ratio
-param1_index <- which(names(asymptotic_variances) == "par1")
-param2_index <- which(names(asymptotic_variances) == "par2")
-avar_ratio <- asymptotic_variances[param1_index] / asymptotic_variances[param2_index]
-
-# Print the result
-print(avar_ratio)
-```
-
-```{r}
-deviance(reg)/df.residual(reg)
-df.residual(datglmrob)
-deviance(datglmrob)
-# pscl::pR2(datglmrob)["McFadden"]
+# Perform bootstrapping
+boot_output <- boot(data = t3, statistic = stat_func, R = 1000)
+boot_output
+# Access the bootstrap results
+boot_estimates <- boot_output$t  # Bootstrap estimates of the statistic
+boot_se <- boot.ci(boot_output, type = "bca")$bca[4]  # Bootstrap standard error
 ```

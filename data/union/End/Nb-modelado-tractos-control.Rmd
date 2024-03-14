@@ -1159,3 +1159,43 @@ asymptotic_variances <- diag(avar_cov)
 # Print the results
 print(asymptotic_variances)
 ```
+
+```{r}
+library(optimx)
+
+# Define the objective function
+obj_fn <- function(par, x, y) {
+  a <- par[1]
+  b <- par[2]
+  sum((y - a * exp(-b * x))^2)
+}
+
+# Generate some example data
+set.seed(123)
+x <- runif(100, 0, 10)
+y <- 2 * exp(-0.3 * x) + rnorm(100, 0, 0.1)
+
+# Fit the model
+fit <- optimx(par = c(1, 1), fn = obj_fn, x = x, y = y)
+
+# Extract the Hessian matrix
+hessian <- fit$hessian
+
+# Calculate the asymptotic variance-covariance matrix
+n <- length(x)
+avar_cov <- solve(hessian) / n
+
+# Extract the asymptotic variances
+asymptotic_variances <- diag(avar_cov)
+
+# Calculate the asymptotic variance ratio
+param1_index <- which(names(asymptotic_variances) == "par1")
+param2_index <- which(names(asymptotic_variances) == "par2")
+avar_ratio <- asymptotic_variances[param1_index] / asymptotic_variances[param2_index]
+
+# Print the resul
+```
+
+```{r}
+
+```
