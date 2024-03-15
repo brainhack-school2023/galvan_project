@@ -934,6 +934,72 @@ plot(log_Ratio_odds_sujetos_ctrl, main = "Composicion de ∏ D=0")
 plot(log_Ratio_odds_sujetos_estudio, main = "Composicion de ∏ D=1")
 ```
 
+### Alternativas comunes a R\^2 en regresión logística condicional 
+
+-   **Prueba de razón de verosimilitud (LRT** Likelihood Ratio Test**)** : la LRT compara el ajuste del modelo completo con el modelo nulo o solo de intersección. La estadística de prueba sigue una distribución chi-cuadrado y un valor p significativo indica que los predictores del modelo proporcionan un mejor ajuste que el modelo nulo. anova(model)
+
+-   **Medidas de pseudo R cuadrado** : se han propuesto varias medidas de pseudo R cuadrado como alternativas a R \^ 2 en la regresión logística condicional. Estas medidas tienen como objetivo cuantificar la proporción de variación explicada por los predictores. Algunas medidas pseudo R-cuadrado comúnmente utilizadas son:
+
+**Pseudo R cuadrado de Cox y Snell** :
+
+-   **Estadística de concordancia (estadística C)** : la estadística C, también conocida como área bajo la curva característica operativa del receptor (ROC), mide la capacidad discriminativa del modelo. Va desde 0,5 (sin discriminación) a 1 (discriminación perfecta).
+
+4.  **Criterios de información** : los criterios de información, como el Criterio de información de Akaike (AIC) y el Criterio de información bayesiano (BIC), se pueden utilizar para comparar el ajuste relativo de diferentes modelos. Valores más bajos de AIC o BIC indican un mejor ajuste.
+
+5.  
+
+```{r}
+# https://jrubalcaba.github.io/posts/information_criterion/
+# https://stats.stackexchange.com/questions/567498/are-exact-logistic-regression-and-conditional-logistic-regression-the-same
+  
+library(fixest)
+library(amt)
+library(pROC)
+
+library(rms)
+library(rcompanion)
+
+# Regresión Logística Condicional
+# criterio de información de Aike (AIC)
+# criterio de información de Bayes (BIC)
+# solo funciona con el modelo realizado con glm
+
+misdat <- data.frame(rbind(t3[,c("D","subclass","A")], t2[,c("D","subclass","A")]))
+
+model <- clogit(D~A+strata(subclass),data=misdat)
+anova(model) 
+performance::r2(model, adjust = TRUE) #proporción de variación explicada por los predictores
+
+prob <- survival:::predict.coxph(model)
+predict(model, type = "risk")
+prob <- predict(model, type = "risk")  # Predicted probabilities
+survival:::coxph(Surv(1:nrow(misdat), misdat$D) ~ prob, data = misdat, method = "breslow")$rscore  # C-statistic
+
+coxph(Surv(1:nrow(misdat), misdat$D) ~ prob, data = misdat, method = "breslow")$rscore 
+coxp <- coxph(Surv(1:nrow(misdat), misdat$D) ~ prob, data = misdat, method = "breslow")
+summary(coxp)
+summary(model)
+
+aic <- AIC(model)  # AIC
+bic <- BIC(model)  # BIC
+deviance(model)
+c(aic, bic)
+
+
+fitstat(reglog.cond)
+fit_clogit(misdat,D~A+strata(subclass), more = NULL, summary_only = FALSE )
+clogit(D~A+strata(subclass),method= "efron", data=misdat)
+
+
+insight::get_varcov(reglog.cond) #Get variance-covariance matrix from models
+# str(misdat)
+# pscl::pR2(reglog.cond)["McFadden"]
+
+anova(reglog.cond, test="Chisq")
+AIC(reglog.cond)
+
+```
+
 ```{r}
 # Hacer graficas
 # https://cran.rstudio.com/web/packages/regressinator/vignettes/logistic-regression-diagnostics.html
