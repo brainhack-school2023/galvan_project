@@ -922,7 +922,10 @@ log_ODDs_Ratios_sujetos_estudio <- productoria(t2$D, δ, t2$A, λzise)
 log_ODDs_Ratios_sujetos_estudio
 log_Ratio_odds_sujetos_estudio = exp(t2$D*(δ*t2$A)+(λzise)) / (1+(exp((δ*t2$A)+(λzise))))
 
+```
 
+```{r}
+c(log_ODDs_Ratios, log_ODDs_Ratios_sujetos_estudio)
 ```
 
 ```{r}
