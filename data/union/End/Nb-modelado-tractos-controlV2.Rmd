@@ -934,7 +934,7 @@ plot(log_Ratio_odds_sujetos_ctrl, main = "Composicion de ∏ D=0")
 plot(log_Ratio_odds_sujetos_estudio, main = "Composicion de ∏ D=1")
 ```
 
-### Alternativas comunes a R\^2 en regresión logística condicional 
+### Alternativas comunes a R\^2 en regresión logística condicional
 
 -   **Prueba de razón de verosimilitud (LRT** Likelihood Ratio Test**)** : la LRT compara el ajuste del modelo completo con el modelo nulo o solo de intersección. La estadística de prueba sigue una distribución chi-cuadrado y un valor p significativo indica que los predictores del modelo proporcionan un mejor ajuste que el modelo nulo. anova(model)
 
