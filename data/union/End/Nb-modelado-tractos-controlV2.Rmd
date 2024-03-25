@@ -874,7 +874,7 @@ stat_func <- function(t, indices) {
 
 # Perform bootstrapping
 boot_output <- boot(data = t3, statistic = stat_func, R = 1000)
-
+sum()
 # Access the bootstrap results
 boot_estimates <- boot_output$t  # Bootstrap estimates of the statistic
 boot_se <- boot.ci(boot_output, type = "bca")$bca[34]  # Bootstrap standard error
@@ -893,6 +893,7 @@ productoria <- function(D,delta,A,lamdazi){
    result = prod((exp(D*(delta*A)+lamdazi))/(1+exp((delta*A)+lamdazi)))
    return(result)
 }
+
 ## donde D es label donde es 1 = Patologia, 0 sin patología, 
 log_Ratio_odds_sujetos_ctrl = exp(t3$D*(δ*t3$A)+(λzi)) / (1+(exp((δ*t3$A)+(λzi))))
 

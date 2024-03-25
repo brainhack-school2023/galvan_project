@@ -1,0 +1,292 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(sandwich)
+# Set the number of simulations
+n_sims <- 1000
+
+# Define the true parameter values
+beta0 <- 0.5  # Intercept
+beta1 <- 1.2  # Coefficient for predictor 1
+beta2 <- -0.8 # Coefficient for predictor 2
+
+# Initialize vectors to store the results
+estimates_beta0 <- numeric(n_sims)
+estimates_beta1 <- numeric(n_sims)
+estimates_beta2 <- numeric(n_sims)
+sandwich_se_beta0 <- numeric(n_sims)
+sandwich_se_beta1 <- numeric(n_sims)
+sandwich_se_beta2 <- numeric(n_sims)
+coverage_beta0 <- numeric(n_sims)
+coverage_beta1 <- numeric(n_sims)
+coverage_beta2 <- numeric(n_sims)
+
+# Run the simulations
+for (i in 1:n_sims) {
+  # Generate synthetic data
+  n <- 500  # Sample size
+  X1 <- rnorm(n)
+  X2 <- rbinom(n, size = 1, prob = 0.5)
+  linear_predictor <- beta0 + beta1 * X1 + beta2 * X2
+  Y <- rbinom(n, size = 1, prob = exp(linear_predictor) / (1 + exp(linear_predictor)))
+  data <- data.frame(Y, X1, X2)
+  
+  # Fit the logistic regression model
+  model <- glm(Y ~ X1 + X2, data = data, family = binomial())
+  
+  # Store the parameter estimates
+  estimates_beta0[i] <- coef(model)[1]
+  estimates_beta1[i] <- coef(model)[2]
+  estimates_beta2[i] <- coef(model)[3]
+  
+  # Store the sandwich standard errors
+  sandwich_se_beta0[i] <- sqrt(sandwich::estfun(model)$cov.unscaled[1, 1])
+  sandwich_se_beta1[i] <- sqrt(sandwich::estfun(model)$cov.unscaled[2, 2])
+  sandwich_se_beta2[i] <- sqrt(sandwich::estfun(model)$cov.unscaled[3, 3])
+  
+  # Check if the true parameter values are covered by the 95% confidence intervals
+  coverage_beta0[i] <- (beta0 >= coef(model)[1] - 1.96 * sandwich_se_beta0[i]) && (beta0 <= coef(model)[1] + 1.96 * sandwich_se_beta0[i])
+  coverage_beta1[i] <- (beta1 >= coef(model)[2] - 1.96 * sandwich_se_beta1[i]) && (beta1 <= coef(model)[2] + 1.96 * sandwich_se_beta1[i])
+  coverage_beta2[i] <- (beta2 >= coef(model)[3] - 1.96 * sandwich_se_beta2[i]) && (beta2 <= coef(model)[3] + 1.96 * sandwich_se_beta2[i])
+}
+
+# Estimate Bias (%)
+bias_beta0 <- mean(estimates_beta0 - beta0) / beta0 * 100
+bias_beta1 <- mean(estimates_beta1 - beta1) / beta1 * 100
+bias_beta2 <- mean(estimates_beta2 - beta2) / beta2 * 100
+
+# Estimate empirical standard error (ESE)
+ese_beta0 <- sd(estimates_beta0)
+ese_beta1 <- sd(estimates_beta1)
+ese_beta2 <- sd(estimates_beta2)
+
+# Estimate sandwich standard error (SE)
+se_beta0 <- mean(sandwich_se_beta0)
+se_beta1 <- mean(sandwich_se_beta1)
+se_beta2 <- mean(sandwich_se_beta2)
+
+# Estimate coverage probability (CP) of 95% confidence interval
+cp_beta0 <- mean(coverage_beta0)
+cp_beta1 <- mean(coverage_beta1)
+cp_beta2 <- mean(coverage_beta2)
+
+# Print the results
+cat("Bias (%):\n")
+cat("beta0:", bias_beta0, "\n")
+cat("beta1:", bias_beta1, "\n")
+cat("beta2:", bias_beta2, "\n\n")
+
+cat("Empirical Standard Error (ESE):\n")
+cat("beta0:", ese_beta0, "\n")
+cat("beta1:", ese_beta1, "\n")
+cat("beta2:", ese_beta2, "\n\n")
+
+cat("Estimated Sandwich Standard Error (SE):\n")
+cat("beta0:", se_beta0, "\n")
+cat("beta1:", se_beta1, "\n")
+cat("beta2:", se_beta2, "\n\n")
+
+cat("Coverage Probability (CP) of 95% Confidence Interval:\n")
+cat("beta0:", cp_beta0, "\n")
+cat("beta1:", cp_beta1, "\n")
+cat("beta2:", cp_beta2, "\n")
+
+```
+
+<https://academic.oup.com/biometrics/article/79/4/3739/7587557>
+
+```{r}
+### REGRESION LOGISTICA
+# Load required packages
+library(boot)
+library(sandwich)
+
+# Set the number of Monte Carlo simulations
+n_sims <- 1000
+
+# Set the true parameter values
+beta0 <- 24.488891  # Intercept
+beta1 <- 11.111111 # Coefficient for predictor1
+beta2 <- -79.24444 # Coefficient for predictor2
+
+# Initialize vectors to store the results
+estimates_beta0 <- numeric(n_sims)
+estimates_beta1 <- numeric(n_sims)
+estimates_beta2 <- numeric(n_sims)
+boot_ses_beta0 <- numeric(n_sims)
+boot_ses_beta1 <- numeric(n_sims)
+boot_ses_beta2 <- numeric(n_sims)
+cov_prob_beta0 <- numeric(n_sims)
+cov_prob_beta1 <- numeric(n_sims)
+cov_prob_beta2 <- numeric(n_sims)
+
+# Run the Monte Carlo simulations
+for (i in 1:n_sims) {
+  # Generate synthetic data based on the true parameter values
+  n <- 500  # Sample size
+  X1 <- rnorm(n)
+  X2 <- rbinom(n, size = 1, prob = 0.5)
+  logit <- beta0 + beta1 * X1 + beta2 * X2
+  Y <- rbinom(n, size = 1, prob = exp(logit) / (1 + exp(logit)))
+  data <- data.frame(Y, X1, X2)
+  
+  # Fit the logistic regression model
+  model <- glm(Y ~ X1 + X2, data = data, family = binomial())
+  
+  # Extract the parameter estimates
+  estimates_beta0[i] <- coef(model)[1]
+  estimates_beta1[i] <- coef(model)[2]
+  estimates_beta2[i] <- coef(model)[3]
+  
+  # Estimate the sandwich standard errors
+  sandwich_cov <- vcovHC(model, type = "const")
+  boot_ses_beta0[i] <- sqrt(sandwich_cov[1, 1])
+  boot_ses_beta1[i] <- sqrt(sandwich_cov[2, 2])
+  boot_ses_beta2[i] <- sqrt(sandwich_cov[3, 3])
+  
+  # Calculate the coverage probabilities
+  cov_prob_beta0[i] <- (beta0 >= coef(model)[1] - 1.96 * boot_ses_beta0[i]) & (beta0 <= coef(model)[1] + 1.96 * boot_ses_beta0[i])
+  cov_prob_beta1[i] <- (beta1 >= coef(model)[2] - 1.96 * boot_ses_beta1[i]) & (beta1 <= coef(model)[2] + 1.96 * boot_ses_beta1[i])
+  cov_prob_beta2[i] <- (beta2 >= coef(model)[3] - 1.96 * boot_ses_beta2[i]) & (beta2 <= coef(model)[3] + 1.96 * boot_ses_beta2[i])
+}
+
+# Calculate the bias, ESE, SE, and CP
+bias_beta0 <- mean(estimates_beta0 - beta0) / beta0 * 100
+bias_beta1 <- mean(estimates_beta1 - beta1) / beta1 * 100
+bias_beta2 <- mean(estimates_beta2 - beta2) / beta2 * 100
+
+ese_beta0 <- sd(estimates_beta0)
+ese_beta1 <- sd(estimates_beta1)
+ese_beta2 <- sd(estimates_beta2)
+
+se_beta0 <- mean(boot_ses_beta0)
+se_beta1 <- mean(boot_ses_beta1)
+se_beta2 <- mean(boot_ses_beta2)
+
+cp_beta0 <- mean(cov_prob_beta0)
+cp_beta1 <- mean(cov_prob_beta1)
+cp_beta2 <- mean(cov_prob_beta2)
+
+# Print the results
+cat("Bias (%):\n")
+cat("Beta0:", bias_beta0, "\n")
+cat("Beta1:", bias_beta1, "\n")
+cat("Beta2:", bias_beta2, "\n\n")
+
+cat("Empirical Standard Error (ESE):\n")
+cat("Beta0:", ese_beta0, "\n")
+cat("Beta1:", ese_beta1, "\n")
+cat("Beta2:", ese_beta2, "\n\n")
+
+cat("Estimated Sandwich Standard Error (SE):\n")
+cat("Beta0:", se_beta0, "\n")
+cat("Beta1:", se_beta1, "\n")
+cat("Beta2:", se_beta2, "\n\n")
+
+cat("Coverage Probability (CP) of 95% Confidence Interval:\n")
+cat("Beta0:", cp_beta0, "\n")
+cat("Beta1:", cp_beta1, "\n")
+cat("Beta2:", cp_beta2, "\n")
+```
+
+```{r}
+### propensity score 
+# Load required packages
+library(boot)
+library(sandwich)
+library(MatchIt)
+
+# Set the number of Monte Carlo simulations
+n_sims <- 1000
+
+# Set the true parameter values
+beta0 <- -1  # Intercept
+beta1 <- 0.8 # Coefficient for predictor1
+beta2 <- -0.5 # Coefficient for predictor2
+
+# Initialize vectors to store the results
+estimates_beta0 <- numeric(n_sims)
+estimates_beta1 <- numeric(n_sims)
+estimates_beta2 <- numeric(n_sims)
+boot_ses_beta0 <- numeric(n_sims)
+boot_ses_beta1 <- numeric(n_sims)
+boot_ses_beta2 <- numeric(n_sims)
+cov_prob_beta0 <- numeric(n_sims)
+cov_prob_beta1 <- numeric(n_sims)
+cov_prob_beta2 <- numeric(n_sims)
+
+# Run the Monte Carlo simulations
+for (i in 1:n_sims) {
+  # Generate synthetic data
+  n <- 1000  # Sample size
+  X1 <- rnorm(n)
+  X2 <- rbinom(n, size = 1, prob = 0.5)
+  logit <- beta0 + beta1 * X1 + beta2 * X2
+  T <- rbinom(n, size = 1, prob = exp(logit) / (1 + exp(logit)))
+  data <- data.frame(T, X1, X2)
+  
+  # Fit the propensity score model
+  ps_model <- glm(T ~ X1 + X2, data = data, family = binomial())
+  
+  # Extract the parameter estimates
+  estimates_beta0[i] <- coef(ps_model)[1]
+  estimates_beta1[i] <- coef(ps_model)[2]
+  estimates_beta2[i] <- coef(ps_model)[3]
+  
+  # Estimate the sandwich standard errors
+  sandwich_cov <- vcovHC(ps_model, type = "const")
+  boot_ses_beta0[i] <- sqrt(sandwich_cov[1, 1])
+  boot_ses_beta1[i] <- sqrt(sandwich_cov[2, 2])
+  boot_ses_beta2[i] <- sqrt(sandwich_cov[3, 3])
+  
+  # Calculate the coverage probabilities
+  cov_prob_beta0[i] <- (beta0 >= coef(ps_model)[1] - 1.96 * boot_ses_beta0[i]) & (beta0 <= coef(ps_model)[1] + 1.96 * boot_ses_beta0[i])
+  cov_prob_beta1[i] <- (beta1 >= coef(ps_model)[2] - 1.96 * boot_ses_beta1[i]) & (beta1 <= coef(ps_model)[2] + 1.96 * boot_ses_beta1[i])
+  cov_prob_beta2[i] <- (beta2 >= coef(ps_model)[3] - 1.96 * boot_ses_beta2[i]) & (beta2 <= coef(ps_model)[3] + 1.96 * boot_ses_beta2[i])
+}
+
+# Calculate the bias, ESE, SE, and CP
+bias_beta0 <- mean(estimates_beta0 - beta0) / beta0 * 100
+bias_beta1 <- mean(estimates_beta1 - beta1) / beta1 * 100
+bias_beta2 <- mean(estimates_beta2 - beta2) / beta2 * 100
+
+ese_beta0 <- sd(estimates_beta0)
+ese_beta1 <- sd(estimates_beta1)
+ese_beta2 <- sd(estimates_beta2)
+
+se_beta0 <- mean(boot_ses_beta0)
+se_beta1 <- mean(boot_ses_beta1)
+se_beta2 <- mean(boot_ses_beta2)
+
+cp_beta0 <- mean(cov_prob_beta0)
+cp_beta1 <- mean(cov_prob_beta1)
+cp_beta2 <- mean(cov_prob_beta2)
+
+# Print the results
+cat("Bias (%):\n")
+cat("Beta0:", bias_beta0, "\n")
+cat("Beta1:", bias_beta1, "\n")
+cat("Beta2:", bias_beta2, "\n\n")
+
+cat("Empirical Standard Error (ESE):\n")
+cat("Beta0:", ese_beta0, "\n")
+cat("Beta1:", ese_beta1, "\n")
+cat("Beta2:", ese_beta2, "\n\n")
+
+cat("Estimated Sandwich Standard Error (SE):\n")
+cat("Beta0:", se_beta0, "\n")
+cat("Beta1:", se_beta1, "\n")
+cat("Beta2:", se_beta2, "\n\n")
+
+cat("Coverage Probability (CP) of 95% Confidence Interval:\n")
+cat("Beta0:", cp_beta0, "\n")
+cat("Beta1:", cp_beta1, "\n")
+cat("Beta2:", cp_beta2, "\n")
+```
+
+```{r}
+# https://scholar.harvard.edu/malf/home |||| opciones disponibles
+```
