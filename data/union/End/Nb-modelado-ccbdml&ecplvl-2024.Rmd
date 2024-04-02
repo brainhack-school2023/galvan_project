@@ -1,0 +1,1007 @@
+---
+title: "Modelo Obtención Log Odd-Ratio en Sujetos Control"
+output: html_notebook
+---
+
+```{r}
+### Paquetes requeridos para el estudio ########
+# Quitar el comentario e instalar
+# install.packages("boot")
+# install.packages("dplyr")
+# install.packages("ggplot2")
+# install.packages("gridExtra")
+# install.packages("MASS")
+# install.packages("fitdistrplus")
+# install.packages("ggstatsplot")
+# install.packages("tibble")
+# install.packages("readr")
+# install.packages("robustbase")
+# install.packages("survival")
+# install.packages("numDeriv")
+# install.packages("optimx")
+# install.packages("survival")
+
+
+library(dplyr)
+library(ggplot2)
+library(gridExtra)
+library(MASS)
+library(fitdistrplus)
+library(ggstatsplot)
+library(tibble)
+library(readr)
+```
+
+```{r}
+# LImpiar todas variables temporales y dejar limpio el ambiente de trabajo
+rm(list = ls())
+```
+
+# Modelo Causal Tractos Esquizofrenia
+
+Funciones
+
+```{r}
+logistic.regression.or.ci <- function(regress.out, level = 0.95) {
+  usual.output <- summary(regress.out)
+  z.quantile <- stats::qnorm(1 - (1 - level) / 2)
+  number.vars <- length(regress.out$coefficients)
+  OR <- exp(regress.out$coefficients[-1])
+  temp.store.result <- matrix(rep(NA, number.vars * 2), nrow = number.vars)
+  for (i in 1:number.vars) {
+    temp.store.result[i, ] <- summary(regress.out)$coefficients[i] +
+      c(-1, 1) * z.quantile * summary(regress.out)$coefficients[i + number.vars]
+  }
+  intercept.ci <- temp.store.result[1, ]
+  slopes.ci <- temp.store.result[-1, ]
+  OR.ci <- exp(slopes.ci)
+  output <- list(
+    regression.table = usual.output, intercept.ci = intercept.ci,
+    slopes.ci = slopes.ci, OR = OR, OR.ci = OR.ci
+  )
+  return(output)
+}
+```
+
+## Etapa 1 - definición de los datos expuestos y no expuestos
+
+Obtener datos de sujetos de control y estudio. Ajustar para su análisis posterior
+
+```{r}
+
+# confusoras DAG= "sl2l_qa", "sl2l_iso","ecpl_qa", "ecpl_iso","age", "gender_F", 
+# features predictoras = "sl2l_diameter","ccbd_diameter","ifol_diameter","ecpl_volume","tral_volume","sl2l_mean_length","ccbd_mean_length"
+
+setwd("C:/hcgalvan/Repositorios/hcgalvan_project/data/union/End")
+temp = gsub(".*target.*", "", readLines("integrado.csv"))
+data<-read.table(text=temp, sep=",", header=TRUE)
+
+t<-data.frame(data[,c("sl2l_diameter","ccbd_diameter","ifol_diameter","ecpl_volume","tral_volume","sl2l_mean_length","ccbd_mean_length","label","sl2l_qa", "sl2l_iso", "ccbd_iso", "ccbd_qa", "ifol_qa", "ifol_iso", "ecpl_qa", "ecpl_iso", "tral_qa", "tral_iso", "afsl_qa", "afsl_iso", "afsr_qa", "afsr_iso", "cfpl_iso", "cfpl_qa", "cfpr_iso", "cfpr_qa", "fatl_iso", "fatl_qa", "fatr_iso", "fatr_qa", "slfl_iso", "slfl_qa", "slfr_iso", "slfr_qa", "tral_iso", "tral_qa", "ufsl_iso", "ufsl_qa", "ufsr_iso", "ufsr_qa", "age", "gender_F")])
+
+t$gend_F <- ifelse(t$gender_F == "True", 1, 0) #convierto en = o 1
+t <- subset(t, select = -c(gender_F)) # Quito de tabla 
+```
+
+### Creación de features expuestos y no expuestos
+
+Definición de nuevas variables como Expuesto y no Expuesto obtenido del analisis de su real distribución empírica. Donde False = No Expuesto = 0; True = Expuesto = 1
+
+```{r}
+ #  Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ # 19.86   22.10   23.02   23.30   24.42   27.18
+t<- t %>% 
+  mutate(sl2ldmExp = if_else((t$sl2l_diameter > 22.10 & t$sl2l_diameter < 24.42), 0, 1))
+#21.73   26.07   28.18   28.29   30.23   32.90 
+t<- t %>% 
+  mutate(ccbdmExp = if_else((t$ccbd_diameter > 26.07 & t$ccbd_diameter < 30.23), 0, 1))
+#11.70   14.68   15.91   15.73   16.51   19.64
+t<- t %>% 
+  mutate(ifoldmExp = if_else((t$ifol_diameter > 14.68 & t$ifol_diameter < 16.51), 0, 1))
+ #1785    6455    7407    7250    8918   10622 
+t<- t %>% 
+  mutate(ecplvlExp = if_else((t$ecpl_volume > 6455 & t$ecpl_volume < 8918), 0, 1))
+#7780   12366   15988   15911   18004   26424 
+t<- t %>% 
+  mutate(tralvlExp = if_else((t$tral_volume > 12366 & t$tral_volume < 18004), 0, 1))
+#65.44   72.18   75.69   76.94   80.61   88.53 
+t<- t %>% 
+  mutate(sl2lmlExp = if_else((t$sl2l_mean_length > 72.18 & t$sl2l_mean_length < 80.61), 0, 1))
+  #99.87  112.62  117.22  117.47  123.81  131.73 
+t<- t %>% 
+  mutate(ccbdmlExp = if_else((t$ccbd_mean_length > 112.62 & t$ccbd_mean_length < 123.81), 0, 1))
+```
+
+```{r}
+#par(mfrow = c(2, 2), mar = c(2, 2, 2, 2)) 
+xtabs(~sl2ldmExp,t);xtabs(~ccbdmExp,t);xtabs(~ifoldmExp,t);xtabs(~ecplvlExp,t);xtabs(~tralvlExp,t);xtabs(~sl2lmlExp,t)
+xtabs(~ccbdmlExp,t)
+```
+
+```{r}
+##---------------------HACIENDO MINIMOS CALCULOS DE ODDS PARA OBSERVAR LOS DATOS ---------------------##
+tx<-c()
+########################
+tx$Esquiz <- ifelse(t$label == 0, "SI", "NO")
+tx$sl2sdmd <- ifelse(t$sl2ldmExp == 0, "NO", "SI")
+xtabs(~sl2sdmd+Esquiz,tx) #table of counts per stratum
+odd <- ((31/27)/(15/23))
+p <- (46/(23+15+27+31))
+sprintf("odd: %f", odd)
+sprintf("log odd: %f", log(odd))
+sprintf("Prob(Ezq): %f", p)
+v1 <- p*(27+31)
+v2 <- (27+31)-v1
+v3 <- p*(23+15)
+v4 <- (23+15)-v3
+pval <- 1-((v1/v2)/(v3/v3))
+pval
+((11.2/128.8)/(198.7/17.3))
+########################
+tx$ccbdmd <- ifelse(t$ccbdmExp == 0, "NO", "SI")
+xtabs(~ccbdmd+Esquiz,tx) #table of counts per stratum
+odd1 <- ((24/25)/(22/25)) ### ERROR
+p1 <- (46/(50+46))
+sprintf("odd: %f", odd1)
+sprintf("log odd: %f", log(odd1))
+sprintf("Prob(Ezq): %f", p1)
+
+########################
+tx$ifoldmd <- ifelse(t$ifoldmExp == 0, "NO", "SI")
+xtabs(~ifoldmd+Esquiz,tx) #table of counts per stratum
+odd2 <- ((27/30)/(16/23)) ### ERROR
+p2 <- ((27+16)/(30+23+27+16))
+sprintf("odd: %f", odd2)
+sprintf("log odd: %f", log(odd2))
+sprintf("Prob(Ezq): %f", p2)
+
+########################
+tx$sl2lmld <- ifelse(t$sl2lmlExp == 0, "NO", "SI")
+xtabs(~sl2lmld+Esquiz,tx) #table of counts per stratum
+odd3 <- ((24/25)/(22/25)) ### ERROR
+p3 <- ((24+22)/(25+25+24+22))
+sprintf("odd: %f", odd3)
+sprintf("log odd: %f", log(odd3))
+sprintf("Prob(Ezq): %f", p3)
+########################
+tx$ecplvld <- ifelse(t$ecplvlExp == 0, "NO", "SI")
+xtabs(~ecplvld+Esquiz,tx) #table of counts per stratum
+odd4 <- ((30/24)/(16/26)) ### ERROR
+p4 <- ((30+16)/(24+26+30+16))
+sprintf("odd: %f", odd4)
+sprintf("log odd: %f", log(odd4))
+sprintf("Prob(Ezq): %f", p4)
+
+########################
+tx$tralvld <- ifelse(t$tralvlExp == 0, "NO", "SI")
+xtabs(~tralvld+Esquiz,tx) #table of counts per stratum
+odd5 <- ((27/26)/(19/24)) ### ERROR
+p5 <- ((27+19)/(26+24+27+19))
+sprintf("odd: %f", odd5)
+sprintf("log odd: %f", log(odd5))
+sprintf("Prob(Ezq): %f", p5)
+
+########################
+tx$ccbdmld <- ifelse(t$ccbdmlExp == 0, "NO", "SI")
+xtabs(~ccbdmld+Esquiz,tx) #table of counts per stratum
+odd6 <- ((33/26)/(13/24)) ### ERROR
+p6 <- ((33+13)/(26+24+33+13))
+sprintf("odd: %f", odd6)
+sprintf("log odd: %f", log(odd6))
+sprintf("Prob(Ezq): %f", p6)
+```
+
+### Creación de variable A a partir de los expuestos y no expuestos
+
+```{r}
+#t <- subset(t, select = -c(A)) # Quito de tabla 
+suma = 0
+resultado <- c()
+for (i in 1:length(t$label)){
+#  suma = sum(t$sl2ldmExp[i], t$sl2lmlExp[i], t$ccbdmExp[i], t$ccbdmlExp[i], t$tralvlExp[i], t$ecplvlExp[i], t$ifoldmExp[i] )
+#  suma = sum(t$sl2ldmExp[i], t$ccbdmlExp[i], t$tralvlExp[i], t$ecplvlExp[i], t$ifoldmExp[i] )
+  suma = sum(t$ccbdmlExp[i], t$ecplvlExp[i]) # solo los 2 mas altos odds: 2.03; 2.34
+#  suma = sum(t$sl2lmlExp[i], t$ccbdmExp[i])
+#  suma = sum(t$sl2ldmExp[i], t$ccbdmlExp[i], t$ecplvlExp[i]) # solo dejo estos que tienen odds altos 1.76; 2.03; 2.34
+  
+  resultado[length(resultado) + 1] <- if_else((suma >=1 ),1, 0)
+}
+xtabs(~resultado)
+t$A <- resultado
+xtabs(~A,t)
+sujeto_Ctrl <- dplyr::select(dplyr::filter(t, label == 1), "A")
+sujeto_Est <- dplyr::select(dplyr::filter(t, label == 0), "A")
+xtabs(~A,sujeto_Ctrl)
+xtabs(~A,sujeto_Est)
+```
+
+## Etapa 2: Regresion Logística con PCA en Sujetos de Estudio - Expuestos.
+
+#### Valor obtenido a partir del feature dependiente A y Confusoras como predictoras.
+
+##### Reducir con PCA las predictoras.
+
+```{r}
+### Seleccion de features filtrando sujetos de control
+t3 <- dplyr::select(dplyr::filter(t, label == 1), "sl2l_qa", "sl2l_iso", "ccbd_iso", "ccbd_qa", "ifol_qa", "ifol_iso", "ecpl_qa", "ecpl_iso", "tral_qa", "tral_iso", "afsl_qa", "afsl_iso", "afsr_qa", "afsr_iso", "cfpl_iso", "cfpl_qa", "cfpr_iso", "cfpr_qa", "fatl_iso", "fatl_qa", "fatr_iso", "fatr_qa", "slfl_iso", "slfl_qa", "slfr_iso", "slfr_qa", "tral_iso", "tral_qa", "ufsl_iso", "ufsl_qa", "ufsr_iso", "ufsr_qa", "age", "gend_F", "A")
+
+```
+
+```{r}
+### No incluye esta lista a feature A para poder realizar escalado de datos
+lista<-c("sl2l_qa", "sl2l_iso", "ccbd_iso", "ccbd_qa", "ifol_qa", "ifol_iso", "ecpl_qa", "ecpl_iso", "tral_qa", "tral_iso", "afsl_qa", "afsl_iso", "afsr_qa", "afsr_iso", "cfpl_iso", "cfpl_qa", "cfpr_iso", "cfpr_qa", "fatl_iso", "fatl_qa", "fatr_iso", "fatr_qa", "slfl_iso", "slfl_qa", "slfr_iso", "slfr_qa", "tral_iso", "tral_qa", "ufsl_iso", "ufsl_qa", "ufsr_iso", "ufsr_qa", "age", "gend_F")
+
+```
+
+#### Escalar/Normalizar y obtener matriz PCAS, graficar
+
+```{r}
+
+pca.out3 <- prcomp(t3[,c(lista)],
+                  scale. = TRUE)
+#pca.out3$x
+pca.var3 <- pca.out3$sdev^2  #autovalores
+# Cálculo de la varianza explicada acumulada 
+prop_varianza <- pca.out3$sdev^2/sum(pca.out3$sdev^2)
+prop_varianza_acum <- cumsum(prop_varianza)
+ggplot(data = data.frame(prop_varianza_acum, pc = factor(1:34)),
+       aes(x = pc, y = prop_varianza_acum, group = 1)) +
+  geom_point() +
+  geom_line() +
+  geom_label(aes(label = round(prop_varianza_acum,2))) +
+  theme_bw() +
+  labs(x = "Componentes principales", 
+       y = "Prop. varianza explicada acumulada")
+```
+
+### Regresion logística binomial con PCA para obtener coeficientes de Confusoras
+
+```{r}
+#disable scientific notation for model summary
+options(scipen=999)
+
+#pca.var3
+misdatos2 <- data.frame(A = t3[, "A"], pca.out3$x[, 1:2])
+
+#pca.out3[1]
+logRegPCANoExp <- glm(A ~ .,  data = misdatos2, family = binomial)
+
+#summary(logRegPCA)
+logistic.regression.or.ci(logRegPCANoExp)
+summary(logRegPCANoExp)$coefficients
+pscl::pR2(logRegPCANoExp)["McFadden"]
+caret::varImp(logRegPCANoExp)
+car::vif(logRegPCANoExp)
+
+```
+
+```{r}
+# Probar con regresion logística robusto a traves del método BY, y verificar valores con regresion normal
+library(robustbase)
+library(survival)
+# str(t3)
+datglmrob<-glmrob(formula = A ~ ., data= misdatos2, family = "binomial", method = "BY")
+summary(datglmrob)
+
+# Extract the variance-covariance matrix
+var_cov_matrix <- vcov(datglmrob)
+print(var_cov_matrix)
+
+# Extract the variances of the parameter estimates
+parameter_variances <- diag(var_cov_matrix)
+print(parameter_variances)
+
+#              [,1]         [,2]          [,3]
+#[1,]  0.1101740565 -0.001349642 -0.0009185936
+#[2,] -0.0013496417  0.006173662  0.0047904317
+#[3,] -0.0009185936  0.004790432  0.0522705289
+```
+
+```{r}
+##------Comparación de coeficientes-------
+datglmrob$coefficients
+logRegPCANoExp$coefficients
+```
+
+#### Generación Propensity Z Score
+
+```{r}
+
+############## PARA SUJETOS DE CONTROL #######################
+zscores2<-c()
+for(i in 1:50) {       # for-loop over rows
+    zscores2[i] <-((1/(1+exp(-(as.numeric(unlist(logRegPCANoExp$coefficients[1]))+as.numeric(unlist(logRegPCANoExp$coefficients[2]))*as.numeric(unlist(pca.out3$x[i,"PC1"]))+as.numeric(unlist(logRegPCANoExp$coefficients[3]))*as.numeric(unlist(pca.out3$x[i,"PC2"])))))))
+}
+t3$zscore <-zscores2
+quantile(t3$zscore)
+#       0%       25%       50%       75%      100% 
+#0.6845395 0.7449761 0.7594602 0.7728350 0.8143427 
+```
+
+### Piece-wice constant function - Aproximar λ(Zi) usando histogram splines
+
+```{r}
+# Utilizar cuantiles para armar stratos que divide en 5 en rangos el histograma de "zscore" a utilizar en regresion logística
+
+cuantil <-quantile(t3$zscore, prob = seq(0, 1, 1/5))
+t3$subclass <- cut(x=t3$zscore,
+                              breaks=quantile(cuantil, 
+                              prob = seq(0, 1, 1/5)),include.lowest=T)
+levels(t3$subclass) <- 1:length(levels(t3$subclass))
+
+xtabs(~A+subclass,t3)
+```
+
+```{r}
+# utilizar los quintiles y definir los valores medios
+b1 = mean(as.numeric(unlist(dplyr::select(dplyr::filter(t3, subclass == 1,),"zscore"))))
+b2 = mean(as.numeric(unlist(dplyr::select(dplyr::filter(t3, subclass == 2,),"zscore"))))
+b3 = mean(as.numeric(unlist(dplyr::select(dplyr::filter(t3, subclass == 3,),"zscore"))))
+b4 = mean(as.numeric(unlist(dplyr::select(dplyr::filter(t3, subclass == 4,),"zscore"))))
+b5 = mean(as.numeric(unlist(dplyr::select(dplyr::filter(t3, subclass == 5,),"zscore"))))
+
+# Determinar los valores representativos
+α_1 = exp(-b1)
+α_2 = exp(-b2)
+α_3 = exp(-b3)
+α_4 = exp(-b4)
+α_5 = exp(-b5)
+
+### Obtengo los límites de zscore a partir del filtro subclase y utilizar en la función por partes
+
+lim1 <- max(as.numeric(unlist(dplyr::select(dplyr::filter(t3, subclass == 1,),"zscore"))))
+lim2 <- max(as.numeric(unlist(dplyr::select(dplyr::filter(t3, subclass == 2,),"zscore"))))
+lim3 <- max(as.numeric(unlist(dplyr::select(dplyr::filter(t3, subclass == 3,),"zscore"))))
+lim4 <- max(as.numeric(unlist(dplyr::select(dplyr::filter(t3, subclass == 4,),"zscore"))))
+lim5 <- max(as.numeric(unlist(dplyr::select(dplyr::filter(t3, subclass == 5,),"zscore"))))
+
+# Armo funcion INDICADORA de x I(x ∈ lim..)
+fx <- function(x, dat){
+    f <- NULL
+    ifelse (x > 0 & x<= lim1, f <- α_1, 0)
+    ifelse (x>lim1 & x<=lim2, f <- α_2, 0)
+    ifelse (x>lim2 & x<=lim3, f <- α_3, 0)
+    ifelse (x>lim3 & x<=lim4, f <- α_4, 0)
+    ifelse (x>lim4, f <- α_5, 0)
+    f
+}
+
+x <- data.frame(t3$zscore)
+for(i in 1:nrow(x)) {       # for-loop over rows
+  lambd <- fx(t3$zscore[[i]])
+  t3$lambda[i] <- lambd
+}
+
+plot(t3$lambda, type="l", las=1)
+points(x)
+
+```
+
+```{r}
+# Coeficientes b = media y α = exp(-b) // Utilizo α como coeficientes de funcion λ
+c(b1, b2, b3, b4, b5)
+c(α_1, α_2, α_3, α_4, α_5)
+#[1] 0.7253579 0.7489343 0.7603540 0.7713493 0.7940045
+#[1] 0.4841512 0.4728702 0.4675009 0.4623888 0.4520310
+```
+
+### Ajustar con MLE (Maximum Likelihood Estimation) λ(Zi)
+
+Buscamos ajustar los coeficientes obtenidos en la función Lambda (función constante por partes a partir de histogram splines) que son los α_1...α_k
+
+```{r}
+library(stats4) # para la función mle
+library(bbmle) # para la función mle2
+
+
+# cuales son los pasos que necesitamos hacer para ajustar como problema MLE?
+# 1 Pull out the design matrix for the model
+# 2 - write support function/ NLL calculator
+# 3 decide on some starting values for numerical optimization
+# 4 - fit the model !! (Decide on our "black box" for optimitation method)
+# 5 - check the model fit, and whether it converged..(profile)
+# 6 - confirm the results do not depend on the starting values.
+# If the model has not converged.. then what?
+  # - change starting values
+   # try different optimization method("SANN" or Nelder-Mead)
+
+# Step 1 get the design matrix 
+ #- armo nuevo data frame con armado de features a partir de las subclases
+
+
+design_matrix <- model.matrix(~ subclass, data=t3)
+head(design_matrix)
+
+# Utilizo además https://biol607.github.io/2012/ Exercise 14 on if (sigma <= 0) return(NaN)
+# 2 - write support function/ NLL calculator
+
+# Forma 1
+
+glm_MLE_support <- function(b0, b1, b2, b3, b4, sigma, y = as.numeric(t3$subclass), X=design_matrix, dat =t3$zscore){
+  deterministic_part <- as.numeric(ifelse((X[,2]+X[,3]+X[,4]+X[,5])==1,0,b0*X[,1]*dat) + b1*X[,2]*dat + b2*X[,3]*dat + b3*X[,4]*dat + b4*X[,5]*dat)
+  if (sigma <= 0) return(NaN) 
+  -sum(dnorm(y, mean = as.numeric(deterministic_part), sd=as.numeric(sigma), log=T))
+}
+
+# glm_MLE_support(1,1,1,1,0,1,0.7441488)
+# 3 decide on some starting values for numerical optimization
+
+# let's use the standard error of the mean for sigma
+SE <- function(x){
+  as.numeric(sd(as.numeric(x))/sqrt(as.numeric(length(x))))}
+
+# Forma2
+glm.MLE.fit <- mle2(glm_MLE_support,
+                    start=list(b0=α_1 , b1=α_2, b2=α_3, b3=α_4, b4=α_5, sigma = SE(t3$zscore)))
+# 
+summary(glm.MLE.fit)
+
+
+glm.MLE.Null <- mle2(glm_MLE_support,
+                    start=list(b0 = α_1 , b1=α_2, b2=α_3, b3=α_4, b4=α_5, sigma = SE(t3$zscore)),
+                    fixed=list(b0=0 , b1=0, b2=0, b3=0, b4=0))
+
+
+confint(glm.MLE.Null)
+confint(glm.MLE.fit)
+anova(glm.MLE.fit, glm.MLE.Null)
+# anova(str(glm.MLE.fit), test="Chisq") no funciona con este tipo de funcion nll
+  
+plot(profile(glm.MLE.fit))
+summary(glm.MLE.fit)
+confint(glm.MLE.fit)
+AIC(glm.MLE.fit)
+AIC(glm.MLE.Null)
+
+# Para hacer despues, ploteo correcto https://stackoverflow.com/questions/57153916/how-do-i-plot-a-mle2-fit-of-a-model-in-ggplot2-along-with-the-data
+# la busqueda en google fue ggplot(profile(mle2))
+# ggplot(profile(glm.MLE.fit_1))
+#5 look at fit
+#library(arulesViz) no es necesario
+#library(Rgraphviz) no es necesario
+# dismo::plot no es necesario
+################################
+# Probando los coeficientes
+glm.MLE.fit <- mle2(glm_MLE_support,
+                    start=list(b0=1.3779501  , b1=2.6703470  , b2=3.9454824  , b3=5.1855838  , b4=6.2961919  , sigma = 0.0320563  ))
+summary(glm.MLE.fit)
+plot(profile(glm.MLE.fit))
+
+### Se logra con la reg logistica entre A y lambda(z)
+glm.MLE.fit
+# δ<-deviance(glm.MLE.fit)/df.residual(glm.MLE.fit) # ratio varianza para Delta
+# delta <-deviance(reg)/df.residual(reg)
+
+```
+
+### Armar Estratos de Z score para todos los datos y obtener δ -\> D=1\~δA+λ(Zi)
+
+```{r}
+t2 <- dplyr::select(dplyr::filter(t, label == 0), "sl2l_qa", "sl2l_iso", "ccbd_iso", "ccbd_qa", "ifol_qa", "ifol_iso", "ecpl_qa", "ecpl_iso", "tral_qa", "tral_iso", "afsl_qa", "afsl_iso", "afsr_qa", "afsr_iso", "cfpl_iso", "cfpl_qa", "cfpr_iso", "cfpr_qa", "fatl_iso", "fatl_qa", "fatr_iso", "fatr_qa", "slfl_iso", "slfl_qa", "slfr_iso", "slfr_qa", "tral_iso", "tral_qa", "ufsl_iso", "ufsl_qa", "ufsr_iso", "ufsr_qa", "age", "gend_F", "A")
+
+pca.out2 <- prcomp(t2[,c(lista)],
+                  scale. = TRUE)
+#pca.out3$x
+pca.var2 <- pca.out2$sdev^2  #autovalores
+# Cálculo de la varianza explicada acumulada 
+prop_varianza1 <- pca.out2$sdev^2/sum(pca.out2$sdev^2)
+prop_varianza_acum1 <- cumsum(prop_varianza1)
+ggplot(data = data.frame(prop_varianza_acum1, pc = factor(1:34)),
+       aes(x = pc, y = prop_varianza_acum1, group = 1)) +
+  geom_point() +
+  geom_line() +
+  geom_label(aes(label = round(prop_varianza_acum1,2))) +
+  theme_bw() +
+  labs(x = "Componentes principales", 
+       y = "Prop. varianza explicada acumulada")
+
+
+```
+
+```{r}
+############## ESTRATIFICACION PARA SUJETOS DE ESTUDIO #######################
+zscores3<-c()
+for(i in 1:46) {       # for-loop over rows
+    zscores3[i] <-((1/(1+exp(-(as.numeric(unlist(logRegPCANoExp$coefficients[1]))+as.numeric(unlist(logRegPCANoExp$coefficients[2]))*as.numeric(unlist(pca.out2$x[i,"PC1"]))+as.numeric(unlist(logRegPCANoExp$coefficients[3]))*as.numeric(unlist(pca.out2$x[i,"PC2"])))))))
+}
+t2$zscore <-zscores3
+quantile(t2$zscore)
+
+# Utilizar cuantiles para armar stratos que divide en 5 en rangos el histograma de "zscore" a utilizar en regresion logística
+
+cuantil <-quantile(t2$zscore, prob = seq(0, 1, 1/5))
+t2$subclass <- cut(x=t2$zscore,
+                              breaks=quantile(cuantil, 
+                              prob = seq(0, 1, 1/5)),include.lowest=T)
+levels(t2$subclass) <- 1:length(levels(t2$subclass))
+
+xtabs(~A+subclass,t2)
+```
+
+```{r}
+############## UNIR DATOS PARA REG LOG CONDICIONAL #######################
+t3$D <- 0 #Sujetos de Control
+t2$D <- 1 #Sujetos de Estudio
+dat <- rbind(t3[,c("D","subclass","A")], t2[,c("D","subclass","A")])
+
+```
+
+```{r}
+library(survival)
+# Regresion logística condicional o por estratos
+reglog.cond <-clogit(D~A+strata(subclass),data=dat)
+summary(reglog.cond)
+delta = coefficients(reglog.cond)[[1]]
+```
+
+### Armar la estructura de datos en D, A, λ(Zi)
+
+### Forma de hallar Coeficientes con Regresion Logistica Parcial D=1\~A+λ(Zi)
+
+Esta parte, en base a la estructura del paper, se utiliza para hallar intercept y coeficientes, luego ajustar con MLL, hacer bootstrap y generar posibles varianzas asintóticas de los coeficientes. Con el valor de la varianza asintotica del feature A es posible comparar con el coeficiente logrado en reg logística estratificada (condicional) propuesto.
+
+```{r}
+
+# 1. Prefix -------------------------------------------------------------------
+
+# Loading packages
+require(optimx)
+require(numDeriv)
+require(dplyr)
+
+# 2. Loading dataset ----------------------------------------------------------
+# t3$D <- 0 fue resuelto anteriormente al unir datos
+X = model.matrix(~subclass, data=t3) # Armo matriz de dummies para coeficientes
+
+dat <- t3$zscore  # valores de zscore a utilizar en la función lambda
+b0 <- 1.3779501 # coef 1 - Intercept
+b1 <- 2.6703470 # coef 2
+b2 <- 3.9454824 # coef 3
+b3 <- 5.1855838 # coef 4
+b4 <- 6.2961919 # coef 5
+
+# Funcion lambda (funcion constante por partes) para obtener coeficiente de feature propensity zscore 
+λzi <- (as.numeric(ifelse((X[,2]+X[,3]+X[,4]+X[,5])==1,0,b0*X[,1]*dat) + b1*X[,2]*dat + b2*X[,3]*dat + b3*X[,4]*dat + b4*X[,5]*dat))
+
+# 3. Define log-likelihood function for logistic regression model -------------
+# (see applied logistic regression)
+negll <- function(par){
+  
+  #Extract guesses for alpha and beta1
+  alpha <- par[1]
+  beta1 <- par[2]
+  beta2 <- par[3]
+  
+  #Define dependent and independent variables
+  y  <- t3$D
+  x1 <- t3$A
+  x2 <- λzi
+  
+  #Calculate pi and xb
+  xb <- alpha + beta1 * x1 + beta2 * x2
+  pi <- exp(xb) / (1 + exp(xb))
+  
+  #Set high values for 0 < pi < 1
+  if(any(pi > 1) | any(pi < 0)) {
+    val <- 1e+200
+  } else {
+    val <- -sum(y * log(pi) + (1 - y) * log(1 - pi))
+  }
+  val
+}
+
+# 4. Define Gradient function for logistic regression model -------------------
+# (see applied logistic regression)
+negll.grad <- function(par){
+  
+  #Extract guesses for alpha and beta1
+  alpha <- par[1]
+  beta1 <- par[2]
+  beta2 <- par[3]
+  
+  #Define dependent and independent variables
+  y  <- t3$D
+  x1 <- t3$A
+  x2 <- λzi
+  
+  #Create output vector
+  n <- length(par[1])
+  gg <- as.vector(rep(0, n))
+  
+  #Calculate pi and xb
+  xb <- alpha + beta1 * x1 + beta2 * x2
+  pi <- exp(xb) / (1 + exp(xb))
+  
+  #Calculate gradients for alpha and beta1
+  gg[1] <- -sum(y - pi)
+  gg[2] <- -sum(x1 * (y - pi))
+  gg[3] <- -sum(x2 * (y - pi))
+  
+  return(gg)
+}
+
+# 4.1 Compare gradient function with numeric approximation of gradient ========
+# compare gradient at 0, 0, 0
+mygrad <- negll.grad(c(0, 0, 0))
+numgrad <- grad(x = c(0, 0, 0), func = negll)
+
+all.equal(mygrad, numgrad)
+
+# 4. Find maximum of log-likelihood function ----------------------------------
+opt <- optimx(par = c(alpha  = 0,
+                      beta_1 = 0, 
+                      beta_2 = 0), 
+              fn = negll, 
+              gr = negll.grad, 
+              control = list(trace = 0, 
+                             all.methods = TRUE))
+
+# print reulsts of optimisation
+# remove not needed information for purpose of presentation 
+summary(opt, order = "convcode") %>% 
+  dplyr::select(-value, -fevals, -gevals ,-niter )
+
+
+#value fevals gevals niter
+# 5. Estimate regression coeficents using glm ---------------------------------
+
+glm_model <- glm(D ~ A + λzi, 
+                 data = t3,
+                 family = binomial(link = "logit"))
+
+# Print coefficents
+coef(glm_model)
+
+
+# 6. Comparing results from optimx and glm ------------------------------------
+glm_results <- unname(coef(glm_model))
+coef_opt <- coef(opt)
+
+lapply(1:nrow(coef_opt), function(i){
+    
+    optimisation_algorithm <- attributes(coef_opt)$dimnames[[1]][i]
+
+    mle_glm1 <- (coef_opt[i, "alpha" ] - glm_results[1])
+    mle_glm2 <- (coef_opt[i, "beta_1"] - glm_results[2])
+    mle_glm3 <- (coef_opt[i, "beta_2"] - glm_results[3])
+    
+    mean_difference <- mean(mle_glm1, mle_glm2, mle_glm3, na.rm = TRUE)
+    
+    data.frame(optimisation_algorithm, mean_difference)
+    
+  }) %>% 
+    bind_rows() %>% 
+  filter(!is.na(mean_difference)) %>% 
+  mutate(mean_difference = abs(mean_difference)) %>% 
+  arrange(mean_difference)
+
+####################################################################################################
+# https://arunaddagatla.medium.com/maximum-likelihood-estimation-in-logistic-regression-f86ff1627b67
+# https://www.joshua-entrop.com/post/optim_logit_reg/
+# https://stats.stackexchange.com/questions/568322/students-t-distribution-and-ml-in-
+# https://rpubs.com/ramblinguy/meh
+####################################################################################################
+# Lugares consultados en general 
+# https://www.youtube.com/watch?v=wPtHpEp-jRo
+# https://stackoverflow.com/questions/32567582/asymptotic-variance-of-maximum-likelihood-estimator-with-optim-in-r
+# https://rstudio-pubs-static.s3.amazonaws.com/415830_829dd2b0150d438894c0e6695e7e6721.html
+# https://statisticalhorizons.com/logistic-regression-for-rare-events/
+# http://www.sthda.com/english/articles/36-classification-methods-essentials/149-penalized-logistic-regression-essentials-in-r-ridge-lasso-and-elastic-net/
+# https://www.analyticsvidhya.com/blog/2018/07/introductory-guide-maximum-likelihood-estimation-case-study-r/
+# https://stackoverflow.com/questions/24811598/error-in-dropy-rep1-nc-error-for-cv-glmnet-in-glmnet-r-package
+#
+# https://rpubs.com/vanessa1217/645522   Proyecto Final Big Data
+# https://stats.stackexchange.com/questions/219828/interpretation-of-coefficients-in-logistic-regression-output
+# https://tidystat.com/meaning-of-hessian-matrix-from-optim-in-r/
+# 
+####################################################################################################
+```
+
+#### Generar Constante Delta δ -\> D=1\~δA+λ(Zi) a Partir del MLL Reg Log Parcial
+
+Generado despues de obtener la regresion logistica parcial del modelo final
+
+```{r}
+
+# attr(opt, "details")["L-BFGS-B" ,"nhatend"][[1]]
+# Extract the Hessian matrix
+hessian <- attr(opt, "details")["L-BFGS-B" ,"nhatend"][[1]]
+
+# Calculate the asymptotic variance-covariance matrix
+n <- length(t3)
+avar_cov <- solve(hessian) / n
+
+
+# Extract the asymptotic variances
+asymptotic_variances <- diag(avar_cov)
+asymptotic_variances
+# Print the results
+print(asymptotic_variances)
+
+# Calculate the asymptotic variance ratios
+avar_ratios <- matrix(NA, nrow = 3, ncol = 3)
+rownames(avar_ratios) <- c("d1","d2","d3") # names(asymptotic_variances)
+colnames(avar_ratios) <- c("d1","d2","d3") # names(asymptotic_variances)
+
+for (i in 1:3) {
+  for (j in 1:3) {
+    avar_ratios[i, j] <- asymptotic_variances[i] / asymptotic_variances[j]
+  }
+}
+
+# Print the result
+print(avar_ratios)
+
+```
+
+Interpretación de resultados de ratios de la varianza:
+
+-   El elemento fuera de la diagonal más grande es 372.46, que representa la relación entre la varianza asintótica de param3(d3) y la varianza asintótica de param2 (d2). Esto indica que d3 se estima con mucha menos precisión en comparación con d2
+
+-   El elemento fuera de la diagonal más pequeño es 0.0026, que representa la relación entre la varianza asintótica de d2 y la varianza asintótica de d3. Esto sugiere que d2 se estima con mayor precisión en comparación con d3.
+
+-   d1 y d3 tienen una relación cercana a 1 (0.99 y 1.01), lo que indica niveles similares de precisión en sus estimaciones.
+
+-   Al interpretar la matriz de relación de varianza asintótica en el contexto de su problema específico y combinarla con otros diagnósticos del modelo, puede obtener información valiosa sobre la precisión relativa de las estimaciones de sus parámetros e identificar áreas potenciales para una mayor investigación o refinamiento del modelo.
+
+```{r}
+
+# Set the sample size
+n <- 100
+
+# A partir del mejor MLL con metodo L-BFGS-B
+# Define the true parameter values
+beta0 <- -12.33751   # Intercept
+beta1 <- -2.461278  # Coefficient for X1
+beta2 <- -8.80537 # Coefficient for X2
+
+# Generate the predictor variables
+X1 <- rbinom(n, size = 1, prob = 0.5)
+X2 <- rnorm(n, mean = 0, sd = 1)
+
+# Calculate the linear predictor
+linear_predictor <- beta0 + beta1 * X1 + beta2 * X2
+
+# Generate the binary response variable (Y) from the binomial distribution
+Y <- rbinom(n, size = 1, prob = plogis(linear_predictor))
+
+# Combine the variables into a data frame
+synthetic_data <- data.frame(X1, X2, Y)
+
+```
+
+### Resampling approach with boostrap, para reg log estratificada y obtener varianza
+
+Puedo combinar la simulación de Monte Carlo y los métodos de arranque para evaluar exhaustivamente el rendimiento de los estimadores y estimar la variabilidad de las estadísticas. La simulación de Monte Carlo permite evaluar el comportamiento de los estimadores en varios escenarios, mientras que los métodos de arranque proporcionan una manera de estimar la variabilidad de las estadísticas y aproximar sus distribuciones muestrales.
+
+```{r}
+# Load the package
+library(boot)
+library(survival)
+
+# Set the sample size
+n <- 100
+
+# A partir del mejor MLL con metodo L-BFGS-B
+# Define the true parameter values
+beta0 <- -12.33751   # Intercept
+beta1 <- -2.461278  # Coefficient for X1
+beta2 <- -8.80537 # Coefficient for X2
+
+# Generate the predictor variables
+X1 <- rbinom(n, size = 1, prob = 0.5)
+X2 <- rnorm(n, mean = 0, sd = 1)
+
+# Calculate the linear predictor
+linear_predictor <- beta0 + beta1 * X1 + beta2 * X2
+
+# Generate the binary response variable (Y) from the binomial distribution
+Y <- rbinom(n, size = 1, prob = plogis(linear_predictor))
+
+# Combine the variables into a data frame
+synthetic_data <- data.frame(X1, X2, Y)
+
+stat_func <- function(t, indices) {
+  # Calculate the statistic on the resampled data
+  #Regresion logística condicional o por estratos
+  d <- t[indices, ]
+  rlog<- glm(Y ~ X1 + X2,  #D ~ A + λzi, 
+                 data = d,
+                 family = binomial)
+  deviance(rlog)/df.residual(rlog)
+}
+
+# Set the number of Monte Carlo simulations
+n_sims <- 1000
+
+# Initialize vectors to store the results
+estimates <- numeric(n_sims)
+
+# Run the Monte Carlo simulations
+for (i in 1:n_sims) {
+  # Generate synthetic data based on a known model or process
+  datas <- synthetic_data #generate_data(...)
+  
+  # Perform bootstrapping
+  boot_output <- boot(data = datas, statistic = stat_func, R = 100)
+
+  # Access the bootstrap results
+  boot_estimates <- boot_output$t0  # Bootstrap estimates of the statistic
+  
+  # Apply the estimator or method of interest
+  estimates[i] <- boot_estimates #estimate_parameter(data)
+}
+
+# Evaluate the performance of the estimator
+mean_estimate <- mean(estimates)
+estimates
+bias <- mean_estimate - true_parameter_value
+variance <- var(estimates)
+mse <- mean((estimates - true_parameter_value)^2)
+```
+
+### Resampling approach with boostrap, para reg log estratificada y obtener varianza
+
+```{r}
+
+# deviance(reg)/df.residual(reg)
+# df.residual(datglmrob)
+# deviance(datglmrob)
+# pscl::pR2(datglmrob)["McFadden"]
+
+# Install the boot package if not installed
+# install.packages("boot")
+
+# Load the package
+library(boot)
+library(survival)
+# Define database
+# str(dat)
+# hacer reg log simple con 
+
+
+# Define a function to calculate the statistic of interest
+# variance on regression stratific logistic
+stat_func <- function(t, indices) {
+  # Calculate the statistic on the resampled data
+  #Regresion logística condicional o por estratos
+  d <- t[indices, ]
+  rlog<- glm(D ~ A + λzi, 
+                 data = d,
+                 family = binomial)
+  deviance(rlog)/df.residual(rlog) # Al dividir la desviación por los grados de libertad residuales, obtenemos una estimación de la varianza residual sin escala o la desviación residual cuadrática media
+}
+
+
+# Perform bootstrapping
+boot_output <- boot(data = t3, statistic = stat_func, R = 1000)
+sum()
+# Access the bootstrap results
+boot_estimates <- boot_output$t  # Bootstrap estimates of the statistic
+boot_se <- boot.ci(boot_output, type = "bca")$bca[34]  # Bootstrap standard error
+```
+
+## Modelo Final
+
+```{r}
+
+δ <- delta # esta funcion fue hallada en Reg Log Estratificada
+#λzi # Esta funcion fue hallada en MLL
+
+##################################################################
+#función productoria
+productoria <- function(D,delta,A,lamdazi){
+   result = prod((exp(D*(delta*A)+lamdazi))/(1+exp((delta*A)+lamdazi)))
+   return(result)
+}
+
+## donde D es label donde es 1 = Patologia, 0 sin patología, 
+log_Ratio_odds_sujetos_ctrl = exp(t3$D*(δ*t3$A)+(λzi)) / (1+(exp((δ*t3$A)+(λzi))))
+
+
+log_ODDs_Ratios <- productoria(t3$D, δ, t3$A, λzi)
+log_ODDs_Ratios
+```
+
+Probando con datos de sujetos estudio utilizando coeficientes de sujetos de Control
+
+```{r}
+
+δ <- delta
+Xse = model.matrix(~subclass, data=t2) # Armo matriz de dummies para coeficientes
+
+datse <- t2$zscore  # valores de zscore a utilizar en la función lambda
+b0 <- 1.3779501 # coef 1 - Intercept
+b1 <- 2.6703470 # coef 2
+b2 <- 3.9454824 # coef 3
+b3 <- 5.1855838 # coef 4
+b4 <- 6.2961919 # coef 5
+
+# Funcion lambda (funcion constante por partes) para obtener coeficiente de feature propensity zscore 
+λzise <- (as.numeric(ifelse((Xse[,2]+Xse[,3]+Xse[,4]+Xse[,5])==1,0,b0*Xse[,1]*datse) + b1*Xse[,2]*datse + b2*Xse[,3]*datse + b3*Xse[,4]*datse + b4*Xse[,5]*datse))
+log_ODDs_Ratios_sujetos_estudio <- productoria(t2$D, δ, t2$A, λzise)
+
+log_ODDs_Ratios_sujetos_estudio
+log_Ratio_odds_sujetos_estudio = exp(t2$D*(δ*t2$A)+(λzise)) / (1+(exp((δ*t2$A)+(λzise))))
+
+```
+
+```{r}
+c(log_ODDs_Ratios, log_ODDs_Ratios_sujetos_estudio)
+```
+
+```{r}
+par(mfrow = c(1, 2), mar = c(4, 4, 2, 1))
+plot(log_Ratio_odds_sujetos_ctrl, main = "Composicion de ∏ D=0")
+plot(log_Ratio_odds_sujetos_estudio, main = "Composicion de ∏ D=1")
+```
+
+### Alternativas comunes a R\^2 en regresión logística condicional
+
+-   **Prueba de razón de verosimilitud (LRT** Likelihood Ratio Test**)** : la LRT compara el ajuste del modelo completo con el modelo nulo o solo de intersección. La estadística de prueba sigue una distribución chi-cuadrado y un valor p significativo indica que los predictores del modelo proporcionan un mejor ajuste que el modelo nulo. anova(model)
+
+-   **Medidas de pseudo R cuadrado** : se han propuesto varias medidas de pseudo R cuadrado como alternativas a R \^ 2 en la regresión logística condicional. Estas medidas tienen como objetivo cuantificar la proporción de variación explicada por los predictores. Algunas medidas pseudo R-cuadrado comúnmente utilizadas son:
+
+**Pseudo R cuadrado de Cox y Snell** :
+
+-   **Estadística de concordancia (estadística C)** : la estadística C, también conocida como área bajo la curva característica operativa del receptor (ROC), mide la capacidad discriminativa del modelo. Va desde 0,5 (sin discriminación) a 1 (discriminación perfecta).
+
+4.  **Criterios de información** : los criterios de información, como el Criterio de información de Akaike (AIC) y el Criterio de información bayesiano (BIC), se pueden utilizar para comparar el ajuste relativo de diferentes modelos. Valores más bajos de AIC o BIC indican un mejor ajuste.
+
+5.  
+
+```{r}
+# https://jrubalcaba.github.io/posts/information_criterion/
+# https://stats.stackexchange.com/questions/567498/are-exact-logistic-regression-and-conditional-logistic-regression-the-same
+  
+library(fixest)
+library(amt)
+library(pROC)
+
+library(rms)
+library(rcompanion)
+
+# Regresión Logística Condicional
+# criterio de información de Aike (AIC)
+# criterio de información de Bayes (BIC)
+# solo funciona con el modelo realizado con glm
+
+misdat <- data.frame(rbind(t3[,c("D","subclass","A")], t2[,c("D","subclass","A")]))
+
+model <- clogit(D~A+strata(subclass),data=misdat)
+anova(model) 
+performance::r2(model, adjust = TRUE) #proporción de variación explicada por los predictores
+
+prob <- survival:::predict.coxph(model)
+predict(model, type = "risk")
+prob <- predict(model, type = "risk")  # Predicted probabilities
+survival:::coxph(Surv(1:nrow(misdat), misdat$D) ~ prob, data = misdat, method = "breslow")$rscore  # C-statistic
+
+coxph(Surv(1:nrow(misdat), misdat$D) ~ prob, data = misdat, method = "breslow")$rscore 
+coxp <- coxph(Surv(1:nrow(misdat), misdat$D) ~ prob, data = misdat, method = "breslow")
+summary(coxp)
+summary(model)
+
+aic <- AIC(model)  # AIC
+bic <- BIC(model)  # BIC
+deviance(model)
+c(aic, bic)
+
+
+fitstat(reglog.cond)
+fit_clogit(misdat,D~A+strata(subclass), more = NULL, summary_only = FALSE )
+clogit(D~A+strata(subclass),method= "efron", data=misdat)
+
+
+insight::get_varcov(reglog.cond) #Get variance-covariance matrix from models
+# str(misdat)
+# pscl::pR2(reglog.cond)["McFadden"]
+
+anova(reglog.cond, test="Chisq")
+AIC(reglog.cond)
+
+```
+
+```{r}
+# Hacer graficas
+# https://cran.rstudio.com/web/packages/regressinator/vignettes/logistic-regression-diagnostics.html
+```

@@ -1,0 +1,247 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+#library(dplyr)
+library(tidymodels)
+library(readr)
+```
+
+```{r}
+mtcars %>%
+  dplyr::select(hp) %>%
+  specify(response = hp) %>%
+  generate(reps = 10000, type = 'bootstrap') %>%
+  calculate(stat = 'mean')  -> mtcars_bootstrapped_ci_df
+
+```
+
+```{r}
+
+#setwd("C:/hcgalvan/Repositorios/hcgalvan_project/data/union/End")
+temp = gsub(".*target.*", "", readLines("integrado.csv"))
+data<-read.table(text=temp, sep=",", header=TRUE)
+
+t<-data.frame(data[,c("sl2l_diameter","ccbd_diameter","ifol_diameter","ecpl_volume","tral_volume","sl2l_mean_length","ccbd_mean_length","label","sl2l_qa", "sl2l_iso", "ccbd_iso", "ccbd_qa", "ifol_qa", "ifol_iso", "ecpl_qa", "ecpl_iso", "tral_qa", "tral_iso", "afsl_qa", "afsl_iso", "afsr_qa", "afsr_iso", "cfpl_iso", "cfpl_qa", "cfpr_iso", "cfpr_qa", "fatl_iso", "fatl_qa", "fatr_iso", "fatr_qa", "slfl_iso", "slfl_qa", "slfr_iso", "slfr_qa", "tral_iso", "tral_qa", "ufsl_iso", "ufsl_qa", "ufsr_iso", "ufsr_qa", "age", "gender_F")])
+
+t$gend_F <- ifelse(t$gender_F == "True", 1, 0) #convierto en = o 1
+t <- subset(t, select = -c(gender_F)) # Quito de tabla 
+t$sl2l_qa
+```
+
+```{r}
+library(fitdistrplus)
+descdist(t$sl2l_diameter, boot = 1000)
+
+```
+
+```{r}
+set.seed(27)
+boots <- bootstraps(t, times = 2000, apparent = TRUE)
+boots
+```
+
+```{r}
+mean(t$sl2l_diameter)
+sd(t$sl2l_diameter)
+Q <- quantile(t$sl2l_diameter, probs=c(.25, .75), na.rm = FALSE)
+iqr <- IQR(t$sl2l_diameter) 
+up <-  Q[2]+1.5*iqr # Upper Range   
+low<- Q[1]-1.5*iqr # Lower Range 
+
+```
+
+```{r}
+######### DATOS DE CONTROL #########
+set.seed(1234)
+datCtl <- dplyr::select(dplyr::filter(t, label == 1),c("sl2l_diameter","ccbd_diameter","ifol_diameter","ecpl_volume","tral_volume","sl2l_mean_length","ccbd_mean_length","label"))
+mus <- mean(datCtl$sl2l_diameter) # or whatever your mean is
+sds <- sd(datCtl$sl2l_diameter) 
+
+muc <- mean(datCtl$ccbd_diameter) # or whatever your mean is
+sdc <- sd(datCtl$ccbd_diameter) 
+
+mui <- mean(datCtl$ifol_diameter) # or whatever your mean is
+sdi <- sd(datCtl$ifol_diameter) 
+
+mue <- mean(datCtl$ecpl_volume) # or whatever your mean is
+sde <- sd(datCtl$ecpl_volume) 
+
+mut <- mean(datCtl$tral_volume) # or whatever your mean is
+sdt <- sd(datCtl$tral_volume) 
+
+musm <- mean(datCtl$sl2l_mean_length) # or whatever your mean is
+sdsm <- sd(datCtl$sl2l_mean_length) 
+
+mucm <- mean(datCtl$ccbd_mean_length) # or whatever your mean is
+sdcm <- sd(datCtl$ccbd_mean_length) 
+
+n <- 50000 # the number of random values you wish to generate.
+sl2l_dm <- rnorm(n, mean = mus, sd=sds ) 
+ccbd_dm <- rnorm(n, mean = muc, sd=sdc ) 
+ifol_dm <- rnorm(n, mean = mui, sd=sdi ) 
+ecpl_vl <- rnorm(n, mean = mue, sd=sde ) 
+tral_vl <- rnorm(n, mean = mut, sd=sdt ) 
+sl2l_ml <- rnorm(n, mean = musm, sd=sdsm ) 
+ccbd_ml <- rnorm(n, mean = mucm, sd=sdcm ) 
+
+
+```
+
+```{r}
+######### DATOS DE ESTUDIO #########
+set.seed(1234)
+datEst <- dplyr::select(dplyr::filter(t, label == 0),c("sl2l_diameter","ccbd_diameter","ifol_diameter","ecpl_volume","tral_volume","sl2l_mean_length","ccbd_mean_length","label"))
+must <- mean(datEst$sl2l_diameter) # or whatever your mean is
+sdst <- sd(datEst$sl2l_diameter) 
+
+muct <- mean(datEst$ccbd_diameter) # or whatever your mean is
+sdct <- sd(datEst$ccbd_diameter) 
+
+muit <- mean(datEst$ifol_diameter) # or whatever your mean is
+sdit <- sd(datEst$ifol_diameter) 
+
+muet <- mean(datEst$ecpl_volume) # or whatever your mean is
+sdet <- sd(datEst$ecpl_volume) 
+
+mutt <- mean(datEst$tral_volume) # or whatever your mean is
+sdtt <- sd(datEst$tral_volume) 
+
+musmt <- mean(datEst$sl2l_mean_length) # or whatever your mean is
+sdsmt <- sd(datEst$sl2l_mean_length) 
+
+mucmt <- mean(datEst$ccbd_mean_length) # or whatever your mean is
+sdcmt <- sd(datEst$ccbd_mean_length) 
+
+n <- 50000 # the number of random values you wish to generate.
+sl2l_dmt <- rnorm(n, mean = must, sd=sdst ) 
+ccbd_dmt <- rnorm(n, mean = muct, sd=sdct ) 
+ifol_dmt <- rnorm(n, mean = muit, sd=sdit ) 
+ecpl_vlt <- rnorm(n, mean = muet, sd=sdet ) 
+tral_vlt <- rnorm(n, mean = mutt, sd=sdtt ) 
+sl2l_mlt <- rnorm(n, mean = musmt, sd=sdsmt ) 
+ccbd_mlt <- rnorm(n, mean = mucmt, sd=sdcmt ) 
+```
+
+```{r}
+#dat <- data.frame(cbind(sl2l_dm, ccbd_dm, ifol_dm, ecpl_vl, tral_vl, sl2l_ml, ccbd_ml))
+#dat <- data.frame(rbind(sl2l_dmt, ccbd_dmt, ifol_dmt, ecpl_vlt, tral_vlt, sl2l_mlt, ccbd_mlt))
+t3 <- data.frame(sl2l_dm = sl2l_dm, ccbd_dm=ccbd_dm, ifol_dm=ifol_dm, ecpl_vl=ecpl_vl,tral_vl=tral_vl,sl2l_ml=sl2l_ml,ccbd_ml=ccbd_ml, D=0)
+t2 <- data.frame(sl2l_dm = sl2l_dmt, ccbd_dm=ccbd_dmt, ifol_dm=ifol_dmt, ecpl_vl=ecpl_vlt,tral_vl=tral_vlt,sl2l_ml=sl2l_mlt,ccbd_ml=ccbd_mlt, D=1)
+dat <- rbind(t3[,1:8], t2[,1:8])
+
+
+```
+
+```{r}
+
+# histogram of variable-1 
+hist(sl2l_dm,col='green') 
+hist(t$sl2l_diameter,col='red',add=TRUE) 
+
+hist(ccbd_dm, col='blue')
+hist(t$ccbd_diameter, col='red',add=TRUE)
+
+hist(ifol_dm, col='yellow')
+hist(t$ifol_diameter, col='red',add=TRUE)
+
+hist(ecpl_vl, col='violet')
+hist(t$ecpl_volume, col='red',add=TRUE)
+
+hist(tral_vl, col='grey')
+hist(t$tral_volume, col='red',add=TRUE)
+
+hist(sl2l_ml, col='pink')
+hist(t$sl2l_mean_length, col='red',add=TRUE)
+
+hist(ccbd_ml, col='orange')
+hist(t$ccbd_mean_length, col='red',add=TRUE)
+
+```
+
+```{r}
+#  Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ # 19.86   22.10   23.02   23.30   24.42   27.18
+dat<- dat %>% 
+  mutate(sl2ldmExp = if_else((dat$sl2l_dm > 22.10 & dat$sl2l_dm < 24.42), 0, 1))
+#21.73   26.07   28.18   28.29   30.23   32.90 
+dat<- dat %>% 
+  mutate(ccbdmExp = if_else((dat$ccbd_dm > 26.07 & dat$ccbd_dm < 30.23), 0, 1))
+#11.70   14.68   15.91   15.73   16.51   19.64
+dat<- dat %>% 
+  mutate(ifoldmExp = if_else((dat$ifol_dm > 14.68 & dat$ifol_dm < 16.51), 0, 1))
+ #1785    6455    7407    7250    8918   10622 
+dat<- dat %>% 
+  mutate(ecplvlExp = if_else((dat$ecpl_vl > 6455 & dat$ecpl_vl < 8918), 0, 1))
+#7780   12366   15988   15911   18004   26424 
+dat<- dat %>% 
+  mutate(tralvlExp = if_else((dat$tral_vl > 12366 &  dat$tral_vl < 18004), 0, 1))
+#65.44   72.18   75.69   76.94   80.61   88.53 
+dat<- dat %>% 
+  mutate(sl2lmlExp = if_else((dat$sl2l_ml > 72.18 & dat$sl2l_ml < 80.61), 0, 1))
+  #99.87  112.62  117.22  117.47  123.81  131.73 
+dat<- dat %>% 
+  mutate(ccbdmlExp = if_else((dat$ccbd_ml > 112.62 & dat$ccbd_ml < 123.81), 0, 1))
+```
+
+```{r}
+#par(mfrow = c(2, 2), mar = c(2, 2, 2, 2)) 
+xtabs(~sl2ldmExp,dat);xtabs(~ccbdmExp,dat);xtabs(~ifoldmExp,dat);xtabs(~ecplvlExp,dat);xtabs(~tralvlExp,dat);xtabs(~sl2lmlExp,dat)
+xtabs(~ccbdmlExp,dat)
+```
+
+```{r}
+suma = 0
+resultado <- c()
+for (i in 1:length(dat$ccbdmlExp)){
+  suma = sum(dat$sl2ldmExp[i], dat$sl2lmlExp[i], dat$ccbdmExp[i], dat$ccbdmlExp[i], dat$tralvlExp[i], dat$ecplvlExp[i], dat$ifoldmExp[i] )
+#  suma = sum(t$sl2ldmExp[i], t$ccbdmlExp[i], t$tralvlExp[i], t$ecplvlExp[i], t$ifoldmExp[i] )
+  #suma = sum(t$ccbdmlExp[i], t$ecplvlExp[i]) # solo los 2 mas altos odds: 2.03; 2.34
+#  suma = sum(t$sl2lmlExp[i], t$ccbdmExp[i])
+#  suma = sum(t$sl2ldmExp[i], t$ccbdmlExp[i], t$ecplvlExp[i]) # solo dejo estos que tienen odds altos 1.76; 2.03; 2.34
+  
+  resultado[length(resultado) + 1] <- if_else((suma >=1 ),1, 0)
+}
+xtabs(~resultado)
+dat$A <- resultado
+xtabs(~A,dat)
+sujeto_Ctrl <- dplyr::select(dplyr::filter(dat, D == 0), "A")
+sujeto_Est <- dplyr::select(dplyr::filter(dat, D == 1), "A")
+xtabs(~A,sujeto_Ctrl)
+xtabs(~A,sujeto_Est)
+```
+
+```{r}
+
+dctl <- dplyr::select(dplyr::filter(t, label == 1), "sl2l_qa", "sl2l_iso", "ccbd_iso", "ccbd_qa", "ifol_qa", "ifol_iso", "ecpl_qa", "ecpl_iso", "tral_qa", "tral_iso", "afsl_qa", "afsl_iso", "afsr_qa", "afsr_iso", "cfpl_iso", "cfpl_qa", "cfpr_iso", "cfpr_qa", "fatl_iso", "fatl_qa", "fatr_iso", "fatr_qa", "slfl_iso", "slfl_qa", "slfr_iso", "slfr_qa", "tral_iso", "tral_qa", "ufsl_iso", "ufsl_qa", "ufsr_iso", "ufsr_qa", "age", "gend_F")
+```
+
+```{r}
+pca.out3 <- prcomp(dctl,
+                  scale. = TRUE)
+```
+
+```{r}
+pc_scores <- pca.out3$x[,1:2]
+# Set the number of new random variables
+num_new_vars <- 6
+
+# Set the seed for reproducibility
+set.seed(123)
+
+# Generate new random variables
+new_vars <- matrix(rnorm(nrow(pc_scores) * num_new_vars), ncol = num_new_vars)
+
+```
+
+```{r}
+new_data <- cbind(pc_scores, new_vars)
+pairs(new_data)
+```
+
+```{r}
+pca.var3 <- pca.out3$sdev^2 
+
+```
