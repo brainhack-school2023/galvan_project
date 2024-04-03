@@ -221,18 +221,58 @@ dctl <- dplyr::select(dplyr::filter(t, label == 1), "sl2l_qa", "sl2l_iso", "ccbd
 ```{r}
 pca.out3 <- prcomp(dctl,
                   scale. = TRUE)
+####### Otra forma de retener
+# Determine the number of PCs to retain based on a chosen criterion
+# For example, retain PCs that explain at least 80% of the variance
+# explained_variance <- pca_result$sdev^2 / sum(pca_result$sdev^2)
+# num_pcs <- sum(cumsum(explained_variance) <= 0.8) + 1
+###########
+# Utilizo esta forma
+
+
+pca.var3 <- pca.out3$sdev^2  #autovalores
+# Cálculo de la varianza explicada acumulada 
+prop_varianza <- pca.out3$sdev^2/sum(pca.out3$sdev^2)
+prop_varianza_acum <- cumsum(prop_varianza)
+num_pcs <- sum(cumsum(prop_varianza_acum) <= 0.89) + 1
+
 ```
 
 ```{r}
-pc_scores <- pca.out3$x[,1:2]
+# pc_scores <- pca.out3$x[,1:2]
 # Set the number of new random variables
-num_new_vars <- 6
+# num_new_vars <- 6
+
+# Set the seed for reproducibility
+set.seed(123)
+# Generate new random variables
+# new_vars <- matrix(rnorm(nrow(pc_scores) * num_new_vars), ncol = num_new_vars)
+
+# Generate new random variables
+pc_loadings <- pca.out3$rotation
+pca.out3$x[, 1:2]
+pc_loadings[, 1:num_pcs, drop = FALSE]
+data.frame(A = t3[, "D"], pca.out3$x[, 1:2])
+new_vars <- matrix(rnorm(nrow(dctl) * num_pcs), ncol = num_pcs) %*% pc_loadings[, 1:num_pcs, drop = FALSE]
+```
+
+```{r}
+pc_scores <- pca.out3$x
+pc_loadings <- pca.out3$rotation
+# Determine the number of principal components to retain
+num_pcs <- sum(pca.out3$sdev^2 >  1)
 
 # Set the seed for reproducibility
 set.seed(123)
 
 # Generate new random variables
-new_vars <- matrix(rnorm(nrow(pc_scores) * num_new_vars), ncol = num_new_vars)
+new_vars <- matrix(rnorm(nrow(pc_scores) * num_pcs), ncol = num_pcs) %*% pc_loadings[, 1:num_pcs, drop = FALSE]
+
+# como no funciona probe como vector
+new_vars <- matrix(rnorm(nrow(pc_scores) * num_pcs), ncol = num_pcs) * as.vector(pc_loadings[, 1:num_pcs, drop = FALSE])
+
+# como no es lo que estoy buscando
+matrix(rnorm(nrow(pc_scores) * num_pcs), ncol = num_pcs) * as.vector(pc_loadings[, 1:num_pcs, drop = FALSE])
 
 ```
 
@@ -245,3 +285,7 @@ pairs(new_data)
 pca.var3 <- pca.out3$sdev^2 
 
 ```
+
+Bibliografía
+
+<https://online.stat.psu.edu/stat505/book/export/html/670>
