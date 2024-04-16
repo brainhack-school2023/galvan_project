@@ -19,6 +19,28 @@ mtcars %>%
 ```
 
 ```{r}
+logistic.regression.or.ci <- function(regress.out, level = 0.95) {
+  usual.output <- summary(regress.out)
+  z.quantile <- stats::qnorm(1 - (1 - level) / 2)
+  number.vars <- length(regress.out$coefficients)
+  OR <- exp(regress.out$coefficients[-1])
+  temp.store.result <- matrix(rep(NA, number.vars * 2), nrow = number.vars)
+  for (i in 1:number.vars) {
+    temp.store.result[i, ] <- summary(regress.out)$coefficients[i] +
+      c(-1, 1) * z.quantile * summary(regress.out)$coefficients[i + number.vars]
+  }
+  intercept.ci <- temp.store.result[1, ]
+  slopes.ci <- temp.store.result[-1, ]
+  OR.ci <- exp(slopes.ci)
+  output <- list(
+    regression.table = usual.output, intercept.ci = intercept.ci,
+    slopes.ci = slopes.ci, OR = OR, OR.ci = OR.ci
+  )
+  return(output)
+}
+```
+
+```{r}
 
 #setwd("C:/hcgalvan/Repositorios/hcgalvan_project/data/union/End")
 temp = gsub(".*target.*", "", readLines("integrado.csv"))
@@ -192,13 +214,15 @@ xtabs(~sl2ldmExp,dat);xtabs(~ccbdmExp,dat);xtabs(~ifoldmExp,dat);xtabs(~ecplvlEx
 xtabs(~ccbdmlExp,dat)
 ```
 
+### Creación de variable A a partir de los expuestos y no expuestos
+
 ```{r}
 suma = 0
 resultado <- c()
 for (i in 1:length(dat$ccbdmlExp)){
   suma = sum(dat$sl2ldmExp[i], dat$sl2lmlExp[i], dat$ccbdmExp[i], dat$ccbdmlExp[i], dat$tralvlExp[i], dat$ecplvlExp[i], dat$ifoldmExp[i] )
 #  suma = sum(t$sl2ldmExp[i], t$ccbdmlExp[i], t$tralvlExp[i], t$ecplvlExp[i], t$ifoldmExp[i] )
-  #suma = sum(t$ccbdmlExp[i], t$ecplvlExp[i]) # solo los 2 mas altos odds: 2.03; 2.34
+#  suma = sum(t$ccbdmlExp[i], t$ecplvlExp[i]) # solo los 2 mas altos odds: 2.03; 2.34
 #  suma = sum(t$sl2lmlExp[i], t$ccbdmExp[i])
 #  suma = sum(t$sl2ldmExp[i], t$ccbdmlExp[i], t$ecplvlExp[i]) # solo dejo estos que tienen odds altos 1.76; 2.03; 2.34
   
@@ -213,10 +237,20 @@ xtabs(~A,sujeto_Ctrl)
 xtabs(~A,sujeto_Est)
 ```
 
+## Etapa 2: Regresion Logística con PCA en Sujetos de Estudio - Expuestos.
+
+#### Valor obtenido a partir del feature dependiente A y Confusoras como predictoras.
+
+##### Reducir con PCA las predictoras.
+
 ```{r}
 
 dctl <- dplyr::select(dplyr::filter(t, label == 1), "sl2l_qa", "sl2l_iso", "ccbd_iso", "ccbd_qa", "ifol_qa", "ifol_iso", "ecpl_qa", "ecpl_iso", "tral_qa", "tral_iso", "afsl_qa", "afsl_iso", "afsr_qa", "afsr_iso", "cfpl_iso", "cfpl_qa", "cfpr_iso", "cfpr_qa", "fatl_iso", "fatl_qa", "fatr_iso", "fatr_qa", "slfl_iso", "slfl_qa", "slfr_iso", "slfr_qa", "tral_iso", "tral_qa", "ufsl_iso", "ufsl_qa", "ufsr_iso", "ufsr_qa", "age", "gend_F")
+
+
 ```
+
+#### Escalar/Normalizar y obtener matriz PCAS, graficar
 
 ```{r}
 pca.out3 <- prcomp(dctl,
@@ -239,6 +273,249 @@ num_pcs <- sum(cumsum(prop_varianza_acum) <= 0.89) + 1
 ```
 
 ```{r}
+num_simulations <- 50000
+#pca_1 <- vector(length = num_simulations)
+# pca_2  <- vector(length = num_simulations)
+pca_1 <- c()
+pca_2 <- c()
+pca.out3$x[s,"PC1"]
+for (i in 1:num_simulations) {
+  for(s in 1:50) {
+    pca_1[i] <- rnorm(1)*pca.out3$x[s,"PC1"]  
+    pca_2[i] <- rnorm(1)*pca.out3$x[s,"PC2"]
+    }
+  }
+pca_t <- data.frame(pca_1, pca_2)
+```
+
+### Regresion logística binomial con PCA para obtener coeficientes de Confusoras
+
+```{r}
+#disable scientific notation for model summary
+options(scipen=999)
+
+  
+#pca.var3
+# rnom(x)
+misdatos2 <- data.frame(A = sujeto_Ctrl[,"A"], pca_t)
+
+#pca.out3[1]
+logRegPCANoExp <- glm(A ~ .,  data = misdatos2, family = binomial)
+
+summary(logRegPCANoExp)
+logistic.regression.or.ci(logRegPCANoExp)
+summary(logRegPCANoExp)$coefficients
+pscl::pR2(logRegPCANoExp)["McFadden"]
+caret::varImp(logRegPCANoExp)
+car::vif(logRegPCANoExp)
+
+
+```
+
+```{r}
+# Probar con regresion logística robusto a traves del método BY, y verificar valores con regresion normal
+library(robustbase)
+library(survival)
+# str(t3)
+datglmrob<-glmrob(formula = A ~ ., data= misdatos2, family = "binomial", method = "BY")
+summary(datglmrob)
+
+# Extract the variance-covariance matrix
+var_cov_matrix <- vcov(datglmrob)
+print(var_cov_matrix)
+
+# Extract the variances of the parameter estimates
+parameter_variances <- diag(var_cov_matrix)
+print(parameter_variances)
+
+```
+
+#### Generación Propensity Z Score
+
+```{r}
+############## PARA SUJETOS DE CONTROL #######################
+zscores2<-c()
+for(i in 1:50000) {       # for-loop over rows
+    zscores2[i] <-((1/(1+exp(-(as.numeric(unlist(logRegPCANoExp$coefficients[1]))+as.numeric(unlist(logRegPCANoExp$coefficients[2]))*as.numeric(unlist(pca_t$pca_1[i]))+as.numeric(unlist(logRegPCANoExp$coefficients[3]))*as.numeric(unlist(pca_t$pca_2[i])))))))
+}
+
+t2$zscore <-zscores2
+t2$A <- sujeto_Ctrl$A
+quantile(t2$zscore)
+
+# Utilizar cuantiles para armar stratos que divide en 5 en rangos el histograma de "zscore" a utilizar en regresion logística
+
+cuantil <-quantile(t2$zscore, prob = seq(0, 1, 1/5))
+t2$subclass <- cut(x=t2$zscore,
+                              breaks=quantile(cuantil, 
+                              prob = seq(0, 1, 1/5)),include.lowest=T)
+levels(t2$subclass) <- 1:length(levels(t2$subclass))
+
+xtabs(~A+subclass,t2)
+
+```
+
+### Piece-wice constant function - Aproximar λ(Zi) usando histogram splines
+
+```{r}
+# Utilizar cuantiles para armar stratos que divide en 5 en rangos el histograma de "zscore" a utilizar en regresion logística
+
+cuantil <-quantile(t2$zscore, prob = seq(0, 1, 1/5))
+t2$subclass <- cut(x=t2$zscore,
+                              breaks=quantile(cuantil, 
+                              prob = seq(0, 1, 1/5)),include.lowest=T)
+levels(t2$subclass) <- 1:length(levels(t2$subclass))
+
+xtabs(~A+subclass,t2)
+```
+
+```{r}
+# utilizar los quintiles y definir los valores medios
+b1 = mean(as.numeric(unlist(dplyr::select(dplyr::filter(t2, subclass == 1,),"zscore"))))
+b2 = mean(as.numeric(unlist(dplyr::select(dplyr::filter(t2, subclass == 2,),"zscore"))))
+b3 = mean(as.numeric(unlist(dplyr::select(dplyr::filter(t2, subclass == 3,),"zscore"))))
+b4 = mean(as.numeric(unlist(dplyr::select(dplyr::filter(t2, subclass == 4,),"zscore"))))
+b5 = mean(as.numeric(unlist(dplyr::select(dplyr::filter(t2, subclass == 5,),"zscore"))))
+
+# Determinar los valores representativos
+α_1 = exp(-b1)
+α_2 = exp(-b2)
+α_3 = exp(-b3)
+α_4 = exp(-b4)
+α_5 = exp(-b5)
+
+### Obtengo los límites de zscore a partir del filtro subclase y utilizar en la función por partes
+
+lim1 <- max(as.numeric(unlist(dplyr::select(dplyr::filter(t2, subclass == 1,),"zscore"))))
+lim2 <- max(as.numeric(unlist(dplyr::select(dplyr::filter(t2, subclass == 2,),"zscore"))))
+lim3 <- max(as.numeric(unlist(dplyr::select(dplyr::filter(t2, subclass == 3,),"zscore"))))
+lim4 <- max(as.numeric(unlist(dplyr::select(dplyr::filter(t2, subclass == 4,),"zscore"))))
+lim5 <- max(as.numeric(unlist(dplyr::select(dplyr::filter(t2, subclass == 5,),"zscore"))))
+
+# Armo funcion INDICADORA de x I(x ∈ lim..)
+fx <- function(x, dat){
+    f <- NULL
+    ifelse (x > 0 & x<= lim1, f <- α_1, 0)
+    ifelse (x>lim1 & x<=lim2, f <- α_2, 0)
+    ifelse (x>lim2 & x<=lim3, f <- α_3, 0)
+    ifelse (x>lim3 & x<=lim4, f <- α_4, 0)
+    ifelse (x>lim4, f <- α_5, 0)
+    f
+}
+
+x <- data.frame(t2$zscore)
+for(i in 1:nrow(x)) {       # for-loop over rows
+  lambd <- fx(t2$zscore[[i]])
+  t2$lambda[i] <- lambd
+}
+
+# plot(t2$lambda, type="l", las=1)
+# points(x)
+
+```
+
+```{r}
+c(b1, b2, b3, b4, b5)
+c(α_1, α_2, α_3, α_4, α_5)
+```
+
+### Ajustar con MLE (Maximum Likelihood Estimation) λ(Zi)
+
+Buscamos ajustar los coeficientes obtenidos en la función Lambda (función constante por partes a partir de histogram splines) que son los α_1...α_k
+
+```{r}
+library(stats4) # para la función mle
+library(bbmle) # para la función mle2
+
+
+# cuales son los pasos que necesitamos hacer para ajustar como problema MLE?
+# 1 Pull out the design matrix for the model
+# 2 - write support function/ NLL calculator
+# 3 decide on some starting values for numerical optimization
+# 4 - fit the model !! (Decide on our "black box" for optimitation method)
+# 5 - check the model fit, and whether it converged..(profile)
+# 6 - confirm the results do not depend on the starting values.
+# If the model has not converged.. then what?
+  # - change starting values
+   # try different optimization method("SANN" or Nelder-Mead)
+
+# Step 1 get the design matrix 
+ #- armo nuevo data frame con armado de features a partir de las subclases
+
+
+design_matrix <- model.matrix(~ subclass, data=t2)
+head(design_matrix)
+
+# Utilizo además https://biol607.github.io/2012/ Exercise 14 on if (sigma <= 0) return(NaN)
+# 2 - write support function/ NLL calculator
+
+# Forma 1
+
+glm_MLE_support <- function(b0, b1, b2, b3, b4, sigma, y = as.numeric(t2$subclass), X=design_matrix, dat =t2$zscore){
+  deterministic_part <- as.numeric(ifelse((X[,2]+X[,3]+X[,4]+X[,5])==1,0,b0*X[,1]*dat) + b1*X[,2]*dat + b2*X[,3]*dat + b3*X[,4]*dat + b4*X[,5]*dat)
+  if (sigma <= 0) return(NaN) 
+  -sum(dnorm(y, mean = as.numeric(deterministic_part), sd=as.numeric(sigma), log=T))
+}
+
+# glm_MLE_support(1,1,1,1,0,1,0.7441488)
+# 3 decide on some starting values for numerical optimization
+
+# let's use the standard error of the mean for sigma
+SE <- function(x){
+  as.numeric(sd(as.numeric(x))/sqrt(as.numeric(length(x))))}
+
+# Forma2
+glm.MLE.fit <- mle2(glm_MLE_support,
+                    start=list(b0=α_1 , b1=α_2, b2=α_3, b3=α_4, b4=α_5, sigma = SE(t2$zscore)))
+# 
+summary(glm.MLE.fit)
+
+
+glm.MLE.Null <- mle2(glm_MLE_support,
+                    start=list(b0 = α_1 , b1=α_2, b2=α_3, b3=α_4, b4=α_5, sigma = SE(t2$zscore)),
+                    fixed=list(b0=0 , b1=0, b2=0, b3=0, b4=0))
+
+
+confint(glm.MLE.Null)
+confint(glm.MLE.fit)
+anova(glm.MLE.fit, glm.MLE.Null)
+# anova(str(glm.MLE.fit), test="Chisq") no funciona con este tipo de funcion nll
+  
+plot(profile(glm.MLE.fit))
+summary(glm.MLE.fit)
+confint(glm.MLE.fit)
+AIC(glm.MLE.fit)
+AIC(glm.MLE.Null)
+
+# Para hacer despues, ploteo correcto https://stackoverflow.com/questions/57153916/how-do-i-plot-a-mle2-fit-of-a-model-in-ggplot2-along-with-the-data
+# la busqueda en google fue ggplot(profile(mle2))
+# ggplot(profile(glm.MLE.fit_1))
+#5 look at fit
+#library(arulesViz) no es necesario
+#library(Rgraphviz) no es necesario
+# dismo::plot no es necesario
+################################
+# Probando los coeficientes
+glm.MLE.fit <- mle2(glm_MLE_support,
+                    start=list(b0=1.3779501  , b1=2.6703470  , b2=3.9454824  , b3=5.1855838  , b4=6.2961919  , sigma = 0.0320563  ))
+summary(glm.MLE.fit)
+plot(profile(glm.MLE.fit))
+
+### Se logra con la reg logistica entre A y lambda(z)
+glm.MLE.fit
+# δ<-deviance(glm.MLE.fit)/df.residual(glm.MLE.fit) # ratio varianza para Delta
+# delta <-deviance(reg)/df.residual(reg)
+
+```
+
+```{r}
+############## UNIR DATOS PARA REG LOG CONDICIONAL #######################
+t3$D <- 0 #Sujetos de Control
+t2$D <- 1 #Sujetos de Estudio
+dat <- rbind(t3[,c("D","subclass","A")], t2[,c("D","subclass","A")])
+```
+
+```{r}
 # pc_scores <- pca.out3$x[,1:2]
 # Set the number of new random variables
 # num_new_vars <- 6
@@ -253,7 +530,14 @@ pc_loadings <- pca.out3$rotation
 pca.out3$x[, 1:2]
 pc_loadings[, 1:num_pcs, drop = FALSE]
 data.frame(A = t3[, "D"], pca.out3$x[, 1:2])
-new_vars <- matrix(rnorm(nrow(dctl) * num_pcs), ncol = num_pcs) %*% pc_loadings[, 1:num_pcs, drop = FALSE]
+t3
+str(pc_loadings)
+str(dctl)
+(nrow(dctl) * num_pcs)
+matrix(rnorm(nrow(dctl) * num_pcs), ncol = num_pcs)
+new_vars <- matrix(rnorm(ncol(dctl) * num_pcs), ncol = num_pcs) %*% pc_loadings[, 1:num_pcs, drop = FALSE]
+new_vars <- matrix(rnorm(ncol(dctl) * num_pcs), ncol = num_pcs) * as.vector(pc_loadings[, 1:num_pcs, drop = FALSE])
+
 ```
 
 ```{r}
@@ -273,6 +557,10 @@ new_vars <- matrix(rnorm(nrow(pc_scores) * num_pcs), ncol = num_pcs) * as.vector
 
 # como no es lo que estoy buscando
 matrix(rnorm(nrow(pc_scores) * num_pcs), ncol = num_pcs) * as.vector(pc_loadings[, 1:num_pcs, drop = FALSE])
+sum(as.vector(pc_loadings[, 1:num_pcs, drop = FALSE]))
+sum(as.vector(pc_loadings[, 2:num_pcs, drop = FALSE]))
+
+sum(pc_loadings[,1:1])
 
 ```
 
@@ -284,6 +572,47 @@ pairs(new_data)
 ```{r}
 pca.var3 <- pca.out3$sdev^2 
 
+```
+
+```{r}
+# Load the required libraries
+library(ggplot2)
+library(dplyr)
+
+# Generate some example data
+set.seed(123)
+n <- 100
+p <- 5
+X <- matrix(rnorm(n * p, 0, 1), nrow = n, ncol = p)
+y <- 2 * X[, 1] + 3 * X[, 2] + rnorm(n, 0, 1)
+
+# Combine the independent variables and the outcome variable
+data <- cbind(X, y)
+
+# Perform PCA on the combined data
+pca <- prcomp(data, scale. = TRUE)
+
+# Determine the number of principal components to retain
+num_pcs <- 4  # Retain the first 4 principal components
+
+# Generate new random scores
+new_scores <- matrix(rnorm(n * num_pcs, 0, 1), nrow = n, ncol = num_pcs)
+
+# Reconstruct the new data
+new_data <- new_scores %*% pca$rotation[, 1:num_pcs] + matrix(pca$center, nrow = n, ncol = p + 1, byrow = TRUE)
+
+# Reconstruct the new outcome variable
+new_y <- new_data[, (p + 1)]
+
+# Compare the original and new data
+original_data <- as.data.frame(cbind(X, y))
+new_data <- as.data.frame(new_data)
+
+# Plot the original and new data
+ggplot() +
+  geom_point(data = original_data, aes(X1, X2, color = y), alpha = 0.5) +
+  geom_point(data = new_data, aes(X1, X2, color = new_y), alpha = 0.5) +
+  labs(title = "Original vs. New Data")
 ```
 
 Bibliografía
